@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch that will trigger a deployment
+      - artifact-fix-test # the main branch to give updates to
   workflow_dispatch:
 
 permissions:
