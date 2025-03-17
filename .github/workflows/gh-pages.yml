@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - artifact-fix-test # the main branch to give updates to
+      - main # the main branch to give updates to
   workflow_dispatch:
 
 permissions:
