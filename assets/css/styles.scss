@@ -160,6 +160,12 @@ body {
 
 }
 
+@media screen and (max-width: 768px) {
+	.navbar {
+		display: none
+	}
+}
+
 .mainbody {
 	display: flex;
 	justify-content: space-between;

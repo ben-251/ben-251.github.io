@@ -7,7 +7,7 @@ date: 2025-03-17
 We define the group, $G,$ to be the set of all possible move sequences. This group is non-abelian under addition.
 
 Example elements of this group are:
-
+<!--more-->
 - R
 - R+L
 - $L+L=2L$ 
