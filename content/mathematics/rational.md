@@ -1,10 +1,8 @@
 ---
 date: 2025-01-28T23:18:36Z
-draft: false
+draft: true
 title: Proof that there are infinitely many rational numbers between any two real numbers
 ---
-
-blah blah test push 
 
 For this proof I will assume the Field axioms, as well as the following, defined for a field $F$:
 <!--more-->
