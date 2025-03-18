@@ -115,7 +115,7 @@
   --tertiary-accent: #dcc8ff;
 }
 
-.theme-peony {
+.theme-default, .theme-peony {
   --primary-color: #212729;
   --primary-bg: #fffef2;
   --primary-accent: rgb(255, 194, 114);

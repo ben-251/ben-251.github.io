@@ -132,6 +132,7 @@ const themes = Array.from(themeItems).flatMap(item =>
 	  .filter(className => className.startsWith('theme-') && className !== 'theme-item')
   );
 var currentTheme = localStorage.getItem('theme') || themes[0];
+console.log(`CurrentTheme: ${currentTheme}`)
 const middleStart = 80;
 const middleEnd = 60;
 const rightStart = 95;
@@ -140,8 +141,12 @@ const rightEnd = 85;
 
 function applyTheme(theme) {
 	localStorage.setItem('prevtheme', localStorage.getItem('theme'));
+	console.log(`pre-remove classlist: ${document.body.classList}`)
 	document.body.classList.remove(...themes);
+	document.body.classList.remove('theme-default');
+	console.log(`pos-remove classlist: ${document.body.classList}`)
 	document.body.classList.add(theme);  
+	console.log(`post-add classlist: ${document.body.classList}`)
 	localStorage.setItem('theme', theme);  
 }
 function setActive(theme) {
@@ -173,7 +178,7 @@ applyTheme(currentTheme);
 setActive(currentTheme);
 
 themeItems.forEach(item => {
-	console.log(middleStart);
+	// console.log(middleStart);
 	item.style.setProperty('--middle', `${middleStart}%`);
 	item.style.setProperty('--right', `${rightStart}%`);
 
