@@ -174,7 +174,8 @@ function setActive(theme) {
 	})
 }
 
-applyTheme(currentTheme);
+applyTheme(currentTheme); 
+// one issue is that this lags - it shows the default, then changes it to the current. it shouldn't do this.
 setActive(currentTheme);
 
 themeItems.forEach(item => {
