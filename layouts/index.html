@@ -2,13 +2,16 @@
 <section class="section">
 	<main class="container">
 		<div class="post-list">
-			{{ range .Site.Sections }}
-			<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-			{{ range .Pages }}
-			{{ .Render "summary" }}
-			{{ end }}
+			{{ range where .Site.Sections "Pages" "!=" nil }}
+				{{ $publishedPages := where .Pages "Draft" "!=" true }}
+				{{ if and $publishedPages (ne .Section "settings") }} 
+					<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+					{{ range $publishedPages }}
+						{{ .Render "summary" }}
+					{{ end }}
+				{{ end }}
 			{{ end }}
 		</div>
 	</main>
 </section>
-{{ end }}
+{{ end }} 

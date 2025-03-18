@@ -28,14 +28,20 @@ Another natural question is whether there exist two move sequences that are not 
 
 Let $\mathbb{M}$ be the set of all basic, or **primitive** moves, $\mathbb{M} = \{R,U,F,L,D,B\}$. For all $X \in \mathbb{M}$, there exists an abelian subgroup on $X$ under addition. The set $H = \{n X : n \in \mathbb{Z} / 4\}$ is a subset of $G$, is nonempty, and is finite. The fact that this pattern is cyclical (that is, $3X + X = 0$) implies that this set is closed under addition, so $H$ is a subgroup of $G.$ We call this subgroup the **primitive group** over $X,$ written $\text{prim } \{X\}$. For example,  $\text{prim }\{R\} =\{-R, 0, R, 2R\}$, where $-1 \equiv 3$ mod $4$ gives an inverse on addition. 
 
-For some set $S=\{X_{1},X_{2}, \dots X_{m}\}$, the primitive group over $S$ can be written $$\text{prim }S= \{ n_{1}X_{1} + n_{2}X_{2} + \dots+n_{m}X_{m} : n_{i} \in \mathbb{Z} / k \}$$. Every element of this set has an order of $k$. If the pair is parallel, $k=4$, and The set to $\{-1,0,1,2\}$ is taken as representative of $\mathbb{Z} / 4$, and we call the sum a **reduced parallel sequence,** on $A$, for $A \in {R,U,F}$. Since only parallel elements of $G$ form abelian subgroups, $$\text{prim } \{X, Y, X\} = \text{prim } \{X, Y\} \iff X \text{ and } Y \text{ are parallel.}$$
-For any element $a$ of the group G, written as a sum of reduced parallel sequences, $P_0 + … + P_n$, we define the additive inverse $$
+For some set $S=\{X_{1},X_{2}, \dots X_{m}\}$, the primitive group over $S$ can be written $$\text{prim }S= \{ n_{1}X_{1} + n_{2}X_{2} + \dots+n_{m}X_{m} : n_{i} \in \mathbb{Z} / k \}.$$Every element of this set has an order of $k$. If the pair is parallel, $k=4$, and The set to $\{-1,0,1,2\}$ is taken as representative of $\mathbb{Z} / 4$, and we call the sum a **reduced parallel sequence,** on $A$, for $A \in {R,U,F}$. Since only parallel elements of $G$ form abelian subgroups,
+
+$$\text{prim } \{X, Y, X\} = \text{prim } \{X, Y\} \iff X \text{ and } Y \text{ are parallel.}$$
+
+For any element $a$ of the group G, written as a sum of reduced parallel sequences, $P_0 + … + P_n$, we define the additive inverse 
+
+$$
 \begin{split}
 -a &=\ -(P_n + \dots + P_0) \\
 &=\ -P_n - P_{n-1} - \dots - P_0,
 \end{split}
 $$
 To see why this works, consider $a + (-a)$:
+
 $$
 \begin{split}
 a - a = P_0 + \dots + P_n - P_n - ... - P_0

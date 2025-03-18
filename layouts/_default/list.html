@@ -3,8 +3,12 @@
 	<main class="post-list">
 		{{ $section := .Section }}
 		{{ $pages := .Site.GetPage "section" $section }}
-		{{ range $pages.Pages }}
+		{{ if not $pages.Pages }}
+			{{ partial "empty" . }}
+		{{ else }}
+			{{ range $pages.Pages }}
 			{{ .Render "summary" }}
+			{{ end }}
 		{{ end }}
 	</main>
 {{ end }}

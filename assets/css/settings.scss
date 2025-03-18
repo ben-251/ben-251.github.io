@@ -41,6 +41,7 @@
 
 
 		&.active {
+			/* it's not updating this? */
 			border: 3px outset var(--primary-accent);
 			box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
 		} 

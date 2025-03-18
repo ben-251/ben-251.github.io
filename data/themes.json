@@ -17,8 +17,8 @@
 			"class": "theme-raspberry"
 		},
 		{
-			"name": "Sepia",
-			"class": "theme-sepia"
+			"name": "White Peony",
+			"class": "theme-peony"
 		},
 		{
 			"name": "Jest",
@@ -27,6 +27,10 @@
 		{
 			"name": "Emerald City",
 			"class": "theme-emerald"
+		},
+		{
+			"name": "Sepia",
+			"class": "theme-sepia"
 		},
 		{
 			"name": "Grape",

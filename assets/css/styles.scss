@@ -316,6 +316,29 @@ body {
 			max-width: 5em;
 		}
 	}
+
+	.empty-message {
+		// displayed if the list is empty:
+		p {
+			font-size: 1.5rem
+		}
+		h1 {
+			font-size: 2rem;
+		}
+		// margin-inline: auto;
+		background-color: color-mix(in srgb, var(--secondary-bg), transparent);
+		background: linear-gradient(
+			to right,
+			color-mix(in srgb, var(--secondary-bg), transparent 10%),
+			color-mix(in srgb, var(--secondary-bg), transparent 90%)
+		);
+		border: 2px var(--primary-accent) dashed;
+		border: none;
+		color: var(--secondary-color);
+		// padding-inline: 7em;
+		padding-inline: 2em;
+		padding-block: 1em;
+	}
 }
 
 // Page Content
@@ -337,4 +360,15 @@ body {
 	color: var(--special-color);
 	font-weight: 1000;
 	// background-color: var(--special-color);
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+	background-color: var(--tertiary-bg);
+	color: var(--tertiary-color);
+	margin-block: 0em;
+	padding-block: 1em;
+	padding-inline: 1em;
+	width: max-content;
+	width: 100%;
+	margin:auto !important
 }

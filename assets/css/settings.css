@@ -87,7 +87,7 @@
 
 .theme-grape {
   --primary-color: #303085;
-  --primary-bg: #b7b7d6;
+  --primary-bg: #9c8ec4;
   --primary-accent: rgb(145, 97, 204);
   --secondary-color: #fff;
   --secondary-bg: #6c4879;
@@ -107,6 +107,18 @@
   --tertiary-color: var(--secondary-color);
   --tertiary-bg: #3a324c7b;
   --tertiary-accent: #dcc8ff;
+}
+
+.theme-peony {
+  --primary-color: #212729;
+  --primary-bg: #fffef2;
+  --primary-accent: rgb(255, 194, 114);
+  --secondary-color: #102307;
+  --secondary-bg: #fef1d8;
+  --secondary-accent: rgb(255, 181, 96);
+  --tertiary-color: rgb(219, 222, 217);
+  --tertiary-bg: rgb(95, 108, 89);
+  --tertiary-accent: rgb(208, 255, 160);
 }
 
 .theme-options {
@@ -140,6 +152,7 @@
   background: linear-gradient(45deg, var(--primary-bg) var(--middle), var(--secondary-bg) var(--middle), var(--secondary-bg) var(--right), var(--tertiary-bg) var(--right));
 }
 .theme-options .theme-item.active {
+  /* it's not updating this? */
   border: 3px outset var(--primary-accent);
   -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
           box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
