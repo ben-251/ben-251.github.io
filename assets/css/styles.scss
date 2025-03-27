@@ -363,12 +363,14 @@ body {
 }
 
 mjx-container[jax="CHTML"][display="true"] {
-	background-color: var(--tertiary-bg);
-	color: var(--tertiary-color);
+	// background-color: var(--tertiary-bg);
+	// color: var(--tertiary-color);
+	color: color-mix(in srgb, var(--primary-color), var(--base-accent) 50%);
 	margin-block: 0em;
 	padding-block: 1em;
 	padding-inline: 1em;
 	width: max-content;
 	width: 100%;
-	margin:auto !important
+	margin:auto !important;
+	font-size: 1.5em !important;
 }

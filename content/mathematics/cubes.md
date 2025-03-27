@@ -2,6 +2,9 @@
 draft: false
 title: Group Theory on 2x2s
 date: 2025-03-17
+tags:
+  - math
+  - academic
 ---
 ## Introduction
 We define the group, $G,$ to be the set of all possible move sequences. This group is non-abelian under addition.

@@ -1,6 +1,7 @@
 @use 'sass:color';
 
 .theme-light {
+	--base-accent: #3fa7a7;
 	// primary
 	--primary-color: #212729;
 	--primary-bg: #f0eded;
@@ -19,6 +20,7 @@
 
 .theme-dark {
 	$base-light:  #e4e6e7;
+	--base-accent: #408b8b;
 	// primary
 	--primary-color: #{$base-light};
 	--primary-bg: #212729;;
@@ -37,7 +39,7 @@
 
 .theme-raspberry {
 	$base-accent: #d32274;
-	
+	--base-accent: #{$base-accent};
 
 	// primary
 	--primary-color: #dbd2d4;
@@ -135,6 +137,7 @@
 }
 
 .theme-grape {
+	--base-accent: #ab7eeb;
 
 	// primary
 	--primary-color: #303085;
@@ -153,6 +156,7 @@
 }
 
 .theme-space {
+	--base-accent: #7e94eb;
 	// primary
 	--primary-color: #f6f6ff;
 	--primary-bg: #1a1147;
@@ -170,12 +174,16 @@
 }
 
 .theme-default, .theme-peony {
+	--base-accent: #rgb(255,181,96);
+
 	--primary-color: #212729;
 	--primary-bg: #fffef2;
 	--primary-accent: rgb(255, 194, 114);
+
 	--secondary-color: #102307;
 	--secondary-bg: #fef1d8;
 	--secondary-accent: rgb(255, 181, 96);
+	
 	--tertiary-color: rgb(219, 222, 217);
 	--tertiary-bg: rgb(95, 108, 89);
 	--tertiary-accent: rgb(208, 255, 160);

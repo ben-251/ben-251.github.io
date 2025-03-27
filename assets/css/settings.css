@@ -1,4 +1,5 @@
 .theme-light {
+  --base-accent: #3fa7a7;
   --primary-color: #212729;
   --primary-bg: #f0eded;
   --primary-accent: #b5dce7;
@@ -11,6 +12,7 @@
 }
 
 .theme-dark {
+  --base-accent: #408b8b;
   --primary-color: #e4e6e7;
   --primary-bg: #212729;
   --primary-accent: #317486;
@@ -23,6 +25,7 @@
 }
 
 .theme-raspberry {
+  --base-accent: #d32274;
   --primary-color: #dbd2d4;
   --primary-bg: #19030b;
   --primary-accent: #d32274;
@@ -86,6 +89,7 @@
 }
 
 .theme-grape {
+  --base-accent: #ab7eeb;
   --primary-color: #303085;
   --primary-bg: #9c8ec4;
   --primary-accent: rgb(145, 97, 204);
@@ -98,6 +102,7 @@
 }
 
 .theme-space {
+  --base-accent: #7e94eb;
   --primary-color: #f6f6ff;
   --primary-bg: #1a1147;
   --primary-accent: rgb(82, 69, 140);
@@ -110,6 +115,7 @@
 }
 
 .theme-default, .theme-peony {
+  --base-accent: #rgb(255,181,96);
   --primary-color: #212729;
   --primary-bg: #fffef2;
   --primary-accent: rgb(255, 194, 114);
