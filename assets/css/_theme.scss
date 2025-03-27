@@ -30,8 +30,8 @@
 	--secondary-accent: #408b8b;
 
 	// tertiary 
-	--tertiary-color: #{color.scale($base-light, $lightness: -50%, $saturation: 15%)};
-	--tertiary-bg: #c6d1d1;
+	--tertiary-color: rgba(240, 248, 255, 0.736);
+	--tertiary-bg: #404747;
 	--tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent))
 }
 

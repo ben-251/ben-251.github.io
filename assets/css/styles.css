@@ -23,8 +23,8 @@
   --secondary-color: white;
   --secondary-bg: #12181c;
   --secondary-accent: #408b8b;
-  --tertiary-color: #5c7a8a;
-  --tertiary-bg: #c6d1d1;
+  --tertiary-color: rgba(240, 248, 255, 0.736);
+  --tertiary-bg: #404747;
   --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
 }
 
