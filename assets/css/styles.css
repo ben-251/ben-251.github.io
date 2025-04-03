@@ -355,6 +355,9 @@ body {
   width: 50%;
   margin: auto;
 }
+.mainbody hr {
+  border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
+}
 
 .tag-list {
   display: -webkit-box;
@@ -502,5 +505,5 @@ mjx-container[jax=CHTML][display=true] {
   width: max-content;
   width: 100%;
   margin: auto !important;
-  font-size: 1.5em !important;
+  font-size: 1.3em !important;
 }/*# sourceMappingURL=styles.css.map */

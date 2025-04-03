@@ -3,7 +3,6 @@ draft: false
 date: 2025-03-27
 tags:
   - math
-  - blog
 title: "Maths recap 1: Group Theory, Combinatorics and Graham's Number"
 ---
 This week, I finally learned (roughly) what Lie Groups are (pronounced 'LEE'). Imagine an n-sided polygon sitting on a flat surface. Rotate it $\frac{2\pi}{n}$ degrees. The polygon looks exactly the same. If you include the reflective symmetries, you create what's known as a *Dihedral group,* written $D_{n}.$ Now consider the symmetries of a circle. We can rotate any $\theta \in [0,2\pi)$ and we *still* get an identical image. This makes the group an infinite group. 
@@ -21,4 +20,4 @@ g_{n} =
       3 \uparrow^{g_{n-1}}3, \quad \text{if } n \geq 2 
 \end{cases}
 $$
-takes composition and recursion to a whole new level. Language, and writing systems in particular, are so intriguing!
+takes composition and recursion to a whole new level. Language, and writing systems in particular, are so fascinating!
