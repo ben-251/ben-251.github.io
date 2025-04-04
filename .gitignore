@@ -1,4 +1,6 @@
 content/.obsidian
 */.obsidian
 *.obsidian
+public/.obsidian/
+content/.obsidian/
 public
