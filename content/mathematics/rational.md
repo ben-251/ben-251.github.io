@@ -2,6 +2,7 @@
 date: 2025-01-28T23:18:36Z
 draft: true
 title: Proof that there are infinitely many rational numbers between any two real numbers
+description: straight up wrong, lol.
 ---
 
 For this proof I will assume the Field axioms, as well as the following, defined for a field $F$:

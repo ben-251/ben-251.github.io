@@ -360,6 +360,19 @@ body {
 .mainbody hr {
   border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
 }
+.mainbody button {
+  padding-inline: 0.5rem;
+  padding-block: 0.2rem;
+  border-radius: 0.5rem;
+  border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
+  color: var(--primary-accent);
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
 
 .tag-list {
   display: -webkit-box;
@@ -517,10 +530,10 @@ ul.blog-post-list li {
   list-style-type: none;
   padding-inline: 1em;
   padding-block: 0.8em;
-  border-bottom: solid 1px color-mix(in srgb, var(--primary-accent), transparent);
+  border-top: solid 1px color-mix(in srgb, var(--primary-accent), transparent);
 }
-ul.blog-post-list li:last-child {
-  border-bottom: none;
+ul.blog-post-list li:first-child {
+  border-top: none;
 }
 ul.blog-post-list li a {
   text-decoration: none;
@@ -542,8 +555,9 @@ ul.blog-post-list li a .article-container {
   display: inline-flex;
   gap: 0.5em;
 }
-ul.blog-post-list li a .article-container .tag {
+ul.blog-post-list li .tag {
   padding-inline: 0.5rem;
+  padding-block: 0.2rem;
   border-radius: 0.5rem;
   border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
   width: -webkit-fit-content;
@@ -551,5 +565,6 @@ ul.blog-post-list li a .article-container .tag {
   width: fit-content;
   background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
   color: var(--primary-accent);
+  font-family: var(--primary-font);
   font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

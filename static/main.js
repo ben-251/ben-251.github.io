@@ -210,4 +210,16 @@ function animateProperty(element, property, start, end, duration) {
 }
 
 
-
+// TAG system
+function filterForTag(tag) {
+	console.log("clicked tag!!")
+	const posts = document.querySelectorAll('.blog-post-list li')
+	posts.forEach(post => {
+		const tags = post.dataset.tags.split(',')
+		if (tags.includes(tag)) {
+			post.style.display = ''
+		} else {
+			post.style.display = 'none'
+		}
+	})
+}
