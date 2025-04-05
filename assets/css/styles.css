@@ -111,7 +111,7 @@
   --base-accent: #7e94eb;
   --primary-color: #f6f6ff;
   --primary-bg: #1a1147;
-  --primary-accent: rgb(82, 69, 140);
+  --primary-accent: rgb(152, 139, 214);
   --secondary-color: #fff;
   --secondary-bg: #06062a;
   --secondary-accent: #7e94eb;
@@ -124,7 +124,7 @@
   --base-accent: #rgb(255,181,96);
   --primary-color: #212729;
   --primary-bg: #fffef2;
-  --primary-accent: rgb(255, 194, 114);
+  --primary-accent: rgb(235, 168, 81);
   --secondary-color: #102307;
   --secondary-bg: #fef1d8;
   --secondary-accent: rgb(255, 181, 96);
@@ -334,7 +334,9 @@ body {
   padding-inline: 2rem;
 }
 .mainbody main {
-  padding: 3rem;
+  padding-block: 3rem;
+  padding-left: 7rem;
+  padding-right: 10rem;
   overflow-y: auto;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -376,7 +378,7 @@ body {
   width: fit-content;
 }
 
-.post-list {
+main.post-list, main > .post-list {
   font-size: 0.8rem;
   display: block;
   display: -webkit-box;
@@ -388,7 +390,7 @@ body {
           flex-direction: column;
   gap: 1rem;
 }
-.post-list .post-list-item {
+main.post-list .post-list-item, main > .post-list .post-list-item {
   --tertiary-low-op: color-mix(in oklab, var(--tertiary-bg), transparent 5%);
   display: block;
   background-color: color-mix(in srgb, var(--secondary-bg), transparent 20%);
@@ -398,10 +400,10 @@ body {
   margin-bottom: 2rem;
   color: var(--secondary-color);
 }
-.post-list .post-list-item a {
+main.post-list .post-list-item a, main > .post-list .post-list-item a {
   color: var(--secondary-color);
 }
-.post-list .post-list-item .title {
+main.post-list .post-list-item .title, main > .post-list .post-list-item .title {
   margin-block: 0;
   opacity: 0.8;
   font-family: var(--sans-font);
@@ -410,7 +412,7 @@ body {
   width: 60%;
   text-wrap: pretty;
 }
-.post-list .post-list-item .preview {
+main.post-list .post-list-item .preview, main > .post-list .post-list-item .preview {
   background-color: var(--tertiary-low-op);
   background-color: var(--primary-bg);
   color: var(--tertiary-color);
@@ -429,57 +431,51 @@ body {
           margin-block-start: 0.7rem;
   font-size: 0.9rem;
 }
-.post-list .post-list-item .preview > h1, .post-list .post-list-item .preview > p {
+main.post-list .post-list-item .preview > h1, main.post-list .post-list-item .preview > p, main > .post-list .post-list-item .preview > h1, main > .post-list .post-list-item .preview > p {
   margin-block: 0;
 }
-.post-list .post-list-item .preview h1, .post-list .post-list-item .preview h2, .post-list .post-list-item .preview h3, .post-list .post-list-item .preview h4, .post-list .post-list-item .preview h5, .post-list .post-list-item .preview h6 {
+main.post-list .post-list-item .preview h1, main.post-list .post-list-item .preview h2, main.post-list .post-list-item .preview h3, main.post-list .post-list-item .preview h4, main.post-list .post-list-item .preview h5, main.post-list .post-list-item .preview h6, main > .post-list .post-list-item .preview h1, main > .post-list .post-list-item .preview h2, main > .post-list .post-list-item .preview h3, main > .post-list .post-list-item .preview h4, main > .post-list .post-list-item .preview h5, main > .post-list .post-list-item .preview h6 {
   font-size: 1.1rem;
 }
-.post-list .post-list-item .preview .more-link {
+main.post-list .post-list-item .preview .more-link, main > .post-list .post-list-item .preview .more-link {
   color: var(--tertiary-color);
-  color: var(--primary-color);
-  -webkit-text-decoration: underline 2px color-mix(in srgb, var(--tertiary-accent), var(--tertiary-color));
-          text-decoration: underline 2px color-mix(in srgb, var(--tertiary-accent), var(--tertiary-color));
-  -webkit-text-decoration: underline 2px color-mix(in srgb, var(--primary-accent), var(--primary-color));
-          text-decoration: underline 2px color-mix(in srgb, var(--primary-accent), var(--primary-color));
+  font-weight: bold;
 }
-.post-list .post-list-item .tag {
+main.post-list .post-list-item .tag, main > .post-list .post-list-item .tag {
   background-color: var(--tertiary-low-op);
   background-color: var(--primary-bg);
   color: var(--tertiary-color);
   color: var(--primary-color);
 }
-.post-list a {
+main.post-list a, main > .post-list a {
   text-decoration: none;
 }
-.post-list .section-name-headers a {
+main.post-list .section-name-headers a, main > .post-list .section-name-headers a {
   -webkit-text-decoration: underline solid 2px var(--secondary-accent);
           text-decoration: underline solid 2px var(--secondary-accent);
 }
-.post-list .content.shortened {
+main.post-list .content.shortened, main > .post-list .content.shortened {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 5em;
 }
-.post-list .empty-message {
+main.post-list .empty-message, main > .post-list .empty-message {
   background-color: color-mix(in srgb, var(--secondary-bg), transparent);
-  background: -webkit-gradient(linear, left top, right top, from(color-mix(in srgb, var(--secondary-bg), transparent 10%)), to(color-mix(in srgb, var(--secondary-bg), transparent 90%)));
-  background: linear-gradient(to right, color-mix(in srgb, var(--secondary-bg), transparent 10%), color-mix(in srgb, var(--secondary-bg), transparent 90%));
   border: 2px var(--primary-accent) dashed;
   border: none;
   color: var(--secondary-color);
   padding-inline: 2em;
   padding-block: 1em;
 }
-.post-list .empty-message p {
+main.post-list .empty-message p, main > .post-list .empty-message p {
   font-size: 1.5rem;
 }
-.post-list .empty-message h1 {
+main.post-list .empty-message h1, main > .post-list .empty-message h1 {
   font-size: 2rem;
 }
 
-.mainbody .content blockquote {
+.mainbody article.content blockquote {
   margin-inline: 0;
   -webkit-border-start: 2px var(--secondary-accent) solid;
           border-inline-start: 2px var(--secondary-accent) solid;
@@ -487,6 +483,11 @@ body {
           padding-inline-start: 1.4em;
   -webkit-margin-start: 0.4em;
           margin-inline-start: 0.4em;
+}
+.mainbody article.content code {
+  white-space: nowrap;
+  display: inline-block;
+  color: var(--secondary-accent);
 }
 
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
@@ -506,4 +507,52 @@ mjx-container[jax=CHTML][display=true] {
   width: 100%;
   margin: auto !important;
   font-size: 1.3em !important;
+}
+
+ul.blog-post-list {
+  border: 1px solid var(--primary-accent);
+  padding: 0;
+  padding: 1em;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+}
+ul.blog-post-list li {
+  list-style-type: none;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  border-bottom: solid 1px color-mix(in srgb, var(--primary-accent), transparent);
+}
+ul.blog-post-list li:last-child {
+  border-bottom: none;
+}
+ul.blog-post-list li a {
+  text-decoration: none;
+}
+ul.blog-post-list li a .date {
+  color: var(--primary-accent);
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-right: 1em;
+  display: inline-block;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 6em;
+}
+ul.blog-post-list li a .article-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 0.5em;
+}
+ul.blog-post-list li a .article-container .tag {
+  padding-inline: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
+  color: var(--primary-accent);
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

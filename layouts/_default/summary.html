@@ -7,6 +7,8 @@
 		{{ end }}
 	</div>
 	<div class="tag-list">
+		{{/*  Might make this entire thing modular so that it can be reused 
+		exactly the same here and on the page itself  */}}
 		<div class="tag">{{ .ReadingTime }} Minutes</div>
 		<div class="tag">{{ .Date.Format "Jan 2, 2006" }}</div>
 		<div class="tag">{{ .WordCount }} Words</div>
