@@ -1,5 +1,8 @@
 <div class="post-list-item" href="{{ .Permalink }}">
 	<h4 class="title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
+	{{ if .Description }}
+		<p>{{ .Description }}</p>
+	{{ end }}
 	<div class="preview">
 		{{ .Summary }}
 		{{ if .Truncated }}

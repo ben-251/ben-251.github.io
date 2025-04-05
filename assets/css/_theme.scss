@@ -63,7 +63,7 @@
 	// primary
 	--primary-color: #212729;
 	--primary-bg: #fff;
-	--primary-accent: #{$base-accent};
+	--primary-accent: rgb(220, 67, 154);
 
 	// secondary 
 	--secondary-color: #{color.scale($base-accent, $lightness: -70%, $saturation: -50%)};

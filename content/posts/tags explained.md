@@ -4,6 +4,7 @@ title: tag list
 tags:
   - meta
 date: 2025-04-04
+description: A breakdown of the tags used in the blog
 ---
 - `#math`: recent maths learning and such. For proofs or formal writeups of recent theories, see `/mathematics` instead
 - `#poetry`: recent poetry observations and process updates. Excludes pages created solely to present poems. That goes in `/poems`

@@ -46,7 +46,7 @@
 .theme-cherry-blossom {
   --primary-color: #212729;
   --primary-bg: #fff;
-  --primary-accent: hotpink;
+  --primary-accent: rgb(220, 67, 154);
   --secondary-color: #511b36;
   --secondary-bg: #f8d9e9;
   --secondary-accent: hotpink;
@@ -379,7 +379,6 @@ body {
 }
 
 main.post-list, main > .post-list {
-  font-size: 0.8rem;
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;
