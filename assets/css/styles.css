@@ -8,7 +8,7 @@
   --base-accent: #3fa7a7;
   --primary-color: #212729;
   --primary-bg: #f0eded;
-  --primary-accent: #b5dce7;
+  --primary-accent: #2b92af;
   --secondary-color: var(--primary-bg);
   --secondary-bg: var(--primary-color);
   --secondary-accent: #3fa7a7;
@@ -413,11 +413,9 @@ main.post-list .post-list-item .title, main > .post-list .post-list-item .title 
   text-wrap: pretty;
 }
 main.post-list .post-list-item .preview, main > .post-list .post-list-item .preview {
-  background-color: var(--tertiary-low-op);
   background-color: var(--primary-bg);
   color: var(--tertiary-color);
   color: var(--primary-color);
-  opacity: 0.8;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -438,7 +436,7 @@ main.post-list .post-list-item .preview h1, main.post-list .post-list-item .prev
   font-size: 1.1rem;
 }
 main.post-list .post-list-item .preview .more-link, main > .post-list .post-list-item .preview .more-link {
-  color: var(--tertiary-color);
+  color: var(--primary-accent);
   font-weight: bold;
 }
 main.post-list .post-list-item .tag, main > .post-list .post-list-item .tag {

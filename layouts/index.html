@@ -2,16 +2,27 @@
 <section class="section">
 	<main class="container">
 		<div class="post-list">
+			{{/*  get most recent Lastmod */}}
+			{{ $sections := slice }}
 			{{ range where .Site.Sections "Pages" "!=" nil }}
-				{{ $publishedPages := where .Pages "Draft" "!=" true }}
-				{{ if and $publishedPages (ne .Section "settings") }} 
-					<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-					{{ range $publishedPages }}
-						{{ .Render "summary" }}
-					{{ end }}
-				{{ end }}
+			{{ $publishedPages := where .Pages "Draft" "!=" true }}
+			{{ if and $publishedPages (ne .Section "settings") }}
+			{{ $lastmod := (index (sort $publishedPages "Lastmod" "desc") 0).Lastmod }}
+			{{ $sections = $sections | append (dict "Section" . "Lastmod" $lastmod) }}
+			{{ end }}
+			{{ end }}
+
+			{{/* sort and display sections */}}
+			{{ $sortedSections := sort $sections "Lastmod" "desc" }}
+
+			{{ range $sortedSections }}
+			{{ $s := .Section }}
+			<h2><a href="{{ $s.Permalink }}">{{ $s.Title }}</a></h2>
+			{{ range sort (where $s.Pages "Draft" "!=" true) "Lastmod" "desc" }}
+			{{ .Render "summary" }}
+			{{ end }}
 			{{ end }}
 		</div>
 	</main>
 </section>
-{{ end }} 
+{{ end }}

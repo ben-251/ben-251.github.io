@@ -141,22 +141,19 @@ const rightEnd = 85;
 
 function applyTheme(theme) {
 	localStorage.setItem('prevtheme', localStorage.getItem('theme'));
-	console.log(`pre-remove classlist: ${document.body.classList}`)
+	// console.log(`pre-remove classlist: ${document.body.classList}`)
 	document.body.classList.remove(...themes);
 	document.body.classList.remove('theme-default');
-	console.log(`pos-remove classlist: ${document.body.classList}`)
+	// console.log(`pos-remove classlist: ${document.body.classList}`)
 	document.body.classList.add(theme);  
-	console.log(`post-add classlist: ${document.body.classList}`)
+	// console.log(`post-add classlist: ${document.body.classList}`)
 	localStorage.setItem('theme', theme);  
 }
+
 function setActive(theme) {
 	// console.log("setting active")
 	const prevTheme = localStorage.getItem('prevtheme'); // Get the value of 'prevtheme'
-	if (prevTheme != null) {
-	  console.log(`prevtheme: ${localStorage.getItem("prevtheme")}`); // Fetch and log the other value
-	} else {
-	  console.log('No previous theme set.');
-	}
+
 	const forwardTime = 700;
 	const backwardTime = 500;
 	themeItems.forEach(item => {
@@ -164,7 +161,7 @@ function setActive(theme) {
 			item.classList.add("active");
 			animateProperty(item, '--middle', middleStart, middleEnd, forwardTime); 
 			animateProperty(item, '--right', rightStart, rightEnd, forwardTime*1.7); 
-		} else if (item.classList.contains(localStorage.getItem('prevtheme'))) {
+		} else if (item.classList.contains(prevTheme)) {
 			animateProperty(item, '--middle', middleEnd, middleStart, backwardTime*1.2);
 			animateProperty(item, '--right', rightEnd, rightStart, backwardTime); 
 			item.classList.remove("active")
@@ -176,25 +173,20 @@ function setActive(theme) {
 
 applyTheme(currentTheme); 
 // one issue is that this lags - it shows the default, then changes it to the current. it shouldn't do this.
-setActive(currentTheme);
+// setActive(currentTheme);
 
 themeItems.forEach(item => {
-	// console.log(middleStart);
 	item.style.setProperty('--middle', `${middleStart}%`);
 	item.style.setProperty('--right', `${rightStart}%`);
 
 	item.addEventListener('click', () => {
-		// console.log("clicked!");
 		const selectedTheme = item.classList[1];  // The second class is the theme class
 		applyTheme(selectedTheme);
 		setActive(selectedTheme);
-		// console.log(document.body.classList)
 	});
 });
 
 
-
-// console.log(themes);
 
 const themeItem = document.querySelector('.theme-item.active');
 

@@ -3,7 +3,7 @@ draft: false
 date: 2025-03-27
 tags:
   - math
-title: "Maths recap 1: Group Theory, Combinatorics and Graham's Number"
+title: "Maths recap: Group Theory, Combinatorics and Graham's Number"
 ---
 This week, I finally learned (roughly) what Lie Groups are (pronounced 'LEE'). Imagine an n-sided polygon sitting on a flat surface. Rotate it $\frac{2\pi}{n}$ degrees. The polygon looks exactly the same. If you include the reflective symmetries, you create what's known as a *Dihedral group,* written $D_{n}.$ Now consider the symmetries of a circle. We can rotate any $\theta \in [0,2\pi)$ and we *still* get an identical image. This makes the group an infinite group. 
 

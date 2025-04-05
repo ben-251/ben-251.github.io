@@ -262,12 +262,9 @@ main.post-list, main > .post-list {
 		}
 
 		.preview {
-			background-color: var(--tertiary-low-op);
 			background-color: var(--primary-bg);
 			color: var(--tertiary-color);
 			color: var(--primary-color);
-			opacity: 0.8;
-
 			height: max-content;
 			padding-inline: 1rem;
 			padding-block: 1rem;
@@ -289,7 +286,7 @@ main.post-list, main > .post-list {
 			}
 
 			.more-link {
-				color: var(--tertiary-color);
+				color: var(--primary-accent);
 				font-weight: bold;
 			}
 		}
