@@ -487,7 +487,7 @@ main.post-list .empty-message h1, main > .post-list .empty-message h1 {
 .mainbody article.content code {
   white-space: nowrap;
   display: inline-block;
-  color: var(--secondary-accent);
+  color: var(--primary-accent);
 }
 
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
