@@ -360,19 +360,6 @@ body {
 .mainbody hr {
   border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
 }
-.mainbody button {
-  padding-inline: 0.5rem;
-  padding-block: 0.2rem;
-  border-radius: 0.5rem;
-  border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
-  color: var(--primary-accent);
-  font-family: var(--primary-font);
-  font-weight: bold;
-}
 
 .tag-list {
   display: -webkit-box;
@@ -519,21 +506,45 @@ mjx-container[jax=CHTML][display=true] {
   font-size: 1.3em !important;
 }
 
+button {
+  padding-inline: 0.5rem;
+  padding-block: 0.2rem;
+  border-radius: 0.5rem;
+  border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
+  color: var(--primary-accent);
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+
+button.active {
+  background-color: color-mix(in srgb, var(--primary-accent), transparent 2%);
+  color: var(--primary-bg);
+}
+
 ul.blog-post-list {
-  border: 1px solid var(--primary-accent);
   padding: 0;
   padding: 1em;
   background-color: var(--primary-bg);
   color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 ul.blog-post-list li {
   list-style-type: none;
   padding-inline: 1em;
   padding-block: 0.8em;
-  border-top: solid 1px color-mix(in srgb, var(--primary-accent), transparent);
-}
-ul.blog-post-list li:first-child {
-  border-top: none;
+  --border-size: 1px;
+  border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+  margin-bottom: calc(-1 * var(--border-size));
 }
 ul.blog-post-list li a {
   text-decoration: none;
