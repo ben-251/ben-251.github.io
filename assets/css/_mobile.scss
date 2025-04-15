@@ -4,20 +4,6 @@
 		display: block;
 	}
 		
-	#expand {
-		z-index: 999;
-		color: var(--secondary-color);
-		background-color: transparent;
-		border: none;
-		transition: color 200ms ease;
-		font-size: 2rem;
-
-		&.active {
-			color:var(--secondary-accent);
-			background-color: transparent;
-			border: none;
-		}
-	}
 	.nav-mobile {
 		// display: none
 		// .navbar-item.navbar-logo {display: none;}
@@ -29,10 +15,54 @@
 		top: 0;
 		padding: .2em .4em; 
 		background-color: var(--secondary-bg);
+		justify-content: space-between;
+		// z-index: 90;
+		// position: absolute;
+
+		> * {
+			color: var(--secondary-accent);
+			background-color: transparent;
+			border: none;
+			font-size: 2rem;
+		}
+
+		#expand {
+			z-index: 999;
+			transition: color 200ms ease;
+	
+			&.active {
+				color:var(--secondary-color);
+				background-color: transparent;
+				border: none;
+				opacity: 0.75;
+			}
+		}
+
+		.nav-home-button {
+			color: var(--secondary-accent);
+			font-size: 2rem;
+			display: block;
+		}
+
+		a { text-decoration: none }
+
 	}
 
+	#modal-background {
+		z-index: 89;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		position: fixed;
+		left: 0;
+		top:0;
+		display: none;
+		background-color: #00000030;
+		backdrop-filter: blur(2px);
+	}
+	
 	.navbar {
-		z-index: 90;
+		z-index: 91;
 		position: fixed;
 		width: 55vw;
 		// padding-inline: 2em;

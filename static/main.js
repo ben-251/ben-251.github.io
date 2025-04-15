@@ -238,11 +238,10 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 	}
 
 	initialiseMobileNav();
-	console.log("0 reach test")
 	const expand = document.getElementById("expand");
+	const modal = document.getElementById("modal-background");
+	console.log("0 reach test")
 	console.log("1 reach test")
-	console.log(expand);
-	console.log(getComputedStyle(expand).backgroundColor);
 
 	function hideMobileNav() {
 		navbar.style.transition = 'transform 300ms ease-out'; 
@@ -255,6 +254,7 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 		isNavActive = false
 		expand.classList.remove('active');
 		document.body.style.overflow = '';
+		modal.style.display = 'none'
 	}
 
 	function showMobileNav() {
@@ -267,6 +267,7 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 		isNavActive = true
 		expand.classList.add('active')
 		document.body.style.overflow = 'hidden';
+		modal.style.display = 'block'
 	};
 
 	expand.addEventListener('click', () => {

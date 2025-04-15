@@ -1,12 +1,15 @@
-<div class="nav-mobile"><button id="expand">&#9776;</button></div>
+<div class="nav-mobile">
+	<button id="expand">&#9776;</button>
+	<button><a href='{{ absURL "" }}'><i class="fa fa-home nav-home-button"></i></a></button>
+</div>
 <nav class="navbar">
-		<a class="navbar-item navbar-logo" href='{{ absURL "" }}'>
-			{{ $.Site.Title }}
-		</a>
-		<a class="navbar-item" href='{{ absURL "" }}'>
-			Home
-		</a>
-		{{ range sort .Site.Sections "Pages" "desc" }}
-		<a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
-		{{ end }}
+	<a class="navbar-item navbar-logo" href='{{ absURL "" }}'>
+		{{ $.Site.Title }}
+	</a>
+	<a class="navbar-item" href='{{ absURL "" }}'>
+		Home
+	</a>
+	{{ range sort .Site.Sections "Pages" "desc" }}
+	<a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
+	{{ end }}
 </nav>
