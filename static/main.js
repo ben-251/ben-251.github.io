@@ -224,53 +224,57 @@ function filterForTag(tag) {
 }
 
 const navbar = document.querySelector("nav.navbar");
-let isNavActive = true;
 
-function initialiseMobileNav() {
-	const computedStyle = getComputedStyle(navbar);
-	const width = computedStyle.width;
-	navbar.style.transform = `translateX(-${parseInt(width)}px)`;
-	console.log(`width is ${width}`)
-	console.log(navbar.style.transform);
-	isNavActive = false;
-}
+if (window.matchMedia('(max-width: 768px)').matches) {
+	let isNavActive = true;
 
-initialiseMobileNav();
-console.log("0 reach test")
-const expand = document.getElementById("expand");
-console.log("1 reach test")
-console.log(expand);
-console.log(getComputedStyle(expand).backgroundColor);
-
-function hideMobileNav() {
-	navbar.style.transition = 'transform 300ms ease-out'; 
-	const computedStyle = getComputedStyle(navbar);
-	const width = computedStyle.width;
-	navbar.style.transform = `translateX(-${parseInt(width)}px)`;
-	navbar.addEventListener('transitionend', () => {
-		navbar.style.transition = 'none';
-	}, { once: true });
-	isNavActive = false
-	expand.classList.remove('active');
-	document.body.style.overflow = '';
-}
-
-function showMobileNav() {
-	console.log("trying to show");
-	navbar.style.transition = 'transform 300ms ease'; 
-	navbar.style.transform = `translateX(0px)`;
-	navbar.addEventListener('transitionend', () => {
-		navbar.style.transition = 'none';
-	}, { once: true });
-	isNavActive = true
-	expand.classList.add('active')
-	document.body.style.overflow = 'hidden';
-}
-
-expand.addEventListener('click', () => {
-	if (isNavActive) {
-		hideMobileNav()
-	} else {
-		showMobileNav();
+	function initialiseMobileNav() {
+		const computedStyle = getComputedStyle(navbar);
+		const width = computedStyle.width;
+		navbar.style.transform = `translateX(-${parseInt(width)}px)`;
+		console.log(`width is ${width}`)
+		console.log(navbar.style.transform);
+		isNavActive = false;
 	}
-});
+
+	initialiseMobileNav();
+	console.log("0 reach test")
+	const expand = document.getElementById("expand");
+	console.log("1 reach test")
+	console.log(expand);
+	console.log(getComputedStyle(expand).backgroundColor);
+
+	function hideMobileNav() {
+		navbar.style.transition = 'transform 300ms ease-out'; 
+		const computedStyle = getComputedStyle(navbar);
+		const width = computedStyle.width;
+		navbar.style.transform = `translateX(-${parseInt(width)}px)`;
+		navbar.addEventListener('transitionend', () => {
+			navbar.style.transition = 'none';
+		}, { once: true });
+		isNavActive = false
+		expand.classList.remove('active');
+		document.body.style.overflow = '';
+	}
+
+	function showMobileNav() {
+		console.log("trying to show");
+		navbar.style.transition = 'transform 300ms ease'; 
+		navbar.style.transform = `translateX(0px)`;
+		navbar.addEventListener('transitionend', () => {
+			navbar.style.transition = 'none';
+		}, { once: true });
+		isNavActive = true
+		expand.classList.add('active')
+		document.body.style.overflow = 'hidden';
+	};
+
+	expand.addEventListener('click', () => {
+		if (isNavActive) {
+			hideMobileNav()
+		} else {
+			showMobileNav();
+		}
+	})
+
+};

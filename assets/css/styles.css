@@ -215,7 +215,7 @@ body {
   color: var(--primary-color);
 }
 
-.navbar-mobile {
+.nav-mobile {
   display: none;
 }
 
