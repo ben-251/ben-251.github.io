@@ -275,6 +275,15 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 		} else {
 			showMobileNav();
 		}
-	})
+	});
 
+	const nonClosingElements = [navbar, expand]
+	document.addEventListener('click', function(event) {
+		if (!isNavActive) return;
+	  
+		const clickedInside = nonClosingElements.some(el => el && el.contains(event.target));
+		if (!clickedInside) {
+		  hideMobileNav();
+		}
+	  });
 };
