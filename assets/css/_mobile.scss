@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+	body {
+		// flex-direction: column;
+		display: block;
+	}
+		
+	.nav-mobile {
+		// display: none
+		// .navbar-item.navbar-logo {display: none;}
+		width: 100vw;
+		height: fit-content;
+		min-height: min-content;
+		flex-direction: row;
+		top: 0;
+		padding: .4em .9em;
+		background-color: var(--secondary-bg);
+	}
+
+	.navbar {
+		z-index: 999;
+		position: absolute;
+	}
+
+	.mainbody {
+		position: relative;
+		margin: 0 !important;
+		width: fit-content !important;
+
+		p {
+		//	text-align: justify;
+		}
+
+		main {
+			padding: 1em !important;
+		}
+	}
+
+	.footer p  {
+		width: 90vw !important
+	}
+}

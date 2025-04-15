@@ -176,7 +176,7 @@
 }
 
 *:root {
-  --nav-width: 15vw;
+  --nav-width: 10vw;
   --primary-font: spectral, "Cardo";
   --sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
   --header-font: "Spectral", "Playfair Display", "Julius sans one";
@@ -215,6 +215,10 @@ body {
   color: var(--primary-color);
 }
 
+.navbar-mobile {
+  display: none;
+}
+
 .navbar {
   font-family: var(--sans-font);
   font-weight: 100;
@@ -236,7 +240,7 @@ body {
   position: sticky;
   top: 0;
   height: 100vh;
-  padding: 3em 1.4em 3em 1.4em;
+  padding: 3em 1.1em 3em 1.1em;
   background-color: var(--secondary-bg);
   color: var(--secondary-color);
   /* underline effect */
@@ -248,7 +252,7 @@ body {
   letter-spacing: 0.1em;
 }
 .navbar .navbar-item.navbar-logo {
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   font-family: var(--logo-font);
   font-weight: 100;
   text-transform: capitalize;
@@ -287,6 +291,7 @@ body {
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   margin-block: 0.3em;
+  font-size: 0.9em;
 }
 .navbar a,
 .navbar #blog-button {
@@ -310,11 +315,6 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-}
 .mainbody {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,4 +578,43 @@ ul.blog-post-list li .tag {
   color: var(--primary-accent);
   font-family: var(--primary-font);
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+  .nav-mobile {
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 0;
+    padding: 0.4em 0.9em;
+    background-color: var(--secondary-bg);
+  }
+  .navbar {
+    z-index: 999;
+    position: absolute;
+  }
+  .mainbody {
+    position: relative;
+    margin: 0 !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .mainbody main {
+    padding: 1em !important;
+  }
+  .footer p {
+    width: 90vw !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
