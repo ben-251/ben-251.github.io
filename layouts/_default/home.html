@@ -3,7 +3,7 @@
 		{{ $pages := .Site.RegularPages }}
 		{{ $posts := where .Site.RegularPages "Section" "posts" }}
 		{{ if $posts }}
-			{{ range $posts.Pages }}
+			{{ range $posts }}
 				{{ .Render "summary" }}
 			{{ end }}
 		{{ end }}
