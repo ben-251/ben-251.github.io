@@ -453,7 +453,7 @@ ul.blog-post-list {
 }
 
 // poems
-.poem-container, .poem.post-list-item {
+.poem-container {
 	font-family: var(--primary-font);
 
 	.title {
@@ -483,8 +483,35 @@ ul.blog-post-list {
 		}
 	}
 }
+.poem-list {
+	// background-color: var(--secondary-bg);
+	margin-block: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 0rem;
 
+	li {
+		--border-size: 1px;
+		list-style-type: none;
+		border-block: var(--border-size) var(--primary-accent) solid;
+		margin-bottom: calc(-1 * var(--border-size));
+		padding-block: .7em;
+		padding-inline: 1em;
+		transition: all ease 400ms;
 
+		&:hover {
+			background-color: var(--primary-accent);
+			color: var(--primary-accent-contrast)
+		}
+
+		a {
+			text-decoration: none;
+			display: block;
+			font-size: 1.5rem;
+			color: inherit;
+		}
+	}
+}
 
 // MOBILE AT THE END
 @import 'mobile';

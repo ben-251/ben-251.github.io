@@ -603,29 +603,61 @@ ul.blog-post-list li .tag {
   font-weight: bold;
 }
 
-.poem-container, .poem.post-list-item {
+.poem-container {
   font-family: var(--primary-font);
 }
-.poem-container .title, .poem.post-list-item .title {
+.poem-container .title {
   font-family: var(--sans-font);
   margin-bottom: 1em;
 }
-.poem-container .content p, .poem.post-list-item .content p {
+.poem-container .content p {
   margin-block: 0.5em;
   font-size: 1.15rem;
 }
-.poem-container hr, .poem.post-list-item hr {
+.poem-container hr {
   border: none;
   margin-left: 12em;
   margin-block: 0;
 }
-.poem-container hr:before, .poem.post-list-item hr:before {
+.poem-container hr:before {
   content: "∗ ∗ ∗";
   text-align: left;
   color: var(--primary-accent);
   opacity: 100%;
   font-size: 1.5em;
   line-height: 1;
+}
+
+.poem-list {
+  margin-block: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0rem;
+}
+.poem-list li {
+  --border-size: 1px;
+  list-style-type: none;
+  border-block: var(--border-size) var(--primary-accent) solid;
+  margin-bottom: calc(-1 * var(--border-size));
+  padding-block: 0.7em;
+  padding-inline: 1em;
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+.poem-list li:hover {
+  background-color: var(--primary-accent);
+  color: var(--primary-accent-contrast);
+}
+.poem-list li a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  color: inherit;
 }
 
 @media screen and (max-width: 768px) {
@@ -734,10 +766,10 @@ ul.blog-post-list li .tag {
   main > .post-list .post-list-item .title {
     width: 100%;
   }
-  .poem-container .content p, .poem.post-list-item .content p {
+  .poem-container .content p {
     font-size: 1rem;
   }
-  .poem-container hr, .poem.post-list-item hr {
+  .poem-container hr {
     margin-left: 4em;
   }
 }/*# sourceMappingURL=styles.css.map */
