@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="container poem-container">
+	<h1 class="title poem-title">{{ .Title }}</h1>
+
+	<article class="content poem-content">
+		{{ .Content }}
+	</article>
+
+	<div class="">
+		<ul>
+			{{ with .PrevInSection }}
+			<li>Previous Post: <a class="previous" href="{{ .Permalink }}">{{.Title}}</a></li>
+			{{ end }}
+			{{ with .NextInSection }}
+			<li>Next Post: <a class="next" href="{{ .Permalink }}">{{.Title}}</a></li>
+			{{ end }}
+		</ul>
+	</div>
+
+</main>
+{{ end }}

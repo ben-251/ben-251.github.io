@@ -1,14 +1,33 @@
+/* 
+
+*-color: foreground, text
+*-bg: background of elements
+*-accent: setting an element or text to stand out against bg
+*-accent-contrast: setting an element (text, usually) to stand out against accent. When in doubt, set to *-bg.
+
+When unsure of tertiary-*, set to secondary-*; 
+when unsure of secondary-*, set to primary-*.
+
+eventually add a third accent type called accent color:
+- specifically for accent text on *-bg, as opposed to accent-contrast on accent-bg and 
+
+
+all colours must be fully opaque. 
+*/
 .theme-light {
   --base-accent: #3fa7a7;
   --primary-color: #212729;
   --primary-bg: #f0eded;
   --primary-accent: #2b92af;
+  --primary-accent-contrast: var(--primary-bg);
   --secondary-color: var(--primary-bg);
   --secondary-bg: var(--primary-color);
   --secondary-accent: #3fa7a7;
+  --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: var(--primary-color);
   --tertiary-bg: #c6d1d1;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
+  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+  --tertiary-accent-contrast: var(--tertiary-bg);
 }
 
 .theme-dark {
@@ -16,12 +35,15 @@
   --primary-color: #e4e6e7;
   --primary-bg: #212729;
   --primary-accent: #317486;
+  --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
   --secondary-bg: #12181c;
   --secondary-accent: #408b8b;
+  --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: rgba(240, 248, 255, 0.736);
   --tertiary-bg: #404747;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
+  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+  --tertiary-accent-contrast: color-mix(in srgb, black, var(--tertiary-bg));
 }
 
 .theme-raspberry {
@@ -29,24 +51,30 @@
   --primary-color: #dbd2d4;
   --primary-bg: #19030b;
   --primary-accent: #d32274;
-  --secondary-color: #white;
+  --primary-accent-contrast: var(--primary-color);
+  --secondary-color: white;
   --secondary-bg: #4d1126;
   --secondary-accent: #ea799f;
-  --tertiary-color: var(--secondary-color);
-  --tertiary-bg: #c1638283;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
+  --secondary-accent-contrast: var(--secondary-bg);
+  --tertiary-color: color-mix(in oklch, white 85%, var(--base-accent));
+  --tertiary-bg: color-mix(in srgb, var(--primary-bg), #ff73a2 43%);
+  --tertiary-accent: color-mix(in oklch, var(--secondary-accent) 55%, var(--base-accent));
+  --tertiary-accent-contrast: var(--tertiary-color) ;
 }
 
 .theme-cherry-blossom {
   --primary-color: #212729;
   --primary-bg: #fff;
   --primary-accent: rgb(220, 67, 154);
+  --primary-accent-contrast: white;
   --secondary-color: #511b36;
   --secondary-bg: #f8d9e9;
   --secondary-accent: hotpink;
+  --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: white;
   --tertiary-bg: #ca9dbc;
   --tertiary-accent: rgb(255, 178, 216);
+  --tertiary-accent-contrast: black;
 }
 
 .theme-sepia {
@@ -84,8 +112,8 @@
   --secondary-bg: #071f0e;
   --secondary-accent: rgb(113, 207, 113);
   --tertiary-color: var(--secondary-color);
-  --tertiary-bg: #a2ad917d;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+  --tertiary-bg: color-mix(in oklch, #56a86f, var(--secondary-bg));
+  --tertiary-accent: color-mix(in srgb, var(--primary-bg), var(--secondary-accent) 60%);
 }
 
 .theme-grape {
@@ -122,9 +150,10 @@
   --secondary-color: #102307;
   --secondary-bg: #fef1d8;
   --secondary-accent: rgb(255, 181, 96);
-  --tertiary-color: rgb(219, 222, 217);
-  --tertiary-bg: rgb(95, 108, 89);
-  --tertiary-accent: rgb(208, 255, 160);
+  --tertiary-color: var(--secondary-color);
+  --tertiary-bg: var(--secondary-bg);
+  --tertiary-accent: var(--secondary-accent);
+  --tertiary-accent-contrast: var(--tertiary-bg) ;
 }
 
 .theme-options {

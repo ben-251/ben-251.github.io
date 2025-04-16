@@ -1,6 +1,10 @@
 <div class="nav-mobile">
 	<button id="expand">&#9776;</button>
-	<button><a href='{{ absURL "" }}'><i class="fa fa-home nav-home-button"></i></a></button>
+
+	<div class="page-links">
+		<button><a href='{{ absURL "" }}/settings/'><i class="fa fa-gear nav-settings-button"></i></a></button>
+		<button><a href='{{ absURL "" }}'><i class="fa fa-home nav-home-button"></i></a></button>
+	</div>
 </div>
 <nav class="navbar">
 	<a class="navbar-item navbar-logo" href='{{ absURL "" }}'>

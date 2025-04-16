@@ -19,7 +19,7 @@
 		// z-index: 90;
 		// position: absolute;
 
-		> * {
+		* {
 			color: var(--secondary-accent);
 			background-color: transparent;
 			border: none;
@@ -38,10 +38,20 @@
 			}
 		}
 
+		.nav-settings-button {
+			&:hover {
+				color: var(--secondary-color) // not firing atm
+			}
+		}
+
 		.nav-home-button {
 			color: var(--secondary-accent);
 			font-size: 2rem;
 			display: block;
+
+			&:hover {
+				color: var(--secondary-color)
+			}
 		}
 
 		a { text-decoration: none }
@@ -96,18 +106,26 @@
 		width: 90vw !important
 	}
 
-	// ul.blog-post-list li a {
-	// 	display: flex;
-	// 	.date, .title  {
-	// 		min-width: 6em;
-	// 	}
-	// }
-
-	// OR 
-
 	ul.blog-post-list li a {
 		.date {
 			display: block;
+		}
+	}
+	main  {
+		> .post-list {
+			.post-list-item .title {
+				width: 100%;
+			}
+		}
+	}
+
+	.poem-container, .poem.post-list-item {
+		.content {p {
+ 			// white-space: pre-line; // need to find a good way to make wrapped text indented
+			font-size: 1rem;
+		}}
+		hr{
+			margin-left: 4em; // may need a js approach to keep this automatically nicely positioned	
 		}
 	}
 }

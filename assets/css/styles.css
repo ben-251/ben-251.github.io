@@ -1,20 +1,40 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand");
 @import url("https://fonts.googleapis.com/css2?family=Cardo");
 @import url("https://fonts.googleapis.com/css2?family=Spectral");
 @import url("https://fonts.googleapis.com/css2?family=Jost");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair");
+/* 
+
+*-color: foreground, text
+*-bg: background of elements
+*-accent: setting an element or text to stand out against bg
+*-accent-contrast: setting an element (text, usually) to stand out against accent. When in doubt, set to *-bg.
+
+When unsure of tertiary-*, set to secondary-*; 
+when unsure of secondary-*, set to primary-*.
+
+eventually add a third accent type called accent color:
+- specifically for accent text on *-bg, as opposed to accent-contrast on accent-bg and 
+
+
+all colours must be fully opaque. 
+*/
 .theme-light {
   --base-accent: #3fa7a7;
   --primary-color: #212729;
   --primary-bg: #f0eded;
   --primary-accent: #2b92af;
+  --primary-accent-contrast: var(--primary-bg);
   --secondary-color: var(--primary-bg);
   --secondary-bg: var(--primary-color);
   --secondary-accent: #3fa7a7;
+  --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: var(--primary-color);
   --tertiary-bg: #c6d1d1;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
+  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+  --tertiary-accent-contrast: var(--tertiary-bg);
 }
 
 .theme-dark {
@@ -22,12 +42,15 @@
   --primary-color: #e4e6e7;
   --primary-bg: #212729;
   --primary-accent: #317486;
+  --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
   --secondary-bg: #12181c;
   --secondary-accent: #408b8b;
+  --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: rgba(240, 248, 255, 0.736);
   --tertiary-bg: #404747;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
+  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+  --tertiary-accent-contrast: color-mix(in srgb, black, var(--tertiary-bg));
 }
 
 .theme-raspberry {
@@ -35,24 +58,30 @@
   --primary-color: #dbd2d4;
   --primary-bg: #19030b;
   --primary-accent: #d32274;
-  --secondary-color: #white;
+  --primary-accent-contrast: var(--primary-color);
+  --secondary-color: white;
   --secondary-bg: #4d1126;
   --secondary-accent: #ea799f;
-  --tertiary-color: var(--secondary-color);
-  --tertiary-bg: #c1638283;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent)) ;
+  --secondary-accent-contrast: var(--secondary-bg);
+  --tertiary-color: color-mix(in oklch, white 85%, var(--base-accent));
+  --tertiary-bg: color-mix(in srgb, var(--primary-bg), #ff73a2 43%);
+  --tertiary-accent: color-mix(in oklch, var(--secondary-accent) 55%, var(--base-accent));
+  --tertiary-accent-contrast: var(--tertiary-color) ;
 }
 
 .theme-cherry-blossom {
   --primary-color: #212729;
   --primary-bg: #fff;
   --primary-accent: rgb(220, 67, 154);
+  --primary-accent-contrast: white;
   --secondary-color: #511b36;
   --secondary-bg: #f8d9e9;
   --secondary-accent: hotpink;
+  --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: white;
   --tertiary-bg: #ca9dbc;
   --tertiary-accent: rgb(255, 178, 216);
+  --tertiary-accent-contrast: black;
 }
 
 .theme-sepia {
@@ -90,8 +119,8 @@
   --secondary-bg: #071f0e;
   --secondary-accent: rgb(113, 207, 113);
   --tertiary-color: var(--secondary-color);
-  --tertiary-bg: #a2ad917d;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+  --tertiary-bg: color-mix(in oklch, #56a86f, var(--secondary-bg));
+  --tertiary-accent: color-mix(in srgb, var(--primary-bg), var(--secondary-accent) 60%);
 }
 
 .theme-grape {
@@ -128,9 +157,10 @@
   --secondary-color: #102307;
   --secondary-bg: #fef1d8;
   --secondary-accent: rgb(255, 181, 96);
-  --tertiary-color: rgb(219, 222, 217);
-  --tertiary-bg: rgb(95, 108, 89);
-  --tertiary-accent: rgb(208, 255, 160);
+  --tertiary-color: var(--secondary-color);
+  --tertiary-bg: var(--secondary-bg);
+  --tertiary-accent: var(--secondary-accent);
+  --tertiary-accent-contrast: var(--tertiary-bg) ;
 }
 
 .theme-options {
@@ -390,19 +420,19 @@ main.post-list, main > .post-list {
   gap: 1rem;
 }
 main.post-list .post-list-item, main > .post-list .post-list-item {
-  --tertiary-low-op: color-mix(in oklab, var(--tertiary-bg), transparent 5%);
   display: block;
-  background-color: color-mix(in srgb, var(--secondary-bg), transparent 20%);
+  background-color: var(--tertiary-bg);
   padding-block: 0.5rem;
   padding-inline: 1rem;
   padding-block: 1rem;
   margin-bottom: 2rem;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 main.post-list .post-list-item a, main > .post-list .post-list-item a {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 main.post-list .post-list-item .title, main > .post-list .post-list-item .title {
+  color: var(--tertiary-color);
   margin-block: 0;
   opacity: 0.8;
   font-family: var(--sans-font);
@@ -412,9 +442,9 @@ main.post-list .post-list-item .title, main > .post-list .post-list-item .title 
   text-wrap: pretty;
 }
 main.post-list .post-list-item .preview, main > .post-list .post-list-item .preview {
-  background-color: var(--primary-bg);
+  background-color: var(--tertiary-bg);
   color: var(--tertiary-color);
-  color: var(--primary-color);
+  border: var(--tertiary-accent) 2px solid;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -435,14 +465,13 @@ main.post-list .post-list-item .preview h1, main.post-list .post-list-item .prev
   font-size: 1.1rem;
 }
 main.post-list .post-list-item .preview .more-link, main > .post-list .post-list-item .preview .more-link {
-  color: var(--primary-accent);
+  color: var(--tertiary-accent);
   font-weight: bold;
 }
 main.post-list .post-list-item .tag, main > .post-list .post-list-item .tag {
-  background-color: var(--tertiary-low-op);
-  background-color: var(--primary-bg);
-  color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color: var(--tertiary-accent);
+  color: var(--tertiary-accent-contrast);
+  font-weight: 600;
 }
 main.post-list a, main > .post-list a {
   text-decoration: none;
@@ -574,6 +603,31 @@ ul.blog-post-list li .tag {
   font-weight: bold;
 }
 
+.poem-container, .poem.post-list-item {
+  font-family: var(--primary-font);
+}
+.poem-container .title, .poem.post-list-item .title {
+  font-family: var(--sans-font);
+  margin-bottom: 1em;
+}
+.poem-container .content p, .poem.post-list-item .content p {
+  margin-block: 0.5em;
+  font-size: 1.15rem;
+}
+.poem-container hr, .poem.post-list-item hr {
+  border: none;
+  margin-left: 12em;
+  margin-block: 0;
+}
+.poem-container hr:before, .poem.post-list-item hr:before {
+  content: "∗ ∗ ∗";
+  text-align: left;
+  color: var(--primary-accent);
+  opacity: 100%;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
 @media screen and (max-width: 768px) {
   body {
     display: block;
@@ -600,7 +654,7 @@ ul.blog-post-list li .tag {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .nav-mobile > * {
+  .nav-mobile * {
     color: var(--secondary-accent);
     background-color: transparent;
     border: none;
@@ -617,10 +671,16 @@ ul.blog-post-list li .tag {
     border: none;
     opacity: 0.75;
   }
+  .nav-mobile .nav-settings-button:hover {
+    color: var(--secondary-color);
+  }
   .nav-mobile .nav-home-button {
     color: var(--secondary-accent);
     font-size: 2rem;
     display: block;
+  }
+  .nav-mobile .nav-home-button:hover {
+    color: var(--secondary-color);
   }
   .nav-mobile a {
     text-decoration: none;
@@ -670,5 +730,14 @@ ul.blog-post-list li .tag {
   }
   ul.blog-post-list li a .date {
     display: block;
+  }
+  main > .post-list .post-list-item .title {
+    width: 100%;
+  }
+  .poem-container .content p, .poem.post-list-item .content p {
+    font-size: 1rem;
+  }
+  .poem-container hr, .poem.post-list-item hr {
+    margin-left: 4em;
   }
 }/*# sourceMappingURL=styles.css.map */

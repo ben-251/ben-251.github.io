@@ -235,22 +235,23 @@ main.post-list, main > .post-list {
 	
 
 	.post-list-item {
-		--tertiary-low-op: color-mix(in oklab, var(--tertiary-bg), transparent 5%);
+// 		--tertiary-low-op: color-mix(in oklab, var(--tertiary-bg), transparent 5%);
 
 		display: block;
-		background-color: color-mix(in srgb, var(--secondary-bg), transparent 20%);
+		background-color: var(--tertiary-bg);
 		padding-block: 0.5rem;
 		padding-inline: 1rem;
 		padding-block: 1rem;
 		margin-bottom: 2rem;
 
-		color: var(--secondary-color);
+		color: var(--tertiary-color);
 		
 		a {
-			color: var(--secondary-color);
+			color: var(--tertiary-color);
 		}
 
 		.title {
+			color: var(--tertiary-color);
 			margin-block: 0;
 			opacity: 0.8;
 			font-family: var(--sans-font);
@@ -261,9 +262,10 @@ main.post-list, main > .post-list {
 		}
 
 		.preview {
-			background-color: var(--primary-bg);
+			background-color: var(--tertiary-bg);
 			color: var(--tertiary-color);
-			color: var(--primary-color);
+			// color: var(--primary-color);
+			border: var(--tertiary-accent) 2px solid;	
 			height: max-content;
 			padding-inline: 1rem;
 			padding-block: 1rem;
@@ -285,16 +287,15 @@ main.post-list, main > .post-list {
 			}
 
 			.more-link {
-				color: var(--primary-accent);
+				color: var(--tertiary-accent);
 				font-weight: bold;
 			}
 		}
 
 		.tag {
-			background-color: var(--tertiary-low-op);
-			background-color: var(--primary-bg);
-			color: var(--tertiary-color);
-			color: var(--primary-color);
+			background-color: var(--tertiary-accent);
+			color: var(--tertiary-accent-contrast);
+			font-weight: 600;
 		}
 	}
 
@@ -447,6 +448,38 @@ ul.blog-post-list {
 			color: var(--primary-accent);
 			font-family: var(--primary-font);
 			font-weight: bold;
+		}
+	}
+}
+
+// poems
+.poem-container, .poem.post-list-item {
+	font-family: var(--primary-font);
+
+	.title {
+		font-family: var(--sans-font);
+		margin-bottom: 1em;
+	}
+
+	.content {
+		p {
+			margin-block: .5em;
+			font-size: 1.15rem;
+		}
+	}
+
+	hr {
+		border: none;
+		margin-left: 12em;
+		margin-block: 0;
+
+		&:before {
+			content: '∗ ∗ ∗';
+			text-align: left;
+			color: var(--primary-accent);
+			opacity: 100%;
+			font-size: 1.5em;
+			line-height: 1
 		}
 	}
 }
