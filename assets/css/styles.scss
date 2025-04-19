@@ -411,6 +411,8 @@ ul.blog-post-list {
 	display: flex;
 	flex-direction: column;
 
+	
+
 	li {
 		list-style-type: none;
 		padding-inline: 1em;
@@ -421,6 +423,11 @@ ul.blog-post-list {
 
 		a {
 			text-decoration: none;
+			display: flex;
+
+			.date, .title  {
+				min-width: 6em;
+			}
 
 			.date {
 				color: var(--primary-accent);
@@ -428,7 +435,7 @@ ul.blog-post-list {
 				font-size: 1.1em;
 				padding-right: 1em;	
 				display: inline-block;
-				min-width: max-content;
+				// min-width: max-content;
 				width: 6em;		
 			}
 

@@ -577,6 +577,12 @@ ul.blog-post-list li {
 }
 ul.blog-post-list li a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul.blog-post-list li a .date, ul.blog-post-list li a .title {
+  min-width: 6em;
 }
 ul.blog-post-list li a .date {
   color: var(--primary-accent);
@@ -584,9 +590,6 @@ ul.blog-post-list li a .date {
   font-size: 1.1em;
   padding-right: 1em;
   display: inline-block;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
   width: 6em;
 }
 ul.blog-post-list li .tag {
