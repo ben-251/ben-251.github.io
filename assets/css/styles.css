@@ -845,6 +845,20 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   .mainbody main {
     padding: 1em !important;
   }
+  .mainbody article.content p {
+    margin-block: 1em;
+  }
+  .mainbody article.content blockquote {
+    -webkit-margin-end: 0.4em;
+            margin-inline-end: 0.4em;
+    background-color: color-mix(in srgb, color-mix(in oklch, var(--pure-contrast), var(--primary-accent) 70%), var(--primary-bg) 97%);
+    border-left-width: 6px;
+    padding-block: 0.1em;
+    -webkit-padding-end: 1em;
+            padding-inline-end: 1em;
+    text-align: justify;
+    text-wrap: wrap;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -887,7 +901,7 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   }
   mjx-container[jax=CHTML][display=true] {
     font-size: 1.1rem !important;
-    background-color: color-mix(in oklch, var(--primary-bg), var(--pure-contrast) 5%);
+    background-color: color-mix(in srgb, color-mix(in oklch, var(--pure-contrast), var(--primary-accent) 70%), var(--primary-bg) 94%);
     overflow: scroll;
     overflow-wrap: break-word;
   }
