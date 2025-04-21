@@ -197,8 +197,26 @@ all colours must be fully opaque.
 
 	--secondary-color: #27285a;
 	--secondary-bg: #ddddef;
-	--secondary-accent: rgb(134, 142, 255);
+	--secondary-accent: rgb(162, 153, 233);
 	--secondary-accent-contrast: var(--secondary-bg);
+}
+
+.theme-dystopian{
+	--pure-contrast: white;
+
+	--primary-color: #b0b3ab;
+	--primary-bg: #474946;
+	--primary-accent: rgb(206, 213, 169);
+	--primary-accent-contrast: var(--primary-bg);
+
+	--secondary-color: #ffffff;
+	--secondary-bg: #666760;
+	--secondary-accent: rgb(255, 252, 189);
+	--secondary-accent-contrast: var(--secondary-bg);
+
+	--primary-font: "Fira Code", consolas;
+	--header-font: "Fira Code", consolas;
+	--sans-font: "fira code"
 }
 
 
