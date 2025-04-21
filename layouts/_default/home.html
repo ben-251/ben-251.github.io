@@ -1,5 +1,7 @@
 {{ define "main" }}
-	<main class="post-list">
+
+	<main>
+		<article>{{.Content}}</article>
 		{{ $pages := .Site.RegularPages }}
 		{{ $posts := where .Site.RegularPages "Section" "posts" }}
 		{{ if $posts }}

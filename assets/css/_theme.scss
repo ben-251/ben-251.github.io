@@ -19,15 +19,17 @@ all colours must be fully opaque.
 
 .theme-light {
 	--base-accent: #3fa7a7;
+	--pure-contrast: black;
+
 	// primary
 	--primary-color: #212729;
-	--primary-bg: #f0eded;
+	--primary-bg: #f6f6f6;
 	--primary-accent: #2b92af;
 	--primary-accent-contrast: var(--primary-bg);
 
 	// secondary 
 	--secondary-color: var(--primary-bg);
-	--secondary-bg: var(--primary-color);
+	--secondary-bg: #354044;
 	--secondary-accent: #3fa7a7;
 	--secondary-accent-contrast: var(--secondary-bg);
 
@@ -38,13 +40,14 @@ all colours must be fully opaque.
 	--tertiary-accent-contrast: var(--tertiary-bg);
 }
 
-.theme-dark {
+.theme-default, .theme-dark {
 	$base-light:  #e4e6e7;
+	--pure-contrast: white;
 	--base-accent: #408b8b;
 	// primary
 	--primary-color: #{$base-light};
 	--primary-bg: #212729;;
-	--primary-accent: #317486;
+	--primary-accent: #4fa6ba;
 	--primary--accent-contrast: var(--primary-bg);
 
 	// secondary 
@@ -63,7 +66,7 @@ all colours must be fully opaque.
 .theme-raspberry {
 	$base-accent: #d32274;
 	--base-accent: #{$base-accent};
-
+	--pure-contrast: white;
 	// primary
 	--primary-color: #dbd2d4;
 	--primary-bg: #19030b;
@@ -85,6 +88,7 @@ all colours must be fully opaque.
 
 .theme-cherry-blossom {
 	$base-accent:  hotpink;
+	--pure-contrast: black;
 
 	// primary
 	--primary-color: #212729;
@@ -107,18 +111,20 @@ all colours must be fully opaque.
 
 .theme-sepia {
 	$base-accent:  rgb(192, 130, 106);
+	--pure-contrast: black;
 
 	// primary
 	--primary-color: #482005;
 	--primary-bg: #f0e8e0;
-	--primary-bg: #eee0cb;
+	--primary-bg: #fcf2e5;
 	--primary-accent: #{$base-accent};
 
 	// secondary 
 	--secondary-color: #{color.scale($base-accent, $lightness: 100%, $saturation: -50%)};
 	--secondary-bg: #{color.scale($base-accent, $lightness: 0%, $saturation: -30%)};
 	--secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
-	--secondary-accent: #{color.scale($base-accent, $lightness: -50%, $saturation: 60%)};
+	--secondary-bg: #b58670;
+	--secondary-accent: #f7cf9c;
 
 	// tertiary 
 	--tertiary-color: var(--secondary-color);
@@ -148,6 +154,7 @@ all colours must be fully opaque.
 
 .theme-emerald {
 	$base-accent:  rgb(113, 207, 113);
+	--pure-contrast: white;
 
 	// primary
 	--primary-color: #7cbd97;
@@ -186,6 +193,7 @@ all colours must be fully opaque.
 
 .theme-space {
 	--base-accent: #7e94eb;
+	--pure-contrast: white;
 	// primary
 	--primary-color: #f6f6ff;
 	--primary-bg: #1a1147;
@@ -202,8 +210,9 @@ all colours must be fully opaque.
 	--tertiary-accent: #dcc8ff;
 }
 
-.theme-default, .theme-peony {
+.theme-peony {
 	--base-accent: #rgb(255,181,96);
+	--pure-contrast: black;
 
 	--primary-color: #212729;
 	--primary-bg: #fffef2;

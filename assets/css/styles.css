@@ -23,12 +23,13 @@ all colours must be fully opaque.
 */
 .theme-light {
   --base-accent: #3fa7a7;
+  --pure-contrast: black;
   --primary-color: #212729;
-  --primary-bg: #f0eded;
+  --primary-bg: #f6f6f6;
   --primary-accent: #2b92af;
   --primary-accent-contrast: var(--primary-bg);
   --secondary-color: var(--primary-bg);
-  --secondary-bg: var(--primary-color);
+  --secondary-bg: #354044;
   --secondary-accent: #3fa7a7;
   --secondary-accent-contrast: var(--secondary-bg);
   --tertiary-color: var(--primary-color);
@@ -37,11 +38,12 @@ all colours must be fully opaque.
   --tertiary-accent-contrast: var(--tertiary-bg);
 }
 
-.theme-dark {
+.theme-default, .theme-dark {
+  --pure-contrast: white;
   --base-accent: #408b8b;
   --primary-color: #e4e6e7;
   --primary-bg: #212729;
-  --primary-accent: #317486;
+  --primary-accent: #4fa6ba;
   --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
   --secondary-bg: #12181c;
@@ -55,6 +57,7 @@ all colours must be fully opaque.
 
 .theme-raspberry {
   --base-accent: #d32274;
+  --pure-contrast: white;
   --primary-color: #dbd2d4;
   --primary-bg: #19030b;
   --primary-accent: #d32274;
@@ -70,6 +73,7 @@ all colours must be fully opaque.
 }
 
 .theme-cherry-blossom {
+  --pure-contrast: black;
   --primary-color: #212729;
   --primary-bg: #fff;
   --primary-accent: rgb(220, 67, 154);
@@ -85,14 +89,16 @@ all colours must be fully opaque.
 }
 
 .theme-sepia {
+  --pure-contrast: black;
   --primary-color: #482005;
   --primary-bg: #f0e8e0;
-  --primary-bg: #eee0cb;
+  --primary-bg: #fcf2e5;
   --primary-accent: rgb(192, 130, 106);
   --secondary-color: white;
   --secondary-bg: #b38877;
   --secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
-  --secondary-accent: #833112;
+  --secondary-bg: #b58670;
+  --secondary-accent: #f7cf9c;
   --tertiary-color: var(--secondary-color);
   --tertiary-bg: #bdb19f;
   --tertiary-bg: #baa898;
@@ -112,6 +118,7 @@ all colours must be fully opaque.
 }
 
 .theme-emerald {
+  --pure-contrast: white;
   --primary-color: #7cbd97;
   --primary-bg: #10351c;
   --primary-accent: rgb(170, 238, 191);
@@ -138,6 +145,7 @@ all colours must be fully opaque.
 
 .theme-space {
   --base-accent: #7e94eb;
+  --pure-contrast: white;
   --primary-color: #f6f6ff;
   --primary-bg: #1a1147;
   --primary-accent: rgb(152, 139, 214);
@@ -149,8 +157,9 @@ all colours must be fully opaque.
   --tertiary-accent: #dcc8ff;
 }
 
-.theme-default, .theme-peony {
+.theme-peony {
   --base-accent: #rgb(255,181,96);
+  --pure-contrast: black;
   --primary-color: #212729;
   --primary-bg: #fffef2;
   --primary-accent: rgb(235, 168, 81);
@@ -211,7 +220,7 @@ all colours must be fully opaque.
   --sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
   --header-font: "Spectral", "Playfair Display", "Julius sans one";
   --logo-font: Bellefair, "Playfair display";
-  --main-font-size: 18px;
+  --main-font-size: 20px;
   font-size: var(--main-font-size);
   /* to set rem */
 }
@@ -238,6 +247,9 @@ body {
 }
 body a {
   color: var(--primary-color);
+}
+body p > a {
+  color: var(--primary-accent);
 }
 
 body {
@@ -360,8 +372,18 @@ body {
   margin-right: 0;
   margin-left: auto;
 }
+.mainbody ::-moz-selection {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-accent);
+}
+.mainbody ::selection {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-accent);
+}
 .mainbody > h1 {
-  padding-inline: 2rem;
+  padding-inline: 3rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
 }
 .mainbody main {
   padding-block: 3rem;
@@ -378,14 +400,19 @@ body {
   min-height: 100vh;
 }
 .mainbody .footer {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-block: 0.3rem;
+  border-top: solid 5px var(--secondary-bg);
+  padding-block: 1em;
 }
 .mainbody .footer p {
   display: block;
-  width: 50%;
-  margin: auto;
+  margin: 0;
 }
 .mainbody hr {
   border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
@@ -406,6 +433,14 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.mainbody main.container h1.title {
+  margin-bottom: 0.3em;
 }
 
 main.post-list, main > .post-list {
@@ -417,7 +452,6 @@ main.post-list, main > .post-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
 }
 main.post-list .post-list-item, main > .post-list .post-list-item {
   display: block;
@@ -501,6 +535,9 @@ main.post-list .empty-message h1, main > .post-list .empty-message h1 {
   font-size: 2rem;
 }
 
+.mainbody article.content {
+  padding-block: 2em;
+}
 .mainbody article.content blockquote {
   margin-inline: 0;
   -webkit-border-start: 2px var(--secondary-accent) solid;
@@ -514,6 +551,13 @@ main.post-list .empty-message h1, main > .post-list .empty-message h1 {
   white-space: nowrap;
   display: inline-block;
   color: var(--primary-accent);
+}
+.mainbody article.content h1 {
+  margin-bottom: 0.2em;
+  margin-top: 1em;
+}
+.mainbody article.content p {
+  margin-block: 0.1em;
 }
 
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
@@ -552,58 +596,6 @@ button {
 button.active {
   background-color: color-mix(in srgb, var(--primary-accent), transparent 2%);
   color: var(--primary-bg);
-}
-
-ul.blog-post-list {
-  padding: 0;
-  padding: 1em;
-  background-color: var(--primary-bg);
-  color: var(--primary-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-ul.blog-post-list li {
-  list-style-type: none;
-  padding-inline: 1em;
-  padding-block: 0.8em;
-  --border-size: 1px;
-  border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
-  margin-bottom: calc(-1 * var(--border-size));
-}
-ul.blog-post-list li a {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-ul.blog-post-list li a .date, ul.blog-post-list li a .title {
-  min-width: 6em;
-}
-ul.blog-post-list li a .date {
-  color: var(--primary-accent);
-  font-weight: bold;
-  font-size: 1.1em;
-  padding-right: 1em;
-  display: inline-block;
-  width: 6em;
-}
-ul.blog-post-list li .tag {
-  padding-inline: 0.5rem;
-  padding-block: 0.2rem;
-  border-radius: 0.5rem;
-  border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
-  color: var(--primary-accent);
-  font-family: var(--primary-font);
-  font-weight: bold;
 }
 
 .poem-container {
@@ -649,18 +641,111 @@ ul.blog-post-list li .tag {
   margin-bottom: calc(-1 * var(--border-size));
   padding-block: 0.7em;
   padding-inline: 1em;
-  -webkit-transition: all ease 400ms;
-  transition: all ease 400ms;
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
 }
 .poem-list li:hover {
-  background-color: var(--primary-accent);
-  color: var(--primary-accent-contrast);
+  background-color: var(--secondary-bg);
+  color: var(--secondary-color);
 }
 .poem-list li a {
   text-decoration: none;
   display: block;
   font-size: 1.5rem;
   color: inherit;
+}
+
+ul.blog-post-list, ul.home-post-list, .post-list {
+  padding: 0;
+  padding: 1em;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0rem;
+}
+ul.blog-post-list li, ul.home-post-list li, .post-list li {
+  list-style-type: none;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  --border-size: 1px;
+  border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+  margin-bottom: calc(-1 * var(--border-size));
+}
+ul.blog-post-list li:hover, ul.home-post-list li:hover, .post-list li:hover {
+  background-color: color-mix(in srgb, color-mix(in oklch, var(--primary-accent) 90%, var(--pure-contrast)), transparent 92%);
+  color: var(--primary-color);
+}
+ul.blog-post-list li a, ul.home-post-list li a, .post-list li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul.blog-post-list li a .date, ul.blog-post-list li a .title, ul.home-post-list li a .date, ul.home-post-list li a .title, .post-list li a .date, .post-list li a .title {
+  min-width: 6em;
+}
+ul.blog-post-list li a .date, ul.home-post-list li a .date, .post-list li a .date {
+  color: var(--primary-accent);
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-right: 1em;
+  display: inline-block;
+  width: 6em;
+}
+ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
+  padding-inline: 0.5rem;
+  padding-block: 0.2rem;
+  border-radius: 0.5rem;
+  border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
+  color: var(--primary-accent);
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+
+.home-post-lists > .home-post-group:hover:not(:has(> ul:hover)) > * {
+  background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
+}
+.home-post-lists > .home-post-group > h2 {
+  margin-block: 0;
+}
+.home-post-lists > .home-post-group > h2 a {
+  display: block;
+  text-decoration: none;
+  padding-block: 0.2em;
+  padding-inline: 0.6em;
+  -webkit-transition: color 100ms ease;
+  transition: color 100ms ease;
+  border-top: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
+  border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
+  color: var(--primary-accent);
+}
+.home-post-lists > .home-post-group > h2 a:hover {
+  color: var(--primary-accent);
+  background-color: color-mix(in srgb, var(--primary-bg) 85%, var(--primary-accent));
+}
+.home-post-lists .home-post-list {
+  margin-block: 0;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
+}
+.home-post-lists .home-post-list li:first-child {
+  border-top: none;
+}
+.home-post-lists .home-post-list li:last-child {
+  border-bottom: none;
+}
+.home-post-lists .home-post-group:last-child li:last-child {
+  border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
 }
 
 @media screen and (max-width: 768px) {
@@ -760,6 +845,16 @@ ul.blog-post-list li .tag {
   .mainbody main {
     padding: 1em !important;
   }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em;
+  }
   .footer p {
     width: 90vw !important;
   }
@@ -775,4 +870,9 @@ ul.blog-post-list li .tag {
   .poem-container hr {
     margin-left: 4em;
   }
+}
+.home-post-lists .home-post-list {
+  margin-block: 0;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
 }/*# sourceMappingURL=styles.css.map */

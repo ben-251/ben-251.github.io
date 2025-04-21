@@ -1,17 +1,8 @@
-<div class="post-list-item" href="{{ .Permalink }}">
-	<h4 class="title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
-	{{ if .Description }}
-		<p>{{ .Description }}</p>
-	{{ end }}
-	<div class="preview">
-		{{ .Summary }}
-		{{ if .Truncated }}
-		  <a class="more-link" href="{{ .RelPermalink }}">More ...</a>
-		{{ end }}
-	</div>
-	<div class="tag-list">
-		<div class="tag">{{ math.Mul .ReadingTime 2.5 }} Minutes</div>
-		<div class="tag">{{ .Date.Format "Jan 2, 2006" }}</div>
-		<div class="tag">{{ .WordCount }} Words</div>
-	</div>
-</div>
+<a href="{{.Permalink}}">
+	<span class="date">
+		{{.Date.Format "January 2"}}
+	</span>
+	<span class="title">
+		{{.Title}}
+	</span>
+</a>

@@ -1,17 +1,8 @@
-<div class="post-list-item" href="{{ .Permalink }}">
-	<h4 class="title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
-	<div class="preview">
-		{{ .Summary }}
-		{{ if .Truncated }}
-		  <a class="more-link" href="{{ .RelPermalink }}">More ...</a>
-		{{ end }}
-	</div>
-	<div class="tag-list">
-		{{/*  Might make this entire thing modular so that it can be reused 
-		exactly the same here and on the page itself  */}}
-		<div class="tag">{{ .ReadingTime }} Minutes</div>
-		<div class="tag">{{ .Date.Format "Jan 2, 2006" }}</div>
-		<div class="tag">{{ .WordCount }} Words</div>
-		{{/*  Get the actual tags on the post, like #math, #poems, etc  */}}
-	</div>
-</div>
+<a href="{{.Permalink}}">
+	<span class="date">
+		{{.Date.Format "January 2"}}
+	</span>
+	<span class="title">
+		{{.Title}}
+	</span>
+</a>

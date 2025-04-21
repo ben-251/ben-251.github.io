@@ -1,14 +1,19 @@
 {{ define "main" }}
+<main>
 	<h1> {{ .Title }} </h1>
-	<main class="post-list">
-		{{ $section := .Section }}
-		{{ $pages := .Site.GetPage "section" $section }}
-		{{ if not $pages.Pages }}
-			{{ partial "empty" . }}
-		{{ else }}
-			{{ range $pages.Pages }}
-			{{ .Render "summary" }}
-			{{ end }}
+	{{ $section := .Section }}
+	{{ $pages := .Site.GetPage "section" $section }}
+	{{ if not $pages.Pages }}
+		{{ partial "empty" . }}
+	{{ else }}
+	<ul class="post-list">
+		{{ range $pages.Pages }}
+		<li>
+			{{/*  {{ .Render "summary" }}  */}}
+			<a href="{{.Permalink}}">{{.Title}}</a>
+		</li>
 		{{ end }}
-	</main>
+	</ul>
+	{{ end }}
+</main>
 {{ end }}

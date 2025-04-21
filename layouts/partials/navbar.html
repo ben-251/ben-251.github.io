@@ -13,7 +13,13 @@
 	<a class="navbar-item" href='{{ absURL "" }}'>
 		Home
 	</a>
-	{{ range sort .Site.Sections "Pages" "desc" }}
-	<a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
+
+	{{ range sort (where .Site.Sections "Section" "ne" "legal") "Title" "asc" }}
+	{{ $publishedPages := where .Pages "Draft" "ne" true }}
+	{{ if gt (len $publishedPages) 0 }}
+		<a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
 	{{ end }}
+	{{ end }}
+
+
 </nav>

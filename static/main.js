@@ -131,8 +131,8 @@ const themes = Array.from(themeItems).flatMap(item =>
 	Array.from(item.classList)
 	  .filter(className => className.startsWith('theme-') && className !== 'theme-item')
   );
-var currentTheme = localStorage.getItem('theme') || themes[0];
-console.log(`CurrentTheme: ${currentTheme}`);
+var currentTheme = localStorage.getItem('theme') || 'theme-default';
+// console.log(`CurrentTheme: ${currentTheme}`);
 const middleStart = 80;
 const middleEnd = 60;
 const rightStart = 95;
@@ -171,7 +171,22 @@ function setActive(theme) {
 	})
 }
 
-applyTheme(currentTheme); 
+// currentTheme = localStorage.getItem('theme') || 'theme-default';
+// console.log(localStorage.getItem('theme'))
+// console.log(localStorage);
+
+// const storedTheme = localStorage.getItem('theme');
+// console.log('storedTheme:', storedTheme);
+
+// let currentTheme = storedTheme || 'theme-default';
+// console.log('final currentTheme:', currentTheme);
+
+// console.log(currentTheme);
+console.log(currentTheme)
+applyTheme(currentTheme);
+console.log(currentTheme)
+// console.log(`applied theme: ${currentTheme}`);
+
 // one issue is that this lags - it shows the default, then changes it to the current. it shouldn't do this.
 // setActive(currentTheme);
 
