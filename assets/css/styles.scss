@@ -397,6 +397,7 @@ article.content {
 }
 
 // Maths
+// proof square
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
 	--special-color: color-mix(in srgb, var(--primary-accent), var(--primary-color) 70%);
 	color: var(--special-color);
@@ -404,6 +405,8 @@ article.content {
 	// background-color: var(--special-color);
 }
 
+
+// display
 mjx-container[jax="CHTML"][display="true"] {
 	// background-color: var(--tertiary-bg);
 	// color: var(--tertiary-color);
