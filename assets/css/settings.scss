@@ -3,18 +3,15 @@
 
 .theme-options {
 	display: grid;
-	// grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: auto;
 	gap: 2em;
-	// background-color: var(--tertiary-bg);
- 	// background-color: color-mix(in srgb, var(--tertiary-bg), transparent 70%);
-	// background-color: rgba(var(--tertiary-bg), 0.5);
 	padding: 2em;
 	border-radius: 0rem;
 	/* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 
-	.theme-item {
+	.theme-item[class*="theme-"] {
+		font-family: var(--theme-button-font);
 		box-sizing: border-box;
 		position: relative;
 		color: var(--primary-color);
@@ -29,15 +26,34 @@
 		text-underline-offset: .25em;
 
 		--middle: 70%;
+		--middle-left: calc(var(--middle) - 10%);
+		--middle-right: calc(var(--middle) + 10%);
+		--right: 95%;
+
+		// background: linear-gradient(
+		// 	45deg,
+		// 	var(--primary-bg) var(--middle),
+		// 	var(--secondary-bg) var(--middle),
+		// 	var(--primary-accent) var(--middle-left),
+		// 	var(--primary-accent) var(--middle-right),
+		// 	var(--secondary-bg) var(--middle-right)
+		// );
+
+		--border-width: 4%;
+		--middle: 70%;
+		--middle-middle: var(--middle);
+		--middle-left: calc(var(--middle) - var(--border-width));
+		--middle-right: calc(var(--middle) + var(--border-width));
 		--right: 95%;
 
 		background: linear-gradient(
 			45deg,
-			var(--primary-bg) var(--middle),
-			var(--secondary-bg) var(--middle),
-			var(--secondary-bg) var(--right),
-			var(--tertiary-bg) var(--right)
-		);
+			var(--primary-bg) var(--middle-left),
+			var(--primary-accent) var(--middle-left),
+			var(--primary-accent) var(--middle-middle),
+			var(--secondary-bg) var(--middle-middle),
+			var(--secondary-bg) var(--right)
+		) !important;
 
 
 		&.active {

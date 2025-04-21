@@ -31,6 +31,18 @@
 		{
 			"name": "Space",
 			"class": "theme-space"
+		},
+		{
+			"name": "test",
+			"class": "theme-dark-peach"
+		},
+		{
+			"name": "misty",
+			"class": "theme-misty"
+		},
+		{
+			"name": "inverted blossom",
+			"class": "theme-inverted-blossom"
 		}
 	]
 }

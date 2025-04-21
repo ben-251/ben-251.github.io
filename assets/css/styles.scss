@@ -7,7 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo');
 @import url('https://fonts.googleapis.com/css2?family=Spectral');
 @import url('https://fonts.googleapis.com/css2?family=Jost');
+@import url('https://fonts.googleapis.com/css2?family=Arvo');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
 
 * {
 	box-sizing: border-box;
@@ -125,7 +127,7 @@ body {
 				transparent,
 				transparent),
 			linear-gradient(to right,
-				color-mix(in srgb, var(--secondary-accent), var(--primary-bg)),
+				color-mix(in srgb, var(--secondary-accent), var(--secondary-bg)),
 				var(--secondary-accent));
 		background-size: 100% 3px, 0 3px;
 		background-position: 100% 100%, 0 100%;
@@ -258,71 +260,6 @@ main.post-list, main > .post-list {
 	flex-direction: column;
 	
 
-	.post-list-item {
-// 		--tertiary-low-op: color-mix(in oklab, var(--tertiary-bg), transparent 5%);
-
-		display: block;
-		background-color: var(--tertiary-bg);
-		padding-block: 0.5rem;
-		padding-inline: 1rem;
-		padding-block: 1rem;
-		margin-bottom: 2rem;
-
-		color: var(--tertiary-color);
-		
-		a {
-			color: var(--tertiary-color);
-		}
-
-		.title {
-			color: var(--tertiary-color);
-			margin-block: 0;
-			opacity: 0.8;
-			font-family: var(--sans-font);
-			text-transform: uppercase;
-			font-size: 1.15rem;
-			width: 60%;
-			text-wrap: pretty;
-		}
-
-		.preview {
-			background-color: var(--tertiary-bg);
-			color: var(--tertiary-color);
-			// color: var(--primary-color);
-			border: var(--tertiary-accent) 2px solid;	
-			height: max-content;
-			padding-inline: 1rem;
-			padding-block: 1rem;
-			padding-block-start: .6rem;
-
-			margin-block-end: 1.3rem;
-			margin-block-start: 0.7rem;
-
-			font-size: 0.9rem;
-
-
-
-			>h1, >p {
-				margin-block: 0;
-			}
-
-			h1, h2, h3, h4, h5, h6 {
-				font-size: 1.1rem;
-			}
-
-			.more-link {
-				color: var(--tertiary-accent);
-				font-weight: bold;
-			}
-		}
-
-		.tag {
-			background-color: var(--tertiary-accent);
-			color: var(--tertiary-accent-contrast);
-			font-weight: 600;
-		}
-	}
-
 	a {
 		text-decoration: none;
 	}
@@ -408,8 +345,6 @@ article.content {
 
 // display
 mjx-container[jax="CHTML"][display="true"] {
-	// background-color: var(--tertiary-bg);
-	// color: var(--tertiary-color);
 	color: color-mix(in srgb, var(--primary-color), var(--base-accent) 50%);
 	margin-block: 0em;
 	padding-block: 1em;

@@ -133,10 +133,10 @@ const themes = Array.from(themeItems).flatMap(item =>
   );
 var currentTheme = localStorage.getItem('theme') || 'theme-default';
 // console.log(`CurrentTheme: ${currentTheme}`);
-const middleStart = 80;
-const middleEnd = 60;
+const middleStart = 90;
+const middleEnd = 80;
 const rightStart = 95;
-const rightEnd = 85;
+const rightEnd = 90;
 
 
 function applyTheme(theme) {
@@ -154,8 +154,8 @@ function setActive(theme) {
 	// console.log("setting active")
 	const prevTheme = localStorage.getItem('prevtheme'); // Get the value of 'prevtheme'
 
-	const forwardTime = 700;
-	const backwardTime = 500;
+	const forwardTime = 200;
+	const backwardTime = 50;
 	themeItems.forEach(item => {
 		if (item.classList.contains(theme)) {
 			item.classList.add("active");

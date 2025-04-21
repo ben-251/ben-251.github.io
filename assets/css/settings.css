@@ -25,10 +25,6 @@ all colours must be fully opaque.
   --secondary-bg: #354044;
   --secondary-accent: #3fa7a7;
   --secondary-accent-contrast: var(--secondary-bg);
-  --tertiary-color: var(--primary-color);
-  --tertiary-bg: #c6d1d1;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
-  --tertiary-accent-contrast: var(--tertiary-bg);
 }
 
 .theme-default, .theme-dark {
@@ -42,27 +38,19 @@ all colours must be fully opaque.
   --secondary-bg: #12181c;
   --secondary-accent: #408b8b;
   --secondary-accent-contrast: var(--secondary-bg);
-  --tertiary-color: rgba(240, 248, 255, 0.736);
-  --tertiary-bg: #404747;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
-  --tertiary-accent-contrast: color-mix(in srgb, black, var(--tertiary-bg));
 }
 
 .theme-raspberry {
   --base-accent: #d32274;
   --pure-contrast: white;
-  --primary-color: #dbd2d4;
+  --primary-color: #dfd9dd;
   --primary-bg: #19030b;
   --primary-accent: #d32274;
   --primary-accent-contrast: var(--primary-color);
-  --secondary-color: white;
+  --secondary-color: rgb(255, 255, 255);
   --secondary-bg: #4d1126;
   --secondary-accent: #ea799f;
   --secondary-accent-contrast: var(--secondary-bg);
-  --tertiary-color: color-mix(in oklch, white 85%, var(--base-accent));
-  --tertiary-bg: color-mix(in srgb, var(--primary-bg), #ff73a2 43%);
-  --tertiary-accent: color-mix(in oklch, var(--secondary-accent) 55%, var(--base-accent));
-  --tertiary-accent-contrast: var(--tertiary-color) ;
 }
 
 .theme-cherry-blossom {
@@ -75,10 +63,18 @@ all colours must be fully opaque.
   --secondary-bg: #f8d9e9;
   --secondary-accent: hotpink;
   --secondary-accent-contrast: var(--secondary-bg);
-  --tertiary-color: white;
-  --tertiary-bg: #ca9dbc;
-  --tertiary-accent: rgb(255, 178, 216);
-  --tertiary-accent-contrast: black;
+}
+
+.theme-inverted-blossom {
+  --pure-contrast: black;
+  --secondary-color: #212729;
+  --secondary-bg: #fff;
+  --secondary-accent: rgb(220, 67, 154);
+  --secondary-accent-contrast: white;
+  --primary-color: #ac295b;
+  --primary-bg: #f7b0c8;
+  --primary-accent: rgb(255, 255, 255);
+  --primary-accent-contrast: var(--secondary-bg);
 }
 
 .theme-sepia {
@@ -92,10 +88,68 @@ all colours must be fully opaque.
   --secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
   --secondary-bg: #b58670;
   --secondary-accent: #f7cf9c;
-  --tertiary-color: var(--secondary-color);
-  --tertiary-bg: #bdb19f;
-  --tertiary-bg: #baa898;
-  --tertiary-accent: color-mix(in srgb, var(--primary-color), var(--secondary-accent));
+}
+
+.theme-emerald {
+  --pure-contrast: white;
+  --primary-color: #7cbd97;
+  --primary-bg: #10351c;
+  --primary-accent: rgb(170, 238, 191);
+  --secondary-color: #fff;
+  --secondary-bg: #071f0e;
+  --secondary-accent: rgb(113, 207, 113);
+}
+
+.theme-space {
+  --base-accent: #7e94eb;
+  --pure-contrast: white;
+  --primary-color: #f6f6ff;
+  --primary-bg: #1a1147;
+  --primary-accent: rgb(152, 139, 214);
+  --primary-accent-contrast: var(--primary-bg)
+  // secondary
+  --secondary-color: #fff;
+  --secondary-bg: #06062a;
+  --secondary-accent: #7e94eb;
+}
+
+.theme-peony {
+  --base-accent: #rgb(255,181,96);
+  --pure-contrast: black;
+  --primary-color: #212729;
+  --primary-bg: #fffef2;
+  --primary-accent: rgb(235, 168, 81);
+  --secondary-color: #102307;
+  --secondary-bg: #fef1d8;
+  --secondary-accent: rgb(255, 181, 96);
+}
+
+.theme-dark-peach {
+  --pure-contrast: white;
+  --primary-color: #e8e8e8;
+  --primary-bg: #464649;
+  --primary-accent: rgb(255, 168, 181);
+  --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #5a0000;
+  --secondary-bg: #ed8c86;
+  --secondary-accent: rgb(255, 203, 189);
+  --secondary-accent-contrast: var(--secondary-bg);
+  --primary-font: "Fira Code", consolas;
+  --header-font: "Arvo", consolas;
+  --sans-font: "Arvo", "fira code"
+  //--logo-font: consolas;
+}
+
+.theme-misty {
+  --pure-contrast: white;
+  --primary-color: #e8e8e8;
+  --primary-bg: #7979a1;
+  --primary-accent: rgb(223, 203, 255);
+  --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #27285a;
+  --secondary-bg: #ddddef;
+  --secondary-accent: rgb(134, 142, 255);
+  --secondary-accent-contrast: var(--secondary-bg);
 }
 
 .theme-jest {
@@ -108,19 +162,6 @@ all colours must be fully opaque.
   --tertiary-color: var(--secondary-color);
   --tertiary-bg: #a2ad917d;
   --tertiary-accent: color-mix(in srgb, var(--secondary-color), var(--secondary-accent));
-}
-
-.theme-emerald {
-  --pure-contrast: white;
-  --primary-color: #7cbd97;
-  --primary-bg: #10351c;
-  --primary-accent: rgb(170, 238, 191);
-  --secondary-color: #fff;
-  --secondary-bg: #071f0e;
-  --secondary-accent: rgb(113, 207, 113);
-  --tertiary-color: var(--secondary-color);
-  --tertiary-bg: color-mix(in oklch, #56a86f, var(--secondary-bg));
-  --tertiary-accent: color-mix(in srgb, var(--primary-bg), var(--secondary-accent) 60%);
 }
 
 .theme-grape {
@@ -136,35 +177,6 @@ all colours must be fully opaque.
   --tertiary-accent: #dcc8ff;
 }
 
-.theme-space {
-  --base-accent: #7e94eb;
-  --pure-contrast: white;
-  --primary-color: #f6f6ff;
-  --primary-bg: #1a1147;
-  --primary-accent: rgb(152, 139, 214);
-  --secondary-color: #fff;
-  --secondary-bg: #06062a;
-  --secondary-accent: #7e94eb;
-  --tertiary-color: var(--secondary-color);
-  --tertiary-bg: #3a324c7b;
-  --tertiary-accent: #dcc8ff;
-}
-
-.theme-peony {
-  --base-accent: #rgb(255,181,96);
-  --pure-contrast: black;
-  --primary-color: #212729;
-  --primary-bg: #fffef2;
-  --primary-accent: rgb(235, 168, 81);
-  --secondary-color: #102307;
-  --secondary-bg: #fef1d8;
-  --secondary-accent: rgb(255, 181, 96);
-  --tertiary-color: var(--secondary-color);
-  --tertiary-bg: var(--secondary-bg);
-  --tertiary-accent: var(--secondary-accent);
-  --tertiary-accent-contrast: var(--tertiary-bg) ;
-}
-
 .theme-options {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -174,7 +186,8 @@ all colours must be fully opaque.
   border-radius: 0rem;
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 }
-.theme-options .theme-item {
+.theme-options .theme-item[class*=theme-] {
+  font-family: var(--theme-button-font);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -192,10 +205,18 @@ all colours must be fully opaque.
           text-decoration: var(--primary-accent) 2px underline;
   text-underline-offset: 0.25em;
   --middle: 70%;
+  --middle-left: calc(var(--middle) - 10%);
+  --middle-right: calc(var(--middle) + 10%);
   --right: 95%;
-  background: linear-gradient(45deg, var(--primary-bg) var(--middle), var(--secondary-bg) var(--middle), var(--secondary-bg) var(--right), var(--tertiary-bg) var(--right));
+  --border-width: 4%;
+  --middle: 70%;
+  --middle-middle: var(--middle);
+  --middle-left: calc(var(--middle) - var(--border-width));
+  --middle-right: calc(var(--middle) + var(--border-width));
+  --right: 95%;
+  background: linear-gradient(45deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right)) !important;
 }
-.theme-options .theme-item.active {
+.theme-options .theme-item[class*=theme-].active {
   /* it's not updating this? */
   border: 3px outset var(--primary-accent);
   -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
