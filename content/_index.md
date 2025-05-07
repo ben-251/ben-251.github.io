@@ -1,1 +1,1 @@
-If you haven't already, check out the colour theme options [here](settings/settings) :)
+If you haven't already, check out the colour theme options [here](/settings) :)

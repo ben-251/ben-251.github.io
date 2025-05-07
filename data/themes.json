@@ -24,7 +24,6 @@
 			"name": "Emerald City",
 			"class": "theme-emerald"
 		},
-
 		{
 			"name": "Space",
 			"class": "theme-space"
@@ -38,8 +37,12 @@
 			"class": "theme-dark-peach"
 		},
 		{
-			"name": "misty",
-			"class": "theme-misty"
+			"name": "misty (light)",
+			"class": "theme-misty-light"
+		},
+		{
+			"name": "misty (dark)",
+			"class": "theme-misty-dark"
 		},
 		{
 			"name": "Dy$T0p1A",

@@ -19,7 +19,9 @@ all colours must be fully opaque.
 
 .theme-light {
 	--base-accent: #3fa7a7;
+
 	--pure-contrast: black;
+	--pure-color: white;
 
 	// primary
 	--primary-color: #212729;
@@ -38,7 +40,10 @@ all colours must be fully opaque.
 
 .theme-default, .theme-dark {
 	$base-light:  #e4e6e7;
+
 	--pure-contrast: white;
+	--pure-color: black;
+
 	--base-accent: #408b8b;
 	// primary
 	--primary-color: #{$base-light};
@@ -58,6 +63,7 @@ all colours must be fully opaque.
 	$base-accent: #d32274;
 	--base-accent: #{$base-accent};
 	--pure-contrast: white;
+	--pure-color: black;
 	// primary
 	--primary-color: #dfd9dd;
 	--primary-bg: #19030b;
@@ -74,6 +80,7 @@ all colours must be fully opaque.
 .theme-cherry-blossom {
 	$base-accent:  hotpink;
 	--pure-contrast: black;
+	--pure-color: white;
 
 	// primary
 	--primary-color: #212729;
@@ -91,6 +98,7 @@ all colours must be fully opaque.
 .theme-inverted-blossom {
 	$base-accent:  hotpink;
 	--pure-contrast: black;
+	--pure-color: white;
 
 	// secondary
 	--secondary-color: #212729;
@@ -108,6 +116,7 @@ all colours must be fully opaque.
 .theme-sepia {
 	$base-accent:  rgb(192, 130, 106);
 	--pure-contrast: black;
+	--pure-color: white;
 
 	// primary
 	--primary-color: #482005;
@@ -126,6 +135,7 @@ all colours must be fully opaque.
 .theme-emerald {
 	$base-accent:  rgb(113, 207, 113);
 	--pure-contrast: white;
+	--pure-color: black;
 
 	// primary
 	--primary-color: #7cbd97;
@@ -141,6 +151,8 @@ all colours must be fully opaque.
 .theme-space {
 	--base-accent: #7e94eb;
 	--pure-contrast: white;
+	--pure-color: black;
+
 	// primary
 	--primary-color: #f6f6ff;
 	--primary-bg: #1a1147;
@@ -157,12 +169,13 @@ all colours must be fully opaque.
 .theme-peony {
 	--base-accent: #rgb(255,181,96);
 	--pure-contrast: black;
+	--pure-color: white;
 
-	--primary-color: #212729;
+	--primary-color: #292621;
 	--primary-bg: #fffef2;
 	--primary-accent: rgb(235, 168, 81);
 
-	--secondary-color: #102307;
+	--secondary-color: #231707;
 	--secondary-bg: #fef1d8;
 	--secondary-accent: rgb(255, 181, 96);
 	
@@ -170,6 +183,7 @@ all colours must be fully opaque.
 
 .theme-dark-peach {
 	--pure-contrast: white;
+	--pure-color: black;
 
 	--primary-color: #e8e8e8;
 	--primary-bg: #464649;
@@ -187,9 +201,9 @@ all colours must be fully opaque.
 	//--logo-font: consolas;
 }
 
-.theme-misty {
+.theme-misty-dark {
 	--pure-contrast: white;
-
+	--pure-color: black;
 	--primary-color: #e8e8e8;
 	--primary-bg: #7979a1;
 	--primary-accent: rgb(223, 203, 255);
@@ -201,8 +215,24 @@ all colours must be fully opaque.
 	--secondary-accent-contrast: var(--secondary-bg);
 }
 
+.theme-misty-light {
+	--pure-contrast: black;
+	--pure-color: white;
+
+	--secondary-color: #e8e8e8;
+	--secondary-bg: #7979a1;
+	--secondary-accent: rgb(223, 203, 255);
+	--secondary-accent-contrast: var(--secondary-bg);
+
+	--primary-color: #27285a;
+	--primary-bg: #ddddef;
+	--primary-accent: rgb(162, 153, 233);
+	--primary-accent-contrast: var(--primary-bg);
+}
+
 .theme-dystopian{
 	--pure-contrast: white;
+	--pure-color: black;
 
 	--primary-color: #b0b3ab;
 	--primary-bg: #474946;

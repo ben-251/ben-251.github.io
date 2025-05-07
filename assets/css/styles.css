@@ -26,6 +26,7 @@ all colours must be fully opaque.
 .theme-light {
   --base-accent: #3fa7a7;
   --pure-contrast: black;
+  --pure-color: white;
   --primary-color: #212729;
   --primary-bg: #f6f6f6;
   --primary-accent: #2b92af;
@@ -38,6 +39,7 @@ all colours must be fully opaque.
 
 .theme-default, .theme-dark {
   --pure-contrast: white;
+  --pure-color: black;
   --base-accent: #408b8b;
   --primary-color: #e4e6e7;
   --primary-bg: #212729;
@@ -52,6 +54,7 @@ all colours must be fully opaque.
 .theme-raspberry {
   --base-accent: #d32274;
   --pure-contrast: white;
+  --pure-color: black;
   --primary-color: #dfd9dd;
   --primary-bg: #19030b;
   --primary-accent: #d32274;
@@ -64,6 +67,7 @@ all colours must be fully opaque.
 
 .theme-cherry-blossom {
   --pure-contrast: black;
+  --pure-color: white;
   --primary-color: #212729;
   --primary-bg: #fff;
   --primary-accent: rgb(220, 67, 154);
@@ -76,6 +80,7 @@ all colours must be fully opaque.
 
 .theme-inverted-blossom {
   --pure-contrast: black;
+  --pure-color: white;
   --secondary-color: #212729;
   --secondary-bg: #fff;
   --secondary-accent: rgb(220, 67, 154);
@@ -88,6 +93,7 @@ all colours must be fully opaque.
 
 .theme-sepia {
   --pure-contrast: black;
+  --pure-color: white;
   --primary-color: #482005;
   --primary-bg: #f0e8e0;
   --primary-bg: #fcf2e5;
@@ -101,6 +107,7 @@ all colours must be fully opaque.
 
 .theme-emerald {
   --pure-contrast: white;
+  --pure-color: black;
   --primary-color: #7cbd97;
   --primary-bg: #10351c;
   --primary-accent: rgb(170, 238, 191);
@@ -112,6 +119,7 @@ all colours must be fully opaque.
 .theme-space {
   --base-accent: #7e94eb;
   --pure-contrast: white;
+  --pure-color: black;
   --primary-color: #f6f6ff;
   --primary-bg: #1a1147;
   --primary-accent: rgb(152, 139, 214);
@@ -125,16 +133,18 @@ all colours must be fully opaque.
 .theme-peony {
   --base-accent: #rgb(255,181,96);
   --pure-contrast: black;
-  --primary-color: #212729;
+  --pure-color: white;
+  --primary-color: #292621;
   --primary-bg: #fffef2;
   --primary-accent: rgb(235, 168, 81);
-  --secondary-color: #102307;
+  --secondary-color: #231707;
   --secondary-bg: #fef1d8;
   --secondary-accent: rgb(255, 181, 96);
 }
 
 .theme-dark-peach {
   --pure-contrast: white;
+  --pure-color: black;
   --primary-color: #e8e8e8;
   --primary-bg: #464649;
   --primary-accent: rgb(255, 168, 181);
@@ -149,8 +159,9 @@ all colours must be fully opaque.
   //--logo-font: consolas;
 }
 
-.theme-misty {
+.theme-misty-dark {
   --pure-contrast: white;
+  --pure-color: black;
   --primary-color: #e8e8e8;
   --primary-bg: #7979a1;
   --primary-accent: rgb(223, 203, 255);
@@ -161,8 +172,22 @@ all colours must be fully opaque.
   --secondary-accent-contrast: var(--secondary-bg);
 }
 
+.theme-misty-light {
+  --pure-contrast: black;
+  --pure-color: white;
+  --secondary-color: #e8e8e8;
+  --secondary-bg: #7979a1;
+  --secondary-accent: rgb(223, 203, 255);
+  --secondary-accent-contrast: var(--secondary-bg);
+  --primary-color: #27285a;
+  --primary-bg: #ddddef;
+  --primary-accent: rgb(162, 153, 233);
+  --primary-accent-contrast: var(--primary-bg);
+}
+
 .theme-dystopian {
   --pure-contrast: white;
+  --pure-color: black;
   --primary-color: #b0b3ab;
   --primary-bg: #474946;
   --primary-accent: rgb(206, 213, 169);
@@ -445,12 +470,20 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-block: 0.3rem;
-  border-top: solid 5px var(--secondary-bg);
+  border-top: solid 2px var(--secondary-bg);
   padding-block: 1em;
+  background-color: color-mix(in srgb, var(--pure-contrast), transparent 94%);
+  background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));
 }
 .mainbody .footer p {
   display: block;
   margin: 0;
+}
+.mainbody .footer a {
+  text-decoration: none;
+  font-weight: 100;
+  font-family: var(--sans-font);
+  text-transform: uppercase;
 }
 .mainbody hr {
   border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
