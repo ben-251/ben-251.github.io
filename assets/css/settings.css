@@ -259,6 +259,6 @@ all colours must be fully opaque.
 .theme-options .theme-item[class*=theme-].active {
   /* it's not updating this? */
   border: 3px outset var(--primary-accent);
-  -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
-          box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
+  -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
+          box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
 }/*# sourceMappingURL=settings.css.map */

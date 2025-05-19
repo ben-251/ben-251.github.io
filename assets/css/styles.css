@@ -268,8 +268,8 @@ all colours must be fully opaque.
 .theme-options .theme-item[class*=theme-].active {
   /* it's not updating this? */
   border: 3px outset var(--primary-accent);
-  -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
-          box-shadow: 0 0 15px color-mix(in srgb, transparent 80%, var(--secondary-bg));
+  -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
+          box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
 }
 
 * {
@@ -575,6 +575,13 @@ main.post-list .empty-message h1, main > .post-list .empty-message h1 {
 }
 .mainbody article.content p {
   margin-block: 0.1em;
+  margin-bottom: 0.8em;
+}
+.mainbody article.content p:has(+ ul) {
+  margin-bottom: 0;
+}
+.mainbody article.content ul {
+  margin-block: 0.5em;
 }
 
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
@@ -763,6 +770,56 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 }
 .home-post-lists .home-post-group:last-child li:last-child {
   border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+}
+
+.backnext {
+  background-color: var(--secondary-bg);
+  color: ver(--secondary-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.backnext ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+  padding: 0;
+}
+.backnext ul li {
+  border: 1px solid var(--secondary-accent);
+  padding-block: 0.7em;
+  padding-inline: 1.5em;
+  list-style-type: none;
+}
+.backnext ul li:hover {
+  background-color: color-mix(in oklch, var(--secondary-accent) 13%, var(--secondary-bg));
+}
+.backnext ul li.disabled {
+  background-color: color-mix(in oklch, var(--primary-bg) 96%, var(--pure-contrast));
+  --contrast-color: color-mix(in oklch, var(--primary-bg) 68%, var(--pure-contrast)) ;
+  border-color: var(--contrast-color);
+  border-left-color: var(--secondary-accent);
+}
+.backnext ul li.disabled a {
+  color: var(--contrast-color);
+}
+.backnext ul li:first-child {
+  border-right: none;
+}
+.backnext ul li a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
