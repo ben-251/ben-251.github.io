@@ -773,7 +773,7 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 }
 
 .backnext {
-  background-color: var(--secondary-bg);
+  background-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
   color: ver(--secondary-color);
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -804,13 +804,19 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   list-style-type: none;
 }
 .backnext ul li:hover {
-  background-color: color-mix(in oklch, var(--secondary-accent) 13%, var(--secondary-bg));
+  background-color: color-mix(in oklch, var(--primary-accent) 20%, var(--primary-bg));
 }
 .backnext ul li.disabled {
   background-color: color-mix(in oklch, var(--primary-bg) 96%, var(--pure-contrast));
   --contrast-color: color-mix(in oklch, var(--primary-bg) 68%, var(--pure-contrast)) ;
+}
+.backnext ul li.disabled:has(.next) {
   border-color: var(--contrast-color);
   border-left-color: var(--secondary-accent);
+}
+.backnext ul li.disabled:has(.previous) {
+  border-color: var(--contrast-color);
+  border-right-color: var(--secondary-accent);
 }
 .backnext ul li.disabled a {
   color: var(--contrast-color);

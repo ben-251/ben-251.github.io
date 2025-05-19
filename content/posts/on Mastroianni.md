@@ -3,8 +3,8 @@ draft: false
 date: 2025-05-17
 title: What even is a science of the mind, anyway?
 tags:
-  - science
   - mind
+  - science
 description: A response to Adam Mastroianni's article on psychology paradigms
 ---
 I just read [this article](https://www.experimental-history.com/p/new-paradigm-for-psychology-just) by Adam Mastroianni, and liked it. What follows is a series of mostly incoherent thoughts on the article and on psychology as a whole. It's important to remember I'm not an expert in this field; I'm just a guy who finds the mind interesting. The second disclaimer is that I will use "Cognitive Science" and "Psychology" fairly interchangeably—in either case, I'm referring to the study of the human mind. 

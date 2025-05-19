@@ -4,7 +4,7 @@
 		<li><a class="previous" href="{{ .Permalink }}">Previous Post</a></li>
 		{{/*  <li>Previous Post: <a class="previous" href="{{ .Permalink }}">{{.Title}}</a></li>  */}}
 		{{ else }}
-		<li class="disabled"><a class="previous disabled" href="">Previous Post</a></li>
+		<li class="disabled"><a class="previous" href="">Previous Post</a></li>
 		{{ end }}
 		{{ with .NextInSection }}
 		<li><a class="next" href="{{ .Permalink }}">Next Post</a></li>

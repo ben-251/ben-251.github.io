@@ -230,6 +230,7 @@ function filterForTag(tag) {
 	const posts = document.querySelectorAll('.blog-post-list li')
 	posts.forEach(post => {
 		const tags = post.dataset.tags.split(',')
+		console.log(`tags: ${tags}`)
 		if (tags.includes(tag)) {
 			post.style.display = ''
 		} else {

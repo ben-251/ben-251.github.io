@@ -572,7 +572,8 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 }
 
 .backnext {
-	background-color: var(--secondary-bg);
+	//background-color: var(--secondary-bg);
+	background-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
 	color: ver(--secondary-color);
 	width: fit-content;
 	margin: auto;
@@ -593,14 +594,21 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 			list-style-type: none;
 
 			&:hover {
-				background-color: color-mix(in oklch, var(--secondary-accent) 13%, var(--secondary-bg))
+				background-color: color-mix(in oklch, var(--primary-accent) 20%, var(--primary-bg))
 			}
 
 			&.disabled {
 				background-color: color-mix(in oklch, var(--primary-bg) 96%, var(--pure-contrast));
 				--contrast-color: color-mix(in oklch, var(--primary-bg) 68%, var(--pure-contrast)) ;
-				border-color: var(--contrast-color);
-				border-left-color: var(--secondary-accent);
+
+				&:has(.next) {
+					border-color: var(--contrast-color);
+					border-left-color: var(--secondary-accent);
+				}
+				&:has(.previous) {
+					border-color: var(--contrast-color);
+					border-right-color: var(--secondary-accent);				
+				}
 				a{ color: var(--contrast-color); }
 				
 			}
