@@ -19,9 +19,6 @@ enableGitInfo = true
 [params]
   math = true
 
-[services]
-  [services.disqus]
-    shortname = 'ben251'
 
 customcss = [
 	"css/settings.css",
