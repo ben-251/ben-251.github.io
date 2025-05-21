@@ -11,7 +11,7 @@ Everything I like, I like in a specific way. For any interest of mine to *be* an
 # Connections hidden in plain sight
 Our search for this grand link begins with the unlikely pair of murder mysteries and maths. It's maybe not immediately clear that these two are the "same," but think about the way a murder mystery unfolds. There's a question that you must answer. A puzzle. You find clue after clue but can't make any sense of it all, everything is all over the place, and then... Boom! You find the missing piece and everything fits gorgeously together; they’re both about **satisfying solutions.**
 
-In speedcubing, there's a method of blindsolving called 3-style, used for quicker execution. A few months ago I tried to start learning the first half, and I was fully captivated the entire time. Why? Because through what are known as 'commutators', hundreds of algorithms became *intuitive.* 
+In speed-cubing, there's a method of blindfolded solving called 3-style, used for quicker execution. A few months ago I tried to start learning the first half, and I was fully captivated the entire time. Why? Because through what are known as 'commutators', hundreds of algorithms became *intuitive.* 
 
  Why stop here? Cryptic crosswords, chess, programming, they all have this exact pattern. 
 
@@ -28,7 +28,7 @@ Update “clarity” to mean beauty/purity, and suddenly you can explain things 
 
 Even learning is attractive to me precisely because of mind-blowing epiphanies and order-to-chaos moments. The feeling of discovering more about the world, the mind, myself, or humanity, is exactly the same as everything we’ve covered so far. 
 ___
-Now let’s consider some of the things I *don’t* like about some of my hobbies. One thing I find frustrating when planning for a novel is the fact that until very late in the process, it’s impossible to reconcile aspects like theme, character and symbolism into a cohesive substance. With biology it’s the memorisation of arbitrary terms. Maths it’s computation. Computer Science? hardware, low-level languages, and Rust. speed-cubing: OLLs. Web Design: backend.
+Let’s consider some of the things I *don’t* like about some of my hobbies. One thing I find frustrating when planning for a novel is the fact that until very late in the process, it’s impossible to reconcile aspects like theme, character and symbolism into a cohesive substance. With biology it’s the memorisation of arbitrary terms. Maths it’s computation. Computer Science? hardware, low-level languages, and Rust. speed-cubing: OLLs. Web Design: backend.
 
 Hopefully you’re seeing a pattern. The things I dislike most are things that deprive me of my MO. I don’t avoid dissonance outright; In fact, I seem to welcome it, but **only** if it resolves in a way that makes the wait worth it. 
 # Small Representatives
