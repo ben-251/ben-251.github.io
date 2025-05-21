@@ -1,17 +1,30 @@
 {{ define "main" }}
 <main class="container">
 	<h1 class="title">{{ .Title }}</h1>
+	{{ with .Description }}
+		<div class="description">{{ . }}</div>
+	{{ end }}
+
 	<div class="tag-list">
-		<div class="tag">{{ .ReadingTime }} minutes</div>
 		<div class="tag">{{ .Date.Format "2 January 2006" }}</div>
+		<div class="tag">{{ .ReadingTime }} minutes</div>
 		<div class="tag">{{ .WordCount }} words</div>
+		{{ with .Lastmod }}
+  			<div class="tag">Last updated {{ .Format "2 Jan" }}</div>
+		{{ end }}
 	</div>
+	
+
+
+	
 
 	<article class="content">
 		{{ .Content }}
 	</article>
 	
 	{{ partial "backnext.html" . }}
+
+	{{ template "_internal/disqus.html" . }}
 
 </main>
 {{ end }}

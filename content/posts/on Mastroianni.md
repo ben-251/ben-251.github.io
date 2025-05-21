@@ -5,6 +5,7 @@ title: What even is a science of the mind, anyway?
 tags:
   - mind
   - science
+  - language
 description: A response to Adam Mastroianni's article on psychology paradigms
 ---
 I just read [this article](https://www.experimental-history.com/p/new-paradigm-for-psychology-just) by Adam Mastroianni, and liked it. What follows is a series of mostly incoherent thoughts on the article and on psychology as a whole. It's important to remember I'm not an expert in this field; I'm just a guy who finds the mind interesting. The second disclaimer is that I will use "Cognitive Science" and "Psychology" fairly interchangeably—in either case, I'm referring to the study of the human mind. 
@@ -20,7 +21,7 @@ Now is a good point to mention that I have a strong bias to this structure that 
 I've long had gripes with what Adam describes as naïve research. The idea is that flinging questions at a wall will eventually lead to truth if we go at it for long enough, which is just grossly ignores the importance of asking *good questions.* This extends far beyond science, applying even to art analysis. Consider these questions:
 - "Can infants represent occluded objects?"
 - "Why can newborn chicks perceive centre-occluded objects as connected?"
-- "Is *A Thousand Morning* a good poetry collection?"
+- "Is Mary Oliver's *A Thousand Mornings* a good poetry collection?"
 - "Do Chimps have a theory of mind?"
 - "Why does the Bell Jar have the fig tree imagery?"
 - "Why is this Queen sacrifice winning for White?"

@@ -41,8 +41,8 @@ all colours must be fully opaque.
   --pure-contrast: white;
   --pure-color: black;
   --base-accent: #408b8b;
-  --primary-color: #e4e6e7;
-  --primary-bg: #222d31;
+  --primary-color: #ebf3f6;
+  --primary-bg: #1e2a2e;
   --primary-accent: #4fa6ba;
   --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
@@ -421,6 +421,7 @@ body {
 }
 
 .mainbody {
+  --subtle-text-color: color-mix(in srgb, var(--primary-color) 95%, transparent);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +449,35 @@ body {
   margin-bottom: 0;
   margin-top: 2rem;
 }
+.mainbody .tag-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0rem;
+}
+.mainbody .tag-list .tag {
+  color: var(--subtle-text-color);
+  opacity: 0.8;
+  padding-inline: 0.5rem;
+  padding-block: 0;
+  font-size: 0.9rem;
+  font-family: var(--sans-font);
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-right: solid 2.2px color-mix(in srgb, var(--primary-accent), var(--subtle-text-color));
+}
+.mainbody .tag-list .tag:first-child {
+  padding-left: 0;
+}
+.mainbody .tag-list .tag:last-child {
+  border-right: none;
+}
 .mainbody main {
   padding-block: 3rem;
   padding-left: 7rem;
@@ -461,6 +491,18 @@ body {
           box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
+}
+.mainbody main.container h1.title {
+  margin-bottom: 0.3em;
+}
+.mainbody main.container h1.title:has(+ .description) {
+  margin-bottom: 0;
+}
+.mainbody main.container .description {
+  margin-top: 0.4em;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  opacity: 0.85;
 }
 .mainbody .footer {
   display: -webkit-box;
@@ -488,30 +530,61 @@ body {
 .mainbody hr {
   border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
 }
-
-.tag-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.5rem;
+.mainbody article.content {
+  padding-block: 2em;
 }
-.tag-list .tag {
-  background-color: color-mix(in oklab, var(--primary-accent), transparent 70%);
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  border-radius: 2rem;
-  display: block;
+.mainbody article.content blockquote {
+  margin-inline: 0;
+  -webkit-border-start: 2px var(--secondary-accent) solid;
+          border-inline-start: 2px var(--secondary-accent) solid;
+  -webkit-padding-start: 1.4em;
+          padding-inline-start: 1.4em;
+  -webkit-margin-start: 0.4em;
+          margin-inline-start: 0.4em;
+}
+.mainbody article.content code {
+  white-space: nowrap;
+  display: inline-block;
+  color: var(--primary-accent);
+}
+.mainbody article.content h1 {
+  margin-bottom: 0.2em;
+  margin-top: 1em;
+}
+.mainbody article.content p, .mainbody article.content ul, .mainbody article.content ol {
+  color: var(--subtle-text-color);
+  line-height: 1.7;
+}
+.mainbody article.content p {
+  margin-block: 0.1em;
+  margin-bottom: 0.8em;
+}
+.mainbody article.content p:has(+ :is(ul, ol)) {
+  margin-bottom: 0;
+}
+.mainbody article.content p + hr:has(+ p) {
+  border: none;
+  margin: 0;
+}
+.mainbody article.content p + hr:has(+ p)::before {
+  content: " ✽✽✽ ";
+  color: color-mix(in srgb, var(--primary-color) 90%, var(--primary-accent));
+  margin-block: 1.6em;
+  margin-inline: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  display: block;
+  letter-spacing: 1em;
 }
-
-.mainbody main.container h1.title {
-  margin-bottom: 0.3em;
+.mainbody article.content p:has(+ hr) {
+  margin-bottom: 0;
+}
+.mainbody article.content ul, .mainbody article.content ol {
+  margin-block: 0.4em;
+}
+.mainbody article.content a {
+  color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent));
 }
 
 main.post-list, main > .post-list {
@@ -550,38 +623,6 @@ main.post-list .empty-message p, main > .post-list .empty-message p {
 }
 main.post-list .empty-message h1, main > .post-list .empty-message h1 {
   font-size: 2rem;
-}
-
-.mainbody article.content {
-  padding-block: 2em;
-}
-.mainbody article.content blockquote {
-  margin-inline: 0;
-  -webkit-border-start: 2px var(--secondary-accent) solid;
-          border-inline-start: 2px var(--secondary-accent) solid;
-  -webkit-padding-start: 1.4em;
-          padding-inline-start: 1.4em;
-  -webkit-margin-start: 0.4em;
-          margin-inline-start: 0.4em;
-}
-.mainbody article.content code {
-  white-space: nowrap;
-  display: inline-block;
-  color: var(--primary-accent);
-}
-.mainbody article.content h1 {
-  margin-bottom: 0.2em;
-  margin-top: 1em;
-}
-.mainbody article.content p {
-  margin-block: 0.1em;
-  margin-bottom: 0.8em;
-}
-.mainbody article.content p:has(+ ul) {
-  margin-bottom: 0;
-}
-.mainbody article.content ul {
-  margin-block: 0.5em;
 }
 
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {

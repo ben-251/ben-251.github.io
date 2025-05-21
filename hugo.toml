@@ -5,6 +5,8 @@ title = 'Ben Olanlokun'
 theme = 'paper'
 publishDir = "public"
 pluralizeListTitles = false
+enableGitInfo = true
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -16,6 +18,10 @@ pluralizeListTitles = false
 
 [params]
   math = true
+
+[services]
+  [services.disqus]
+    shortname = 'ben251'
 
 customcss = [
 	"css/settings.css",
