@@ -458,10 +458,10 @@ body {
 .mainbody .tag-list .tag {
   color: var(--subtle-text-color);
   opacity: 0.8;
+  font-family: var(--sans-font);
   padding-inline: 0.5rem;
   padding-block: 0;
   font-size: 0.9rem;
-  font-family: var(--sans-font);
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -478,6 +478,12 @@ body {
 .mainbody .tag-list .tag:last-child {
   border-right: none;
 }
+.mainbody .last-mod {
+  color: var(--subtle-text-color);
+  opacity: 0.75;
+  font-family: var(--sans-font);
+  font-size: 0.85rem;
+}
 .mainbody main {
   padding-block: 3rem;
   padding-left: 7rem;
@@ -493,6 +499,7 @@ body {
   min-height: 100vh;
 }
 .mainbody main.container h1.title {
+  font-size: 2.5rem;
   margin-bottom: 0.3em;
 }
 .mainbody main.container h1.title:has(+ .description) {
@@ -964,7 +971,22 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
     width: fit-content !important;
   }
   .mainbody main {
-    padding: 1em !important;
+    padding: 5vw;
+  }
+  .mainbody main.container {
+    padding: 5vw;
+  }
+  .mainbody main.container .description {
+    margin-block: 0.3em;
+  }
+  .mainbody main.container .last-mod {
+    display: none;
+  }
+  .mainbody main.container .tag-list {
+    opacity: 0.85;
+  }
+  .mainbody main.container .tag-list .tag {
+    font-size: 0.8rem;
   }
   .mainbody article.content p {
     margin-block: 1em;
@@ -1009,6 +1031,18 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
     margin-block: 0;
     -webkit-margin-after: 0.5em;
             margin-block-end: 0.5em;
+  }
+  .home-post-lists .home-post-list li {
+    padding-inline: 0.1em;
+  }
+  .home-post-lists .home-post-list li .title {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .home-post-lists .home-post-list li .date {
+    min-width: 6em;
+    font-size: 0.9em;
   }
   main.container {
     width: 100vw;

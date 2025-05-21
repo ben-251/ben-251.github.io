@@ -9,10 +9,10 @@
 		<div class="tag">{{ .Date.Format "2 January 2006" }}</div>
 		<div class="tag">{{ .ReadingTime }} minutes</div>
 		<div class="tag">{{ .WordCount }} words</div>
-		{{ with .Lastmod }}
-  			<div class="tag">Last updated {{ .Format "2 Jan" }}</div>
-		{{ end }}
 	</div>
+	{{ with .Lastmod }}
+		<div class="last-mod">Last updated {{ .Format "2 Jan" }}</div>
+	{{ end }}
 	
 
 

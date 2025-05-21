@@ -94,7 +94,27 @@
 		width: fit-content !important;
 
 		main {
-			padding: 1em !important;
+			padding: 5vw;
+		}
+		
+		main.container {
+			padding: 5vw;
+
+			.description {
+				margin-block: 0.3em;
+			}
+	
+			.last-mod {
+				display: none;
+			}
+
+			.tag-list {
+				opacity: 0.85;
+
+				.tag {
+					font-size: 0.8rem;
+				}
+			}
 		}
 
 		article.content {
@@ -158,6 +178,17 @@
 		.home-post-list {
 			margin-block: 0;
 			margin-block-end: 0.5em;
+			li {
+				padding-inline: 0.1em;
+				.title {
+					flex-grow: 2;
+				}
+
+				.date {
+					min-width: 6em;
+					font-size: .9em;
+				}
+			}
 		}
 	}
 

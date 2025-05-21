@@ -21,7 +21,7 @@
 				<div class="home-post-group">
 					<h2><a href="{{ $s.Permalink }}">{{ $s.Title }}</a></h2>
 					<ul class="home-post-list">
-						{{ range sort (where $s.Pages "Draft" "!=" true) "Lastmod" "desc" }}
+						{{ range sort (where $s.Pages "Draft" "!=" true) "Date" "desc" }}
 							<li>
 								{{ .Render "summary" }}
 							</li>
