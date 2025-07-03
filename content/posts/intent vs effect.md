@@ -1,7 +1,7 @@
 ---
 date: 2025-07-01
 draft: false
-title: Does artist intent matter?
+title: How much credit are artists due?
 description: An analysis of an analysis of Sylvia Plath
 tags:
   - art
@@ -53,7 +53,6 @@ Lastly (and most excitingly), if you happen to be both an artist and a theorist,
 
 Bonus thought: Wayson's article proved full of depth, and it wasn't even outwardly posing to be an artwork. We only really explored one feature of Wayson's article, but her use of imagery, and her careful balance of tone, are other aspects I'd happily dive into. I don't know whether you would call it "art." Maybe not. But I do know analysing this felt eerily similar to how I imagine Wayson herself felt analysing Plath. 
 
-
 # References:
-1. Wayson, K. (2007). *Sylvia Plath: “Fever 103º”: The incinerating vision of this Plath classic.* Poetry Foundation https://www.poetryfoundation.org/articles/68911/sylvia-plath-fever-103.
+1. Wayson, K. (2007). *Sylvia Plath: “Fever 103º”: The incinerating vision of this Plath classic.* Poetry Foundation https://www.poetryfoundation.org/articles/68911/sylvia-plath-fever-103. All emboldened text is my doing.
 2. Plath, S. (1965). *Fever 103º* In T. Hughes (Ed.), *Ariel.* Faber & Faber.

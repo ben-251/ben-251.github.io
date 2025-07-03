@@ -54,7 +54,7 @@
 			var(--primary-accent) var(--middle-middle),
 			var(--secondary-bg) var(--middle-middle),
 			var(--secondary-bg) var(--right)
-		) !important;
+		);
 
 		//border-radius: 2em;
 		border-radius: 0;
@@ -70,3 +70,4 @@
 		// } making this effect appear on all theme options
 	}
 }
+

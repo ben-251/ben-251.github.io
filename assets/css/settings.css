@@ -268,7 +268,7 @@ all colours must be fully opaque.
   --middle-left: calc(var(--middle) - var(--border-width));
   --middle-right: calc(var(--middle) + var(--border-width));
   --right: 95%;
-  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right)) !important;
+  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right));
   border-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;

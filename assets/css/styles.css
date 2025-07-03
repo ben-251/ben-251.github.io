@@ -278,7 +278,7 @@ all colours must be fully opaque.
   --middle-left: calc(var(--middle) - var(--border-width));
   --middle-right: calc(var(--middle) + var(--border-width));
   --right: 95%;
-  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right)) !important;
+  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right));
   border-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -911,6 +911,7 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 @media screen and (max-width: 768px) {
   body {
     display: block;
+    overflow-x: hidden;
   }
   .nav-mobile {
     width: 100vw;
@@ -998,9 +999,9 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   .mainbody {
     position: relative;
     margin: 0 !important;
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .mainbody main {
     padding: 5vw;
@@ -1091,5 +1092,27 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
     background-color: color-mix(in srgb, color-mix(in oklch, var(--pure-contrast), var(--primary-accent) 70%), var(--primary-bg) 94%);
     overflow: scroll;
     overflow-wrap: break-word;
+  }
+  .mainbody:has(.theme-options) {
+    padding-inline: 1em;
+    width: 100vw;
+  }
+  .mainbody:has(.theme-options) footer {
+    display: none;
+  }
+  h1:has(+ .theme-options) {
+    padding-left: 0em;
+  }
+  .theme-options {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100vw;
+    padding-top: 3em;
+    padding-bottom: 6em;
+    padding-inline: 0em;
+  }
+  .theme-options .theme-item[class*=theme-] {
+    font-size: 0.8em;
+    padding: 0.8em;
+    background: var(--primary-bg);
   }
 }/*# sourceMappingURL=styles.css.map */

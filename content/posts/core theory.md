@@ -4,7 +4,7 @@ tags:
   - meta
 date: 2025-05-21
 title: What is interesting?
-description: A deep dive into the single basis of all I find interesting and enjoyable
+description: A debut of Core Theory
 ---
 Everything I like, I like in a specific way. For any interest of mine to *be* an interest of mine—maths, poetry, colour, music, philosophy—there are specific qualities that I look for, consciously or otherwise. Specific joys I find in learning, teaching, or *doing,* that I must find. My claim in this post is that these qualities are exactly the same at their core. 
 
