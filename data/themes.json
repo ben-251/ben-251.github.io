@@ -4,46 +4,51 @@
 			"name": "Light",
 			"class": "theme-light"
 		},
+
+		{
+			"name": "Blossom",
+			"class": "theme-cherry-blossom"
+		},
+		
+		
+		{
+			"name": "Sepia",
+			"class": "theme-sepia"
+		},
+		
+		{
+			"name": "Popcorn",
+			"class": "theme-peony"
+		},
+		
+		{
+			"name": "Cornflower",
+			"class": "theme-cornflower"
+		},
+		
+		{
+			"name": "lavender",
+			"class": "theme-misty-light"
+		},
 		{
 			"name": "Dark",
 			"class": "theme-dark"
 		},
 		{
-			"name": "Blossom",
-			"class": "theme-cherry-blossom"
-		},
-		{
 			"name": "Berry",
 			"class": "theme-raspberry"
-		},
-		
-		{
-			"name": "Sepia",
-			"class": "theme-sepia"
 		},
 		{
 			"name": "Emerald City",
 			"class": "theme-emerald"
 		},
 		{
-			"name": "Popcorn",
-			"class": "theme-peony"
-		},
-		{
 			"name": "Space",
 			"class": "theme-space"
 		},
 		{
-			"name": "Cornflower",
-			"class": "theme-cornflower"
-		},
-		{
 			"name": "experimental",
 			"class": "theme-dark-peach"
-		},
-		{
-			"name": "lavender",
-			"class": "theme-misty-light"
 		},
 		{
 			"name": "d.y.s.t.o.p.i.a",

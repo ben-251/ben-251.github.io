@@ -232,11 +232,12 @@ all colours must be fully opaque.
 
 .theme-options {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: 2em;
+  gap: 1em;
   padding: 2em;
   border-radius: 0rem;
+  padding-inline: 4em;
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 }
 .theme-options .theme-item[class*=theme-] {
@@ -252,7 +253,7 @@ all colours must be fully opaque.
           user-select: none;
   background-color: var(--primary-bg);
   position: relative;
-  padding: 2rem;
+  padding: 1.6rem;
   padding-right: 3rem;
   -webkit-text-decoration: var(--primary-accent) 2px underline;
           text-decoration: var(--primary-accent) 2px underline;
@@ -268,7 +269,7 @@ all colours must be fully opaque.
   --middle-right: calc(var(--middle) + var(--border-width));
   --right: 95%;
   background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right)) !important;
-  border-radius: 2em;
+  border-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border: 3px solid var(--primary-accent);

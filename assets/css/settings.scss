@@ -3,11 +3,12 @@
 
 .theme-options {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
-	gap: 2em;
+	gap: 1em;
 	padding: 2em;
 	border-radius: 0rem;
+	padding-inline: 4em;
 	/* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 
 	.theme-item[class*="theme-"] {
@@ -19,7 +20,7 @@
 		user-select: none;
 		background-color: var(--primary-bg);
 		position: relative;
-		padding: 2rem;
+		padding: 1.6rem;
 		padding-right: 3rem;
 
 		text-decoration: var(--primary-accent) 2px underline;
@@ -55,7 +56,8 @@
 			var(--secondary-bg) var(--right)
 		) !important;
 
-		border-radius: 2em;
+		//border-radius: 2em;
+		border-radius: 0;
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 

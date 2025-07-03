@@ -33,13 +33,13 @@ I said earlier that half of the sentences in the guide have Plath as the subject
 
 Do you see it? Wayson often uses phrases describing objectively what the poem *is,* or what it's existence does for the reader. In fact, several of the quotes seemingly centred around Plath are completely focused on the reader:
 
-> ...Plath leads us into an apocalyptic wasteland.
+> ...Plath **leads us** into an apocalyptic wasteland.
 
-> In this “flickering,” we see faint flashes of dim light...
+> In this “flickering,” **we see** faint flashes of dim light and **we hear** tiny electrical noises.
 
-> She is almost out of sight, almost out of earshot...
+> She is **almost out of sight, almost out of earshot**—and then, in the very last line, even the sound-play disintegrates.
 
-That last one is quite subtle, but the idea is the same. The sentence is about Plath (or the *speaker*, anyway), yet it refers to what the reader can see and hear.
+That last one is subtle, but the idea is the same. The sentence is about Plath (or the *speaker*, anyway), yet it refers to what the reader can see and hear.
 
 All that to say, the key point to analysing poetry is not to uncover the thoughts of the poet, but to understand what the poem is doing to us, the readers. This has a few interesting consequences. 
 
