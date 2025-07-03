@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="container prose-container">
+	<h1 class="title prose-title">{{ .Title }}</h1>
+
+	<article class="content prose-content">
+		{{ .Content }}
+	</article>
+
+	{{ partial "backnext.html" . }}
+
+</main>
+{{ end }}

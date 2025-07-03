@@ -47,7 +47,7 @@
 		--right: 95%;
 
 		background: linear-gradient(
-			45deg,
+			100deg,
 			var(--primary-bg) var(--middle-left),
 			var(--primary-accent) var(--middle-left),
 			var(--primary-accent) var(--middle-middle),
@@ -55,11 +55,16 @@
 			var(--secondary-bg) var(--right)
 		) !important;
 
+		border-radius: 2em;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
 
-		&.active {
-			/* it's not updating this? */
-			border: 3px outset var(--primary-accent);
-			box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
-		} 
+		border: 3px solid var(--primary-accent);
+		box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
+
+		// &.active {
+		// 	border: 3px solid var(--primary-accent);
+		// 	box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
+		// } making this effect appear on all theme options
 	}
 }

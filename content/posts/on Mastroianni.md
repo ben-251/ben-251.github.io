@@ -8,7 +8,7 @@ tags:
   - language
 description: A response to Adam Mastroianni's article on psychology paradigms
 ---
-I just read [this article](https://www.experimental-history.com/p/new-paradigm-for-psychology-just) by Adam Mastroianni, and liked it. What follows is a series of mostly incoherent thoughts on the article and on psychology as a whole. It's important to remember I'm not an expert in this field; I'm just a guy who finds the mind interesting. The second disclaimer is that I will use "Cognitive Science" and "Psychology" fairly interchangeably—in either case, I'm referring to the study of the human mind. 
+I just read [this article](https://www.experimental-history.com/p/new-paradigm-for-psychology-just) by Adam Mastroianni, and really liked it. What follows is a series of mostly incoherent thoughts on the article and on psychology as a whole. I'm obviously not an expert in this field; I'm just a guy who finds the mind interesting. I will use "Cognitive Science" and "Psychology" fairly interchangeably—in either case, I'm referring to a study of the human mind. 
 
 # Units and Rules
 In his article, Adam makes the case that for psychology to be good science, it should work with well-defined "units" and rules that act on those units. From what I've learned, some fields studying the mind. seem to come quite close to this. For example, in [Words and Rules](https://stevenpinker.com/files/pinker/files/edinburgh.pdf) (1999), Steven Pinker provides evidence for word generation being a result of both a memorised lexicon and rules acting on that lexicon (prefixes, regular past tense verbs, etc). This feels quite closely linked to the definition of good science Adam suggests.   

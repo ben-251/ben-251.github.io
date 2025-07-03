@@ -17,18 +17,16 @@ In speed-cubing, there's a method of blindfolded solving called 3-style, used fo
 
 *'Yeah okay, but surely not **everything** fits this strict narrative? You still have to account for all the hobbies you're omitting—the **artsy** ones.'* 
 
-Good question, reader. Luckily I have just the thing to get us there: Jazz theory. What's my favourite part about Jazz? The complex harmony. The sound of a crunchy unexpected chord immediately followed by a perfect resolution—tension and release. **Clarity from dissonance.** 
+Good question, reader. Luckily I have just the thing to get us there: Jazz theory. What's my favourite part about Jazz? The complex harmony. The sound of a crunchy unexpected chord immediately followed by a perfect resolution—tension and release. **Clarity from dissonance.**$^1$
 
 Reading poetry is exactly this. One second I'm scrunching my face at a strangely constructed sentence, then suddenly I *get it* and I'm marvelling like crazy (we could go on a whole tangent here about what it even means to "get" a poem, but no, let's stay on target). It's not just reading literature, either. Writing novels scratches this same itch; my favourite aspect of writing might just be seeing characters *exist* when previously they were a mess of abstract ideas. Same with writing poetry, but we'll get back to that. 
 
 # What about aesthetics?
-Update “clarity” to mean beauty/purity, and suddenly you can explain things like my heavy form-over-function lean: cinematography, cover art, website themes, you get the idea. Even the *styles* I tend to gravitate to are about cohesion and simplicity. And this is exactly the same as the beauty of solving bug in code, or finding a brilliant combination in a chess game. 
-
-*(I'd like to explore links between this and the Emmanuel Kant's 'Critique of Judgement', but unfortunately I don't know enough about it yet; I have some reading to do!)*
+Update “clarity” to mean beauty/purity, and suddenly you can explain things like my heavy form-over-function lean: cinematography, cover art, website themes, you get the idea. Even the *styles* I tend to gravitate to are about cohesion and simplicity. And this is exactly the same as the beauty of solving bug in code, or finding a brilliant combination in a chess game.$^2$
 
 Even learning is attractive to me precisely because of mind-blowing epiphanies and order-to-chaos moments. The feeling of discovering more about the world, the mind, myself, or humanity, is exactly the same as everything we’ve covered so far. 
 ___
-Let’s consider some of the things I *don’t* like about some of my hobbies. One thing I find frustrating when planning for a novel is the fact that until very late in the process, it’s impossible to reconcile aspects like theme, character and symbolism into a cohesive substance. With biology it’s the memorisation of arbitrary terms. Maths it’s computation. Computer Science? hardware, low-level languages, and Rust. speed-cubing: OLLs. Web Design: backend.
+Let’s consider some of the things I *don’t* like about some of my hobbies. One thing I find frustrating when planning for a novel is the fact that until very late in the process, it’s impossible to reconcile aspects like theme, character and symbolism into a cohesive substance. With biology it’s the memorisation of arbitrary terms. Maths it’s computation. Computer Science? hardware, low-level languages, and Rust. speed-cubing: OLLs. Web Design: backend.$^3$
 
 Hopefully you’re seeing a pattern. The things I dislike most are things that deprive me of my MO. I don’t avoid dissonance outright; In fact, I seem to welcome it, but **only** if it resolves in a way that makes the wait worth it. 
 # Small Representatives
@@ -43,3 +41,10 @@ I think I was mostly right here (certainly about the quality of my writing, lol)
 One cool consequence of all this is that now I have a strong way to predict what fields will last as interests and which will just be "appreciation." For example, politics and history are areas I will probably never be fully invested in, because they don't fully fit my core thread. Aspects of history, politics, ethics, etc, *can* be interesting to me, but they will never take the heightened role of fields like arts, some sciences, maths, etc. In fact, the longevity of a hobby can be described fully by referring to it's closeness to my model. In other words, an interest is exactly as strong and long-lasting as it is aligned with the beauty-from-dissonance ideal.
 
 Another amazing thing—maybe *the* most amazing thing about this theory—is that we’re all different, and so what unites all my interests probably doesn't unite yours. What you love or hate about politics or gardening doesn’t have to fit my model in the slightest. In fact, even my own model is just an approximation of the inexpressibly complex reality of personality.
+
+
+___
+
+1. In this post, I used words like "clarity," "beauty," and "order" as near synonyms. I don't think this is the best way to analyse these "cores," and in fact I think the subtle differences between these words can drastically change what interests or styles are natural. 
+2. I'd like to explore links between this and actual aesthetics philosophy. This feels very "Judgement of taste"-like. One possible conclusion is that my model rejects or fights with the idea of universal subjectivity.
+3. There's a lot to say here about the difference between disliking something for what it is, and disliking something because it's difficult, which I might cover in a future post.

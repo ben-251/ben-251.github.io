@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code");
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict");
 /* 
 
 *-color: foreground, text
@@ -27,12 +28,12 @@ all colours must be fully opaque.
   --base-accent: #3fa7a7;
   --pure-contrast: black;
   --pure-color: white;
-  --primary-color: #212729;
-  --primary-bg: #f6f6f6;
-  --primary-accent: #2b92af;
+  --primary-color: #07495f;
+  --primary-bg: #fbfeff;
+  --primary-accent: #35adcf;
   --primary-accent-contrast: var(--primary-bg);
-  --secondary-color: var(--primary-bg);
-  --secondary-bg: #354044;
+  --secondary-color: #004d67;
+  --secondary-bg: #b4ddec;
   --secondary-accent: #3fa7a7;
   --secondary-accent-contrast: var(--secondary-bg);
 }
@@ -177,11 +178,24 @@ all colours must be fully opaque.
   --pure-color: white;
   --secondary-color: #e8e8e8;
   --secondary-bg: #7979a1;
-  --secondary-accent: rgb(223, 203, 255);
+  --secondary-accent: rgb(162, 149, 220);
   --secondary-accent-contrast: var(--secondary-bg);
   --primary-color: #27285a;
-  --primary-bg: #ddddef;
+  --primary-bg: #ededf8;
   --primary-accent: rgb(162, 153, 233);
+  --primary-accent-contrast: var(--primary-bg);
+}
+
+.theme-cornflower {
+  --pure-contrast: black;
+  --pure-color: white;
+  --secondary-color: white;
+  --secondary-bg: #7f92c1;
+  --secondary-accent: rgb(237, 243, 255);
+  --secondary-accent-contrast: var(--secondary-bg);
+  --primary-color: #27285a;
+  --primary-bg: #f8f6ed;
+  --primary-accent: rgb(118, 153, 229);
   --primary-accent-contrast: var(--primary-bg);
 }
 
@@ -263,13 +277,13 @@ all colours must be fully opaque.
   --middle-left: calc(var(--middle) - var(--border-width));
   --middle-right: calc(var(--middle) + var(--border-width));
   --right: 95%;
-  background: linear-gradient(45deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right)) !important;
-}
-.theme-options .theme-item[class*=theme-].active {
-  /* it's not updating this? */
-  border: 3px outset var(--primary-accent);
-  -webkit-box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
-          box-shadow: 0 0 15px color-mix(in srgb, transparent 85%, var(--pure-contrast));
+  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right)) !important;
+  border-radius: 2em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 3px solid var(--primary-accent);
+  -webkit-box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
+          box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
 }
 
 * {
@@ -284,6 +298,7 @@ all colours must be fully opaque.
   --header-font: "Spectral", "Playfair Display", "Julius sans one";
   --logo-font: Bellefair, "Playfair display";
   --main-font-size: 20px;
+  --prose-title-font: Bellefair, "passions conflict", "mea culpa";
   font-size: var(--main-font-size);
   /* to set rem */
 }
@@ -437,12 +452,10 @@ body {
   margin-left: auto;
 }
 .mainbody ::-moz-selection {
-  background-color: var(--secondary-bg);
-  color: var(--secondary-accent);
+  background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
 }
 .mainbody ::selection {
-  background-color: var(--secondary-bg);
-  color: var(--secondary-accent);
+  background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
 }
 .mainbody > h1 {
   padding-inline: 3rem;
@@ -483,6 +496,7 @@ body {
   opacity: 0.75;
   font-family: var(--sans-font);
   font-size: 0.85rem;
+  margin-top: 0.2em;
 }
 .mainbody main {
   padding-block: 3rem;
@@ -557,6 +571,7 @@ body {
 .mainbody article.content h1 {
   margin-bottom: 0.2em;
   margin-top: 1em;
+  font-size: 1.4em;
 }
 .mainbody article.content p, .mainbody article.content ul, .mainbody article.content ol {
   color: var(--subtle-text-color);
@@ -591,7 +606,7 @@ body {
   margin-block: 0.4em;
 }
 .mainbody article.content a {
-  color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent));
+  color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
 }
 
 main.post-list, main > .post-list {
@@ -782,6 +797,22 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   color: var(--primary-accent);
   font-family: var(--primary-font);
   font-weight: bold;
+}
+
+.mainbody main.prose-container h1.prose-title {
+  font-family: var(--prose-title-font);
+  font-weight: 100;
+  font-size: 3rem;
+  color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%);
+}
+.mainbody main.prose-container article.prose-content {
+  padding-top: 0;
+}
+.mainbody main.prose-container article.prose-content p {
+  margin-bottom: 0.2em;
+}
+.mainbody main.prose-container article.prose-content p:not(:first-child) {
+  text-indent: 1.5em;
 }
 
 .home-post-lists > .home-post-group:hover:not(:has(> ul:hover)) > * {

@@ -13,39 +13,40 @@
 			"class": "theme-cherry-blossom"
 		},
 		{
+			"name": "Berry",
+			"class": "theme-raspberry"
+		},
+		
+		{
 			"name": "Sepia",
 			"class": "theme-sepia"
-		},
-		{
-			"name": "Popcorn",
-			"class": "theme-peony"
 		},
 		{
 			"name": "Emerald City",
 			"class": "theme-emerald"
 		},
 		{
+			"name": "Popcorn",
+			"class": "theme-peony"
+		},
+		{
 			"name": "Space",
 			"class": "theme-space"
 		},
 		{
-			"name": "Berry",
-			"class": "theme-raspberry"
+			"name": "Cornflower",
+			"class": "theme-cornflower"
 		},
 		{
 			"name": "experimental",
 			"class": "theme-dark-peach"
 		},
 		{
-			"name": "misty (light)",
+			"name": "lavender",
 			"class": "theme-misty-light"
 		},
 		{
-			"name": "misty (dark)",
-			"class": "theme-misty-dark"
-		},
-		{
-			"name": "Dy$T0p1A",
+			"name": "d.y.s.t.o.p.i.a",
 			"class": "theme-dystopian"
 		}
 	]

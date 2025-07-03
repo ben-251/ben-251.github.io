@@ -3,7 +3,7 @@ draft: false
 title: tag list
 tags:
   - meta
-date: 2025-04-04
+date: 2024-03-22
 description: A breakdown of the tags used in the blog
 ---
 Each post will have at least one tag. I'll update this page as new tags prove necessary (or otherwise).

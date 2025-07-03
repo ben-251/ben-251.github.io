@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict');
 
 * {
 	box-sizing: border-box;
@@ -23,6 +24,7 @@
 	--header-font: "Spectral", "Playfair Display", "Julius sans one";
 	--logo-font: Bellefair, 'Playfair display';
 	--main-font-size: 20px;
+	--prose-title-font: Bellefair, "passions conflict", "mea culpa";
 	font-size: var(--main-font-size);
 	/* to set rem */
 }
@@ -185,8 +187,8 @@ body {
 	margin-left: auto;
 	
 	::selection {
-		background-color: var(--secondary-bg);
-		color: var(--secondary-accent);
+		background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
+		// color: var(--secondary-accent);
 	}
 
 	> h1 {
@@ -228,6 +230,7 @@ body {
 		opacity: 0.75;
 		font-family: var(--sans-font);
 		font-size: .85rem;
+		margin-top: .2em;
 	}
 
 	main {
@@ -309,6 +312,7 @@ body {
 		h1 {
 			margin-bottom: 0.2em;
 			margin-top: 1em;
+			font-size: 1.4em;
 		}
 		p, ul, ol {
 			color: var(--subtle-text-color);
@@ -341,7 +345,7 @@ body {
 			margin-block: 0.4em;
 		}
 		a {
-			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent));
+			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
 		}
 		
 	}
@@ -575,6 +579,29 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 	}
 }
 
+
+
+
+// PROSE (short stories)
+.mainbody main.prose-container {
+	h1.prose-title {
+		font-family: var(--prose-title-font);
+		font-weight: 100;
+		font-size: 3rem;
+		color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%)
+	}
+	article.prose-content {
+		padding-top: 0;
+
+		p {
+			margin-bottom: 0.2em;
+			// not justifying for now
+		}
+		p:not(:first-child) {
+			text-indent: 1.5em;
+		}
+	}
+}
 
 .home-post-lists {
 	> .home-post-group {

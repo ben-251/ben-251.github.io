@@ -24,15 +24,14 @@ all colours must be fully opaque.
 	--pure-color: white;
 
 	// primary
-	--primary-color: #212729;
-	--primary-bg: #f6f6f6;
-	
-	--primary-accent: #2b92af;
+	--primary-color: #07495f;
+	--primary-bg: #fbfeff;
+	--primary-accent: #35adcf;
 	--primary-accent-contrast: var(--primary-bg);
 
 	// secondary 
-	--secondary-color: var(--primary-bg);
-	--secondary-bg: #354044;
+	--secondary-color: #004d67;
+	--secondary-bg: #b4ddec;
 	--secondary-accent: #3fa7a7;
 	--secondary-accent-contrast: var(--secondary-bg);
 
@@ -221,12 +220,27 @@ all colours must be fully opaque.
 
 	--secondary-color: #e8e8e8;
 	--secondary-bg: #7979a1;
-	--secondary-accent: rgb(223, 203, 255);
+	--secondary-accent: rgb(162, 149, 220);
 	--secondary-accent-contrast: var(--secondary-bg);
 
 	--primary-color: #27285a;
-	--primary-bg: #ddddef;
+	--primary-bg: #ededf8;
 	--primary-accent: rgb(162, 153, 233);
+	--primary-accent-contrast: var(--primary-bg);
+}
+
+.theme-cornflower {
+	--pure-contrast: black;
+	--pure-color: white;
+
+	--secondary-color: white;
+	--secondary-bg: #7f92c1;
+	--secondary-accent: rgb(237, 243, 255);
+	--secondary-accent-contrast: var(--secondary-bg);
+
+	--primary-color: #27285a;
+	--primary-bg: #f8f6ed;
+	--primary-accent: rgb(118, 153, 229);
 	--primary-accent-contrast: var(--primary-bg);
 }
 
