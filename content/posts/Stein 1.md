@@ -1,8 +1,8 @@
 ---
 date: 2025-08-19
 draft: false
-title: Gorgeous nonsense
-description: A brief exploration of Gertrude Stein
+title: "Gorgeous nonsense: on Gertrude Stein"
+description: A brief exploration of Stein's perplexing work
 tags:
   - art
   - "#writing"
@@ -42,5 +42,5 @@ So try a close read of her work, and see what you learn. Just be sure to take a 
 # References:
 1. Stein, G., & Perlow, S. (2014). _Tender buttons : the corrected centennial edition_. City Light Books.
 2. Wade, F. (2025). _Gertrude Stein: an Afterlife._ Simon and Schuster.
-
+3. Lowell, A. (1955). *The Complete Poetical Works of Amy Lowell.* Houghton Mifflin Company.
 ‌
