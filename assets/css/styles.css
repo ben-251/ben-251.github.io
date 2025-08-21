@@ -215,6 +215,18 @@ all colours must be fully opaque.
   --sans-font: "fira code" ;
 }
 
+.theme-alabaster {
+  --base-accent: #rgb(255,181,96);
+  --pure-contrast: black;
+  --pure-color: white;
+  --primary-color: #8b7457;
+  --primary-bg: #fbf6f2;
+  --primary-accent: rgb(163, 101, 30);
+  --secondary-color: #896b4a;
+  --secondary-bg: #e3d0c0;
+  --secondary-accent: rgb(255, 255, 255);
+}
+
 .theme-jest {
   --primary-color: #750b4c;
   --primary-bg: #ffe8f3;
@@ -557,8 +569,8 @@ body {
 }
 .mainbody article.content blockquote {
   margin-inline: 0;
-  -webkit-border-start: 2px var(--secondary-accent) solid;
-          border-inline-start: 2px var(--secondary-accent) solid;
+  -webkit-border-start: 2px var(--primary-accent) solid;
+          border-inline-start: 2px var(--primary-accent) solid;
   -webkit-padding-start: 1.4em;
           padding-inline-start: 1.4em;
   -webkit-margin-start: 0.4em;
@@ -608,6 +620,11 @@ body {
 }
 .mainbody article.content a {
   color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
+}
+.mainbody article.content div.poem {
+  width: 70%;
+  margin-left: 3em;
+  margin-bottom: 2em;
 }
 
 main.post-list, main > .post-list {
@@ -686,23 +703,29 @@ button.active {
   color: var(--primary-bg);
 }
 
-.poem-container {
+main.container.poem-container {
   font-family: var(--primary-font);
 }
-.poem-container .title {
+main.container.poem-container h1.title.poem-title {
   font-family: var(--sans-font);
-  margin-bottom: 1em;
+  font-size: 2rem;
+  margin-bottom: 0.7em;
 }
-.poem-container .content p {
+main.container.poem-container article.content {
+  padding-top: 0;
+}
+main.container.poem-container article.content p {
   margin-block: 0.5em;
-  font-size: 1.15rem;
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-bottom: 1.5em;
 }
-.poem-container hr {
+main.container.poem-container hr {
   border: none;
   margin-left: 12em;
   margin-block: 0;
 }
-.poem-container hr:before {
+main.container.poem-container hr:before {
   content: "∗ ∗ ∗";
   text-align: left;
   color: var(--primary-accent);
@@ -800,22 +823,6 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   font-weight: bold;
 }
 
-.mainbody main.prose-container h1.prose-title {
-  font-family: var(--prose-title-font);
-  font-weight: 100;
-  font-size: 3rem;
-  color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%);
-}
-.mainbody main.prose-container article.prose-content {
-  padding-top: 0;
-}
-.mainbody main.prose-container article.prose-content p {
-  margin-bottom: 0.2em;
-}
-.mainbody main.prose-container article.prose-content p:not(:first-child) {
-  text-indent: 1.5em;
-}
-
 .home-post-lists > .home-post-group:hover:not(:has(> ul:hover)) > * {
   background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
 }
@@ -841,6 +848,7 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   margin-block: 0;
   -webkit-margin-after: 2em;
           margin-block-end: 2em;
+  padding-top: 0;
 }
 .home-post-lists .home-post-list li:first-child {
   border-top: none;
@@ -848,12 +856,39 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 .home-post-lists .home-post-list li:last-child {
   border-bottom: none;
 }
+.home-post-lists .home-post-list .post-list-item.poem {
+  line-height: 1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.home-post-lists .home-post-list .post-list-item.poem h4 {
+  margin: 0;
+  font-weight: 100;
+}
 .home-post-lists .home-post-group:last-child li:last-child {
   border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
 }
 
+.mainbody main.prose-container h1.prose-title {
+  font-family: var(--prose-title-font);
+  font-weight: 100;
+  font-size: 3rem;
+  color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%);
+}
+.mainbody main.prose-container article.prose-content {
+  padding-top: 0;
+}
+.mainbody main.prose-container article.prose-content p {
+  margin-bottom: 0.2em;
+}
+.mainbody main.prose-container article.prose-content p:not(:first-child) {
+  text-indent: 1.5em;
+}
+
 .backnext {
-  background-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
+  --backnext-bg-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
+  background-color: var(--backnext-bg-color);
   color: ver(--secondary-color);
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -887,8 +922,8 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   background-color: color-mix(in oklch, var(--primary-accent) 20%, var(--primary-bg));
 }
 .backnext ul li.disabled {
-  background-color: color-mix(in oklch, var(--primary-bg) 96%, var(--pure-contrast));
-  --contrast-color: color-mix(in oklch, var(--primary-bg) 68%, var(--pure-contrast)) ;
+  background-color: color-mix(in oklch, var(--backnext-bg-color) 96%, var(--pure-contrast));
+  --contrast-color: color-mix(in oklch, var(--backnext-bg-color) 68%, var(--pure-contrast)) ;
 }
 .backnext ul li.disabled:has(.next) {
   border-color: var(--contrast-color);

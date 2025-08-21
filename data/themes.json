@@ -15,12 +15,10 @@
 			"name": "Sepia",
 			"class": "theme-sepia"
 		},
-		
 		{
-			"name": "Popcorn",
-			"class": "theme-peony"
-		},
-		
+			"name": "Alabaster",
+			"class": "theme-alabaster"
+		},		
 		{
 			"name": "Cornflower",
 			"class": "theme-cornflower"
@@ -29,6 +27,11 @@
 		{
 			"name": "lavender",
 			"class": "theme-misty-light"
+		},
+
+		{
+			"name": "Popcorn",
+			"class": "theme-peony"
 		},
 		{
 			"name": "Dark",

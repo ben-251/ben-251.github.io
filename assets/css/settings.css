@@ -205,6 +205,18 @@ all colours must be fully opaque.
   --sans-font: "fira code" ;
 }
 
+.theme-alabaster {
+  --base-accent: #rgb(255,181,96);
+  --pure-contrast: black;
+  --pure-color: white;
+  --primary-color: #8b7457;
+  --primary-bg: #fbf6f2;
+  --primary-accent: rgb(163, 101, 30);
+  --secondary-color: #896b4a;
+  --secondary-bg: #e3d0c0;
+  --secondary-accent: rgb(255, 255, 255);
+}
+
 .theme-jest {
   --primary-color: #750b4c;
   --primary-bg: #ffe8f3;

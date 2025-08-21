@@ -10,19 +10,19 @@
 			{{ $publishedPages := where .Pages "Draft" "!=" true }}
 			{{ if and $publishedPages (ne .Section "settings") }}
 			{{ $lastmod := (index (sort $publishedPages "Lastmod" "desc") 0).Lastmod }}
-			{{ $sections = $sections | append (dict "Section" . "Lastmod" $lastmod) }}
+			{{ $sections = $sections | append (dict "SectionPage" . "Lastmod" $lastmod) }}
 			{{ end }}
 			{{ end }}
 
 			{{/* sort and display sections */}}
 			{{ $sortedSections := sort $sections "Lastmod" "desc" }}
 			{{ range $sortedSections }}
-				{{ $s := .Section }}
+				{{ $s := .SectionPage }}
 				<div class="home-post-group">
 					<h2><a href="{{ $s.Permalink }}">{{ $s.Title }}</a></h2>
 					<ul class="home-post-list">
-						{{ range sort (where $s.Pages "Draft" "!=" true) "Date" "desc" }}
-							<li>
+						{{ range sort (where $s.RegularPages "Draft" "!=" true) "Date" "desc" }}
+							<li>									
 								{{ .Render "summary" }}
 							</li>
 						{{ end }}

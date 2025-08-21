@@ -1,8 +1,8 @@
 ---
 date: 2025-07-01
 draft: false
-title: How much credit are artists due?
-description: An analysis of an analysis of Sylvia Plath
+title: On artistic intent and interpretation
+description: What happens to art when the artist puts down their pen?
 tags:
   - art
 ---

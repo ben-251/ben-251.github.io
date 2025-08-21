@@ -1,0 +1,15 @@
+<div class="backnext">
+	<ul>
+		{{ with .PrevInSection }}
+		<li><a class="previous" href="{{ .Permalink }}">Previous Poem</a></li>
+		{{/*  <li>Previous Post: <a class="previous" href="{{ .Permalink }}">{{.Title}}</a></li>  */}}
+		{{ else }}
+		<li class="disabled"><a class="previous" href="">Previous Poem</a></li>
+		{{ end }}
+		{{ with .NextInSection }}
+		<li><a class="next" href="{{ .Permalink }}">Next Poem</a></li>
+		{{ else }}
+		<li class="disabled"><a class="next" href="">Next Poem</a></li>
+		{{ end }}
+	</ul>
+</div>

@@ -298,7 +298,7 @@ body {
 
 		blockquote {
 			margin-inline: 0;
-			border-inline-start: 2px var(--secondary-accent) solid;
+			border-inline-start: 2px var(--primary-accent) solid;
 			padding-inline-start: 1.4em;
 			margin-inline-start: .4em;
 		}
@@ -346,6 +346,13 @@ body {
 		}
 		a {
 			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
+		}
+
+
+		div.poem {
+			width: 70%;
+			margin-left: 3em;
+			margin-bottom: 2em;
 		}
 		
 	}
@@ -452,18 +459,23 @@ button.active {
 
 
 // poems
-.poem-container {
+main.container.poem-container {
 	font-family: var(--primary-font);
 
-	.title {
+	h1.title.poem-title {
 		font-family: var(--sans-font);
-		margin-bottom: 1em;
+		font-size: 2rem;
+		margin-bottom: .7em;
 	}
 
-	.content {
+	article.content {
+		padding-top: 0;
+
 		p {
 			margin-block: .5em;
-			font-size: 1.15rem;
+			font-size: 1rem;
+			line-height: 1.45;
+			margin-bottom: 1.5em
 		}
 	}
 
@@ -512,8 +524,7 @@ button.active {
 	}
 }
 
-// MERGE THIS WITH POEM-LIST CSS (DRY)
-
+// MERGE THIS WITH POEM-LIST CSS (i think I have already now?)
 ul.blog-post-list, ul.home-post-list, .post-list {
 
 	// border: 1px solid var(--primary-accent);
@@ -580,29 +591,6 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 }
 
 
-
-
-// PROSE (short stories)
-.mainbody main.prose-container {
-	h1.prose-title {
-		font-family: var(--prose-title-font);
-		font-weight: 100;
-		font-size: 3rem;
-		color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%)
-	}
-	article.prose-content {
-		padding-top: 0;
-
-		p {
-			margin-bottom: 0.2em;
-			// not justifying for now
-		}
-		p:not(:first-child) {
-			text-indent: 1.5em;
-		}
-	}
-}
-
 .home-post-lists {
 	> .home-post-group {
 
@@ -639,6 +627,8 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 	.home-post-list {
 		margin-block: 0;
 		margin-block-end: 2em;
+		padding-top: 0;
+		
 
 		li:first-child {
 			border-top: none;
@@ -647,7 +637,18 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 		li:last-child {
 			border-bottom: none;
 		}
+
+		.post-list-item.poem {
+			line-height: 1;
+			height: fit-content;
+
+			h4 {
+				margin: 0;
+				font-weight: 100;
+			}
+		}
 	}
+	
 	.home-post-group:last-child {
 		li:last-child {
 			border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
@@ -655,9 +656,33 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 	}
 }
 
+
+
+// PROSE (short stories)
+.mainbody main.prose-container {
+	h1.prose-title {
+		font-family: var(--prose-title-font);
+		font-weight: 100;
+		font-size: 3rem;
+		color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%)
+	}
+	article.prose-content {
+		padding-top: 0;
+
+		p {
+			margin-bottom: 0.2em;
+			// not justifying for now
+		}
+		p:not(:first-child) {
+			text-indent: 1.5em;
+		}
+	}
+}
+
 .backnext {
 	//background-color: var(--secondary-bg);
-	background-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
+	--backnext-bg-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
+	background-color: var(--backnext-bg-color);
 	color: ver(--secondary-color);
 	width: fit-content;
 	margin: auto;
@@ -682,8 +707,8 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 			}
 
 			&.disabled {
-				background-color: color-mix(in oklch, var(--primary-bg) 96%, var(--pure-contrast));
-				--contrast-color: color-mix(in oklch, var(--primary-bg) 68%, var(--pure-contrast)) ;
+				background-color: color-mix(in oklch, var(--backnext-bg-color) 96%, var(--pure-contrast));
+				--contrast-color: color-mix(in oklch, var(--backnext-bg-color) 68%, var(--pure-contrast)) ;
 
 				&:has(.next) {
 					border-color: var(--contrast-color);
