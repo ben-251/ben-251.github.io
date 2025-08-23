@@ -36,9 +36,9 @@ Crumbs forgotten are not particular. Plates can break but crumbs disperse, colou
 Clump everything back together. What are you looking at. What is overcome if not the parts now whole, in particular. <br> Crumbs disperse colour. Less pieces now, the plates are not broken. 
 </div>   
 
-In writing this, I discovered is that this level of chaos is tremendously difficult to balance. It's fairly easy to write sentences that make no sense, and it's not terribly hard to write sentences with pleasing diction. The trouble is doing both at once. This is one of the many puzzling parts of her work: to appreciate it means letting go of the particulars, or at least the need to understand them, yet the only way to differentiate her work from so-called "Automatic Writing" is to welcome the idea that every word is intentional, and that the nonsense only works *because* of this meticulous care. 
+In writing this, I discovered is that this level of chaos is tremendously difficult to balance. It's fairly easy to write sentences that make no sense, and it isn't terribly hard to write sentences with pleasing diction. The trouble is doing both at once. This is one of the many puzzling parts of her work: to appreciate it means letting go of the particulars, or at least the need to understand them, yet the only way to differentiate her work from so-called "Automatic Writing" is to welcome the idea that every word is intentional, and that the nonsense only works *because* of this meticulous care. 
 
-So try a close read of her work, and see what you learn. Just be sure to take a step back every now and then, and, as her words travel from the page to your voice and to your mind, let the words do their thing. 
+So, reader, I recommend trying a close-read of her work, and seeing what you learn. Just be sure to take a step back every now and then, and, as her words travel from the page to your voice and to your mind, let the words do their thing. 
 # References:
 1. Stein, G., & Perlow, S. (2014). _Tender buttons : the corrected centennial edition_. City Light Books.
 2. Wade, F. (2025). _Gertrude Stein: an Afterlife._ Simon and Schuster.

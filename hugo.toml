@@ -6,6 +6,7 @@ theme = 'paper'
 publishDir = "public"
 pluralizeListTitles = false
 enableGitInfo = true
+enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]
