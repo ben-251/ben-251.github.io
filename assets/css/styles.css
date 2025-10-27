@@ -618,6 +618,9 @@ body {
 .mainbody article.content ul, .mainbody article.content ol {
   margin-block: 0.4em;
 }
+.mainbody article.content .notes {
+  list-style-type: lower-alpha;
+}
 .mainbody article.content a {
   color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
 }
@@ -941,6 +944,26 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 }
 .backnext ul li a {
   text-decoration: none;
+}
+
+main.four-o-four {
+  margin: auto;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+main.four-o-four > * {
+  text-align: center;
+}
+main.four-o-four h1 {
+  font-family: var(--sans-font);
+  font-weight: 800;
+  font-size: 13rem;
+  margin-bottom: 0;
+  margin-top: 15vh;
 }
 
 @media screen and (max-width: 768px) {

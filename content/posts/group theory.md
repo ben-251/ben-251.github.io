@@ -5,7 +5,7 @@ tags:
   - math
 title: "Maths recap: Group Theory, Combinatorics and Graham's Number"
 ---
-This week, I finally learned (roughly) what Lie Groups are (pronounced 'LEE'). Imagine an n-sided polygon sitting on a flat surface. Rotate it $\frac{2\pi}{n}$ degrees. The polygon looks exactly the same. If you include the reflective symmetries, you create what's known as a *Dihedral group,* written $D_{n}.$ Now consider the symmetries of a circle. We can rotate any $\theta \in [0,2\pi)$ and we *still* get an identical image. This makes the group an infinite group. 
+This week, I finally learned (roughly) what Lie Groups are (pronounced 'LEE'). Imagine an n-sided polygon sitting on a flat surface. Rotate it $\frac{2\pi}{n}$ degrees. The polygon looks exactly the same. If you include the reflective symmetries, you create what's known as a *Dihedral group,* written $D_{n}.$ Now consider the symmetries of a circle. We can rotate any $\theta \in [0,2\pi)$ and we *still* get an identical image. This makes the group an infinite group.$^1$
 
 The other important thing is that the group action is smooth (differentiable). This makes some sense, since the act of passing through each $\theta$ is definitely continuous, but I'm not sure how the calculus on groups actually works.
 
@@ -21,3 +21,7 @@ g_{n} =
 \end{cases}
 $$
 takes composition and recursion to a whole new level. Language, and writing systems in particular, are so fascinating!
+
+
+# Notes
+1. I had no idea at the time of writing this that lie groups had anything to do with manifolds, and I also had no idea about lie algebras or lie brackets or any of that. All I knew was they involved groups and calculus *somehow.*

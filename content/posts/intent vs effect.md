@@ -5,6 +5,8 @@ title: On artistic intent and interpretation
 description: What happens to art when the artist puts down their pen?
 tags:
   - art
+  - writing
+  - poetry
 ---
 ***— Disclaimer: despite this article covering artist intent and Fever 103, I'm not covering the controversial war references in this post. After some more research I'd like to discuss artist responsibility, but that's not the goal of this post. —***
 

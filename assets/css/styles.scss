@@ -344,6 +344,9 @@ body {
 		ul, ol {
 			margin-block: 0.4em;
 		}
+		.notes {
+			list-style-type: lower-alpha;
+		}
 		a {
 			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
 		}
@@ -729,6 +732,32 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 			a {text-decoration: none}
 			
 		}
+	}
+}
+
+
+// 404 ERROR PAGE
+main.four-o-four {
+	margin: auto;
+	width: 100%;
+	padding: 0;
+	position:fixed;
+	top: 0;
+	left:0;
+	overflow: hidden;
+
+	> * {
+		// display: block;
+		// margin:auto;
+		text-align: center
+	}
+
+	h1 {
+		font-family: var(--sans-font);
+		font-weight: 800;
+		font-size: 13rem;
+		margin-bottom: 0;
+		margin-top: 15vh;
 	}
 }
 

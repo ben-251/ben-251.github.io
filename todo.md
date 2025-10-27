@@ -2,10 +2,12 @@
 - [ ] comments
 - [ ] tag-based rss/email
 
-# Style-improvements
-- [ ] make the "last updated" not part of the 3 mini tag things. Either put it under or above or something
-- [ ] make the header sizes on mobile smaller and the title font size bigger (atm h1's are literally larger than the title...)
+# UI/UX-improvements
+- [x] make the "last updated" not part of the 3 mini tag things. Either put it under or above or something
+- [x] make the header sizes on mobile smaller and the title font size bigger (atm h1's are literally larger than the title...)
 - [ ] make the page header capitalisation consistent
+- [ ] make the backnext buttons appear at the top too, for easier navigation
+- [x] make the last updated only show on desktop
 
 # Bugs
 - [ ] On the home page, /poems creates a blank item for some reason (probably draft related somehow)
