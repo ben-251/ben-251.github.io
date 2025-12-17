@@ -48,18 +48,20 @@ I thought of a simple prompt, for today's consolidation study:
 
 Here's what I've come up with:
 
-**Aftertaste**
-Petrichor
-filling the space the
-rain left vacant.
-Soil disturbed
-refuses to stay silent.
+<div class="poem">
+<h1>Aftertaste </h1>
+Petrichor  <br>
+filling the space the  <br>
+rain left vacant.   <br>
+Soil disturbed   <br>
+refuses to stay silent. <br>  
+<br> Rain was joy,    <br>
+tapping gently before erupting   <br>
+into applause and sparkles   <br>
+and thunder, the absence of which   <br>
+left the scent unsupervised.   
+</div>
 
-Rain was joy,
-tapping gently before erupting
-into applause and sparkles
-and thunder, the absence of which
-left the scent unsupervised.
 
 I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally, given how much care I saw in today's poem. Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success. 
 
