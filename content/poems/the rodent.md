@@ -4,6 +4,7 @@ draft: false
 title: The Rodent
 tags:
   - nature
+  - grief
 ---
 His eyes were locked on a flowing   
 crowd, who paid no mind to his lifeless state;  
