@@ -61,7 +61,7 @@ into applause and sparkles
 and thunder, the absence of which
 left the scent unsupervised.
 
-I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, but overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success. 
+I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally, given how much care I saw in today's poem. Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success. 
 
 # Notes
 1. I'm not fully convinced by this interpretation of the "rock" and "white skull," but at least by connotation, the point loosely stands anyway.
