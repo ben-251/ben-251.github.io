@@ -64,10 +64,11 @@ left the scent unsupervised.
 </div>
 
 
-I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally in the second stanza, given how much care I saw in today's poem. Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success. 
+I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally in the second stanza, given how much care I saw in today's poem.$^2$ Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success.
 
 # Notes
 1. I'm not fully convinced by this interpretation of the "rock" and "white skull," but at least by connotation, the point loosely stands anyway.
+2. I think for these exercises to really work, I should revisit them after a while to write a second draft, since the revision process is quite crucial to the creation of a poem in general.
 # References
 1. Plath, S. (2010). _Ariel_. Faber And Faber. (Original work published 1965)
 2. Richards, I.A. (1936). _The Philosophy of Rhetoric_. Oxford University Press
