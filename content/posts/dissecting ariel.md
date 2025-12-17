@@ -6,6 +6,7 @@ tags:
   - writing
   - art
   - poetry
+  - DA
 description: A poem which balances order and chaos instructively.
 ---
 
@@ -63,10 +64,11 @@ left the scent unsupervised.
 </div>
 
 
-I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally, given how much care I saw in today's poem. Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success. 
+I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally in the second stanza, given how much care I saw in today's poem. Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success. 
 
 # Notes
 1. I'm not fully convinced by this interpretation of the "rock" and "white skull," but at least by connotation, the point loosely stands anyway.
-# Sources
-1. Richards, I.A. (1936). _The Philosophy of Rhetoric_. Oxford University Press
-2. Williams, R. (2019). _The Poetry Toolkit: the Essential Guide to Studying Poetry_. Bloomsbury Academic, Bloomsbury Publishing Plc.
+# References
+1. Plath, S. (2010). _Ariel_. Faber And Faber. (Original work published 1965)
+2. Richards, I.A. (1936). _The Philosophy of Rhetoric_. Oxford University Press
+3. Williams, R. (2019). _The Poetry Toolkit: the Essential Guide to Studying Poetry_. Bloomsbury Academic, Bloomsbury Publishing Plc.
