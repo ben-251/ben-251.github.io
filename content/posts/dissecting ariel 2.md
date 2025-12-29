@@ -38,6 +38,7 @@ With all this in mind, we address the elephant(s) in the room: *who* is saying *
 
 The first stanza paints a picture of axes striking wood, and a sound echoing outward "like horses." One interpretation of this is that the power and passion associated with horses is being applied to the echo of the axes' stroke, which is then applied to the impact of words. From the comparison of the sap to tears, and the stump to a skull$^1$ we conclude that the effect of these words on their recipient is unpleasant. Similarly, the axes initially suggest the person uttering these words is doing so with intentional aggression, but the word "riderless" in stanza four seems to hint at a lack of control. The axe-wielder is not doing so with a clear aim, but is nonetheless succeeding at causing harm. I wish I could explain what the stars at the bottom of the pool are, but so far I have nothing. Maybe I will edit this in the future. 
 
+___
 # Application and Studies
 Main Thoughts
 - The idea of an extended metaphor branching out into a few other mini-metaphors is new to me. I think I've done this in some of my poems, but not to this extent. There is a lot of potential here. 
@@ -64,7 +65,7 @@ left the scent unsupervised.
 </div>
 
 
-I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a more concrete vehicle, and I think I could have used line breaks more intentionally in the second stanza, given how much care I saw in today's poem.$^2$ Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success.
+I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a ore concrete vehicle, and I think I could have used line breaks more intentionally in the second stanza, given how much care I saw in today's poem.$^2$ Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success.
 
 # Notes
 1. I'm not fully convinced by this interpretation of the "rock" and "white skull," but at least by connotation, the point loosely stands anyway.

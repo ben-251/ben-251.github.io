@@ -42,7 +42,7 @@
 	</article>
 	<button id="showall" onclick="resetFilter()">Show All</button>
 	{{ $allTags := slice }}
-	{{ range .Site.RegularPages }}
+	{{ range .RegularPages }}
 	{{ range .Params.tags }}
 	{{ $allTags = $allTags | append . }}
 	{{ end }}
@@ -55,10 +55,10 @@
 		<!-- Ranges through content/posts/*.md -->
 
 		{{ range .Pages }}
-		{{ if .Params.tags }}
-			<li data-tags='{{ delimit .Params.tags "," }}'>
-		{{ else }}
-			<li data-tags="">
+			{{ if .Params.tags }}
+				<li data-tags='{{ delimit .Params.tags "," }}'>
+			{{ else }}
+				<li data-tags="">
 		{{ end }}
 			<a href="{{.Permalink}}">
 				<span class="date">
