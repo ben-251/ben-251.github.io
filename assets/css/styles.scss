@@ -296,6 +296,8 @@ body {
 		// background-color: red;
 		padding-block: 2em;
 
+
+		// Standard Elements
 		blockquote {
 			margin-inline: 0;
 			border-inline-start: 2px var(--primary-accent) solid;
@@ -308,7 +310,9 @@ body {
 			display: inline-block;
 			color: var(--primary-accent)
 		}
-
+		a {
+			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
+		}
 		h1 {
 			margin-bottom: 0.2em;
 			margin-top: 1em;
@@ -322,10 +326,11 @@ body {
 			margin-block: 0.1em;
 			margin-bottom: 0.8em;
 		}
-		p:has(+ :is(ul, ol)) {
-			margin-bottom: 0;
-		}
-		p + hr:has(+ p) { // dinkus
+		
+
+
+		// Dinkuses
+		p + hr:has(+ p) { 
 			border: none;
 			margin: 0;
 			&::before {
@@ -338,20 +343,37 @@ body {
 				letter-spacing: 1em;
 			}
 		}
+		p + hr:has(+ :is(h1,h2,h3)) { // dinkus before new section
+			margin: 0;
+			height: 3px;
+			border: none;
+			background: linear-gradient(to right, #0000, color-mix(in srgb, #0000 70%, var(--primary-accent)), #0000);
+			margin-block: 2.5em;
+			margin-inline: auto;
+			width: 70%;
+		}
 		p:has(+ hr) { // p before dinkus
 			margin-bottom: 0;
 		}
+
+		hr + :is(h1,h2,h3) {
+			margin-top: 0
+		}
+
+
+		// lists
 		ul, ol {
 			margin-block: 0.4em;
 		}
+		p:has(+ :is(ul, ol)) {
+			margin-bottom: 0;
+		}
+
+		// misc
 		.notes {
 			list-style-type: lower-alpha;
 		}
-		a {
-			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
-		}
-
-
+	
 		div.poem {
 			width: 70%;
 			margin-left: 3em;
