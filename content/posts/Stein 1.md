@@ -5,7 +5,7 @@ title: "Gorgeous nonsense: on Gertrude Stein"
 description: A brief exploration of Stein's perplexing work
 tags:
   - art
-  - "#writing"
+  - writing
 ---
 I recently went to a workshop hosted by Francesca Wade, author of recently published *Gertrude Stein, an Afterlife,* which dives into the life and legacy of the ever-perplexing poet. I went in expecting answers (Stein breaks rules like they're written in pencil) and left with a deeper understanding of how such apparent chaos could contain meaning.
 
