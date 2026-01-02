@@ -35,4 +35,5 @@ The poem ends with a voice. The same voice which started this poem off, desperat
 3. I imagine I will briefly mention *Morning Song* in one of my upcoming posts, on the interconnectedness of Ariel's imagery, which I plan on properly writing after reading and analysing all (or most) of Ariel's poems in a lot more depth than I currently have.
 4. Especially in Hughes' arrangement (as opposed to Plath's original order).
 
-
+# References
+1. Plath, S. (2010). _Ariel_. Faber And Faber. (Original work published 1965)

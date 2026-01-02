@@ -20,6 +20,7 @@
 *:root {
 	--nav-width: 10vw;
 	--primary-font: spectral, 'Cardo';
+	// --primary-italic-font: ;
 	--sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
 	--header-font: "Spectral", "Playfair Display", "Julius sans one";
 	--logo-font: Bellefair, 'Playfair display';
@@ -645,6 +646,17 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 					background-color: color-mix(in srgb, var(--primary-bg) 85%, var(--primary-accent));
 				}
 			}
+		}
+		.title{
+			font-family: var(--sans-font);
+			font-weight: 500;
+			color: var(--secondary-color);
+		}
+		.description {
+			font-style: italic;
+			font-family: var(--primary-font);
+			font-weight: 100;
+			opacity: 0.4;
 		}
 	}
 
