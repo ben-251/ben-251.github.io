@@ -867,7 +867,7 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 }
 .home-post-lists > .home-post-group .description {
   font-style: italic;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-weight: 100;
   opacity: 0.4;
 }
