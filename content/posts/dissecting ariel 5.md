@@ -7,7 +7,7 @@ tags:
   - art
   - poetry
   - DA
-description:
+description: A simple personifying image proves anything but.
 ---
 The first stanza introduces us to the central tool of the poem: the personification of Kindness. Kindness is described with wealthy and rosy characteristics: she “glides” and is “nice”; she has “jewels” and “rings.” We are also introduced to the image of “mirrors,” a common theme in Plath’s work, including the Bell Jar. In the Bell Jar, reflections are disorienting and unrecognisable. However, in this poem, “the mirrors / are filling with smiles,” suggesting that the speaker is joyful to be a recipient of kind actions. 
 ## Spoonful of sugar 
@@ -30,7 +30,7 @@ Plath pivots again to a seemingly unrelated image, describing the early stages o
 | Anaesthetics | “I have given \[…] my history to the anaesthetists” | “\[My Japanese silks] may be pinned any minute, anaesthetized” |
 
 
-## Kindness??
+## Kindness: the final act
 The final stanza begins with what we can safely conjecture is a direct reference to Ted Hughes, the passive actions of whom contrast those of Plath earlier. The steam of the tea also links to the “smoke” referenced in the poem’s third line$^1$.
 
 > The blood jet is poetry,
@@ -41,6 +41,10 @@ We can (fairly) safely conjecture that the “you” referred to in this closing
 The following lines, however, are not so kind. The “blood jet” seems to refer to a spurt of blood that can’t be prevented, and *this,* we are told, is an accurate portrayal of what poetry is. We must ask who would attempt to prevent it: the attacker, the attacked, or perhaps both? A potential interpretation of this is that the speaker has murdered her husband, who in his dying act, gives their children over. Maybe. With this interpretation, the roses are a good thing: the one act of kindness this addressee is capable of. This seems to satisfy the theme given by the poem’s title, which, unlike *Words* (which used it’s key term only once excluding the title) repeats it’s title *five* times across it’s twenty lines. If we are to find a satisfying interpretation of this final stanza, it is imperative that that interpretation is completely intertwined with the idea of kindness, which this one seems to do. 
 
 I think it’s also very possible that it is the ‘kindness’ which is doing these acts, making tea for her husband and putting together clothes. 
+
+Regardless, one thing is clear: the first three exploratory stanzas serve the fourth, not the other way round. Thus, the poem is like a snowball, picking up ideas, themes and connections, finally reaching a climactic statement, one which is only clear because of the work before it. 
+
+
 ___
 # Applications
 I love the idea of ending on a sentence that connects associatively, but not with immediate narrative clarity. My default is to handhold my readers until there is no doubt they miss the idea I am trying to convey, often at great loss of associative power and depth. My favourite poems to read are ones that have treasure at every layer, but if I had to pick between only finding treasure at the surface, and only finding it deeper, I would pick the latter in a heartbeat. 
