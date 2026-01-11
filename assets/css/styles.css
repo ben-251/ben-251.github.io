@@ -634,6 +634,27 @@ body {
 .mainbody article.content p:has(+ :is(ul, ol)) {
   margin-bottom: 0;
 }
+.mainbody article.content table {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mainbody article.content table, .mainbody article.content td {
+  border-collapse: collapse;
+}
+.mainbody article.content table, .mainbody article.content th, .mainbody article.content td {
+  border: 1px solid var(--primary-accent);
+}
+.mainbody article.content th, .mainbody article.content td {
+  padding: 0.4em 0.6em;
+}
+.mainbody article.content th {
+  font-family: var(--sans-font);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
 .mainbody article.content .notes {
   list-style-type: lower-alpha;
 }
@@ -863,7 +884,8 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
 .home-post-lists > .home-post-group .title {
   font-family: var(--sans-font);
   font-weight: 500;
-  color: var(--secondary-color);
+  color: color-mix(in srgb, var(--primary-color) 90%, color-mix(in srgb, var(--primary-bg) 50%, var(--primary-accent)));
+  opacity: 0.8;
 }
 .home-post-lists > .home-post-group .description {
   font-style: italic;

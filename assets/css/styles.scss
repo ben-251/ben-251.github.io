@@ -370,6 +370,21 @@ body {
 			margin-bottom: 0;
 		}
 
+
+		// table
+		table { margin:auto; width:fit-content}
+		table, td { border-collapse: collapse }
+		table, th, td {
+			border: 1px solid var(--primary-accent);
+		}
+		th, td {
+			padding: 0.4em 0.6em;
+		}
+		th {
+			font-family: var(--sans-font);
+			width: min-content;
+		}
+
 		// misc
 		.notes {
 			list-style-type: lower-alpha;
@@ -650,7 +665,14 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 		.title{
 			font-family: var(--sans-font);
 			font-weight: 500;
-			color: var(--secondary-color);
+			color: 
+				color-mix(in srgb,
+					var(--primary-color) 90%, 
+				color-mix(in srgb,
+					var(--primary-bg) 50%,
+					var(--primary-accent)) 
+				);
+			opacity: 0.8
 		}
 		.description {
 			font-style: italic;
