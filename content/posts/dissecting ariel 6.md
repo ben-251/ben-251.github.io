@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2026-01-14
+date: 2026-01-17
 title: "Poppies in July: Dissecting Ariel #6"
 tags:
   - writing
