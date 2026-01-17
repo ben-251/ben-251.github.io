@@ -1,76 +1,82 @@
 ---
 draft: false
-date: 2025-12-11
-title: "Words: Dissecting Ariel #2"
+date: 2025-12-29
+title: "Edge: Dissecting Ariel #2"
 tags:
   - writing
   - art
   - poetry
   - DA
-description: A poem which balances order and chaos instructively.
+description: Plath teaches us how to create and wield associations.
 ---
 
-This is an official start to a series I'll be doing, where I analyse a poem a week from Sylvia Plath's Ariel, from the last to the first. In each entry I'll start by analysing what the poem is doing technically. I'll lay out the features of the poem that seem to work great, and possible reasons for that. I'll also explore the features that surprise or confuse me, either in on-the-nose meaning or by having unconventional choices, from my perspective. I'll then broaden to look at how this poem fits within the other Ariel poems I've analysed, and then finally I'll consider applications to my own poetry. I'll probably finish each entry with some sort of study/exercise, or an example of a decision I made in an actual draft, really just way where this analysis has concretely affected my own work. 
 
-Today's poem is *Words.* 
+# Voices and Agency
+We begin with an anonymised woman in the state of perfection and death. The definite article suggests a *particular* woman, maybe representing Plath herself. However, by choosing to be particular about much else, Plath abstracts her identity, extending the scope of the subject to women (or mothers) in general.
 
-# Metaphor as perpetual motion
-Plath begins bewilderingly. The word "Axes"—in isolation—presents itself as the introduction to this poem's world of imagery. There is no word placed between "Words" and "Axes," just a tenor and a vehicle (Richards, 1936, p. 36; Williams, 2019, p. 259). One powerful effect of this is that the range of the metaphor is unbounded. Had Plath said, "Words are axes, after whose stroke the wood rings,..." then after some exploration of the image, we might assume that the linking power of the metaphor has died, and that Plath intends to focus somewhere else. By omitting any direct link, copular or otherwise, the vehicle is effectively the entire poem. 
+The poem can be loosely divided into two subjects: the woman and her children, the latter of which are also directly linked to death. Through Plath's choices of narrative actions for the former, Plath appears to actively reduce the scale and importance of the woman's voice.  She smiles, and "her bare feet seem to be saying" things, but the woman herself never says or even *does* anything except in relation her children. This seems to hint at a restriction that childbirth brings, consistent with the fact that Plath had recently birthed her second child at the time of writing this collection. The poem *Morning Song* is an example of a poem that touches on these tensions quite explicitly: the attention babies draw to themselves, and the way mothers attend instantly to their children's needs, are ideas prevalent in that poem. Through both poems, Plath portrays her experience of motherhood as a loss of identity and a sort of death. 
 
-This effect is exemplified by the later use of the titular tenor in the final stanza, seemingly mark the end of the vehicle's primary domain. However, Plath immediately brings back the horse metaphor, incidentally re-activating the entire web of images that she has strung together up to this point. This allows the axes to serve as a deeply permeating extended metaphor, possibly also hinting at the persistence of the words.
-# Intentional Instability
-The line lengths are very irregular, and the words that Plath breaks on are shocking too. For this first line, we can conclude that the primary effect is isolating the word "axes." It seems to work quite well. Paying attention to sound, we can observe a triple repetition of the 'a' sound across the first three lines, as well as a fairly consistent use of the 'w' sound across all four stanzas. We also have repetition of the word "echoes" acting as a literal echo. Finally, note that there is little to know rhyme at the end of any lines. "Axes" and "horses" sort of slant rhyme, and "rings" and "travelling," but nothing strong. Thus, the little order that exists in this stanza exists at the beginning of lines, and the beginning of the stanza. The result is that in this first stanza, we have a feeling of almost-order. Like the concentric rings on a tree's cross-section, we see patterns that feel quite stable, but have some clear irregularities. 
+# The Edge of Everything
+The title was a bit of a mystery to me, but I have two guesses (and no particular reason to reject either) one:
+1. The "Edge" is the chisel that forms the woman, a Greek statue. 
+2. The "Edge" is the boundary between death and ‘not-death’.
 
-Every line in stanza two is enjambed, and quite defiantly, too. The noun phrase within "like the water striving" cannot be pried apart without dissonance. A more end-stopped version might look like this: 
+One interpretation, then, is that the woman statue$^1$ is created through suffering, as a baby is created through suffering$^2$, and that both creations now transitioned not from death to life, but from non-existence to  existence, and that this existence can often be more accurately a *dead* existence. 
 
-> The sap wells like tears, 
-> like the water striving
-> to re-establish its mirror
-> over the rock that drops and turns,
+Also worth noting are the enjambed lines "Her dead / Body \[...]" and "Her bare / Feet \[...]." The emphasis on these words, in the context of the interpretation just presented, places the lifeless, naked existence of this woman in comparison to the tumultuous existence of newborn children. The empty space formed by the line break allows both phrases to really ring, and emphasises the isolating death.
 
-but instead we have "...the / water..." and in stanza three, we have "Years later I / encounter them..." which creates a similar tension. This dissonance makes these stanzas read faster, and it makes the balance of the alliterative "w" sounds all the more easy to cling to. 
+To tie everything together, consider these lines from *Morning Song:*
 
-By the second instance of the word, 'words,' Plath has taken the reader on a ride. The final stanza offers no resolution to the previous tension, instead continuing with a powerful line break with "/ While /" standing on its own, separating the final two lines from the seventeen chaotic lines above. The ending, however, is not a peaceful contrast. Rather, it continues irregularly, just from a slightly different angle. At the start of stanza four, The "f" and "t" sounds in *indefatigable* and *hoof-taps*, as well as the "d" and "r" sounds in "Words dry and riderless," create a nice rhythm within this drama, a smoothness notably missing from the sounds of the final two lines.
+> Our voices echo, magnifying your arrival. New Statue.     
+> In a drafty museum, your nakedness    
+> Shadows our safety. \[...]    
 
-The first and last stanzas respond to the turbulence of the middle with an uneasy peace. The bookends have hints of disorder, but manage to counteract it partially with sound and with generally unabrasive line breaks. 
-# Words?
-With all this in mind, we address the elephant(s) in the room: *who* is saying *what* words to *whom*?? Who is wielding the axes, and who or what is the tree?
+In the context of *Morning Song,* the statue in the museum is the newborn, and this image is a well-crafted exploration of this creature settling into its existence, being marvelled at by the people around. In *Edge,* the statue is the woman, and here, rather than focussing on perception, we focus on the person herself. 
 
-The first stanza paints a picture of axes striking wood, and a sound echoing outward "like horses." One interpretation of this is that the power and passion associated with horses is being applied to the echo of the axes' stroke, which is then applied to the impact of words. From the comparison of the sap to tears, and the stump to a skull$^1$ we conclude that the effect of these words on their recipient is unpleasant. Similarly, the axes initially suggest the person uttering these words is doing so with intentional aggression, but the word "riderless" in stanza four seems to hint at a lack of control. The axe-wielder is not doing so with a clear aim, but is nonetheless succeeding at causing harm. I wish I could explain what the stars at the bottom of the pool are, but so far I have nothing. Maybe I will edit this in the future. 
+Overall, this confirms the link between the two poems, and acts as a darker side of the same coin: if *Morning Song* explored the good and bad of start of a life, *Edge* explores the good and bad of the end of one. 
+
+# The Garden
+Now we consider lines 9 to 16. Taking these words literally, the dead woman’s children are themselves dead. The comparison of the children to snakes does a few things. First, it trains the reader to see the children through a dehumanizing lens. Second, it may describe a literal foetal position.  Lastly, by using the image of a snake, we portray them as evil, dangerous beings, which colours the next image with an uneasy tone. The children are positioned as if about to be breastfed, but both mother and children are lifeless. It is as if the children are to blame.
+
+Yet, rather than this death providing distance, Plath appears to see this death as a source of closeness between the mother and her children, so close in fact that the children are ‘folded’ back into her. The word ‘folded’ is uncomfortable and rules out any affectionate, motherly interpretation of the woman’s actions. This matches with the idea that she is “now empty” of milk and therefore motherly provision. 
+
+One other note is the use of colour in this poem. White is used in *Tulips* to describe a form of pure peacefulness, consistent with the way people with suicidal ideation might romanticize death as a perfect escape, rather than a painful one. This isn’t to say Plath was unaware of the impact death leaves on loved ones, but the fact that the woman in this poem brings her children with her suggests that, to her, the solution to being separated by death is more death. It’s a heavy and heart-breaking portrayal of the complex set of feelings that several people have felt, and that many have tragically acted on.
+
 
 ___
-# Application and Studies
-Main Thoughts
-- The idea of an extended metaphor branching out into a few other mini-metaphors is new to me. I think I've done this in some of my poems, but not to this extent. There is a lot of potential here. 
-- Plath's use of line breaks, syntax, and sound, to mirror the sound, patterns, and motion of the images mentioned was particularly interesting. I especially liked the way stanza two rolled into stanza three, perfectly matching with the phrase "drops and turns." 
-- I also *love* the idea of "hyper-direct" comparisons, omitting a simile or metaphor or copula and just placing two things beside each other for the reader to play with.
 
-I thought of a simple prompt, for today's consolidation study: 
-> Write about the feeling of finishing a good meal.
+## Structure as a Compass
+By far the biggest source of intrigue in this poem for me was the choice to break lines 2 and 6 after only two words. I'd initially imagined its purpose was simply to create an awkward feeling in the poem, but there are several ways to create a tense emotion, that don't involve such disruptive breaks to the stability of a poem.$^2$ What I liked most about the investigation into this choice was that the line breaks served to highlight two phrases as connected, a link which guided most of my analysis. 
 
-Here's what I've come up with:
+One lesson then is that sometimes, associations can be created not through explicit juxtaposition through line order, but through the similarity between various structural elements of the poem.
+
+I'm in the drafting process for one of my poems, an Ars Poetica titled *Abacus in the Nile.* I realised I could use structure in a similar way in this tiny poem to hopefully say a lot more than what is immediately apparent:
 
 <div class="poem">
-<h1>Aftertaste </h1>
-Petrichor  <br>
-filling the space the  <br>
-rain left vacant.   <br>
-Soil disturbed   <br>
-refuses to stay silent. <br>  
-<br> Rain was joy,    <br>
-tapping gently before erupting   <br>
-into applause and sparkles   <br>
-and thunder, the absence of which   <br>
-left the scent unsupervised.   
+<h1>Abacus in the Nile </h1>
+Before he died, he placed an abacus in a basket <br>
+and a baby in the basket and the basket <br>
+in the river. <br>
+<br>
+I survived through the numbers, <br>
+growing and shrinking like lungs, <br>
+guiding my little brain along.  <br>
+<br>
+The current bobbed my little boat along, <br>
+and just like that we were one: <br>
+<br>
+Me, my basket, my abacus, and poetry. <br>
 </div>
 
+This poem is based largely on Mary Oliver's passing metaphor of Poetry as a river, in *A Poetry Handbook* but I chose not to explicitly state that anymore, and to instead use the list of objects in the end, to let the reader come to the conclusion themselves, when they realise the river is the only item missing.
 
-I think it was fairly risky pairing two fairly difficult-to-pin concepts together like this, but the beauty of studies and quick exercises is that these sort of experiments cost nothing. In the future I might prefer to use a ore concrete vehicle, and I think I could have used line breaks more intentionally in the second stanza, given how much care I saw in today's poem.$^2$ Overall, while writing that, I felt more options available to me than I would typically consider, which I will treat as an indicator of success.
+Similarly, I link the "little brain" to the "little boat", and the numbers to the current. One effect of this is that now the mind is nurtured by numbers, the vessel that this survival comes through is itself is guided by poetry, slightly twisting the use of the word survival to say that actual survival comes from the river but the basket (the mind) makes it hard to tell. 
 
+Undoubtedly there is room to add more exploration, particularly to the nature of numbers/mathematics beyond those three lines, which is what I am working on at the time of writing this paragraph; but I share this version to highlight the effectiveness of structure as a compass, guiding the reader around the concept-world the poet creates. 
 # Notes
-1. I'm not fully convinced by this interpretation of the "rock" and "white skull," but at least by connotation, the point loosely stands anyway.
-2. I think for these exercises to really work, I should revisit them after a while to write a second draft, since the revision process is quite crucial to the creation of a poem in general.
+1. Or, the dead woman who is *like* a statue. This may be a stronger possibility.
+2. Okay, "suffering" is a slight leap, but I'm relying again on *Morning Song* here, and its portrayal of a baby's cries, to justify the connection. 
+3. Of course, with the interpretive links to dying and existence, the strange decision is much more justifiable, as explored earlier.
 # References
 1. Plath, S. (2010). _Ariel_. Faber And Faber. (Original work published 1965)
-2. Richards, I.A. (1936). _The Philosophy of Rhetoric_. Oxford University Press
-3. Williams, R. (2019). _The Poetry Toolkit: the Essential Guide to Studying Poetry_. Bloomsbury Academic, Bloomsbury Publishing Plc.
+2. Oliver, M. (1994). _A poetry handbook_ (pp. 9). Harper Collins

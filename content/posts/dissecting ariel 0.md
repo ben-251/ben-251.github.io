@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2025-10-27
-title: "Morning Song: Analysing Sylvia Plath"
+title: "Morning Song: dissecting Ariel #0"
 tags:
   - writing
   - art
