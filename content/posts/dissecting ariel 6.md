@@ -7,13 +7,13 @@ tags:
   - art
   - poetry
   - DA
-description:
+description: A nature poem weaves two strong images together
 ---
 # The Red Flower
 > Little poppies, little hell flames,
 > Do you do no harm?
 
-Fire is a symbol that I hesitate to use in my poems, because, along roses, the sea, the wind, and many more, fire is an image that people have observed and talked about for generations, seemingly from every angle imaginary. Yet, in continuing to explore this basic element, and contrast it to so many different “tenors,” we unconsciously create a web of symbols across time, place, and culture, which I think is quite amazing. 
+Fire is a symbol that I hesitate to use freely in my poems, because, along with the sea, and the wind, fire creates a basic picture that people have observed and talked about for generations, seemingly from every angle imaginary. There is a danger in ‘defaulting’ to familiar images and limiting creativity (and intrigue) in the process. Yet, in continuing to explore this basic element, and contrast it to so many different “tenors,” we unconsciously create a web of symbols across time, place, and culture, which I think is quite amazing. 
 
 The use of fire in this poem reminded me of the following quote from *Frankenstein*, by the monster, on discovering an abandoned campfire:
 
