@@ -17,7 +17,7 @@ If you're interested in a sphere that analyses any form of art, you'll have like
 Consider [this analysis](https://www.poetryfoundation.org/articles/68911/sylvia-plath-fever-103#poem) by Kary Wayson of Sylvia Plath's *Fever 103*. We see a sentence like
 > In a few bold strokes, Plath uses repetition’s incantatory effect to undercut our assumptions about purity.
 
-and assume Wayson means that Plath intended to "undercut out assumptions about purity", so used repetition for it's "incantatory effect" to do exactly that. Maybe that *is* what Wayson meant. But I think a much useful reading is that **Plath's poem** challenges our assumptions. The poem, not the poet. That sounds like a stretch, or at least an inconsequential "uhm actually." But look at some of the other ways Wayson describes Plath's work. Actually, look at *every* way Wayson describes Plath's work! 
+and assume Wayson means that Plath intended to "undercut out assumptions about purity", so used repetition for it's "incantatory effect" to do exactly that. Maybe that *is* what Wayson meant. But I think a much more useful reading is that **Plath's poem** challenges our assumptions. The poem, not the poet. That sounds like a stretch, or at least an inconsequential "uhm actually." But look at some of the other ways Wayson describes Plath's work. Actually, look at *every* way Wayson describes Plath's work! 
 
 Kary Wayson begins her Poem Guide with the name "Sylvia Plath." About half of the claims in this guide have Plath as their subject. But, importantly, Wayson *never* claims Plath "wants," "tries," "desires," or "thinks," anything. 
 
