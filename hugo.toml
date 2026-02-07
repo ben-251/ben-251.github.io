@@ -8,6 +8,7 @@ pluralizeListTitles = false
 enableGitInfo = true
 enableRobotsTXT = true
 
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -18,7 +19,6 @@ enableRobotsTXT = true
           inline = [['\(', '\)'], ['$', '$']]
 	[markup.goldmark.renderer]
 		unsafe= true
-
 
 [params]
   math = true
