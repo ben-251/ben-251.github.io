@@ -597,6 +597,23 @@ body {
   margin-block: 0.1em;
   margin-bottom: 0.8em;
 }
+.mainbody article.content strong {
+  font-weight: 1000;
+}
+.mainbody article.content img {
+  max-width: 60vw;
+}
+.mainbody article.content figcaption {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-family: var(--sans-font);
+}
+.mainbody article.content .figcaption-index {
+  font-variant: small-caps;
+}
 .mainbody article.content p + hr:has(+ p) {
   border: none;
   margin: 0;

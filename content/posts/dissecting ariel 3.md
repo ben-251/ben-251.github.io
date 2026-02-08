@@ -3,8 +3,6 @@ draft: false
 date: 2026-01-03
 title: "Contusion: Dissecting Ariel #3"
 tags:
-  - writing
-  - art
   - poetry
   - DA
 description: Searching for depth in one of her more simple-looking poems.

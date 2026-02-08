@@ -328,8 +328,23 @@ body {
 			margin-bottom: 0.8em;
 		}
 		
-
-
+		strong {
+			font-weight: 1000;
+			// color: red !important;
+		}
+		// Figures and Images
+		img {
+			max-width: 60vw;
+		}
+		figcaption {
+			display: block;
+			width: fit-content;
+			margin: auto;
+			font-family: var(--sans-font);
+		}
+		.figcaption-index {
+			font-variant: small-caps;
+		}
 		// Dinkuses
 		p + hr:has(+ p) { 
 			border: none;

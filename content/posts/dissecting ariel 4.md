@@ -3,8 +3,6 @@ draft: false
 date: 2026-01-09
 title: "Kindness: Dissecting Ariel #4"
 tags:
-  - writing
-  - art
   - poetry
   - DA
 description: A simple personifying image proves anything but.

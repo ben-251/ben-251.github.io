@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.925736360064548 65.9091796875">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #266466;
+      }
+
+      .cls-2 {
+        fill: #e1f2ec;
+        font-family: CinzelDecorative-Regular, 'Cinzel Decorative';
+        font-size: 56.854969024658203px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="29.863763151440253" cy="29.863763151439343" r="29.863763151440708"/>
+  <text class="cls-2" transform="translate(14.6620693345576 49.762905120849609)"><tspan x="0" y="0">B</tspan></text>
+</svg>

@@ -11,7 +11,7 @@ When a poet tackles the prose poem, there are often a few directions you could t
 In ‘The Hanging of the Mouse', from *Rainy Season; Sub-Tropics,* Elizabeth Bishop goes the opposite direction. In fact, at first, it seems hard to argue that this is a poem at all. What drew my attention initially was the fascinating premise as well as the cast of characters; my experience was almost identical to reading a short story or the start of a novel. Even at this stage, however, I could subconsciously sense a precise care being given to language across the whole narrative. On my second and third read, this precision sparkled subtly, and later was impossible to ignore. Rather than analysing this text as strictly a poem or strictly a piece of prose, I will analyse it as what it is: a piece of text which uses elements from both to convey its meaning. 
 
 # 1. A Question of Authority
-One way Bishop employs poetic techniques is through her diction. Throughout this narrative, Bishop repeats the word “traditional” five times, to describe various aspects of the mouse’s assailants:
+One way Bishop employs poetic techniques is through her diction. Throughout this narrative, Bishop repeats$^1$ the word “traditional” five times, to describe various aspects of the mouse’s assailants:
 
 | ”Traditional” Symbol | Quote                                                                                 |
 | -------------------- | ------------------------------------------------------------------------------------- |
@@ -62,3 +62,7 @@ Thus we have:
 
 The result of this complex web of miscommunications is that the kitten, his mother, and the mantis, all share in the mouse’s sufferings, and not the beetle or the bullfrog, or the raccoon and his son.
 
+# Notes
+1. I also didn’t mention Bishop’s use of repetition in phrases like “Early, early in the morning…” or “…long, long antennae,” or even the more subtle “…stayed up later and later…” and “…hopelessly round and round….”, because in all of these cases, I think the repetition is more a widespread stylistic pattern, than a sign of any unique depth. For comparison, see ‘Anaphora’, ‘Argument’, and ‘Four Poems[III / While Someone Telephones]’ for more nice examples of this effect.
+# References
+1. Bishop, E. (1983). _The Complete Poems, 1927-1979,_ pp. 143–145

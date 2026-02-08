@@ -3,8 +3,6 @@ draft: false
 date: 2026-01-17
 title: "Poppies in July: Dissecting Ariel #5"
 tags:
-  - writing
-  - art
   - poetry
   - DA
 description: A nature poem weaves two strong images together

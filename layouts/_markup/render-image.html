@@ -1,0 +1,9 @@
+<figure>
+	<figcaption><p>{{ with .Text }} {{ . | markdownify }} {{ end }}
+	</p></figcaption>
+	<a href="{{ .Destination | safeURL }}" target="_blank">
+	<img src="{{ replace .Destination ".jpg" ".jpg.small" | safeURL }}"  alt="{{ .Text }}"
+	{{ with .Title }}title="{{ . }}"{{ end }}/>
+	</a>
+</figure>
+{{/*  currently not working. feel free to delete  */}}

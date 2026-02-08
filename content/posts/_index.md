@@ -6,4 +6,4 @@ tags:
   - meta
 ---
 
-I'll soon begin populating pages with all sorts of topics: poetry, science, art, maths - whatever :)
+You can find on this site a collection of essays, such as close-reads and essays on poetics, art, and the sciences. Occasionally I may also post my work, in whatever art form I find myself in. 

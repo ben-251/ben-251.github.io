@@ -11,21 +11,29 @@ enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'], ['$', '$']]
+	[markup.goldmark.extensions]
+	  [markup.goldmark.extensions.passthrough]
+		enable = true
+		[markup.goldmark.extensions.passthrough.delimiters]
+		  block = [['\[', '\]'], ['$$', '$$']]
+		  inline = [['\(', '\)'], ['$', '$']]
 	[markup.goldmark.renderer]
 		unsafe= true
+	[markup.goldmark.parser]
+	  wrapStandAloneImageWithinParagraph = false
+	  [markup.goldmark.parser.attribute]
+		block = true
 
 [params]
-  math = true
+	math = true
+	[params.meta]
+		favicon = false
+
+	
 
 [services]
   [services.disqus]
-    shortname = 'ben251'
+	shortname = 'ben251'
 
 customcss = [
 	"css/settings.css",

@@ -1,21 +1,3 @@
-// import { themes } from "./settings/themeChange.js";
-
-// const dropdown = document.getElementById("blog-button");
-// let items = document.getElementById("blog-items")
-// // console.log(dropdown)
-// // console.log("test")
-// function dropdownClicked() {
-// 	// console.log("trying to add")
-// 	items.classList.toggle("open");
-// }
-
-// dropdown.addEventListener(
-// 	"click",
-// 	function () {
-// 		dropdownClicked()
-// 	}
-// )
-
 const modal = document.getElementById("modal");
 let modalImage = document.getElementById("modal-image");
 let modalHeader = document.getElementById("modal-text-header");
@@ -132,7 +114,7 @@ const themes = Array.from(themeItems).flatMap(item =>
 	  .filter(className => className.startsWith('theme-') && className !== 'theme-item')
   );
 var currentTheme = localStorage.getItem('theme') || 'theme-default';
-// console.log(`CurrentTheme: ${currentTheme}`);
+
 const middleStart = 90;
 const middleEnd = 80;
 const rightStart = 95;
@@ -171,24 +153,10 @@ function setActive(theme) {
 	})
 }
 
-// currentTheme = localStorage.getItem('theme') || 'theme-default';
-// console.log(localStorage.getItem('theme'))
-// console.log(localStorage);
-
-// const storedTheme = localStorage.getItem('theme');
-// console.log('storedTheme:', storedTheme);
-
-// let currentTheme = storedTheme || 'theme-default';
-// console.log('final currentTheme:', currentTheme);
-
-// console.log(currentTheme);
-console.log(currentTheme)
+// console.log(currentTheme)
 applyTheme(currentTheme);
-console.log(currentTheme)
-// console.log(`applied theme: ${currentTheme}`);
+// console.log(currentTheme)
 
-// one issue is that this lags - it shows the default, then changes it to the current. it shouldn't do this.
-// setActive(currentTheme);
 
 themeItems.forEach(item => {
 	item.style.setProperty('--middle', `${middleStart}%`);
@@ -304,3 +272,24 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 		}
 	  });
 };
+
+
+// System to Number Figures:
+document.addEventListener("DOMContentLoaded", () => {
+	var figures = document.getElementsByClassName("article-figure");
+	// console.log("running")
+	Array.from(figures).forEach((figure, i) => {
+		var caption = figure.querySelector('.article-figcaption');
+		// console.log(`The current caption for the figure is ${caption.textContent}`);
+		let currentCaptionText = caption.textContent;
+		let indexSpan = document.createElement("span");
+		indexSpan.classList.add('figcaption-index');
+		indexSpan.textContent = `Figure ${i+1}: `;
+		let newText = document.createTextNode(currentCaptionText);
+		caption.textContent = '';
+		caption.appendChild(indexSpan);
+		caption.appendChild(newText);
+
+		// console.log(`The current caption for the figure is ${caption.textContent}`);
+	});
+});
