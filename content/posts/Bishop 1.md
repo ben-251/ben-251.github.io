@@ -61,7 +61,6 @@ Thus we have:
 4. A child crowd member misunderstood by his parent.
 
 The result of this complex web of miscommunications is that the kitten, his mother, and the mantis, all share in the mouse’s sufferings, and not the beetle or the bullfrog, or the raccoon and his son.
-
 # Notes
 1. I also didn’t mention Bishop’s use of repetition in phrases like “Early, early in the morning…” or “…long, long antennae,” or even the more subtle “…stayed up later and later…” and “…hopelessly round and round….”, because in all of these cases, I think the repetition is more a widespread stylistic pattern, than a sign of any unique depth. For comparison, see ‘Anaphora’, ‘Argument’, and ‘Four Poems[III / While Someone Telephones]’ for more nice examples of this effect.
 # References
