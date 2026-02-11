@@ -680,6 +680,22 @@ body {
   margin-left: 3em;
   margin-bottom: 2em;
 }
+.mainbody article.content h1#chapters {
+  margin-bottom: 0;
+}
+.mainbody article.content .chapter-list {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-family: var(--primary-font);
+}
+.mainbody article.content .chapter-list a {
+  font-family: var(--sans-font);
+  font-style: normal;
+  color: color-mix(var(--primary-accent), var(--primary-color));
+}
+.mainbody article.content .chapter-list a:hover {
+  color: var(--primary-accent);
+}
 
 main.post-list, main > .post-list {
   display: block;

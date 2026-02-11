@@ -1,0 +1,13 @@
+<ul class="chapter-list">
+	{{ $tag := .Get "tag" }}
+
+	{{ $relevantPages := where .Site.RegularPages  "Params.tags" "intersect" (slice "SV-theory") }}
+	{{ range $relevantPages }}
+		<li class="draft-is-{{ .Draft }}">
+	  	<a href="{{ .RelPermalink }}">
+			{{ .Title }}
+	  	</a>
+		{{ with .Params.description }} - {{ . }}{{ end }}
+		</li>
+  	{{ end }}
+</ul>
