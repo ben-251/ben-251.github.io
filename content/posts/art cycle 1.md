@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: 2026-02-07
 title: "Art Cycle Ch. 1: The Art Cycle"
 tags:
