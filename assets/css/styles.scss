@@ -346,7 +346,7 @@ body {
 			font-variant: small-caps;
 		}
 		// Dinkuses
-		p + hr:has(+ p) { 
+		:is(p,blockquote) + hr:has(+ p) { 
 			border: none;
 			margin: 0;
 			&::before {
