@@ -73,24 +73,24 @@ I believe this emphasis on symbols rather than signal (or, “a system to pointi
 > “I think music is the primary model—how close can you get this language to be like music and communicate feeling at the base level in the same way a composition with no words communicates meaning? It might be impossible.”$^{20}$
 
 # Notes and References
-1. I grimace at this sentence, particularly the phrase “created art.” I would rather say something like “Congratulations, you have just *arted*,” but to avoid overloading the analysis with new terms and jargon, nonetheless, if you pay careful attention to my obstinate phrasing, you will surely find the spirit of ‘art as action’ implicit throughout my arguments, 
-2. Lucy Collins, *Confessionalism* (Blackwell Publishing Ltd., 2001) in “A Companion to 20th Century Poetry,” p.197
-3. Steven Axelrod, *Robert Lowell: Life and Art.* (Princeton University Press, 1979)
-4. In fact, it very rarely is. Lyn Hejinian’s exploration of the “Event” really nails this idea home. (see “A Fable for Now: Kate Fagan Interviews Lyn Hejinian” [here](http://cordite.org.au/interviews/fagan-hejinian/2/))
+1. I initially grimaced at this sentence, particularly the phrase “created art.” I would rather say something like “Congratulations, you have just *arted*,” but to avoid overloading the analysis with new terms and jargon, I reverted to the normal use of the word. Nevertheless, if you pay attention to my obstinate phrasing, you might find the spirit of ‘art as action’ implicit throughout my arguments.
+2. Lucy Collins, *Confessionalism* (Blackwell Publishing Ltd., 2001) in “A Companion to 20th Century Poetry,” p.197.
+3. Steven Axelrod, *Robert Lowell: Life and Art.* (Princeton University Press, 1979).
+4. In fact, it very rarely is. Lyn Hejinian’s exploration of the “Event” really nails this idea home. (see “A Fable for Now: Kate Fagan Interviews Lyn Hejinian” [here](http://cordite.org.au/interviews/fagan-hejinian/2/)).
 5. At the time of writing this, I am heavily exploring the latter, so I can only apologise for any bias in phrasing—I wholeheartedly believe in the necessity and value of both approaches.
 6. Music is quite tricky to place within this model for exactly this reason. Some music is clearly more specular than others, but the art form as a whole is insanely visceral. I’ve chosen to use Music as the example to show both the strengths *and* potential limitations of working with this model, before narrowing down into poetics, where it undoubtedly functions better.
-7. Paul Verlain, “Clair de Lune,” in _One Hundred and One Poems by Paul Verlaine_ (University of Chicago Press, 2008
-8. Jessica Duchen, _Debussy’s “Clair De Lune”: The Story Behind the Masterpiece’_ (UDiscover Music, 2019) accessed [here](https://www.udiscovermusic.com/classical-features/debussy-clair-de-lune-masterpiece-guide/)
+7. Paul Verlain, “Clair de Lune,” in _One Hundred and One Poems by Paul Verlaine_ (University of Chicago Press, 2008.
+8. Jessica Duchen, _Debussy’s “Clair De Lune”: The Story Behind the Masterpiece’_ (UDiscover Music, 2019) accessed [here](https://www.udiscovermusic.com/classical-features/debussy-clair-de-lune-masterpiece-guide/).
 9. Lyn Hejinian, “The Rejection of Closure,” in *The Language of Inquiry*  (University of California Press, 2000), p.50.
 10. Ibid., p. 56.
-11. Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014)
+11. Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014).
 12. Lyn Hejinian, “Two Stein Talks,” in *The Language of Inquiry*  (University of California Press, 2000), p.100.
-13. William James, *The Principles of Psychology I* (Harvard University Press, 1981,) p. 238
-14. Derek Allan, _Art is never a representation of reality._ (Iai.tv, 2026, February 10) accessed [here](https://iai.tv/articles/art-is-never-a-representation-of-reality-auid-3492)
-15. Susanne Langer, *Feeling and Form* (Charles Scribner’s Sons, 1953) p.40
-16. Ellie Anderson, “Susanne Langer on Symbolism and Artistic Expression” in *Aesthetics and Philosophy of Art Series* (2023) accessed [here](https://youtu.be/gwYNyxDTOhQ)
+13. William James, *The Principles of Psychology I* (Harvard University Press, 1981,) p. 238.
+14. Derek Allan, _Art is never a representation of reality._ (Iai.tv, 2026, February 10) accessed [here](https://iai.tv/articles/art-is-never-a-representation-of-reality-auid-3492).
+15. Susanne Langer, *Feeling and Form* (Charles Scribner’s Sons, 1953) p.40.
+16. Ellie Anderson, “Susanne Langer on Symbolism and Artistic Expression” in *Aesthetics and Philosophy of Art Series* (2023) accessed [here](https://youtu.be/gwYNyxDTOhQ).
 17. This is one reason why Lyn Hejinian’s ‘My Life’ is able to work so well—it works with complex webs of association, all centred around the gaps between sentences.
 18.  Lyn Hejinian, “Reason,” in *The Language of Inquiry*  (University of California Press, 2000), p.344.
-19. Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014)
-20. Foundation, P. (2021, February 3). _Terrance Hayes_. Poetry Foundation. accessed [here](https://www.poetryfoundation.org/poets/terrance-hayes)
+19. Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014).
+20. Unknown Writer, (2021, February 3). _Terrance Hayes_. Poetry Foundation. accessed [here](https://www.poetryfoundation.org/poets/terrance-hayes).
 ‌
