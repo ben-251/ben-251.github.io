@@ -863,6 +863,17 @@ main.container.poem-container hr:before {
   color: inherit;
 }
 
+.year-label {
+  margin-block: 0;
+  color: var(--primary-accent);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.tag-buttons {
+  margin-bottom: 1em;
+}
+
 ul.blog-post-list, ul.home-post-list, .post-list {
   padding: 0;
   padding: 1em;
@@ -876,6 +887,7 @@ ul.blog-post-list, ul.home-post-list, .post-list {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0rem;
+  margin-block: 0;
 }
 ul.blog-post-list li, ul.home-post-list li, .post-list li {
   list-style-type: none;

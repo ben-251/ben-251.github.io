@@ -628,9 +628,17 @@ main.container.poem-container {
 	}
 }
 
+.year-label {
+	margin-block: 0;
+	color: var(--primary-accent);
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.tag-buttons {
+	margin-bottom: 1em;
+}
 // MERGE THIS WITH POEM-LIST CSS (i think I have already now?)
 ul.blog-post-list, ul.home-post-list, .post-list {
-
 	// border: 1px solid var(--primary-accent);
 	// border-bottom: none;
 	padding: 0;
@@ -640,6 +648,7 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 	display: flex;
 	flex-direction: column;
 	gap: 0rem;
+	margin-block: 0; // because the year-label will be ontop
 
 	li {
 		list-style-type: none;
