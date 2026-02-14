@@ -412,10 +412,13 @@ body {
 		}
 		div.footnotes {
 			hr {display: none;}
-			ol li p {
-				line-height: 1.35;
-				margin-bottom: 0.1em;
+			ol {
 				font-family: var(--tertiary-font);
+
+				li p {
+					line-height: 1.35;
+					margin-bottom: 0.1em;
+				}
 			}
 		}
 		a.footnote-ref {

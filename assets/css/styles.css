@@ -685,10 +685,12 @@ body p > a {
 .mainbody article.content div.footnotes hr {
   display: none;
 }
+.mainbody article.content div.footnotes ol {
+  font-family: var(--tertiary-font);
+}
 .mainbody article.content div.footnotes ol li p {
   line-height: 1.35;
   margin-bottom: 0.1em;
-  font-family: var(--tertiary-font);
 }
 .mainbody article.content a.footnote-ref {
   text-decoration: none;

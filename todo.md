@@ -4,7 +4,7 @@
 - [ ] footnotes
 
 # hugo/md tweaks
-- [ ] go through all old pages to remove "# Notes" "# References" or "# Notes and References", then make that heading automatically add itself if the frontmatter includes `hasNotes,` then everything will be super clean!
+- [x] go through all old pages to remove "# Notes" "# References" or "# Notes and References", then make that heading automatically add itself if the frontmatter includes `hasNotes,` then everything will be super clean! // didn't do exactly this, but instead used css to target the heading that comes *before* the reference list, whatever it is
 
 # UI/UX-improvements
 - [x] make the "last updated" not part of the 3 mini tag things. Either put it under or above or something

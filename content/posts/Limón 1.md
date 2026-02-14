@@ -6,7 +6,6 @@ tags:
   - poetry
 description: An exploration of what good contemporary verse is capable of
 ---
-
 As far as poetic traditions go, *In the Country of Resurrection* is quite objective, in a similar vein to that of the Imagist poets, perhaps. The poem operates partially on the level of the ‘Image,’ as described my Ezra Pound, but also operates quite heavily through structure and associations. Notably missing from either description, however, is the common poetic devices of sound/rhythm. There are elements of sound that come into play, but the structure and use of line is what really carries the poem, I think.
 
 # Final Turn

@@ -14,10 +14,16 @@ This description could have applied to a painter copying a rock from memory or d
 
 {{< figure src="/art_cycle.png" alt="A graph of the Art Cycle, showing an arrow from object to initial response, then into a box named ‘the Medium’ with two circles named ‘Visceral/Gut’ and ‘Specular/Mirror’, then from there to a box called ‘Finished work’ and finally a ‘simulated response’" caption="A graph of the Art Cycle" >}}
 
+[^1]: I initially grimaced at this sentence, particularly the phrase “created art.” During the early stages, I preferred something like “Congratulations, you have just *arted*,” but to avoid overusing jargon, I reverted to the normal use of the word. Nevertheless, if you pay attention to my obstinate phrasing, you might find the spirit of ‘art as action’ implicit throughout my arguments.
+
 # The Mossy Rock
 In the above example, the object of interest to the artist was a rock, which is about as stable and tangible as can be. However, this does not have to be the only way of engaging with the artistic process. In describing the poetry movement ‘Confessionalism,’ Lucy Collins writes[^2] that “The expression of personal pain has been regarded as a hallmark of confessional poetry,” citing “destructive family relationships; traumatic childhoods; broken marriages; recurring mental breakdowns; alcoholism or drug abuse” as examples from the key writers of the movement. It would be difficult to claim that writing with “undisguised exposure”[^3] about these experiences is outside the scope of artistic expression, and my claim is that the object of an art process need not be tangible.[^4]
 
 There is, however, a clear rub between the intangibility of objects and the intangibility of a response to them. My claim is that while objects can be a whole host of things, from physical objects or places to ideas or events, the response exists only emotionally and intellectually (that is, internally).
+
+[^2]:  Lucy Collins, *Confessionalism* (Blackwell Publishing Ltd., 2001) in “A Companion to 20th Century Poetry,” p.197.
+[^3]:  Steven Axelrod, *Robert Lowell: Life and Art.* (Princeton University Press, 1979).
+[^4]:  In fact, it very rarely is. Lyn Hejinian’s notion of the “event” really nails this idea home. (see “A Fable for Now: Kate Fagan Interviews Lyn Hejinian” [here](http://cordite.org.au/interviews/fagan-hejinian/2/)).
 # The Medium Space
 What is the medium that an artist creates with? Maybe paint, or a typewriter? For my purposes, I refer to those as tools, and reserve the word ‘**medium**’ for a specific category within art forms. Consider songwriting, where the linguistic, the visual, and the sonic all collaborate to convey meaning (incidentally, poetry also works with these three categories). You could break these down further into elements (the sentence, the line, colour, shape, pitch, rhythm and so on), but taken together they form a backbone for creation and interpretation. I don’t concern myself too much with defining exactly what media fit into each artform, because there is a good deal of overlap and the grey areas are not too interesting. Instead, I focus on how elements function within a work, how they tend to play within their medium, how they influence elements from other media, and so on. Another point is that art *forms* are specific traditions and shapes of the much more general act of artistic expression. Thus, when thinking of a general, loose set of categories, I use the terms ‘**medium space,**’ or sometimes simply ‘**media**’.
 
@@ -27,12 +33,16 @@ There are two extremes when working with any given medium space:
 
 The former I call “engaging with the **Specular,**” and the latter “engaging with the **Visceral.**” We take some time now to explore these two modes of thinking.
 
+[^5]:  At the time of writing this, I am heavily exploring the latter, so I can only apologise for any bias in phrasing—I wholeheartedly believe in the necessity and value of both approaches.
+
 # The Specular
 A Specular-focused approach places the audience in the exact position of the artist, faithfully reflecting the objects that inspired them, that is, treating the medium as a specular surface. When looking in a mirror, the goal is not to see the mirror at all; it is to see what the mirror reflects. In a similar sense, the Specular is concerned with making the media as invisible as possible.
 
 A friend of mine encountered this media invisibility quite directly through Timothy Schmalz’ sculpture ‘Homeless Jesus,’ portraying a homeless person asleep on a bench. He, like several people who saw the sculpture, was initially fooled into seeing a real person asleep there, and so any feelings of compassion or deep emotion were, from his reference point, directed at reality, not a representation of it; the media of the statue were largely unseen. In a situation like this, aesthetics and form are clearly not the only point. It is “a social statement, meant to bring awareness to Jesus’ literal connection to homeless people…”[^6] and does this by directly representing the artist’s object of inspiration, that is, an actual homeless person, asleep on a bench. 
 
 Examples from poetry would be the *Imagism* and *Confessional* movements, Haiku, Found Poetry, and even the inclusion of Epigraphs. We find strong examples in the storytelling artform through memoir and biography.
+
+[^6]: Lennie Bennett, *Emotionally charged 'Homeless Jesus' sculpture in Tampa a social statement* (Tampa Bay Times, 2016, March 31), accessed [here](https://www.tampabay.com/things-to-do/visualarts/emotionally-charged-homeless-jesus-sculpture-in-tampa-a-social-statement/2271410/).
 
 # The Visceral
 If an artist “looks” at their object in a Visceral work, they do so only from a peripheral angle. Visceral approaches are all about making the medium tangible and drawing attention to all its elements. This is often accomplished by refusing to represent anything directly at all. An example would be a clouded mirror, which forces you to remember the materials of glass and dust and steam that you would otherwise never register. As a result of this indirect focus, visceral work is often quite difficult to analyse: it may engage its audience powerfully on an intuitive level, but it is quite difficult to figure out why. 
@@ -44,6 +54,10 @@ At first, music may appear to be necessarily visceral; its sonic elements are of
 > “The work shares the poem’s delicacy, its plangent yet subtle suggestions of mingled sorrow and beauty, and the ‘blue note’ in the middle section – which seems almost to evoke those weeping fountains – encapsulates a certain atmosphere that permeates the entire piece.”[^9]
 
 A more visceral piece may be found in minimal music, for example with Steve Reich’s *Music for 18 Musicians.* Here, the medium is completely impossible to ignore, with its insistent repetition and structure, slowly evolving but always pulsing and pounding. A work like this is hard to place; it is quite dissonant to the audience. Taking this even further, Okkyung Lee’s *Ghil* fits into the genre of “noise music”—with virtually no clear object to focus on, all we can see is the medium; all we can focus on is the physical clouded mirror. Some may find a work like this needlessly chaotic, and others may suggest it taps into something no other music can. I don’t argue for one or the other, but crucially, whatever is happening here is *different* to what the more specular pieces do.
+
+[^7]:  Music is quite tricky to place within this model for exactly this reason. Some music is clearly more specular than others, but the art form as a whole is insanely visceral. I’ve chosen to use Music as the example to show both the strengths *and* potential limitations of working with this model, before narrowing down into poetics, where it undoubtedly functions better.
+[^8]:  Paul Verlaine, “Clair de Lune,” in _One Hundred and One Poems by Paul Verlaine_ (University of Chicago Press, 2008.
+[^9]:  Jessica Duchen, _Debussy’s “Clair De Lune”: The Story Behind the Masterpiece’_ (UDiscover Music, 2019), accessed [here](https://www.udiscovermusic.com/classical-features/debussy-clair-de-lune-masterpiece-guide/).
 
 # On Language
 In both visceral and specular works, the ultimate goal of the artist could be one of two things: to have the audience form their unique response, or to guide them toward the original response of the author. A specular artist could represent a rock as directly as possible in the hopes that their audience will come to the same deep feelings that they experienced, but just as easily, their reason for representing the rock itself may be to allow the audience to form their own reactions and responses. Similarly, a visceral artist could work deeply with their media to represent the abstract essence of the rock as experienced on first inspiration, but equally easily, they could work with their media to let the work open up, allowing the audience to react however they do.
@@ -61,6 +75,13 @@ Similarly, when close-reading Gertrude Stein’s infamous ‘A Carafe that is a 
 > “There is not a conjunction or a preposition, and hardly an adverbial phrase, syntactic form, or inflection of voice, in human speech, that does not express some shading or other of relation which we at some moment actually feel to exist between the larger objects of our thought. \[…] We ought to say a feeling of *and,* a feeling of *if,* a feeling of *but,* and a feeling of *by,* quite as readily as we say a feeling of *blue* or a feeling of *cold.*”[^14]
 
 Showing that every element of a sentence matters, not solely because of what it represents about the piece’s object, but because of the inherent characters within every word (and, by extension the character within clauses, lines, paragraphs, etc). 
+
+[^10]:  Lyn Hejinian, “The Rejection of Closure,” in *The Language of Inquiry*  (University of California Press, 2000), p.50.
+[^11]:  Ibid., p. 56.
+[^12]:  Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014).
+[^13]:  Lyn Hejinian, “Two Stein Talks,” in *The Language of Inquiry*  (University of California Press, 2000), p.100.
+[^14]:  William James, *The Principles of Psychology I* (Harvard University Press, 1981) p. 238.
+
 ***
 To be fully visceral, on the other hand, requires the removal of all direct communicative power, to not “claim” anything. This might appear quite easy, particularly if you argue that my earlier proposition of music as necessarily representational is a little wishy-washy. In fact, this sort of critique is an established point of debate:
 
@@ -74,21 +95,7 @@ I believe this emphasis on symbols rather than signal (or, “a system to pointi
 
 > “I think music is the primary model—how close can you get this language to be like music and communicate feeling at the base level in the same way a composition with no words communicates meaning? It might be impossible.”[^21]
 
-# Notes and References
-[^1]: I initially grimaced at this sentence, particularly the phrase “created art.” During the early stages, I preferred something like “Congratulations, you have just *arted*,” but to avoid overusing jargon, I reverted to the normal use of the word. Nevertheless, if you pay attention to my obstinate phrasing, you might find the spirit of ‘art as action’ implicit throughout my arguments.
-[^2]:  Lucy Collins, *Confessionalism* (Blackwell Publishing Ltd., 2001) in “A Companion to 20th Century Poetry,” p.197.
-[^3]:  Steven Axelrod, *Robert Lowell: Life and Art.* (Princeton University Press, 1979).
-[^4]:  In fact, it very rarely is. Lyn Hejinian’s notion of the “event” really nails this idea home. (see “A Fable for Now: Kate Fagan Interviews Lyn Hejinian” [here](http://cordite.org.au/interviews/fagan-hejinian/2/)).
-[^5]:  At the time of writing this, I am heavily exploring the latter, so I can only apologise for any bias in phrasing—I wholeheartedly believe in the necessity and value of both approaches.
-[^6]: Lennie Bennett, *Emotionally charged 'Homeless Jesus' sculpture in Tampa a social statement* (Tampa Bay Times, 2016, March 31), accessed [here](https://www.tampabay.com/things-to-do/visualarts/emotionally-charged-homeless-jesus-sculpture-in-tampa-a-social-statement/2271410/).
-[^7]:  Music is quite tricky to place within this model for exactly this reason. Some music is clearly more specular than others, but the art form as a whole is insanely visceral. I’ve chosen to use Music as the example to show both the strengths *and* potential limitations of working with this model, before narrowing down into poetics, where it undoubtedly functions better.
-[^8]:  Paul Verlaine, “Clair de Lune,” in _One Hundred and One Poems by Paul Verlaine_ (University of Chicago Press, 2008.
-[^9]:  Jessica Duchen, _Debussy’s “Clair De Lune”: The Story Behind the Masterpiece’_ (UDiscover Music, 2019), accessed [here](https://www.udiscovermusic.com/classical-features/debussy-clair-de-lune-masterpiece-guide/).
-[^10]:  Lyn Hejinian, “The Rejection of Closure,” in *The Language of Inquiry*  (University of California Press, 2000), p.50.
-[^11]:  Ibid., p. 56.
-[^12]:  Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014).
-[^13]:  Lyn Hejinian, “Two Stein Talks,” in *The Language of Inquiry*  (University of California Press, 2000), p.100.
-[^14]:  William James, *The Principles of Psychology I* (Harvard University Press, 1981) p. 238.
+
 [^15]:  Derek Allan, _Art is never a representation of reality._ (Iai.tv, 2026, February 10), accessed [here](https://iai.tv/articles/art-is-never-a-representation-of-reality-auid-3492).
 [^16]: Susanne Langer, *Feeling and Form* (Charles Scribner’s Sons, 1953) p.40.
 [^17]:  Ellie Anderson, “Susanne Langer on Symbolism and Artistic Expression” in *Aesthetics and Philosophy of Art Series* (2023), accessed [here](https://youtu.be/gwYNyxDTOhQ).
@@ -97,3 +104,5 @@ I believe this emphasis on symbols rather than signal (or, “a system to pointi
 [^20]: Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014).
 [^21]:  Unknown Writer(s), (2021, February 3). _Terrance Hayes_. Poetry Foundation, accessed [here](https://www.poetryfoundation.org/poets/terrance-hayes).
 ‌
+# Notes and References
+<!-- necessary header, btw -->
