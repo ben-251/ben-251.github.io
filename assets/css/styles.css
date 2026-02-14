@@ -569,6 +569,7 @@ body {
   border-color: color-mix(in srgb, transparent 80%, var(--primary-accent));
 }
 .mainbody article.content {
+  scroll-behavior: smooth;
   padding-block: 2em;
 }
 .mainbody article.content blockquote {
@@ -678,6 +679,15 @@ body {
 }
 .mainbody article.content div.footnotes hr {
   display: none;
+}
+.mainbody article.content a.footnote-ref {
+  text-decoration: none;
+}
+.mainbody article.content a.footnote-ref::before {
+  content: "[";
+}
+.mainbody article.content a.footnote-ref::after {
+  content: "]";
 }
 .mainbody article.content .notes {
   list-style-type: lower-alpha;
@@ -1163,6 +1173,9 @@ main.four-o-four h1 {
   }
   .mainbody main.container .tag-list .tag {
     font-size: 0.8rem;
+  }
+  .mainbody article.content {
+    scroll-behavior: auto;
   }
   .mainbody article.content p {
     margin-block: 1em;

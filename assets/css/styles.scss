@@ -294,6 +294,9 @@ body {
 	}
 
 	article.content {
+		scroll-behavior: smooth;
+		
+
 		// background-color: red;
 		padding-block: 2em;
 
@@ -404,6 +407,17 @@ body {
 		// footnotes
 		div.footnotes {
 			hr {display: none;}
+		}
+		a.footnote-ref {
+			text-decoration: none;
+
+			&::before {
+				content: '[';
+			}
+
+			&::after {
+				content: ']';
+			}
 		}
 
 		// misc
