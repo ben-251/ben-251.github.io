@@ -676,6 +676,9 @@ body {
   width: -moz-min-content;
   width: min-content;
 }
+.mainbody article.content div.footnotes hr {
+  display: none;
+}
 .mainbody article.content .notes {
   list-style-type: lower-alpha;
 }

@@ -315,6 +315,7 @@ body {
 			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
 		}
 		h1 {
+			// font-variant: small-caps;
 			margin-bottom: 0.2em;
 			margin-top: 1em;
 			font-size: 1.4em;
@@ -398,6 +399,11 @@ body {
 		th {
 			font-family: var(--sans-font);
 			width: min-content;
+		}
+
+		// footnotes
+		div.footnotes {
+			hr {display: none;}
 		}
 
 		// misc
