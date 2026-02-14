@@ -47,7 +47,7 @@ all colours must be fully opaque.
   --primary-accent: #4fa6ba;
   --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
-  --secondary-bg: #12181c;
+  --secondary-bg: rgb(18.36, 24.48, 27.54);
   --secondary-accent: #408b8b;
   --secondary-accent-contrast: var(--secondary-bg);
 }
@@ -74,7 +74,7 @@ all colours must be fully opaque.
   --primary-accent: rgb(220, 67, 154);
   --primary-accent-contrast: white;
   --secondary-color: #511b36;
-  --secondary-bg: #f8d9e9;
+  --secondary-bg: rgb(248.25, 216.75, 232.5);
   --secondary-accent: hotpink;
   --secondary-accent-contrast: var(--secondary-bg);
 }
@@ -100,7 +100,7 @@ all colours must be fully opaque.
   --primary-bg: #fcf2e5;
   --primary-accent: rgb(192, 130, 106);
   --secondary-color: white;
-  --secondary-bg: #b38877;
+  --secondary-bg: rgb(179.1, 135.7, 118.9);
   --secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
   --secondary-bg: #b58670;
   --secondary-accent: #f7cf9c;
@@ -306,10 +306,10 @@ all colours must be fully opaque.
 
 *:root {
   --nav-width: 10vw;
-  --primary-font: spectral, "Cardo";
+  --primary-font: spectral, 'Cardo';
   --sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
   --header-font: "Spectral", "Playfair Display", "Julius sans one";
-  --logo-font: Bellefair, "Playfair display";
+  --logo-font: Bellefair, 'Playfair display';
   --main-font-size: 20px;
   --prose-title-font: Bellefair, "passions conflict", "mea culpa";
   font-size: var(--main-font-size);
@@ -376,8 +376,6 @@ body {
   padding: 3em 1.1em 3em 1.1em;
   background-color: var(--secondary-bg);
   color: var(--secondary-color);
-  /* underline effect */
-  /* more nav stuff */
 }
 .navbar * {
   display: block;
@@ -412,6 +410,9 @@ body {
   width: max-content;
   text-wrap: pretty;
 }
+.navbar {
+  /* underline effect */
+}
 .navbar .navbar-item {
   background: -webkit-gradient(linear, left top, right top, from(transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(color-mix(in srgb, var(--secondary-accent), var(--secondary-bg))), to(var(--secondary-accent)));
   background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, color-mix(in srgb, var(--secondary-accent), var(--secondary-bg)), var(--secondary-accent));
@@ -433,6 +434,9 @@ body {
 .navbar a:not(.navbar-logo):hover {
   background-size: 0 3px, 100% 3px;
   opacity: 1;
+}
+.navbar {
+  /* more nav stuff */
 }
 .navbar li a {
   margin-left: 1em;
@@ -614,11 +618,11 @@ body {
 .mainbody article.content .figcaption-index {
   font-variant: small-caps;
 }
-.mainbody article.content p + hr:has(+ p) {
+.mainbody article.content :is(p, blockquote) + hr:has(+ p) {
   border: none;
   margin: 0;
 }
-.mainbody article.content p + hr:has(+ p)::before {
+.mainbody article.content :is(p, blockquote) + hr:has(+ p)::before {
   content: " ✽✽✽ ";
   color: color-mix(in srgb, var(--primary-color) 90%, var(--primary-accent));
   margin-block: 1.6em;
@@ -720,6 +724,12 @@ main.post-list .content.shortened, main > .post-list .content.shortened {
   text-overflow: ellipsis;
   max-width: 5em;
 }
+main.post-list .empty-message p, main > .post-list .empty-message p {
+  font-size: 1.5rem;
+}
+main.post-list .empty-message h1, main > .post-list .empty-message h1 {
+  font-size: 2rem;
+}
 main.post-list .empty-message, main > .post-list .empty-message {
   background-color: color-mix(in srgb, var(--secondary-bg), transparent);
   border: 2px var(--primary-accent) dashed;
@@ -727,12 +737,6 @@ main.post-list .empty-message, main > .post-list .empty-message {
   color: var(--secondary-color);
   padding-inline: 2em;
   padding-block: 1em;
-}
-main.post-list .empty-message p, main > .post-list .empty-message p {
-  font-size: 1.5rem;
-}
-main.post-list .empty-message h1, main > .post-list .empty-message h1 {
-  font-size: 2rem;
 }
 
 .TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
@@ -1113,8 +1117,7 @@ main.four-o-four h1 {
     top: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.1882352941);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
   }
   .navbar {
     z-index: 91;
@@ -1171,6 +1174,12 @@ main.four-o-four h1 {
             padding-inline-end: 1em;
     text-align: justify;
     text-wrap: wrap;
+  }
+  .mainbody article.content figure {
+    margin: 0;
+  }
+  .mainbody article.content figure img {
+    max-width: 100vw;
   }
   .footer {
     display: -webkit-box;

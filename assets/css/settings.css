@@ -37,7 +37,7 @@ all colours must be fully opaque.
   --primary-accent: #4fa6ba;
   --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
-  --secondary-bg: #12181c;
+  --secondary-bg: rgb(18.36, 24.48, 27.54);
   --secondary-accent: #408b8b;
   --secondary-accent-contrast: var(--secondary-bg);
 }
@@ -64,7 +64,7 @@ all colours must be fully opaque.
   --primary-accent: rgb(220, 67, 154);
   --primary-accent-contrast: white;
   --secondary-color: #511b36;
-  --secondary-bg: #f8d9e9;
+  --secondary-bg: rgb(248.25, 216.75, 232.5);
   --secondary-accent: hotpink;
   --secondary-accent-contrast: var(--secondary-bg);
 }
@@ -90,7 +90,7 @@ all colours must be fully opaque.
   --primary-bg: #fcf2e5;
   --primary-accent: rgb(192, 130, 106);
   --secondary-color: white;
-  --secondary-bg: #b38877;
+  --secondary-bg: rgb(179.1, 135.7, 118.9);
   --secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
   --secondary-bg: #b58670;
   --secondary-accent: #f7cf9c;

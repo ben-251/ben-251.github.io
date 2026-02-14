@@ -41,7 +41,7 @@ body {
   --font-serif: Unna, "Cormorant";
   --font-sans: Karla, Quicksand, "FIra Sans";
   --font-family-editor: var(--font-sans), var(--font-sans), Avenir, "Avenir Next", sans-serif;
-  --font-text: var(--font-sans), "Baskervville", "Source Serif 4", "Poiret One", "Anonymous Pro";
+  --font-text: var(--font-sans), 'Baskervville', 'Source Serif 4', 'Poiret One', 'Anonymous Pro';
   --font-italics: var(--font-text), var(--font-serif), "Poiret One", "EB garamond", "Playfair", "latin modern roman dunhill";
   --font-bold: var(--font-text), var(--font-serif), "Varela Round", "Lobster Two";
   --font-bold-italics: var(--font-text), var(--font-serif), "Varela Round", "Lobster Two";
@@ -55,11 +55,11 @@ body {
   --font-timeline-accent: "Cinzel";
   --font-timeline-main: Garamond, "EB Garamond";
   --font-poem: Garamond, "EB Garamond";
-  --font-poem-title: Rosarivo, Unna, Marcellus, Quicksand, Jost, "Montserrat Medium", Garamond, "Gill Sans", "Gill Sans MT", sans-serif;
+  --font-poem-title: Rosarivo, Unna, Marcellus, Quicksand, Jost, 'Montserrat Medium', Garamond, 'Gill Sans', 'Gill Sans MT', sans-serif;
   --font-prose: Garamond, "EB Garamond";
   --font-prose-title: Cinzel;
   --font-profile: Garamond, "EB Garamond";
-  --font-profile-heading: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font-profile-heading: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --font-profile-fancy: Cinzel, Garamond;
   --tag-bg: rgba(225, 128, 255, 0.144);
   --tag-font-color: rgb(239, 206, 255);
@@ -939,10 +939,12 @@ ul .task-list-item ul::before {
 /* manual codeblock override */
 .HyperMD-codeblock {
   display: inline;
-  /* syntax highlights */
 }
 .HyperMD-codeblock.HyperMD-codeblock-bg {
   --code-background: color-mix(in srgb, var(--background-secondary), transparent 60%);
+}
+.HyperMD-codeblock {
+  /* syntax highlights */
 }
 .HyperMD-codeblock span.cm-hmd-codeblock {
   --selected-color: white;

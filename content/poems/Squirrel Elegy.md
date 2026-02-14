@@ -30,7 +30,7 @@ Bones and tendons fix themselves—
 the squirrel turns his face to the garden.  
   
 Supposed to be in the garden. Somewhere  
-in the air, birds are looking for your corpse. 
+in the air, birds are looking for your corpse.  
 Corpse? Somewhere between the moment  
 I saw you and the moment I walked away,  
 the hope of your being unravelled.   
