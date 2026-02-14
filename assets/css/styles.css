@@ -109,7 +109,7 @@ all colours must be fully opaque.
 .theme-emerald {
   --pure-contrast: white;
   --pure-color: black;
-  --primary-color: #7cbd97;
+  --primary-color: #addcb7;
   --primary-bg: #10351c;
   --primary-accent: rgb(170, 238, 191);
   --secondary-color: #fff;
@@ -310,6 +310,7 @@ all colours must be fully opaque.
   --sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
   --header-font: "Spectral", "Playfair Display", "Julius sans one";
   --logo-font: Bellefair, 'Playfair display';
+  --tertiary-font: Bellefair;
   --main-font-size: 20px;
   --prose-title-font: Bellefair, "passions conflict", "mea culpa";
   font-size: var(--main-font-size);
@@ -317,6 +318,8 @@ all colours must be fully opaque.
 }
 
 body {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
@@ -325,9 +328,11 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-color);
   font-size: 1rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   min-height: 100vh;
   height: 100;
+  max-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,11 +346,6 @@ body a {
 }
 body p > a {
   color: var(--primary-accent);
-}
-
-body {
-  background-color: var(--primary-bg);
-  color: var(--primary-color);
 }
 
 .nav-mobile {
@@ -677,8 +677,18 @@ body {
   width: -moz-min-content;
   width: min-content;
 }
+.mainbody article.content h1:has(+ div.footnotes), .mainbody article.content .ref-header {
+  font-variant: small-caps;
+  font-family: var(--sans-font);
+  font-weight: 100;
+}
 .mainbody article.content div.footnotes hr {
   display: none;
+}
+.mainbody article.content div.footnotes ol li p {
+  line-height: 1.35;
+  margin-bottom: 0.1em;
+  font-family: var(--tertiary-font);
 }
 .mainbody article.content a.footnote-ref {
   text-decoration: none;
@@ -894,7 +904,7 @@ ul.blog-post-list li a .date, ul.home-post-list li a .date, .post-list li a .dat
   font-size: 1.1em;
   padding-right: 1em;
   display: inline-block;
-  width: 6em;
+  width: 7.5em;
 }
 ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   padding-inline: 0.5rem;

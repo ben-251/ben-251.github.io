@@ -82,7 +82,7 @@ I believe this emphasis on symbols rather than signal (or, “a system to pointi
 [^5]:  At the time of writing this, I am heavily exploring the latter, so I can only apologise for any bias in phrasing—I wholeheartedly believe in the necessity and value of both approaches.
 [^6]: Lennie Bennett, *Emotionally charged 'Homeless Jesus' sculpture in Tampa a social statement* (Tampa Bay Times, 2016, March 31), accessed [here](https://www.tampabay.com/things-to-do/visualarts/emotionally-charged-homeless-jesus-sculpture-in-tampa-a-social-statement/2271410/).
 [^7]:  Music is quite tricky to place within this model for exactly this reason. Some music is clearly more specular than others, but the art form as a whole is insanely visceral. I’ve chosen to use Music as the example to show both the strengths *and* potential limitations of working with this model, before narrowing down into poetics, where it undoubtedly functions better.
-[^8]:  Paul Verlain, “Clair de Lune,” in _One Hundred and One Poems by Paul Verlaine_ (University of Chicago Press, 2008.
+[^8]:  Paul Verlaine, “Clair de Lune,” in _One Hundred and One Poems by Paul Verlaine_ (University of Chicago Press, 2008.
 [^9]:  Jessica Duchen, _Debussy’s “Clair De Lune”: The Story Behind the Masterpiece’_ (UDiscover Music, 2019), accessed [here](https://www.udiscovermusic.com/classical-features/debussy-clair-de-lune-masterpiece-guide/).
 [^10]:  Lyn Hejinian, “The Rejection of Closure,” in *The Language of Inquiry*  (University of California Press, 2000), p.50.
 [^11]:  Ibid., p. 56.

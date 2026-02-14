@@ -7,7 +7,7 @@
 		{{ partial "empty" . }}
 	{{ else }}
 	<ul class="post-list">
-		{{ range $pages.Pages }}
+		{{ range first 5 $pages.Pages }}
 		<li>
 			{{/*  {{ .Render "summary" }}  */}}
 			<a href="{{.Permalink}}">{{.Title}}</a>

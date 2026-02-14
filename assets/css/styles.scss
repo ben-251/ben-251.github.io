@@ -24,34 +24,11 @@
 	--sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
 	--header-font: "Spectral", "Playfair Display", "Julius sans one";
 	--logo-font: Bellefair, 'Playfair display';
+	--tertiary-font: Bellefair;
 	--main-font-size: 20px;
 	--prose-title-font: Bellefair, "passions conflict", "mea culpa";
 	font-size: var(--main-font-size);
 	/* to set rem */
-}
-
-body {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	background-color: var(--primary-bg);
-	font-family: var(--primary-font);
-	color: var(--primary-color);
-	font-size: 1rem;
-	overflow: scroll;
-	min-height: 100vh;
-	height: 100;
-
-	display: flex;
-	flex-direction: row;
-
-	a {
-		color: var(--primary-color)
-	}
-
-	p > a {
-		color: var(--primary-accent)
-	}
 }
 
 
@@ -63,6 +40,29 @@ body {
 
 body {
 	@include body-theme();
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: var(--primary-bg);
+	font-family: var(--primary-font);
+	color: var(--primary-color);
+	font-size: 1rem;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	min-height: 100vh;
+	height: 100;
+	max-width: 100vw;
+
+	display: flex;
+	flex-direction: row;
+
+	a {
+		color: var(--primary-color)
+	}
+
+	p > a {
+		color: var(--primary-accent)
+	}
 }
 
 .nav-mobile {display: none}
@@ -405,8 +405,18 @@ body {
 		}
 
 		// footnotes
+		h1:has(+div.footnotes), .ref-header {	
+			font-variant: small-caps;
+			font-family: var(--sans-font);
+			font-weight: 100;
+		}
 		div.footnotes {
 			hr {display: none;}
+			ol li p {
+				line-height: 1.35;
+				margin-bottom: 0.1em;
+				font-family: var(--tertiary-font);
+			}
 		}
 		a.footnote-ref {
 			text-decoration: none;
@@ -661,7 +671,7 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 				padding-right: 1em;	
 				display: inline-block;
 				// min-width: max-content;
-				width: 6em;		
+				width: 7.5em;		
 			}
 
 			// .article-container {
