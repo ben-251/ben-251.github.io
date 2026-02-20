@@ -6,7 +6,7 @@ tags:
   - poetry
 description: A poem on infancy and knowledge
 ---
-What stood out first about [this](https://www.poetryfoundation.org/poetrymagazine/poems/1639264/wheres-my-moon) delightful poem is how deliberately it portrays infancy through its elements. The rhyming couplet pattern (AA AA AA …) is never broken, and when you pair that with the incessant repetition of the question *’Where’s my moon?’* you get the feeling of a nursery rhyme or lullaby:
+What stood out first about [this](https://www.poetryfoundation.org/poetrymagazine/poems/1639264/wheres-my-moon) delightful poem, by Carole Boston Weatherford, is how deliberately it portrays infancy through its elements. The rhyming couplet pattern (AA AA AA …) is never broken, and when you pair that with the incessant repetition of the question *’Where’s my moon?’* you get the feeling of a nursery rhyme or lullaby:
 
 > Child wakes at sunup, fresh as June   
 > But worries still, *Where’s my moon?*

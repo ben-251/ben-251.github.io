@@ -1,10 +1,11 @@
 ---
 draft: true
-date: 2026-02-07
-title: "Art Cycle Pt. 2: Engaging the Cycle"
+date: 2026-02-20
+title: "Art Cycle Ch. 2: Engaging the Cycle"
 tags:
   - art
   - poetics
   - SV-theory
-description: " An exploration of the drafting process"
+description: " On Drafting and Composition"
 ---
+fgh

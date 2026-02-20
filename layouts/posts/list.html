@@ -35,7 +35,7 @@
 	}
 </script>
 <main>
-	<h1>{{.Title}}</h1>
+	<h1>{{.Title}} </h1>
 	<article>
 		<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
 		{{.Content}}
@@ -59,20 +59,13 @@
 		<ul class="blog-post-list">
 			<!-- Ranges through content/posts/*.md -->
 
-			{{ range .Pages }}
+			{{ range.Pages }}
 				{{ if .Params.tags }}
 					<li data-tags='{{ delimit .Params.tags "," }}'>
 				{{ else }}
 					<li data-tags="">
 				{{ end }}
-					<a href="{{.Permalink}}">
-						<span class="date">
-							{{.Date.Format "January 2"}}
-						</span>
-						<span class="title">
-							{{.Title}}
-						</span>
-					</a>
+					{{ .Render "summary" }}
 				</li>
 			{{ end }}
 		</ul>

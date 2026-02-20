@@ -7,6 +7,7 @@ tags:
   - DA
 description:
 ---
+Ever since I noticed today’s poem would begin with the final word of ‘Morning Song,’ I’ve been eager to get to it. With this connection in mind, it’s no surprise that ‘Balloons’ is bursting (pun intended) with childhood themes and imagery, presenting a view of life from a child’s eyes
 # The small, simple lines
 > Your small
 > 
@@ -28,8 +29,10 @@ The final stanza creates a powerful closure. Its two sentences employ assonance 
 
 The result of this peculiar rhythm is a slow, confused reflection, contrasting with the vibrant energy of much of the rest of the poem. 
 
-# Balloon’s Inner World
-This poem is punctuated with questions and images related to the inside of the balloon. The speaker from the start seems to know clearly that the balloon contains only air, and that the balloon is not trying to hide this (“guileless and clear”, “globes of thin air”). Later, we see the child try to uncover the secrets of the balloon, “Seeming to see / A funny pink world he might eat on the other side of it,” just before the air of the balloon is again described, this time as “a world as clear as water.” 
+# The Balloon’s Inner World
+This poem is punctuated with questions and images related to the inside of the balloon. The speaker seems to know early on that the balloon contains only air, and the balloon is not trying to hide this, leading to the descriptions “guileless and clear”,  and “globes of thin air”. Later, we see the child try to uncover the secrets of the balloon, “Seeming to see / A funny pink world he might eat on the other side of it,” just before the air of the balloon is again described, this time as “a world as clear as water.” So altogether, the child wrongly expects to find a rich and complex “world” inside the lively balloon, and instead finds precisely nothing. As an isolated statement about childhood, and how the world of possibility shrinks with age (think of the fig tree from *The Bell Jar*) this would be quite depressing. However, this statement is placed in an interesting context.
 
+# Fat Jug
+If a crucial feature of the balloons’ description is their liveliness, a parallel for the small brother of the poem might be his lack of knowledge. The child plays with his balloon, looks into it expectantly, bites it, and then holds the consequences in his hands. He  
 
 

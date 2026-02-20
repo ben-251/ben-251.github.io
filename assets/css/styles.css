@@ -590,9 +590,9 @@ body p > a {
   color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
 }
 .mainbody article.content h1 {
-  margin-bottom: 0.2em;
+  margin-bottom: 0em;
   margin-top: 1em;
-  font-size: 1.4em;
+  font-size: 1.65em;
 }
 .mainbody article.content p, .mainbody article.content ul, .mainbody article.content ol {
   color: var(--subtle-text-color);
@@ -780,7 +780,7 @@ mjx-container[jax=CHTML][display=true] {
   width: max-content;
   width: 100%;
   margin: auto !important;
-  font-size: 1.3em !important;
+  font-size: 1.2rem !important;
 }
 
 button {
@@ -933,6 +933,12 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   font-family: var(--primary-font);
   font-weight: bold;
 }
+ul.blog-post-list li .description, ul.home-post-list li .description, .post-list li .description {
+  font-style: italic;
+  font-family: var(--secondary-font);
+  font-weight: 100;
+  opacity: 0.8;
+}
 
 .home-post-lists > .home-post-group:hover:not(:has(> ul:hover)) > * {
   background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
@@ -960,12 +966,6 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   font-weight: 500;
   color: color-mix(in srgb, var(--primary-color) 90%, color-mix(in srgb, var(--primary-bg) 50%, var(--primary-accent)));
   opacity: 0.8;
-}
-.home-post-lists > .home-post-group .description {
-  font-style: italic;
-  font-family: var(--secondary-font);
-  font-weight: 100;
-  opacity: 0.4;
 }
 .home-post-lists .home-post-list {
   margin-block: 0;

@@ -1,7 +1,6 @@
 @use 'theme';
 @use 'settings';
 
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand');
 @import url('https://fonts.googleapis.com/css2?family=Cardo');
@@ -319,9 +318,9 @@ body {
 		}
 		h1 {
 			// font-variant: small-caps;
-			margin-bottom: 0.2em;
+			margin-bottom: 0em;
 			margin-top: 1em;
-			font-size: 1.4em;
+			font-size: 1.65em;
 		}
 		p, ul, ol {
 			color: var(--subtle-text-color);
@@ -543,7 +542,7 @@ mjx-container[jax="CHTML"][display="true"] {
 	width: max-content;
 	width: 100%;
 	margin:auto !important;
-	font-size: 1.3em !important;
+	font-size: 1.2rem !important;
 }
 
 // BLOG POST LIST
@@ -703,13 +702,19 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 			font-family: var(--primary-font);
 			font-weight: bold;
 		}
+
+		.description {
+			font-style: italic;
+			font-family: var(--secondary-font);
+			font-weight: 100;
+			opacity: 0.8;
+		}
 	}
 }
 
 
 .home-post-lists {
 	> .home-post-group {
-
 		&:hover:not(:has( > ul:hover)){  // how did I get this first try??
 			> * {
 				background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
@@ -737,6 +742,7 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 				}
 			}
 		}
+
 		.title{
 			font-family: var(--sans-font);
 			font-weight: 500;
@@ -749,12 +755,12 @@ ul.blog-post-list, ul.home-post-list, .post-list {
 				);
 			opacity: 0.8
 		}
-		.description {
-			font-style: italic;
-			font-family: var(--secondary-font);
-			font-weight: 100;
-			opacity: 0.4;
-		}
+		// .description {
+		// 	font-style: italic;
+		// 	font-family: var(--secondary-font);
+		// 	font-weight: 100;
+		// 	opacity: 0.4;
+		// }
 	}
 
 

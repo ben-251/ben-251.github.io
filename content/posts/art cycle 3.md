@@ -1,10 +1,10 @@
 ---
 draft: true
 date: 2026-02-07
-title: "Art Cycle Ch. 3: Analysis of Art"
+title: "The author-audience relationship: Approaches to close-reading."
 tags:
   - art
   - poetics
   - SV-theory
-description: Teasing out the relationship between artist and audience, and addressing various approaches to close-reading.
+description: "Art Cycle #3"
 ---

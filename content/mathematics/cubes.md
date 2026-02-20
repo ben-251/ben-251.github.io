@@ -3,6 +3,8 @@ draft: false
 title: Group Theory on 2x2s
 date: 2025-03-17
 tags:
+  - group-theory
+description: a little all-over-the-place in hindsight...
 ---
 ## Introduction
 We define the group, $G,$ to be the set of all possible move sequences. This group is non-abelian under addition.
@@ -27,9 +29,9 @@ Another natural question is whether there exist two move sequences that are not 
 # Move Sequences
 *Note: We ignore primitive permutation groups and reserve the word primitive for purposes outlined below:*
 
-Let $\mathbb{M}$ be the set of all basic, or **primitive** moves, $\mathbb{M} = \{R,U,F,L,D,B\}$. For all $X \in \mathbb{M}$, there exists an abelian subgroup on $X$ under addition. The set $H = \{n X : n \in \mathbb{Z} / 4\}$ is a subset of $G$, is nonempty, and is finite. The fact that this pattern is cyclical (that is, $3X + X = 0$) implies that this set is closed under addition, so $H$ is a subgroup of $G.$ We call this subgroup the **primitive group** over $X,$ written $\text{prim } \{X\}$. For example,  $\text{prim }\{R\} =\{-R, 0, R, 2R\}$, where $-1 \equiv 3$ mod $4$ gives an inverse on addition. 
+Let $\mathbb{M}$ be the set of all basic, or **primitive** moves, $\mathbb{M} = \{R,U,F,L,D,B\}$. For all $x \in \mathbb{M}$, there exists an abelian subgroup on $x$ under addition. The set $H = \{n x : n \in \mathbb{Z} / 4\}$ is a subset of $G$, is nonempty, and is finite. The fact that this pattern is cyclic (that is, $\langle x \rangle = H$ ) implies that $H$ is a  cyclic subgroup of $G.$ Call this subgroup the **primitive group** over $X,$ written $\text{prim } \{X\}$. 
 
-For some set $S=\{X_{1},X_{2}, \dots X_{m}\}$, the primitive group over $S$ can be written $$\text{prim }S= \{ n_{1}X_{1} + n_{2}X_{2} + \dots+n_{m}X_{m} : n_{i} \in \mathbb{Z} / k \}.$$Every element of this set has an order of $k$. If the pair is parallel, $k=4$, and The set to $\{-1,0,1,2\}$ is taken as representative of $\mathbb{Z} / 4$, and we call the sum a **reduced parallel sequence,** on $A$, for $A \in {R,U,F}$. Since only parallel elements of $G$ form abelian subgroups,
+For some set $S=\{X_{a},X_{b},\dots\}$, the primitive group over $S$ can be written $$\text{prim }S= \{ n_{a}X_{a} + n_{b}X_{b} + \dots : n_{i} \in \mathbb{Z} / k \}.$$Every element of this set has an order of $k$. If the pair is parallel, $k=4$, and The set to $\{-1,0,1,2\}$ is taken as representative of $\mathbb{Z} / 4$, and we call the sum a **reduced parallel sequence,** on $A$, for $A \in {R,U,F}$. Since only parallel elements of $G$ form abelian subgroups,
 
 $$\text{prim } \{X, Y, X\} = \text{prim } \{X, Y\} \iff X \text{ and } Y \text{ are parallel.}$$
 
