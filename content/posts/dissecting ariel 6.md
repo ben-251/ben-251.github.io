@@ -1,11 +1,11 @@
 ---
-draft: true
-date: 2026-01-26
+draft: false
+date: 2026-02-21
 title: "Balloons: Dissecting Ariel #6"
 tags:
   - poetry
   - DA
-description:
+description: A surprisingly light-hearted look at the process of childhood.
 ---
 Ever since I noticed today’s poem would begin with the final word of ‘Morning Song,’ I’ve been eager to get to it. With this connection in mind, it’s no surprise that ‘Balloons’ is bursting (pun intended) with childhood themes and imagery, presenting a view of life from a child’s eyes
 # The small, simple lines
@@ -32,7 +32,12 @@ The result of this peculiar rhythm is a slow, confused reflection, contrasting w
 # The Balloon’s Inner World
 This poem is punctuated with questions and images related to the inside of the balloon. The speaker seems to know early on that the balloon contains only air, and the balloon is not trying to hide this, leading to the descriptions “guileless and clear”,  and “globes of thin air”. Later, we see the child try to uncover the secrets of the balloon, “Seeming to see / A funny pink world he might eat on the other side of it,” just before the air of the balloon is again described, this time as “a world as clear as water.” So altogether, the child wrongly expects to find a rich and complex “world” inside the lively balloon, and instead finds precisely nothing. As an isolated statement about childhood, and how the world of possibility shrinks with age (think of the fig tree from *The Bell Jar*) this would be quite depressing. However, this statement is placed in an interesting context.
 
-# Fat Jug
-If a crucial feature of the balloons’ description is their liveliness, a parallel for the small brother of the poem might be his lack of knowledge. The child plays with his balloon, looks into it expectantly, bites it, and then holds the consequences in his hands. He  
+# Un-actualised Vessels of Creativity
+If a crucial feature of the balloons’ description is their liveliness, a parallel for the small brother of the poem might be his lack of naivety and lack of knowledge. He, through the speaker, thinks of a cat as “squeaking,” a word usually reserved for mice. The child plays with his balloon, looks into it expectantly, bites it, and then holds the consequences in his hands. 
+
+The metaphor of a “fat jug” is super interesting. “Fat” gets us thinking of affluence and comfort, and jugs are containers, vessels, often containing water. It is as though the massive world of possibility that the child was expecting to find in his balloon actually lives in his own mind. Thus, his “fist” is little, and yet he is well fed on ideas and questions and wonder. 
+
+
+
 
 
