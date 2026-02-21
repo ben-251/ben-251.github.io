@@ -3,8 +3,8 @@ draft: false
 date: 2026-02-17
 title: The future of 2026's close reads
 tags:
-  - "#meta"
-  - "#poetry"
+  - meta
+  - poetry
 description: A quick explanation of the structure moving forward
 ---
 One of the reasons the ‘Dissecting Ariel’ series is helping develop my poetry so much is because it forces me to engage with poems I would normally skip over. Issue is, if I *only* close-read from one poetry collection, then I limit my ability to read wide, and risk learning how to analyse *Plath,* not how to analyse *poetry.* 

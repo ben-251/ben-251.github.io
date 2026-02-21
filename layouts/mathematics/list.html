@@ -10,7 +10,7 @@
 	}
 	function filterForTag(tag) {
 		const showallbutton = document.querySelector('#showall')
-		const posts = document.querySelectorAll('.blog-post-list li');
+		const posts = document.querySelectorAll('.math-post-list li');
 		console.log(tag)
 		activebutton = document.getElementById(tag);
 		removeallactive();
@@ -27,7 +27,7 @@
 	}
 	function resetFilter() {
 		const showallbutton = document.querySelector('#showall')
-		document.querySelectorAll('.blog-post-list li').forEach(post => {
+		document.querySelectorAll('.math-post-list li').forEach(post => {
 			post.style.display = '';
 		})
 		removeallactive();
@@ -56,7 +56,7 @@
 
 	{{ range .Pages.GroupByDate "2006" }}
 		<p class="year-label">{{ .Key }}</p>
-		<ul class="blog-post-list post-list">
+		<ul class="math-post-list">
 			<!-- Ranges through content/posts/*.md -->
 
 			{{ range.Pages }}

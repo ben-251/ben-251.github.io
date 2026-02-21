@@ -7,20 +7,20 @@
 			{{/* get most recent Lastmod */}}
 			{{ $sections := slice }}
 			{{ range where (where .Site.Sections "Section" "ne" "legal") "Pages" "!=" nil }}
-			{{ $publishedPages := where .Pages "Draft" "!=" true }}
-			{{ if and $publishedPages (ne .Section "settings") }}
-			{{ $lastmod := (index (sort $publishedPages "Lastmod" "desc") 0).Lastmod }}
-			{{ $sections = $sections | append (dict "SectionPage" . "Lastmod" $lastmod) }}
-			{{ end }}
+				{{ $publishedPages := where .Pages "Draft" "!=" true }}
+				{{ if and $publishedPages (ne .Section "settings") }}
+					{{ $date := (index (sort $publishedPages "Date" "desc") 0).Date }}
+					{{ $sections = $sections | append (dict "SectionPage" . "Date" $date) }}
+				{{ end }}
 			{{ end }}
 
 			{{/* sort and display sections */}}
-			{{ $sortedSections := sort $sections "Lastmod" "desc" }}
+			{{ $sortedSections := sort $sections "Date" "desc" }}
 			{{ range $sortedSections }}
 				{{ $s := .SectionPage }}
 				<div class="home-post-group">
 					<h2><a href="{{ $s.Permalink }}">{{ $s.Title }}</a></h2>
-					<ul class="home-post-list">
+					<ul class="home-post-list post-list">
 						{{ range sort (where $s.RegularPages "Draft" "!=" true) "Date" "desc" | first 3 }}
 							<li>									
 								{{ .Render "summary" }}

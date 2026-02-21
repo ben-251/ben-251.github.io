@@ -876,7 +876,7 @@ main.container.poem-container hr:before {
   margin-bottom: 1em;
 }
 
-ul.blog-post-list, ul.home-post-list, .post-list {
+ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
   padding: 0;
   padding: 1em;
   background-color: var(--primary-bg);
@@ -891,7 +891,7 @@ ul.blog-post-list, ul.home-post-list, .post-list {
   gap: 0rem;
   margin-block: 0;
 }
-ul.blog-post-list li, ul.home-post-list li, .post-list li {
+ul.blog-post-list li, ul.home-post-list li, ul.math-post-list li, .post-list li {
   list-style-type: none;
   padding-inline: 1em;
   padding-block: 0.8em;
@@ -899,20 +899,20 @@ ul.blog-post-list li, ul.home-post-list li, .post-list li {
   border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
   margin-bottom: calc(-1 * var(--border-size));
 }
-ul.blog-post-list li:hover, ul.home-post-list li:hover, .post-list li:hover {
+ul.blog-post-list li:hover, ul.home-post-list li:hover, ul.math-post-list li:hover, .post-list li:hover {
   background-color: color-mix(in srgb, color-mix(in oklch, var(--primary-accent) 90%, var(--pure-contrast)), transparent 92%);
   color: var(--primary-color);
 }
-ul.blog-post-list li a, ul.home-post-list li a, .post-list li a {
+ul.blog-post-list li a, ul.home-post-list li a, ul.math-post-list li a, .post-list li a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-ul.blog-post-list li a .date, ul.blog-post-list li a .title, ul.home-post-list li a .date, ul.home-post-list li a .title, .post-list li a .date, .post-list li a .title {
+ul.blog-post-list li a .date, ul.blog-post-list li a .title, ul.home-post-list li a .date, ul.home-post-list li a .title, ul.math-post-list li a .date, ul.math-post-list li a .title, .post-list li a .date, .post-list li a .title {
   min-width: 6em;
 }
-ul.blog-post-list li a .date, ul.home-post-list li a .date, .post-list li a .date {
+ul.blog-post-list li a .date, ul.home-post-list li a .date, ul.math-post-list li a .date, .post-list li a .date {
   color: var(--primary-accent);
   font-weight: bold;
   font-size: 1.1em;
@@ -920,7 +920,7 @@ ul.blog-post-list li a .date, ul.home-post-list li a .date, .post-list li a .dat
   display: inline-block;
   width: 7.5em;
 }
-ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
+ul.blog-post-list li .tag, ul.home-post-list li .tag, ul.math-post-list li .tag, .post-list li .tag {
   padding-inline: 0.5rem;
   padding-block: 0.2rem;
   border-radius: 0.5rem;
@@ -933,7 +933,7 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, .post-list li .tag {
   font-family: var(--primary-font);
   font-weight: bold;
 }
-ul.blog-post-list li .description, ul.home-post-list li .description, .post-list li .description {
+ul.blog-post-list li .description, ul.home-post-list li .description, ul.math-post-list li .description, .post-list li .description {
   font-style: italic;
   font-family: var(--secondary-font);
   font-weight: 100;
@@ -969,8 +969,8 @@ ul.blog-post-list li .description, ul.home-post-list li .description, .post-list
 }
 .home-post-lists .home-post-list {
   margin-block: 0;
-  -webkit-margin-after: 2em;
-          margin-block-end: 2em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
   padding-top: 0;
 }
 .home-post-lists .home-post-list li:first-child {
