@@ -1,7 +1,7 @@
 <ul class="chapter-list">
 	{{ $tag := .Get "tag" }}
 
-	{{ $relevantPages := where .Site.RegularPages  "Params.tags" "intersect" (slice "SV-theory") }}
+	{{ $relevantPages := where .Site.RegularPages  "Params.tags" "intersect" (slice $tag) }}
 	{{ range sort $relevantPages  "Date" "asc" }}
 		<li class="draft-is-{{ .Draft }}">
 	  	<a href="{{ .RelPermalink }}">

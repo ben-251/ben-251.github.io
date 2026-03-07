@@ -8,9 +8,9 @@ tags:
   - SV-theory
 description:
 ---
-This is an introduction to my new model of art and poetics. The goal of this series of posts is to walk you through my thinking, to provide you with a new, powerful way to think about creating and analysing art. This is not as an objective claim about the actual process that happens in the mind, but a simplified description and exploration of the process on a slightly wider level (much like the Bohr model of the atom, say).
+This is an introduction to my new model of art and poetics. The goal of this series of posts is to walk you through my thinking, and to provide you with a powerful way to think about creating and analysing art. This is not as an objective claim about the actual process that happens in the mind, but a simplified description and exploration of the process on a slightly wider level (much like the Bohr model of the atom, say).
 
-The first 3 chapters focus on art in general, with the third leaning more into poetics; from there, all future chapters will focus specifically on poetics.
+My analysis will be released in monthly chapters, the first three focusing on art in general, with later chapters narrowing their focus to poetics.
 
 # Chapters
 {{< content-menu tag="SV-theory" >}}

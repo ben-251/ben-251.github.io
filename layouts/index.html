@@ -21,7 +21,7 @@
 				<div class="home-post-group">
 					<h2><a href="{{ $s.Permalink }}">{{ $s.Title }}</a></h2>
 					<ul class="home-post-list post-list">
-						{{ range sort (where $s.RegularPages "Draft" "!=" true) "Date" "desc" | first 3 }}
+						{{ range sort (where $s.RegularPages "Draft" "!=" true) "Date" "desc" | first 5 }}
 							<li>									
 								{{ .Render "summary" }}
 							</li>

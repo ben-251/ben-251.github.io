@@ -5,5 +5,4 @@ title: posts
 tags:
   - meta
 ---
-
-You can find on this site a collection of essays, such as close-reads and essays on poetics, art, and the sciences. Occasionally I may also post my work, in whatever art form I find myself in. 
+You can find here weekly poetry close-reads, as well as essays on poetics, art, and occasionally the sciences. 

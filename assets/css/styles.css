@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code");
 @import url("https://fonts.googleapis.com/css2?family=Passions+Conflict");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader");
+@import url("https://fonts.googleapis.com/css2?family=Yrsa");
 /* 
 
 *-color: foreground, text
@@ -306,13 +308,14 @@ all colours must be fully opaque.
 
 *:root {
   --nav-width: 10vw;
-  --primary-font: spectral, 'Cardo';
+  --primary-font: Spectral, Yrsa, Newsreader;
   --sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
   --header-font: "Spectral", "Playfair Display", "Julius sans one";
   --logo-font: Bellefair, 'Playfair display';
   --tertiary-font: Bellefair;
   --main-font-size: 20px;
   --prose-title-font: Bellefair, "passions conflict", "mea culpa";
+  --poem-font: Spectral;
   font-size: var(--main-font-size);
   /* to set rem */
 }
@@ -708,6 +711,7 @@ body p > a {
   width: 70%;
   margin-left: 3em;
   margin-bottom: 2em;
+  font-family: var(--poem-font);
 }
 .mainbody article.content h1#chapters {
   margin-bottom: 0;
@@ -810,12 +814,13 @@ main.container.poem-container h1.title.poem-title {
   font-size: 2rem;
   margin-bottom: 0.7em;
 }
-main.container.poem-container article.content {
+main.container.poem-container article.poem-content {
   padding-top: 0;
+  font-family: var(--poem-font);
 }
-main.container.poem-container article.content p {
+main.container.poem-container article.poem-content p {
   margin-block: 0.5em;
-  font-size: 1rem;
+  font-size: 0.96rem;
   line-height: 1.45;
   margin-bottom: 1.5em;
 }
@@ -908,6 +913,9 @@ ul.blog-post-list li a, ul.home-post-list li a, ul.math-post-list li a, .post-li
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 ul.blog-post-list li a .date, ul.blog-post-list li a .title, ul.home-post-list li a .date, ul.home-post-list li a .title, ul.math-post-list li a .date, ul.math-post-list li a .title, .post-list li a .date, .post-list li a .title {
   min-width: 6em;
@@ -915,10 +923,13 @@ ul.blog-post-list li a .date, ul.blog-post-list li a .title, ul.home-post-list l
 ul.blog-post-list li a .date, ul.home-post-list li a .date, ul.math-post-list li a .date, .post-list li a .date {
   color: var(--primary-accent);
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.15em;
   padding-right: 1em;
   display: inline-block;
   width: 7.5em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 ul.blog-post-list li .tag, ul.home-post-list li .tag, ul.math-post-list li .tag, .post-list li .tag {
   padding-inline: 0.5rem;
