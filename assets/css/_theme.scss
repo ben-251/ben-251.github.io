@@ -37,7 +37,7 @@ all colours must be fully opaque.
 
 }
 
-.theme-default, .theme-dark {
+.theme-dark {
 	$base-light:  #e4e6e7;
 
 	--pure-contrast: white;
@@ -76,7 +76,7 @@ all colours must be fully opaque.
 	--secondary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-cherry-blossom {
+.theme-default, .theme-cherry-blossom {
 	$base-accent:  hotpink;
 	--pure-contrast: black;
 	--pure-color: white;
