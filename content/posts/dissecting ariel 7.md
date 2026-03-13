@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: 2026-03-11
 title: "Paralytic: Dissecting Ariel #7"
 tags:
