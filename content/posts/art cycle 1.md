@@ -6,7 +6,7 @@ tags:
   - art
   - poetics
   - SV-theory
-description: A deep dive into the fundamentals of my theory
+description: Opening explorations on a theory of art.
 ---
 You are on a walk with your family, exploring a local park, feeling largely uninspired for your next project, when you see a rock. The mossy rock, one of several around you, should not interest, let alone inspire, you, but for some reason it does. Maybe it is the way the light hits one half of the rock, creating a bold shadow across its stippled surface. Maybe the way the rock leans against the tree, with a mini crater of soil as proof for its dislodging, builds a curiosity in you. Maybe it is the brown layer on the back of the moss where someone peeled it, a surprising contrast to the yellow-green everywhere else. You are captivated, and when you go home, you decide to represent that response, whatever it was, through your medium. You experiment and tweak and frown and revisit, and, at the end of an embarrassingly long process, you create something which you can engage with, and on engagement experience a powerful one, like the one that inspired you. Congratulations, you have just created art.[^1]
 

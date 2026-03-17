@@ -1,6 +1,6 @@
 ---
 date: 2025-08-05
-draft: false
+draft: true
 title: Squirrel Elegy
 tags:
   - nature

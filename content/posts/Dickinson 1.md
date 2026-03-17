@@ -6,6 +6,18 @@ tags:
   - poetry
 description: A quick read of Dickinson's 'A Book'
 ---
+<div class=”poem”>
+He ate and drank the precious words, <br>
+His spirit grew robust; <br>
+He knew no more that he was poor, <br>
+Nor that his frame was dust. <br>
+He danced along the dingy days, <br>
+And this bequest of wings <br>
+Was but a book. What liberty <br>
+A loosened spirit brings! <br>
+</div>
+
+
 In “XXI. A Book”, we discover that the legacy of the writer highlighted in Whitman’s “Song of Myself” is equally crucial for Dickinson. The poem portrays a man receiving the inheritance of a written work, presumably poetry, from an unnamed, unaddressed writer. The omission of writer is crucial: whereas Whitman “follow[s] you, whoever you are”, Dickinson refuses to introduce the reader to the creator of the work. For Dickinson, then, the most important step of the interaction between poet and reader is the receipt of “precious words”; reading (and wrestling with a text’s possibilities) allows for a freedom which the writer wishes to gift their reader. 
 
 The phrase “bequest of wings” highlights this idea. The implication with ‘bequest’ is that the writer leaves their work behind. The freedom wings provide, to leave the flat plane and explore the third dimension, is given to the reader, when they learn to explore a text. This freedom is also emphasised through the rejection of objective knowing, through the line “He knew no more that he was poor,” comparing prosaic certainty to poverty. Indeed, in the world of possibility, the reader “ate and drank,” yet the cold, unchanging reality gave nothing.
