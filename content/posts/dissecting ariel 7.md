@@ -1,31 +1,31 @@
 ---
-draft: true
+draft: false
 date: 2026-03-11
 title: "Paralytic: Dissecting Ariel #7"
 tags:
   - poetry
   - DA
-description: A subversion on the apathy of the Plathian speaker
+description: A subversion on the Plathian speaker's typical apathy
 ---
-The speaker of today’s poem[^1] is a ‘paralytic’, suffering with the inability to be a part of the world around him[^2]. As time passes, he remains unable to do anything but think and speak his thoughts to the reader. In this sense the poem becomes something of a desperate cry, before ultimately resolving with a bittersweet conclusion
+The speaker of today’s poem[^1] is a ‘paralytic’, suffering with the inability to be a part of the world around him[^2]. As time passes, he remains unable to do anything but think and speak his thoughts to the reader. In this sense the poem becomes something of a desperate cry, before its bittersweet conclusion.
 
-#
+# A fuzzy start
 > It happens. Will it go on?
 
-This opening line sets the tone for what will be a crushing monologue. The use of the present tense throughout the poem creates a sense of endlessness. However, when we first read “It happens,” we have no idea when “it” started or if “it” has ended. It is the speaker’s question that makes the current vagueness become meaningful. The vagueness is still frustrating, but now in an intriguing way. The rest of the poem will explore what “it” is, and in that sense the dash after the question mark can be read as acting similarly to a colon.
+This opening line sets the tone for what will be a crushing monologue. The use of the present tense throughout the poem creates a sense of endlessness. However, when we first read “It happens,” we have no idea when “it” started or if “it” has ended. It is the question that makes the vagueness matter, creating intrigue, rather than only frustration. The rest of the poem will explore what “it” is, and in that sense the dash after the question mark can be read as acting similarly to a colon.
 
-The effect of this framing is that rather than describing a series of moments as short events that happened across a narrative, Plath gives us a single stretched moment, extending the present agony of the speaker infinitely.
+The effect of this framing is that rather than describing a series of moments as short events that happened across a narrative, Plath stretches a single moment dramatically, exploring the nuance of the speaker’s mental and emotional state.
 
 # Suffering and the Non-self
-At the closing turn of the poem, our speaker reaches a moment of apparent relief. A lot of what happens in these last two stanzas hinges on the reference to Buddhism:
+At the closing turn of the poem, our speaker reaches a point of respite, described in a way that hinges on its reference to Buddhism:
 
-> …ignorance concerning the three characteristics of sentient existence—suffering, impermanence and non-self—will lead […] to appropriation (the identification of certain elements as ‘I’ and ‘mine’). This leads in turn to the formation of attachments, in the form of desire and aversion… [^3]
+> …[I]gnorance concerning the three characteristics of sentient existence—suffering, impermanence and non-self—will lead […] to appropriation (the identification of certain elements as ‘I’ and ‘mine’). This leads in turn to the formation of attachments, in the form of desire and aversion… [^3]
 
-With a brief survey, we find several instances of the speaker referencing himself and his things: his ‘mind’, his ‘two dust bags’, his ‘sleeping couch’, his ‘wife’, his ‘daughters’, his ‘lips’, and finally his ‘bare back.’
+With a brief survey across the poem, we find several instances of the speaker referencing himself and his things: his ‘mind’, his ‘two dust bags’, his ‘sleeping couch’, his ‘wife’, his ‘daughters’, his ‘lips’, and finally his ‘bare back.’
 
-> Two girls 
-> As flat as she, who whisper
-> ‘We’re your daughters.’
+> Two girls    
+> As flat as she, who whisper   
+> ‘We’re your daughters.’  
 
 It’s worth mentioning that in English, possessive pronouns are more flexible than just talking of ownership, but here they seem to have ownership as an additional loose implication, even for family members, in the sense of attachment to people and things of the world and the self. Thus, the two daughters would not have said ‘You’re our father’, as this would be a statement of the speaker’s identity, rather than of connections to the speaker (and also, explicitly stating “father/mother” would weaken the sense that the speaker is reduced to nothing).
 

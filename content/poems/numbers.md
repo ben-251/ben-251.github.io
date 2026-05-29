@@ -16,7 +16,7 @@ $3.$
 There is a stable structure and a we, and all the same. There is much to say now, many to speak to.
 
 $4.$  
-For Two, Three is a step too gentle. For Three, Two wants too much. A pair pair forms, and all are pleased with their arrangement.
+For Two, Three is a step too gentle. For Three, Two wants too much. A pair pair forms, and all are pleased with the arrangement.
 
 $5.$   
 Fire vessel of happiness, darting across every room, burning the new furniture and saying, “Look at me, I will be in charge when I am older!”
@@ -25,7 +25,7 @@ $6.$
 Sick sombre creatures look to their big brother. Six’s sick siblings see kisses mark their transition into an afterlife. A hand ticks, sinks its way to the bottom of the half-pipe.
 
 $7.$   
-This heaven if heaven is not so perfect. Two and Three gone, Five erratic, there are no worthy primes. Seven is hesitant but settles into this workplace.
+This heaven if heaven is not so perfect. Two and Three gone, Five erratic, there are no worthy primes. Seven is hesitant but settles into her role.
 
 $8.$  
 A Two meets a Two meets a Two meets a Two.
@@ -34,4 +34,4 @@ $9.$
 Deny no Three a seat at the table! A strength of strength reunited, so perfect undisturbed.
 
 $10.$   
-Tentatively they yield to Five’s early inheritance. Five settles. Their kingdom breaks into tents, an unscaling, fizzling into no intensity. 
+Tentatively they yield to Five’s early inheritance. Five settles. Their kingdom breaks down to tents, an unscaling, fizzling into no intensity. 

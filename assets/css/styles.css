@@ -40,7 +40,7 @@ all colours must be fully opaque.
   --secondary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-default, .theme-dark {
+.theme-dark {
   --pure-contrast: white;
   --pure-color: black;
   --base-accent: #408b8b;
@@ -68,7 +68,7 @@ all colours must be fully opaque.
   --secondary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-cherry-blossom {
+.theme-default, .theme-cherry-blossom {
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #212729;

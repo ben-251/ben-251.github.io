@@ -169,8 +169,6 @@ themeItems.forEach(item => {
 	});
 });
 
-
-
 const themeItem = document.querySelector('.theme-item.active');
 
 function animateProperty(element, property, start, end, duration) {

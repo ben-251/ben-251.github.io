@@ -202,11 +202,14 @@ hr,
 
 .cm-comment {
   color: var(--code-comment);
-  font-family: var(--font-comments);
   font-weight: 100;
+  opacity: 0.5;
+  font-size: 0.9em;
 }
 .cm-comment:is(.cm-comment-start, .cm-comment-end) {
-  opacity: 0.5;
+  display: none;
+  opacity: 0.6;
+  font-size: 0.1em;
 }
 
 .cm-sizer {

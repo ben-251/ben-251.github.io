@@ -43,14 +43,20 @@
 	<div class="tag-buttons">
 		<button id="showall" onclick="resetFilter()">Show All</button>
 		{{ $allTags := slice }}
-		{{ range .RegularPages }}
-		{{ range .Params.tags }}
-		{{ $allTags = $allTags | append . }}
+		
+		{{ range .Site.RegularPages }}
+		{{ $path := replace .File.Path "\\" "/" }}
+
+		{{ if and (eq .Section "posts") (not (hasPrefix $path "posts/draft/")) }}
+			{{ range .Params.tags }}
+				{{ $allTags = $allTags | append . }}
+			{{ end }}
 		{{ end }}
 		{{ end }}
+
 		{{ $uniqueTags := $allTags | uniq }}
 		{{ range $uniqueTags }}
-		<button class="tag" id='{{ . }}' onclick="filterForTag('{{ . }}')">#{{ . }}</button>
+			<button class="tag" id='{{ . }}' onclick="filterForTag('{{ . }}')">#{{ . }}</button>
 		{{ end }}
 	</div>
 
@@ -65,8 +71,8 @@
 				{{ else }}
 					<li data-tags="">
 				{{ end }}
-					{{ .Render "summary" }}
-				</li>
+						{{ .Render "summary" }}
+					</li>
 			{{ end }}
 		</ul>
 	{{ end }}
