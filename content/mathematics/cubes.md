@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Group Theory on 2x2s
 date: 2025-03-17
 tags:

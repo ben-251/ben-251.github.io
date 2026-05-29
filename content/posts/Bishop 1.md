@@ -16,7 +16,7 @@ One way Bishop employs poetic techniques is through her diction. Throughout this
 | ”Traditional” Symbol | Quote                                                                                 |
 | -------------------- | ------------------------------------------------------------------------------------- |
 | Beetle Armour        | “…two enormous brown beetles in the traditional picturesque armor of an earlier day.” |
-| Beetle Antennae      | “…their traditional long, long atntennae…“                                            |
+| Beetle Antennae      | “…their traditional long, long antennae…“                                             |
 | Raccoon Mask         | “A raccoon, wearing the traditional black mask…”                                      |
 | Bullfrog Costume     | “He was a very large, overweight bullfrog, also dressed in the traditional costume…”  |
 | Bullfrog Scroll      | “…and carrying the traditional long scroll that dragged for several feet…”            |
@@ -24,7 +24,7 @@ One way Bishop employs poetic techniques is through her diction. Throughout this
     
 The characters that receive this description are all crucial players in the mouse’s demise: the soldiers that bring him to his death, the executioner, and the messenger that officially pronounces his sentence, respectively. They are each portrayed in varying negative ways, and as a result cast tradition itself into that same unflattering light. 
 
-One way this shows up is through the cold, precise descriptions of the beetle’s movements. Their “traditional long antennae” emphasise the exactness of their movements; every aspect of the beetles is tuned to perfection, to *tradition.* Yet this traditional exactness does not stop the mouse from moving erratically; it merely causes unnecessary distress and discomfort for him.
+One way this shows up is through the cold, precise descriptions of the beetles’ movements. Their “traditional long antennae” emphasise the exactness of their movements; every aspect of the beetles is tuned to perfection, to *tradition.* Yet this traditional exactness does not stop the mouse from moving erratically; it merely causes unnecessary distress and discomfort for him.
 
 In a similar way, the traditional mask of the raccoon does little to remove their culpability. The only distance the father raccoon is able to create is by making his *son* into his mask: by having his son do each and every action, including the final act that sends the mouse to his death, the father comes close to erasing his guilt. 
 

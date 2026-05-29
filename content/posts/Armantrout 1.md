@@ -4,7 +4,7 @@ date: 2026-05-29
 title: "Bees: A Close-Read"
 tags:
   - poetry
-description: What even is a bee, am I right?
+description: An intriguing exploration of mortality and language
 ---
 The bookends of Rae Armantrout’s [‘Bees’](https://www.poetryfoundation.org/poetrymagazine/poems/89350/bees-572b73911eea4)[^1] prompt two seemingly unrelated questions. The title primes us to expect a poem about bees, but for most of the poem, we find ourselves asking, “Where are the promised ‘bees’?” Secondly, the last phrase of the poem is an invitation to “Come in”, which makes us wonder, “Where is *in*?” Rather satisfyingly, both questions find their resolution in the same concepts, which we will try to tease out.
 # Existence and Uniqueness

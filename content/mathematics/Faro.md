@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Group Theory on Faro Shuffles
 date: 2025-09-25
 tags:
