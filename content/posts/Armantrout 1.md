@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: 2026-05-21
 title: "Bees: A Close-Read"
 tags:
