@@ -1,7 +1,7 @@
 ---
-draft: false
+draft: true
 date: 2026-02-13
-title: "Art Cycle Ch. 1: The Art Cycle"
+title: "Art Cycle Ch. 1: The Shape of Art"
 tags:
   - art
   - poetics

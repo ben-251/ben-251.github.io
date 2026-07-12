@@ -1,10 +1,10 @@
 ---
 draft: true
 date: 2026-02-07
-title: "Elements of Language: An Introduction"
+title: "Art Cycle Ch. 4: Reception"
 tags:
   - art
   - poetics
   - SV-theory
-description: "Art Cycle #4"
+description:
 ---

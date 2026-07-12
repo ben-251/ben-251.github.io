@@ -1,10 +1,10 @@
 ---
 draft: true
 date: 2026-02-07
-title: "The Force of Form: On 'The Language of Inquiry'"
+title: "Art Cycle Ch. 5: The Craft of Reception"
 tags:
   - art
   - poetics
   - SV-theory
-description: "Art Cycle #5"
+description:
 ---

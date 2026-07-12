@@ -1,12 +1,12 @@
 ---
 draft: true
 date: 2026-02-20
-title: "Art Cycle Ch. 2: Engaging the Cycle"
+title: "Art Cycle Ch. 2: Creation as Composition"
 tags:
   - art
   - poetics
   - SV-theory
-description: " On Drafting and Composition"
+description:
 ---
 Hopefully you have read the previous chapter, explaining the idea behind my model of art. I thought a nice place to go from there might be to explore the process of creating art, before analysis, because much of how we analyse art refers back to its creation.
 

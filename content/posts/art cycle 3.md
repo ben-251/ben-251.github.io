@@ -1,10 +1,10 @@
 ---
 draft: true
 date: 2026-02-07
-title: "The author-audience relationship: Approaches to close-reading."
+title: "Art Cycle Ch. 3: Creation as Performance"
 tags:
   - art
   - poetics
   - SV-theory
-description: "Art Cycle #3"
+description:
 ---
