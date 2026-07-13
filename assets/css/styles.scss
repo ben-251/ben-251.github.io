@@ -876,27 +876,30 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 
 
 // 404 ERROR PAGE
-main.four-o-four {
-	margin: auto;
+main:has(main.four-o-four) {
 	width: 100%;
-	padding: 0;
-	position:fixed;
-	top: 0;
-	left:0;
-	overflow: hidden;
+	height: 100%;
 
-	> * {
-		// display: block;
-		// margin:auto;
-		text-align: center
-	}
+	main.four-o-four {
+		margin: auto;
+		// width: 100%;
+		padding: 0;
+		overflow: hidden;
 
-	h1 {
-		font-family: var(--sans-font);
-		font-weight: 800;
-		font-size: 13rem;
-		margin-bottom: 0;
-		margin-top: 15vh;
+		> * {
+			// display: block;
+			// margin:auto;
+			text-align: center
+		}
+
+		h1 {
+			font-family: var(--sans-font);
+			font-weight: 800;
+			font-size: 13rem;
+			margin-bottom: 0;
+			margin-top: 15vh;
+			display: block
+		}
 	}
 }
 

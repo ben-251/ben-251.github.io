@@ -1,13 +1,13 @@
 {{ define "main" }}
-<section class="section">
-<main class="four-o-four">
-  <h1>404</h1>
-  <p>Sorry, I can't find the page you're looking for :(</p>
-  <p>
-    <a href="{{ .Site.Home.RelPermalink }}">
-      Take me back to the homepage
-    </a>
-  </p>
+<main class="container">
+	<main class="four-o-four">
+	<h1>404</h1>
+	<p>Sorry, I can't find the page you're looking for :(</p>
+	<p>
+		<a href='{{ "/" | relURL }}'>
+		Take me back to the homepage
+		</a>
+	</p>
+	</main>
 </main>
-</section>
 {{ end }}
