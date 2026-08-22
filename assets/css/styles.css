@@ -586,6 +586,7 @@ body p > a {
   border-top: solid 2px var(--secondary-bg);
   padding-block: 1em;
   background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));
+  font-size: 0.73rem;
 }
 .mainbody .footer p {
   display: block;
