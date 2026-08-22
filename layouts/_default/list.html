@@ -1,6 +1,8 @@
 {{ define "main" }}
 <main>
-	<h1 class="page-header"> {{ .Title }} </h1>
+	{{ partial "post-header.html" .}}
+
+
 	{{ $section := .Section }}
 	{{ $pages := .Site.GetPage "section" $section }}
 	{{ if not $pages.Pages }}

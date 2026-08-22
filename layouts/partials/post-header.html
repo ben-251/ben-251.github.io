@@ -1,6 +1,5 @@
-<div class="post-header">
-	<h1 class="title">{{ .Title }}</h1>
-	{{ with .Description }}
-		<div class="description">{{ . }}</div>
-	{{ end }}
-</div>
+{{ partial "post-header-custom.html" (dict
+	"page" .
+	"titleClass" ""
+	"descriptionClass" ""
+) }}

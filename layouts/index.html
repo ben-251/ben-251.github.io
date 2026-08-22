@@ -1,7 +1,8 @@
 {{ define "main" }}
 <section class="section">
 	<main class="container">
-		<h1>Welcome!</h1>
+		{{ partial "post-header.html" . }}
+
 		<article>{{.Content}}</article>
 		<div class="home-content-lists">
 			{{/* get most recent Lastmod */}}

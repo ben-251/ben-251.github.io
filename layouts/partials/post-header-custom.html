@@ -1,0 +1,7 @@
+<div class="post-header">
+	<h1 class="page-header title {{ .options.titleClass }}">{{ .page.Title }}</h1>
+
+	{{ with .page.Description }}
+		<div class="description {{ $.options.descriptionClass }}">{{ . }}</div>
+	{{ end }}
+</div>

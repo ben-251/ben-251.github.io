@@ -1,6 +1,11 @@
 {{ define "main" }}
 <main class="container about-container">
-	<h1 class="page-header title about-title">{{ .Title }}</h1>
+	{{ partial "post-header-custom.html" (dict
+		"page" .
+		"options" (dict
+			"titleClass" "about-title"
+		)
+	) }}
 
 	<article class="content about-content">
 		{{ .Content }}
