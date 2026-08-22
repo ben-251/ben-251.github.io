@@ -4,8 +4,8 @@ date: 2026-01-03
 title: "Contusion: Dissecting Ariel #3"
 tags:
   - poetry
-  - DA
-description: Searching for depth in one of her more simple-looking poems.
+  - Ariel
+description: Searching for depth in one of Plath’s more simple-looking poems.
 ---
 
 This one seems to be doing very little, but of course with time that opinion might change.$^1$

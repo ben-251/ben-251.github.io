@@ -1,9 +1,9 @@
 ---
 draft: false
 date: 2025-08-05
-title: poems
+title: Poems
 tags:
   - meta
 ---
 
-Poems live here
+A few unpublished poems.

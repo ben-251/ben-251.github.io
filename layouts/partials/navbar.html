@@ -2,7 +2,7 @@
 	<button id="expand">&#9776;</button>
 
 	<div class="page-links">
-		<button><a href='{{ absURL "" }}settings'><i class="fa fa-gear nav-settings-button"></i></a></button>
+		<button><a href='{{ absURL "" }}themes'><i class="fa fa-gear nav-settings-button"></i></a></button>
 		<button><a href='{{ absURL "" }}'><i class="fa fa-home nav-home-button"></i></a></button>
 	</div>
 </div>
@@ -14,12 +14,14 @@
 		Home
 	</a>
 
+	<a class="navbar-item" href = '{{ absURL "" }}about-me'>
+		About Me
+	</a>
+
 	{{ range sort (where .Site.Sections "Section" "ne" "legal") "Title" "asc" }}
 	{{ $publishedPages := where .Pages "Draft" "ne" true }}
-	{{ if gt (len $publishedPages) 0 }}
+	{{ if gt (len $publishedPages) 0 }}   
 		<a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
 	{{ end }}
 	{{ end }}
-
-
 </nav>

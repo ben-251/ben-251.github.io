@@ -102,7 +102,7 @@ I believe this emphasis on symbols rather than signal (or, “a system to pointi
 [^18]: This is one reason why Lyn Hejinian’s ‘My Life’ is able to work so well—it works with complex webs of association, all centred around the gaps between sentences.
 [^19]:   Lyn Hejinian, “Reason,” in *The Language of Inquiry*  (University of California Press, 2000), p.344.
 [^20]: Gertrude Stein, *Tender Buttons: The Corrected Centennial Edition* (City Lights Books, 2014).
-[^21]:  Unknown Writer(s), (2021, February 3). _Terrance Hayes_. Poetry Foundation, accessed [here](https://www.poetryfoundation.org/poets/terrance-hayes).
+[^21]:  Poetry Foundation Editors, (2021, February 3). _Terrance Hayes_. Poetry Foundation, accessed [here](https://www.poetryfoundation.org/poets/terrance-hayes).
 ‌
 # What next?
 Now that I have laid out a sketch of my model, we can begin to test it on a more macro level. For example, how should an artist approach the daunting task of creation and drafting? How do they know when they have a completed work? How do they evaluate their own work? I explore ideas like these in the next chapters. 

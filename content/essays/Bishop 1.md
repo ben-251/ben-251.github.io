@@ -4,6 +4,7 @@ date: 2026-02-06
 title: "The Hanging of the Mouse: a close-read"
 tags:
   - poetry
+  - close-reads
 description: Analysing one of Elizabeth Bishop's prose poems
 ---
 When a poet tackles the prose poem, there are often a few directions you could try. Often one opts for a style that subverts the expectations of typical prose, leaning into the strangeness permitted by poetry, either by engaging the intellectual realm, by employing surreal, abstract narratives, or by creating very tangential links between sentences, as with the so called ‘Language Poets’ of the 70s.

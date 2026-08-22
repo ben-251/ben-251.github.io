@@ -1,10 +1,10 @@
 ---
-draft: false
+draft: true
 date:
 title: "Ariel: (not-so) Final Thoughts"
 tags:
   - poetry
-  - DA
+  - Ariel
 description: Looking back on a year of Plath
 ---
 

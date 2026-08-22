@@ -1,1 +1,1 @@
-If you haven't already, check out the colour theme options [here](/settings) :)
+Read essays and poems in the lists below. Updated every few weeks. 

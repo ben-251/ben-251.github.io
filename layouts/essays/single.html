@@ -1,9 +1,6 @@
 {{ define "main" }}
 <main class="container">
-	<h1 class="title">{{ .Title }}</h1>
-	{{ with .Description }}
-		<div class="description">{{ . }}</div>
-	{{ end }}
+	{{ partial "post-header.html" . }}
 
 	<div class="tag-list">
 		<div class="tag">{{ .Date.Format "2 January 2006" }}</div>

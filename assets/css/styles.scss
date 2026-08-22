@@ -1,17 +1,29 @@
 @use 'theme';
 @use 'settings';
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4');
+
+		// — sans — 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand');
-@import url('https://fonts.googleapis.com/css2?family=Cardo');
-@import url('https://fonts.googleapis.com/css2?family=Spectral');
 @import url('https://fonts.googleapis.com/css2?family=Jost');
-@import url('https://fonts.googleapis.com/css2?family=Arvo');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin');
+
+		// — misc serif — 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
-@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader');
-@import url('https://fonts.googleapis.com/css2?family=Yrsa');
+@import url('https://fonts.googleapis.com/css2?family=Cardo');
+
+		// — transitionals — 
+@import url('https://fonts.googleapis.com/css2?family=Spectral');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4');
+
+    	// — Mono — 
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono');
+
+		// — slab —
+@import url('https://fonts.googleapis.com/css2?family=Arvo');
+
 
 * {
 	box-sizing: border-box;
@@ -20,15 +32,16 @@
 
 *:root {
 	--nav-width: 10vw;
-	--primary-font: Spectral, Yrsa, Newsreader;
+	--primary-font: Newsreader, Spectral;
 	// --primary-italic-font: ;
-	--sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
-	--header-font: "Spectral", "Playfair Display", "Julius sans one";
+	--sans-font:  "Nunito sans", jost, "quicksand";
+	--header-font: Newsreader, Spectral;
 	--logo-font: Bellefair, 'Playfair display';
 	--tertiary-font: Bellefair;
 	--main-font-size: 20px;
-	--prose-title-font: Bellefair, "passions conflict", "mea culpa";
-	--poem-font: Spectral;
+	--prose-title-font: Bellefair;
+	--poem-font: Newsreader;
+	--code-font: "Chivo Mono", "Fira Code";
 	font-size: var(--main-font-size);
 	/* to set rem */
 }
@@ -41,12 +54,13 @@
 
 body {
 	@include body-theme();
+	--text-accent: color-mix(in oklch, var(--primary-accent) 80%, var(--primary-color));
+	--subtle-text-color: color-mix(in srgb, var(--primary-color) 95%, transparent);
+	
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	background-color: var(--primary-bg);
 	font-family: var(--primary-font);
-	color: var(--primary-color);
 	font-size: 1rem;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -71,7 +85,7 @@ body {
 .nav-mobile {display: none}
 .navbar {
 	font-family: var(--sans-font);
-	font-weight: 100;
+	font-weight: 300;
 	text-transform: uppercase;
 
 	box-sizing: border-box;
@@ -123,7 +137,8 @@ body {
 		text-decoration: none;
 		color: inherit;
 		width: max-content;
-		text-wrap: pretty
+		text-wrap: pretty;
+		font-weight: 500;
 	}
 
 	/* underline effect */
@@ -150,7 +165,7 @@ body {
 
 	a,
 	#blog-button {
-		font-weight: 800;
+		font-weight: 500;
 	}
 
 	a:not(.navbar-logo):hover {
@@ -166,7 +181,6 @@ body {
 	a#home-link {
 		letter-spacing: 0.2em;
 		font-size: 1.3em;
-		font-weight: 800;
 		opacity: unset;
 	}
 
@@ -180,8 +194,6 @@ body {
 
 // Page Content
 .mainbody {
-	--subtle-text-color: color-mix(in srgb, var(--primary-color) 95%, transparent);
-
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -192,7 +204,6 @@ body {
 	
 	::selection {
 		background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
-		// color: var(--secondary-accent);
 	}
 
 	> h1 {
@@ -206,7 +217,6 @@ body {
 		gap: 0rem;
 	
 		.tag {
-			// background-color: color-mix(in oklab, var(--primary-accent), transparent 70%);
 			color: var(--subtle-text-color);
 			opacity: 0.8;
 			font-family: var(--sans-font);
@@ -247,23 +257,33 @@ body {
 		box-sizing: border-box;
 		width: 100%;
 		min-height: 100vh;
+
+		> h1 {
+			font-weight: 450;
+		}
 	}
 
 	main.container {
-		h1.title {
-			font-size: 2.5rem;
-			margin-bottom: 0.3em;
+		.post-header {
+			h1.title {
+				font-size: 2rem;
+				margin-bottom: 0.3em;
+				font-weight: 600;
 
-			&:has(+.description) {
-				margin-bottom: 0;
+				&:has(+.description) {
+					margin-bottom: 0;
+				}
+
+				font-family: var(--sans-font);
 			}
-		}
-		.description {
-			margin-top: 0.4em;
-			margin-bottom: 1.2em;
-			// font-family: var(--sans-font);
-			font-size: 1rem;
-			opacity: 0.85;
+			.description {
+				margin-top: 0.2em;
+				margin-bottom: 0.9em;
+				font-size: 1.1rem;
+				font-weight: 400;
+				opacity: 0.85;
+				// font-style: italic;
+			}
 		}
 	}
 	
@@ -275,7 +295,6 @@ body {
 		padding-block: .3rem;
 		border-top: solid 2px var(--secondary-bg);
 		padding-block: 1em;
-		background-color: color-mix(in srgb, var(--pure-contrast), transparent 94%);
 		background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));
 
 		p {
@@ -286,7 +305,7 @@ body {
 
 		a {
 			text-decoration: none;
-			font-weight: 100;
+			font-weight: 350;
 			font-family: var(--sans-font);
 			text-transform: uppercase;
 		}
@@ -298,9 +317,6 @@ body {
 
 	article.content {
 		scroll-behavior: smooth;
-		
-
-		// background-color: red;
 		padding-block: 2em;
 
 
@@ -310,33 +326,54 @@ body {
 			border-inline-start: 2px var(--primary-accent) solid;
 			padding-inline-start: 1.4em;
 			margin-inline-start: .4em;
+			background-color: var(--primary-accent);
 		}
 
 		code {
 			white-space: nowrap;
 			display: inline-block;
-			color: var(--primary-accent)
+			color: var(--text-accent);
+			font-family: var(--code-font);
 		}
 		a {
-			color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
+			color: var(--text-accent);
+
+			&.footnote-ref {
+				text-decoration: none;
+	
+				&::before {
+					content: '[';
+				}
+	
+				&::after {
+					content: ']';
+				}
+			}
 		}
-		h1 {
-			// font-variant: small-caps;
+		:is(h1, h2, h3, h4, h5, h6) {
 			margin-bottom: 0em;
 			margin-top: 1em;
-			font-size: 1.65em;
+			font-weight: 550;
+			font-family: var(--sans-font);
 		}
+		h1 {
+			font-size: 1.65em;
+			font-weight: 600;
+		}
+		h2 { font-size: 1.4em }
 		p, ul, ol {
 			color: var(--subtle-text-color);
 			line-height: 1.7;
+			margin-top: 0;
 		}
 		p {
 			margin-block: 0.1em;
 			margin-bottom: 0.8em;
+			font-weight: 400;
 		}
 		
 		strong {
-			font-weight: 1000;
+			font-weight: 500;
 			// color: red !important;
 		}
 		// Figures and Images
@@ -411,7 +448,7 @@ body {
 		h1:has(+div.footnotes), .ref-header {	
 			font-variant: small-caps;
 			font-family: var(--sans-font);
-			font-weight: 100;
+			font-weight: 300;
 		}
 		div.footnotes {
 			hr {display: none;}
@@ -422,17 +459,6 @@ body {
 					line-height: 1.35;
 					margin-bottom: 0.1em;
 				}
-			}
-		}
-		a.footnote-ref {
-			text-decoration: none;
-
-			&::before {
-				content: '[';
-			}
-
-			&::after {
-				content: ']';
 			}
 		}
 
@@ -548,13 +574,13 @@ mjx-container[jax="CHTML"][display="true"] {
 button {
 	padding-inline: .5rem;
 	padding-block: .2rem;
-	border-radius: .5rem;
+	border-radius: .6rem;
 	border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
 	width: fit-content;
 	background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
 	color: var(--primary-accent);
-	font-family: var(--primary-font);
-	font-weight: bold;
+	font-family: var(--sans-font);
+	font-weight: 500;
 }
 
 button.active {
@@ -567,21 +593,51 @@ button.active {
 main.container.poem-container {
 	font-family: var(--primary-font);
 
-	h1.title.poem-title {
+	div.poem-header{
 		font-family: var(--sans-font);
-		font-size: 2rem;
-		margin-bottom: .7em;
+		margin-bottom: 1em;
+
+		* {
+			margin-block: 0;
+		}
+
+		.title.poem-title {
+			font-size: 2rem;
+			font-variant-ligatures: common-ligatures;
+			font-weight: 600;
+		}
+		.poem-subtitle, .poem-epigraph {
+			margin-top: 0;
+			font-style: italic;
+			font-family: var(--poem-font);
+		}
+		.poem-epigraph {
+			font-family: var(--poem-font);
+			margin-left: 1.2em;
+			padding-block: 0.4em;
+		}
 	}
+	
 
 	article.poem-content {
 		padding-top: 0;
 		font-family: var(--poem-font);
 
-		p {
-			margin-block: .5em;
-			font-size: 0.96rem;
+		p, .column-stanza {
+			margin-bottom: 1em;
+			font-size: 1rem;
 			line-height: 1.45;
-			margin-bottom: 1.5em
+			font-weight: 350;
+		}
+
+		p {
+			// margin-block: .5em;
+		}
+		
+		.column-stanza {
+			display: flex;
+			flex-direction: row;
+			gap: 1.6em;
 		}
 	}
 
@@ -599,48 +655,29 @@ main.container.poem-container {
 			line-height: 1
 		}
 	}
+
 }
-.poem-list {
-	// background-color: var(--secondary-bg);
-	margin-block: 1em;
-	display: flex;
-	flex-direction: column;
-	gap: 0rem;
 
-	li {
-		--border-size: 1px;
-		list-style-type: none;
-		border-block: var(--border-size) var(--primary-accent) solid;
-		margin-bottom: calc(-1 * var(--border-size));
-		padding-block: .7em;
-		padding-inline: 1em;
-		transition: all ease 200ms;
-
-		&:hover {
-			background-color: var(--secondary-bg);
-			color: var(--secondary-color)
-		}
-
-		a {
-			text-decoration: none;
-			display: block;
-			font-size: 1.5rem;
-			color: inherit;
-		}
-	}
-}
 
 .year-label {
 	margin-block: 0;
 	color: var(--primary-accent);
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 1.4em;
+	margin-top: 1em;
 }
 .tag-buttons {
 	margin-bottom: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: .4em;
+	row-gap: .6em;
+
+	button {
+	}
 }
-// MERGE THIS WITH POEM-LIST CSS (i think I have already now?)
-ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
+
+.essay-post-list, .poem-post-list, .math-post-list, .post-list {
 	// border: 1px solid var(--primary-accent);
 	// border-bottom: none;
 	padding: 0;
@@ -654,17 +691,17 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 
 	li {
 		list-style-type: none;
-		padding-inline: 1em;
-		padding-block: 0.8em;
+		padding-inline: 1.3em;
+		padding-block: 1em;
 		--border-size: 1px;
 		border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
 		margin-bottom: calc(-1*var(--border-size));
+		transition: all ease 150ms;
 
 		&:hover {
 			background-color: color-mix(in srgb,
 			 	color-mix(in oklch, var(--primary-accent) 90%, var(--pure-contrast)), 
 			transparent 92%);
-			color: var(--primary-color)
 		}
 
 		a {
@@ -672,14 +709,14 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 			display: flex;
 			align-items: center;
 
-			.date, .title  {
+			.date, .summary  {
 				min-width: 6em;
 			}
 
 			.date {
 				color: var(--primary-accent);
-				font-weight: bold;
-				font-size: 1.15em;
+				font-weight: 550;
+				font-size: 1.1em;
 				padding-right: 1em;	
 				display: inline-block;
 				// min-width: max-content;
@@ -687,10 +724,25 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 				height: max-content;
 			}
 
-			// .article-container {
-			// 	display: inline-flex;
-			// 	gap: .5em;
-			// }
+			.summary {
+				display: flex;
+				flex-direction: column;
+				gap: .3em;
+
+				.title {
+					font-size: 1.2em;
+					letter-spacing: .02em;
+					
+				}
+
+				.description {
+					font-style: italic;
+					font-family: var(--secondary-font);
+					font-weight: 450;
+					opacity: 0.8;
+					letter-spacing: .025em;
+				}
+			}
 		}
 
 		.tag {
@@ -704,19 +756,62 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 			font-family: var(--primary-font);
 			font-weight: bold;
 		}
+	}
 
-		.description {
-			font-style: italic;
-			font-family: var(--secondary-font);
-			font-weight: 100;
-			opacity: 0.8;
+	&.home-content-list {
+		.summary {
+			.description {margin: 0};
 		}
 	}
 }
 
+.poem-post-list {
+	li {
+		padding: .6em 4em .6em 1em;
 
-.home-post-lists {
-	> .home-post-group {
+		.title {
+			display: block;
+			margin-block: 0;
+			
+			font-weight: 380;
+			font-size: 1.2em;
+			letter-spacing: 0.02em;
+		}
+	}
+
+	&:not(.home-content-list) {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-top: 2em;
+		border-block: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+		padding-block: 1.1em;
+
+		li {		
+			border: none;
+
+			&:hover{
+				background-color: inherit;
+				color: inherit;
+
+				a {
+					color: var(--text-accent);
+				}
+			}
+
+			a {
+				transition: all ease 200ms;
+			}
+		}
+	}
+}
+
+.mainbody .home-content-lists {
+	display: flex;
+	flex-direction: column;
+	gap: 1em; 
+
+	> .home-content-list-container {
 		&:hover:not(:has( > ul:hover)){  // how did I get this first try??
 			> * {
 				background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
@@ -729,7 +824,7 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 			a {
 				display: block;
 				text-decoration: none;
-				padding-block: .2em;
+				padding-block: .35em;
 				padding-inline: .6em;
 				transition: color 100ms ease;
 
@@ -742,58 +837,41 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 					color: var(--primary-accent);
 					background-color: color-mix(in srgb, var(--primary-bg) 85%, var(--primary-accent));
 				}
+
+				font-weight: 500;
+
 			}
 		}
 
-		.title{
-			font-family: var(--sans-font);
-			font-weight: 500;
-			color: 
-				color-mix(in srgb,
-					var(--primary-color) 90%, 
-				color-mix(in srgb,
-					var(--primary-bg) 50%,
-					var(--primary-accent)) 
-				);
-			opacity: 0.8
-		}
-		// .description {
-		// 	font-style: italic;
-		// 	font-family: var(--secondary-font);
-		// 	font-weight: 100;
-		// 	opacity: 0.4;
-		// }
-	}
-
-
-	.home-post-list {
-		margin-block: 0;
-		margin-block-end: 0em;
-		padding-top: 0;
-		
-
-		li:first-child {
-			border-top: none;
-		}
-
-		li:last-child {
-			border-bottom: none;
-		}
-
-		.post-list-item.poem {
-			line-height: 1;
-			height: fit-content;
-
-			h4 {
-				margin: 0;
-				font-weight: 100;
-			}
-		}
-	}
+		> .home-content-list {
+			margin-block: 0;
+			margin-block-end: 0em;
+			padding-top: 0;
+			
 	
-	.home-post-group:last-child {
-		li:last-child {
-			border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+			li:first-child {
+				border-top: none;
+			}
+	
+			li:last-child {
+				border-bottom: none;
+			}
+	
+			.content-list-item.poem {
+				line-height: 1;
+				height: fit-content;
+	
+				h4 {
+					margin: 0;
+					font-weight: 400;
+				}
+			}
+		}
+
+		&:last-child {			
+			li:last-child {
+				border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+			}
 		}
 	}
 }
@@ -874,6 +952,26 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
 	}
 }
 
+// About Me Page
+.mainbody .about-container {
+	.title {
+		font-family: var(--sans-font);
+		font-size: 2.1em;
+		font-weight: 610;
+		margin-bottom: .5em;
+	}
+
+	.about-content {
+		padding-top: 0;
+
+		h1 {
+			font-family: var(--sans-font);
+		}
+		h2 {
+			margin-top: 0.4em
+		}
+	}
+}
 
 // 404 ERROR PAGE
 main:has(main.four-o-four) {

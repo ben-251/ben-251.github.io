@@ -76,7 +76,7 @@ all colours must be fully opaque.
 	--secondary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-default, .theme-cherry-blossom {
+.theme-cherry-blossom {
 	$base-accent:  hotpink;
 	--pure-contrast: black;
 	--pure-color: white;
@@ -147,8 +147,8 @@ all colours must be fully opaque.
 	--secondary-accent: #{$base-accent};
 }
 
-.theme-space {
-	--base-accent: #7e94eb;
+.theme-default, .theme-space {
+	$base-accent: #7e94eb;
 	--pure-contrast: white;
 	--pure-color: black;
 
@@ -166,7 +166,7 @@ all colours must be fully opaque.
 }
 
 .theme-peony {
-	--base-accent: #rgb(255,181,96);
+	$base-accent: rgb(255,181,96);
 	--pure-contrast: black;
 	--pure-color: white;
 

@@ -10,7 +10,7 @@
 	}
 	function filterForTag(tag) {
 		const showallbutton = document.querySelector('#showall')
-		const posts = document.querySelectorAll('.blog-post-list li');
+		const posts = document.querySelectorAll('.essay-post-list li');
 		console.log(tag)
 		activebutton = document.getElementById(tag);
 		removeallactive();
@@ -27,7 +27,7 @@
 	}
 	function resetFilter() {
 		const showallbutton = document.querySelector('#showall')
-		document.querySelectorAll('.blog-post-list li').forEach(post => {
+		document.querySelectorAll('.essay-post-list li').forEach(post => {
 			post.style.display = '';
 		})
 		removeallactive();
@@ -47,7 +47,7 @@
 		{{ range .Site.RegularPages }}
 		{{ $path := replace .File.Path "\\" "/" }}
 
-		{{ if and (eq .Section "posts") (not (hasPrefix $path "posts/draft/")) }}
+		{{ if and (eq .Section "essays") (not (hasPrefix $path "essays/draft/")) }}
 			{{ range .Params.tags }}
 				{{ $allTags = $allTags | append . }}
 			{{ end }}
@@ -62,19 +62,10 @@
 
 	{{ range .Pages.GroupByDate "2006" }}
 		<p class="year-label">{{ .Key }}</p>
-		<ul class="blog-post-list post-list">
-			<!-- Ranges through content/posts/*.md -->
-
-			{{ range.Pages }}
-				{{ if .Params.tags }}
-					<li data-tags='{{ delimit .Params.tags "," }}'>
-				{{ else }}
-					<li data-tags="">
-				{{ end }}
-						{{ .Render "summary" }}
-					</li>
-			{{ end }}
-		</ul>
+		{{ partial "essay-list.html" (dict
+  			"pages" .Pages
+  			"home" false
+		) }}
 	{{ end }}
 </main>
 {{ end }}

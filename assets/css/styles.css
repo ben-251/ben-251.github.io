@@ -1,15 +1,14 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand");
+@import url("https://fonts.googleapis.com/css2?family=Jost");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair");
 @import url("https://fonts.googleapis.com/css2?family=Cardo");
 @import url("https://fonts.googleapis.com/css2?family=Spectral");
-@import url("https://fonts.googleapis.com/css2?family=Jost");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono");
 @import url("https://fonts.googleapis.com/css2?family=Arvo");
-@import url("https://fonts.googleapis.com/css2?family=Bellefair");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code");
-@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict");
-@import url("https://fonts.googleapis.com/css2?family=Newsreader");
-@import url("https://fonts.googleapis.com/css2?family=Yrsa");
 /* 
 
 *-color: foreground, text
@@ -68,7 +67,7 @@ all colours must be fully opaque.
   --secondary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-default, .theme-cherry-blossom {
+.theme-cherry-blossom {
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #212729;
@@ -119,8 +118,7 @@ all colours must be fully opaque.
   --secondary-accent: rgb(113, 207, 113);
 }
 
-.theme-space {
-  --base-accent: #7e94eb;
+.theme-default, .theme-space {
   --pure-contrast: white;
   --pure-color: black;
   --primary-color: #f6f6ff;
@@ -134,7 +132,6 @@ all colours must be fully opaque.
 }
 
 .theme-peony {
-  --base-accent: #rgb(255,181,96);
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #292621;
@@ -308,14 +305,15 @@ all colours must be fully opaque.
 
 *:root {
   --nav-width: 10vw;
-  --primary-font: Spectral, Yrsa, Newsreader;
-  --sans-font: jost, "quicksand", "Julius sans one", "Jura", "Bricolage Grotesque";
-  --header-font: "Spectral", "Playfair Display", "Julius sans one";
+  --primary-font: Newsreader, Spectral;
+  --sans-font: "Nunito sans", jost, "quicksand";
+  --header-font: Newsreader, Spectral;
   --logo-font: Bellefair, 'Playfair display';
   --tertiary-font: Bellefair;
   --main-font-size: 20px;
-  --prose-title-font: Bellefair, "passions conflict", "mea culpa";
-  --poem-font: Spectral;
+  --prose-title-font: Bellefair;
+  --poem-font: Newsreader;
+  --code-font: "Chivo Mono", "Fira Code";
   font-size: var(--main-font-size);
   /* to set rem */
 }
@@ -323,13 +321,13 @@ all colours must be fully opaque.
 body {
   background-color: var(--primary-bg);
   color: var(--primary-color);
+  --text-accent: color-mix(in oklch, var(--primary-accent) 80%, var(--primary-color));
+  --subtle-text-color: color-mix(in srgb, var(--primary-color) 95%, transparent);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: var(--primary-bg);
   font-family: var(--primary-font);
-  color: var(--primary-color);
   font-size: 1rem;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -357,7 +355,7 @@ body p > a {
 
 .navbar {
   font-family: var(--sans-font);
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -412,6 +410,7 @@ body p > a {
   width: -moz-max-content;
   width: max-content;
   text-wrap: pretty;
+  font-weight: 500;
 }
 .navbar {
   /* underline effect */
@@ -432,7 +431,7 @@ body p > a {
 }
 .navbar a,
 .navbar #blog-button {
-  font-weight: 800;
+  font-weight: 500;
 }
 .navbar a:not(.navbar-logo):hover {
   background-size: 0 3px, 100% 3px;
@@ -447,7 +446,6 @@ body p > a {
 .navbar a#home-link {
   letter-spacing: 0.2em;
   font-size: 1.3em;
-  font-weight: 800;
   opacity: unset;
 }
 .navbar a.active {
@@ -456,7 +454,6 @@ body p > a {
 }
 
 .mainbody {
-  --subtle-text-color: color-mix(in srgb, var(--primary-color) 95%, transparent);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,17 +529,25 @@ body p > a {
   width: 100%;
   min-height: 100vh;
 }
-.mainbody main.container h1.title {
-  font-size: 2.5rem;
-  margin-bottom: 0.3em;
+.mainbody main > h1 {
+  font-weight: 450;
 }
-.mainbody main.container h1.title:has(+ .description) {
+.mainbody main.container .post-header h1.title {
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+.mainbody main.container .post-header h1.title:has(+ .description) {
   margin-bottom: 0;
 }
-.mainbody main.container .description {
-  margin-top: 0.4em;
-  margin-bottom: 1.2em;
-  font-size: 1rem;
+.mainbody main.container .post-header h1.title {
+  font-family: var(--sans-font);
+}
+.mainbody main.container .post-header .description {
+  margin-top: 0.2em;
+  margin-bottom: 0.9em;
+  font-size: 1.1rem;
+  font-weight: 400;
   opacity: 0.85;
 }
 .mainbody .footer {
@@ -555,7 +560,6 @@ body p > a {
   padding-block: 0.3rem;
   border-top: solid 2px var(--secondary-bg);
   padding-block: 1em;
-  background-color: color-mix(in srgb, var(--pure-contrast), transparent 94%);
   background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));
 }
 .mainbody .footer p {
@@ -564,7 +568,7 @@ body p > a {
 }
 .mainbody .footer a {
   text-decoration: none;
-  font-weight: 100;
+  font-weight: 350;
   font-family: var(--sans-font);
   text-transform: uppercase;
 }
@@ -583,30 +587,51 @@ body p > a {
           padding-inline-start: 1.4em;
   -webkit-margin-start: 0.4em;
           margin-inline-start: 0.4em;
+  background-color: var(--primary-accent);
 }
 .mainbody article.content code {
   white-space: nowrap;
   display: inline-block;
-  color: var(--primary-accent);
+  color: var(--text-accent);
+  font-family: var(--code-font);
 }
 .mainbody article.content a {
-  color: color-mix(in oklch, var(--subtle-text-color), var(--primary-accent) 80%);
+  color: var(--text-accent);
 }
-.mainbody article.content h1 {
+.mainbody article.content a.footnote-ref {
+  text-decoration: none;
+}
+.mainbody article.content a.footnote-ref::before {
+  content: "[";
+}
+.mainbody article.content a.footnote-ref::after {
+  content: "]";
+}
+.mainbody article.content :is(h1, h2, h3, h4, h5, h6) {
   margin-bottom: 0em;
   margin-top: 1em;
+  font-weight: 550;
+  font-family: var(--sans-font);
+}
+.mainbody article.content h1 {
   font-size: 1.65em;
+  font-weight: 600;
+}
+.mainbody article.content h2 {
+  font-size: 1.4em;
 }
 .mainbody article.content p, .mainbody article.content ul, .mainbody article.content ol {
   color: var(--subtle-text-color);
   line-height: 1.7;
+  margin-top: 0;
 }
 .mainbody article.content p {
   margin-block: 0.1em;
   margin-bottom: 0.8em;
+  font-weight: 400;
 }
 .mainbody article.content strong {
-  font-weight: 1000;
+  font-weight: 500;
 }
 .mainbody article.content img {
   max-width: 60vw;
@@ -683,7 +708,7 @@ body p > a {
 .mainbody article.content h1:has(+ div.footnotes), .mainbody article.content .ref-header {
   font-variant: small-caps;
   font-family: var(--sans-font);
-  font-weight: 100;
+  font-weight: 300;
 }
 .mainbody article.content div.footnotes hr {
   display: none;
@@ -694,15 +719,6 @@ body p > a {
 .mainbody article.content div.footnotes ol li p {
   line-height: 1.35;
   margin-bottom: 0.1em;
-}
-.mainbody article.content a.footnote-ref {
-  text-decoration: none;
-}
-.mainbody article.content a.footnote-ref::before {
-  content: "[";
-}
-.mainbody article.content a.footnote-ref::after {
-  content: "]";
 }
 .mainbody article.content .notes {
   list-style-type: lower-alpha;
@@ -790,15 +806,15 @@ mjx-container[jax=CHTML][display=true] {
 button {
   padding-inline: 0.5rem;
   padding-block: 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
   color: var(--primary-accent);
-  font-family: var(--primary-font);
-  font-weight: bold;
+  font-family: var(--sans-font);
+  font-weight: 500;
 }
 
 button.active {
@@ -809,20 +825,48 @@ button.active {
 main.container.poem-container {
   font-family: var(--primary-font);
 }
-main.container.poem-container h1.title.poem-title {
+main.container.poem-container div.poem-header {
   font-family: var(--sans-font);
+  margin-bottom: 1em;
+}
+main.container.poem-container div.poem-header * {
+  margin-block: 0;
+}
+main.container.poem-container div.poem-header .title.poem-title {
   font-size: 2rem;
-  margin-bottom: 0.7em;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  font-weight: 600;
+}
+main.container.poem-container div.poem-header .poem-subtitle, main.container.poem-container div.poem-header .poem-epigraph {
+  margin-top: 0;
+  font-style: italic;
+  font-family: var(--poem-font);
+}
+main.container.poem-container div.poem-header .poem-epigraph {
+  font-family: var(--poem-font);
+  margin-left: 1.2em;
+  padding-block: 0.4em;
 }
 main.container.poem-container article.poem-content {
   padding-top: 0;
   font-family: var(--poem-font);
 }
-main.container.poem-container article.poem-content p {
-  margin-block: 0.5em;
-  font-size: 0.96rem;
+main.container.poem-container article.poem-content p, main.container.poem-container article.poem-content .column-stanza {
+  margin-bottom: 1em;
+  font-size: 1rem;
   line-height: 1.45;
-  margin-bottom: 1.5em;
+  font-weight: 350;
+}
+main.container.poem-container article.poem-content .column-stanza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.6em;
 }
 main.container.poem-container hr {
   border: none;
@@ -838,50 +882,27 @@ main.container.poem-container hr:before {
   line-height: 1;
 }
 
-.poem-list {
-  margin-block: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 0rem;
-}
-.poem-list li {
-  --border-size: 1px;
-  list-style-type: none;
-  border-block: var(--border-size) var(--primary-accent) solid;
-  margin-bottom: calc(-1 * var(--border-size));
-  padding-block: 0.7em;
-  padding-inline: 1em;
-  -webkit-transition: all ease 200ms;
-  transition: all ease 200ms;
-}
-.poem-list li:hover {
-  background-color: var(--secondary-bg);
-  color: var(--secondary-color);
-}
-.poem-list li a {
-  text-decoration: none;
-  display: block;
-  font-size: 1.5rem;
-  color: inherit;
-}
-
 .year-label {
   margin-block: 0;
   color: var(--primary-accent);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.4em;
+  margin-top: 1em;
 }
 
 .tag-buttons {
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 0.4em;
+     -moz-column-gap: 0.4em;
+          column-gap: 0.4em;
+  row-gap: 0.6em;
 }
-
-ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
+.essay-post-list, .poem-post-list, .math-post-list, .post-list {
   padding: 0;
   padding: 1em;
   background-color: var(--primary-bg);
@@ -896,19 +917,20 @@ ul.blog-post-list, ul.home-post-list, ul.math-post-list, .post-list {
   gap: 0rem;
   margin-block: 0;
 }
-ul.blog-post-list li, ul.home-post-list li, ul.math-post-list li, .post-list li {
+.essay-post-list li, .poem-post-list li, .math-post-list li, .post-list li {
   list-style-type: none;
-  padding-inline: 1em;
-  padding-block: 0.8em;
+  padding-inline: 1.3em;
+  padding-block: 1em;
   --border-size: 1px;
   border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
   margin-bottom: calc(-1 * var(--border-size));
+  -webkit-transition: all ease 150ms;
+  transition: all ease 150ms;
 }
-ul.blog-post-list li:hover, ul.home-post-list li:hover, ul.math-post-list li:hover, .post-list li:hover {
+.essay-post-list li:hover, .poem-post-list li:hover, .math-post-list li:hover, .post-list li:hover {
   background-color: color-mix(in srgb, color-mix(in oklch, var(--primary-accent) 90%, var(--pure-contrast)), transparent 92%);
-  color: var(--primary-color);
 }
-ul.blog-post-list li a, ul.home-post-list li a, ul.math-post-list li a, .post-list li a {
+.essay-post-list li a, .poem-post-list li a, .math-post-list li a, .post-list li a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -917,13 +939,13 @@ ul.blog-post-list li a, ul.home-post-list li a, ul.math-post-list li a, .post-li
       -ms-flex-align: center;
           align-items: center;
 }
-ul.blog-post-list li a .date, ul.blog-post-list li a .title, ul.home-post-list li a .date, ul.home-post-list li a .title, ul.math-post-list li a .date, ul.math-post-list li a .title, .post-list li a .date, .post-list li a .title {
+.essay-post-list li a .date, .essay-post-list li a .summary, .poem-post-list li a .date, .poem-post-list li a .summary, .math-post-list li a .date, .math-post-list li a .summary, .post-list li a .date, .post-list li a .summary {
   min-width: 6em;
 }
-ul.blog-post-list li a .date, ul.home-post-list li a .date, ul.math-post-list li a .date, .post-list li a .date {
+.essay-post-list li a .date, .poem-post-list li a .date, .math-post-list li a .date, .post-list li a .date {
   color: var(--primary-accent);
-  font-weight: bold;
-  font-size: 1.15em;
+  font-weight: 550;
+  font-size: 1.1em;
   padding-right: 1em;
   display: inline-block;
   width: 7.5em;
@@ -931,7 +953,28 @@ ul.blog-post-list li a .date, ul.home-post-list li a .date, ul.math-post-list li
   height: -moz-max-content;
   height: max-content;
 }
-ul.blog-post-list li .tag, ul.home-post-list li .tag, ul.math-post-list li .tag, .post-list li .tag {
+.essay-post-list li a .summary, .poem-post-list li a .summary, .math-post-list li a .summary, .post-list li a .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3em;
+}
+.essay-post-list li a .summary .title, .poem-post-list li a .summary .title, .math-post-list li a .summary .title, .post-list li a .summary .title {
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+}
+.essay-post-list li a .summary .description, .poem-post-list li a .summary .description, .math-post-list li a .summary .description, .post-list li a .summary .description {
+  font-style: italic;
+  font-family: var(--secondary-font);
+  font-weight: 450;
+  opacity: 0.8;
+  letter-spacing: 0.025em;
+}
+.essay-post-list li .tag, .poem-post-list li .tag, .math-post-list li .tag, .post-list li .tag {
   padding-inline: 0.5rem;
   padding-block: 0.2rem;
   border-radius: 0.5rem;
@@ -944,23 +987,69 @@ ul.blog-post-list li .tag, ul.home-post-list li .tag, ul.math-post-list li .tag,
   font-family: var(--primary-font);
   font-weight: bold;
 }
-ul.blog-post-list li .description, ul.home-post-list li .description, ul.math-post-list li .description, .post-list li .description {
-  font-style: italic;
-  font-family: var(--secondary-font);
-  font-weight: 100;
-  opacity: 0.8;
+.essay-post-list.home-content-list .summary .description, .poem-post-list.home-content-list .summary .description, .math-post-list.home-content-list .summary .description, .post-list.home-content-list .summary .description {
+  margin: 0;
 }
 
-.home-post-lists > .home-post-group:hover:not(:has(> ul:hover)) > * {
+.poem-post-list li {
+  padding: 0.6em 4em 0.6em 1em;
+}
+.poem-post-list li .title {
+  display: block;
+  margin-block: 0;
+  font-weight: 380;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+}
+.poem-post-list:not(.home-content-list) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2em;
+  border-block: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+  padding-block: 1.1em;
+}
+.poem-post-list:not(.home-content-list) li {
+  border: none;
+}
+.poem-post-list:not(.home-content-list) li:hover {
+  background-color: inherit;
+  color: inherit;
+}
+.poem-post-list:not(.home-content-list) li:hover a {
+  color: var(--text-accent);
+}
+.poem-post-list:not(.home-content-list) li a {
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
+}
+
+.mainbody .home-content-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+.mainbody .home-content-lists > .home-content-list-container:hover:not(:has(> ul:hover)) > * {
   background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
 }
-.home-post-lists > .home-post-group > h2 {
+.mainbody .home-content-lists > .home-content-list-container > h2 {
   margin-block: 0;
 }
-.home-post-lists > .home-post-group > h2 a {
+.mainbody .home-content-lists > .home-content-list-container > h2 a {
   display: block;
   text-decoration: none;
-  padding-block: 0.2em;
+  padding-block: 0.35em;
   padding-inline: 0.6em;
   -webkit-transition: color 100ms ease;
   transition: color 100ms ease;
@@ -968,39 +1057,36 @@ ul.blog-post-list li .description, ul.home-post-list li .description, ul.math-po
   border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
   color: var(--primary-accent);
 }
-.home-post-lists > .home-post-group > h2 a:hover {
+.mainbody .home-content-lists > .home-content-list-container > h2 a:hover {
   color: var(--primary-accent);
   background-color: color-mix(in srgb, var(--primary-bg) 85%, var(--primary-accent));
 }
-.home-post-lists > .home-post-group .title {
-  font-family: var(--sans-font);
+.mainbody .home-content-lists > .home-content-list-container > h2 a {
   font-weight: 500;
-  color: color-mix(in srgb, var(--primary-color) 90%, color-mix(in srgb, var(--primary-bg) 50%, var(--primary-accent)));
-  opacity: 0.8;
 }
-.home-post-lists .home-post-list {
+.mainbody .home-content-lists > .home-content-list-container > .home-content-list {
   margin-block: 0;
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
   padding-top: 0;
 }
-.home-post-lists .home-post-list li:first-child {
+.mainbody .home-content-lists > .home-content-list-container > .home-content-list li:first-child {
   border-top: none;
 }
-.home-post-lists .home-post-list li:last-child {
+.mainbody .home-content-lists > .home-content-list-container > .home-content-list li:last-child {
   border-bottom: none;
 }
-.home-post-lists .home-post-list .post-list-item.poem {
+.mainbody .home-content-lists > .home-content-list-container > .home-content-list .content-list-item.poem {
   line-height: 1;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-.home-post-lists .home-post-list .post-list-item.poem h4 {
+.mainbody .home-content-lists > .home-content-list-container > .home-content-list .content-list-item.poem h4 {
   margin: 0;
-  font-weight: 100;
+  font-weight: 400;
 }
-.home-post-lists .home-post-group:last-child li:last-child {
+.mainbody .home-content-lists > .home-content-list-container:last-child li:last-child {
   border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
 }
 
@@ -1075,6 +1161,22 @@ ul.blog-post-list li .description, ul.home-post-list li .description, ul.math-po
 }
 .backnext ul li a {
   text-decoration: none;
+}
+
+.mainbody .about-container .title {
+  font-family: var(--sans-font);
+  font-size: 2.1em;
+  font-weight: 610;
+  margin-bottom: 0.5em;
+}
+.mainbody .about-container .about-content {
+  padding-top: 0;
+}
+.mainbody .about-container .about-content h1 {
+  font-family: var(--sans-font);
+}
+.mainbody .about-container .about-content h2 {
+  margin-top: 0.4em;
 }
 
 main:has(main.four-o-four) {
@@ -1246,7 +1348,7 @@ main:has(main.four-o-four) main.four-o-four h1 {
   .footer p {
     width: 90vw !important;
   }
-  ul.blog-post-list li a .date {
+  ul.essay-post-list li a .date {
     display: block;
   }
   main > .post-list .post-list-item .title {
@@ -1258,20 +1360,20 @@ main:has(main.four-o-four) main.four-o-four h1 {
   .poem-container hr {
     margin-left: 4em;
   }
-  .home-post-lists .home-post-list {
+  .home-content-lists .home-content-list {
     margin-block: 0;
     -webkit-margin-after: 0.5em;
             margin-block-end: 0.5em;
   }
-  .home-post-lists .home-post-list li {
+  .home-content-lists .home-content-list li {
     padding-inline: 0.1em;
   }
-  .home-post-lists .home-post-list li .title {
+  .home-content-lists .home-content-list li .title {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
   }
-  .home-post-lists .home-post-list li .date {
+  .home-content-lists .home-content-list li .date {
     min-width: 6em;
     font-size: 0.9em;
   }

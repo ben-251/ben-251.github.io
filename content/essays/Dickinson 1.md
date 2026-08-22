@@ -1,9 +1,10 @@
 ---
 draft: false
 date: 2026-03-04
-title: The (Im-)mortal Writer
+title: The Immortal Writer
 tags:
   - poetry
+  - close-reads
 description: A quick read of Dickinson's 'A Book'
 ---
 <div class=poem>

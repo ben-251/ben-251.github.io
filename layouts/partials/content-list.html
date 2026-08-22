@@ -1,0 +1,30 @@
+{{ $classes := slice .class }}
+
+{{ if .home }}
+	{{ $classes = $classes | append "home-content-list" }}
+{{ end }}
+
+<ul class='{{ delimit $classes " " }}'>
+	{{ range .pages }}
+		{{ if .Params.tags }}
+			<li data-tags='{{ delimit .Params.tags "," }}'>
+		{{ else }}
+			<li data-tags="">
+		{{ end }}								
+			{{ .Render "summary" }}
+		</li>
+	{{ end }}
+
+	{{ if .home }}
+	<li data-tags="">
+		<a href="{{ .moreURL }}">
+		<span class="date"> 
+			{{/*  using .date is HIGHLY questionable here, 
+			lol. so instead I'm going to write a .more here and in css do
+			".date, .more" */}}
+			...
+		</span>
+	</a>
+	</li>		
+	{{ end }}				
+</ul>

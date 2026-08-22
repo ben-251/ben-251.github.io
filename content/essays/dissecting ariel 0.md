@@ -4,7 +4,7 @@ date: 2025-10-27
 title: "Morning Song: dissecting Ariel #0"
 tags:
   - poetry
-  - DA
+  - Ariel
 description: A quick close read of a fantastic collection-opener.
 ---
 > Our voices echo, magnifying your arrival.

@@ -20,10 +20,10 @@ It’s on one hand a simple, unassuming poem, and yet this is precisely what it 
 
 What’s interesting about that refrain line is that it doesn’t attempt to fluidly connect each circumstance to the question. Instead, it embraces the ridiculousness of thinking so much about the moon. We get phrases like:
 - “But worries still, *Where’s my moon?*”
-- “Floats the question, [WMM?]”
+- “Floats the question, …”
+- “and begs once more, …”
+- “The scoop a reminder, …”
 - “Pops! Gone forever, *Like my moon?*”
-- “The scoop a reminder, [WMM?]”
-- “and begs once more, [WMM?]”
   
 I think it’s these short phrases that make this poem really shine. If they were all the same, and the refrain just read
 > and asks again, *Where’s my moon?*
@@ -34,7 +34,7 @@ With the verbs we instead get, we see the energy of the child fluctuate througho
 
 We see this in the transition from line 2’s “wonders” to line 12’s “wanders.” The words are pronounced almost identically, yet the second feels more open, much like how the child is considering creative options to solve this unknowing. 
 
-I particularly love the couplet “Child pretends all afternoon / And quizzes a wizard, [WMM]”. In so few words, we get a picture of a child bored, talking to their imaginary friend, and importantly, talking to this friend about their primary concern: the missing moon. The repetition of the `/ɪz/` in “quizzes” and “wizard” strengthens the unity between the child’s question and whoever will listen to it, but the fact that the listener is imaginary here means that the question remains unanswered. Thus, in addition to the tension of the question, we see a new tension emerge: to answer the question, the child must first be *listened to.* Both these tensions build a powerful momentum together.
+I particularly love the couplet “Child pretends all afternoon / And quizzes a wizard, WMM”. In so few words, we get a picture of a child bored, talking to their imaginary friend, and importantly, talking to this friend about their primary concern: the missing moon. The repetition of the `/ɪz/` in “quizzes” and “wizard” strengthens the unity between the child’s question and whoever will listen to it, but the fact that the listener is imaginary here means that the question remains unanswered. Thus, in addition to the tension of the question, we see a new tension emerge: to answer the question, the child must first be *listened to.* Both these tensions build a powerful momentum together.
 
 # “…Where’s my moon?”
 It’s worthwhile looking closely at the phrase which the child repeats, considering it occurs 13 times in this exact phrasing (and two extra times with variations). One question we might ask is *what could this phrase have been instead?* Here a few possible variations:
@@ -47,13 +47,13 @@ It’s worthwhile looking closely at the phrase which the child repeats, conside
 
 “Where’s my moon?” beats “Where is my moon” for at least two reasons. First, contractions are conventionally more informal, and second, using three words allows the phrase to really sing each time it repeats. 
 
-In addition to how nice the original sounded, there are a few extra reasons it fits better than all the ones I’ve listed. Both demands and questions carry a sense of momentum, because both need to be resolved (a request is either obeyed or ignored, a question is either answered or ignored), but If the phrase were an explicit demand/request for the moon to return, we would miss on the childlike curiosity, which emphasises the lack of knowledge (and therefore power/agency) that the child has. If instead of a locative question, we had a ‘why’ or ‘when,’ we would lean much more abstract, and lose the childlike quality that ‘where’ has. The question of location creates a connection to object permanence: the moon has not simply gone on a trip somewhere; it has ceased to exist. Finally, by adding the possessive “my,” we get the feeling that the child has lost something that is personal and important to them, a sentiment we’d miss with the phrase “the moon.”
+In addition to how nice the original sounded, there are a few extra reasons it fits better than all the ones I’ve listed. Demands and questions both carry a sense of momentum, because both need resolution (a request by being followed, a question by being answered), but if the phrase were an explicit demand/request for the moon to return, we would miss on the childlike curiosity, which so nicely emphasises the lack of knowledge (and therefore lack of power) that the child has. If instead of a locative question, we had a ‘why’ or ‘when,’ we would lean much more abstract, and lose the direct quality that ‘where’ has. The question of location also creates a connection to object permanence: the moon has not simply gone on a trip somewhere; it has ceased to exist. Finally, by adding the possessive “my,” we get the feeling that the child has lost something that is personal and important to them, a sentiment we’d miss with the phrase “the moon.”
 
 Okay, so this is the best way to talk about the moon, but so far, we’ve ignored a pressing question…
 # Why a moon?
-To get to the heart of this, we must ask what the moon *is,* especially from the perspective of a child. It is an object that comes and goes unpredictably. It is an object that in the daytime is easy to forget about. It is often the brightest object in an otherwise dark setting. It is perfectly circular. Unlike the sun, It can comfortably be *looked at.* It height means it is looked *up* at.
+To get to the heart of this, we must ask what the moon *is,* especially from the perspective of a child. It is an object that comes and goes unpredictably. It is an object that in the daytime is easy to forget about. It is often the brightest object in an otherwise dark setting. It is perfectly circular. Unlike the sun, It can comfortably be *looked at.* Its height means it is looked *up* at.
 
-So we get a portrait of a child who has access to a very present sun, “but worries still” about the perfect entity, which the child physically looks *up* to, and isn’t intimidated by, a source of comfort in the dark silence of the night. This to me, sounds quite like a *mother.* One can imagine a child separated from their mother, who is looked after by their father or some other relative, who tucks them in, and gives them fruit and ice-cream, and takes them to a party with a pool. And yet, in this day of relaxation and brightness, the child longs to be reunited with their mother. This is even more convincing when you consider the sounds in the word “moon”: two nasal consonants bridged by a vowel, and compare that with the words “mum” or “mom,” with a near identical structure. You can even easily swap the words in all instances of the question:
+So we get a portrait of a child who has access to a very present sun, “but worries still” about the perfect entity, which the child physically looks *up* to, and isn’t intimidated by, a source of comfort in the dark silence of the night. This to me, sounds quite like a *mother.* One can imagine a child separated from their mother, who is looked after by their father or some other relative, who tucks them in, and gives them fruit and ice-cream, and takes them to a party with a pool. And yet, in this day of relaxation and brightness, the child longs to be reunited with their mother. This association is even more compelling when you consider the sounds in the word “moon”: two nasal consonants bridged by a vowel, and compare that with the words “mum” or “mom,” mirrors of this exact structure. You can even easily swap the words in all instances of the question:
 
 - “A child wonders, *Where’s my mum?*”
 - “Wails and wails, *Where’s my mum?*”
@@ -72,5 +72,5 @@ The power of this interpretation shines with the final two couplets:
 
 Of course, a direct reading is that the moon which was covered by clouds is revealed this night, but even alongside this interpretation, we can notice that the only moment their question is responded to is when resolution arrives. The tension from the unanswered question, and the tension from the elusive moon, are both released in sync. This matches the idea that the mother’s presence makes everything okay. If we imagine the child’s mother away for whatever reason, it makes perfect sense that the child would only feel at peace with their lack of control and knowledge when their mother, protector and ultimate source of wisdom, arrives, and makes a promise which is immediately fulfilled. If we then take the moon as a metaphor for the mother, then the point of resolution is not the final line, but the line before it, where the unity between the two aforementioned tensions is at its most extreme: to find your mother answer the question ‘where is my mum?’ *is*  to find her.  
 
-This poem is an exploration of the discomfort of ‘not knowing’, and of the need to depend on grown-ups that *do* know. It explores infancy and motherhood, and beautifully portrays the thinking of children so new to the complex workings of the world.
+This poem is an exploration of the discomfort of ‘not knowing’, and of the need to depend on grown-ups that *do* know. Through the poem’s deceptively simple structure, Weatherford beautifully portrays the mind and dependency of children so new to the complex workings of the world.
 

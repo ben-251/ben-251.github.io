@@ -4,7 +4,8 @@ date: 2026-02-21
 title: "Don Paterson: ‘A Powercut‘"
 tags:
   - poetry
-description: A close look at the anaphora of a satisfyingly suffocating sonnet.
+  - close-reads
+description: This sonnet wields anaphora to satisfyingly suffocating effect.
 ---
 This is a poem about reference and restriction. This is a poem which …
 

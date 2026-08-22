@@ -4,16 +4,17 @@ date: 2026-01-09
 title: "Kindness: Dissecting Ariel #4"
 tags:
   - poetry
-  - DA
+  - Ariel
+  - close-reads
 description: A simple personifying image proves anything but.
 ---
 The first stanza introduces us to the central tool of the poem: the personification of Kindness. Kindness is described with wealthy and rosy characteristics: she “glides” and is “nice”; she has “jewels” and “rings.” We are also introduced to the image of “mirrors,” a common theme in Plath’s work, including the Bell Jar. In the Bell Jar, reflections are disorienting and unrecognisable. However, in this poem, “the mirrors / are filling with smiles,” suggesting that the speaker is joyful to be a recipient of kind actions. 
 ## Spoonful of sugar 
-> What is so real as the cry of a child?"
+> What is so real as the cry of a child?  
+> A rabbit’s cry may be wilder  
+> but it has no soul.
 
-When in the second stanza, Plath asks the reader this question, 
-
-The reader quickly finds a home for this question, opening stanza two with a link to one of her central themes: womanhood through the lens of motherhood. She describes a child’s cry as a soulful-yet-tame version of a rabbit’s. This image is directly connected to no other lines in the poem, as plath immediately pivots to the central image: Kindness as a form of sweetness. Through the remainder of this poem, sugar (and, by association, kindness) is connected to health and comfort.
+The reader easily places this question as a link to one of Plath’s central themes: womanhood through the lens of motherhood. She describes a child’s cry as a soulful-yet-tame version of a rabbit’s. From here, Plath immediately pivots back to the central image: Kindness as a form of sweetness. In these two lines, sugar (and, by association, kindness) is connected to health and comfort.
 
 By placing the “rabbit’s cry” in between these two positive descriptions of the effects of kindness, Plath suggests that the relief for the pain that children experience is the kindness of their parents.
 

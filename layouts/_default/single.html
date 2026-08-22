@@ -1,18 +1,6 @@
 {{ define "main" }}
 <main class="container">
-	<h1 class="title">{{ .Title }}</h1>
-	{{ with .Description }}
-		<div class="description">{{ . }}</div>
-	{{ end }}
-
-	<div class="tag-list">
-		<div class="tag">{{ .Date.Format "2 January 2006" }}</div>
-		<div class="tag">{{ .WordCount }} words</div>
-	</div>
-	{{ with .Lastmod }}
-		<div class="last-mod">Last updated {{ .Format "2 January" }}</div>
-	{{ end }}
-		
+	{{ partial "post-header.html" . }}
 
 	<article class="content">
 		{{ .Content }}

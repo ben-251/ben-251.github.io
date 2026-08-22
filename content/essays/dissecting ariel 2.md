@@ -4,13 +4,13 @@ date: 2025-12-29
 title: "Edge: Dissecting Ariel #2"
 tags:
   - poetry
-  - DA
+  - Ariel
 description: Plath teaches us how to create and wield associations.
 ---
 
 
 # Voices and Agency
-We begin with an anonymised woman in the state of perfection and death. The definite article suggests a *particular* woman, maybe representing Plath herself. However, by choosing to be particular about much else, Plath abstracts her identity, extending the scope of the subject to women (or mothers) in general.
+We begin with an anonymised woman in the state of perfection and death. The definite article suggests a *particular* woman, maybe representing Plath herself. However, by choosing not to be particular about much else, Plath abstracts her identity, extending the scope of the subject to women (or mothers) in general.
 
 The poem can be loosely divided into two subjects: the woman and her children, the latter of which are also directly linked to death. Through Plath's choices of narrative actions for the former, Plath appears to actively reduce the scale and importance of the woman's voice.  She smiles, and "her bare feet seem to be saying" things, but the woman herself never says or even *does* anything except in relation her children. This seems to hint at a restriction that childbirth brings, consistent with the fact that Plath had recently birthed her second child at the time of writing this collection. The poem *Morning Song* is an example of a poem that touches on these tensions quite explicitly: the attention babies draw to themselves, and the way mothers attend instantly to their children's needs, are ideas prevalent in that poem. Through both poems, Plath portrays her experience of motherhood as a loss of identity and a sort of death. 
 
@@ -29,9 +29,7 @@ To tie everything together, consider these lines from *Morning Song:*
 > In a drafty museum, your nakedness    
 > Shadows our safety. \[...]    
 
-In the context of *Morning Song,* the statue in the museum is the newborn, and this image is a well-crafted exploration of this creature settling into its existence, being marvelled at by the people around. In *Edge,* the statue is the woman, and here, rather than focussing on perception, we focus on the person herself. 
-
-Overall, this confirms the link between the two poems, and acts as a darker side of the same coin: if *Morning Song* explored the good and bad of start of a life, *Edge* explores the good and bad of the end of one. 
+In the context of *Morning Song,* the statue in the museum is the newborn, and this image is a well-crafted exploration of this creature settling into its existence, being marvelled at by the people around. In *Edge,* the statue is the woman, and here, rather than focussing on perception, we focus on the person herself. This acts as a darker side of the same coin: if *Morning Song* explored the good and bad of start of a life, *Edge* explores the good and bad of the end of one. 
 
 # The Garden
 Now we consider lines 9 to 16. Taking these words literally, the dead woman’s children are themselves dead. The comparison of the children to snakes does a few things. First, it trains the reader to see the children through a dehumanizing lens. Second, it may describe a literal foetal position.  Lastly, by using the image of a snake, we portray them as evil, dangerous beings, which colours the next image with an uneasy tone. The children are positioned as if about to be breastfed, but both mother and children are lifeless. It is as if the children are to blame.

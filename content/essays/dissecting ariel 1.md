@@ -4,7 +4,7 @@ date: 2025-12-11
 title: "Words: Dissecting Ariel #1"
 tags:
   - poetry
-  - DA
+  - Ariel
 description: A poem which balances order and chaos instructively.
 ---
 

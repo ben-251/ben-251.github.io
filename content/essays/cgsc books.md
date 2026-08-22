@@ -2,6 +2,7 @@
 draft: false
 date: 2025-05-24
 title: Favourite cognitive science texts
+description: A summary of the texts I enjoyed, and why I enjoyed them.
 tags:
   - mind
 ---

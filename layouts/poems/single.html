@@ -1,7 +1,22 @@
 {{ define "main" }}
 <main class="container poem-container">
-	<h1 class="title poem-title">{{ .Title }}</h1>
 
+	<div class="poem-header">
+		<h1 class="title poem-title">{{ .Title }}</h1>
+
+		{{ if .Param "subtitle" }}
+			<p class="subtitle poem-subtitle">
+				{{ .Param "subtitle" }}
+			</p>
+		{{ end }}
+
+		{{ if .Param "epigraph" }}
+			<p class="epigraph poem-epigraph">
+				{{ .Param "epigraph" }}
+			</p>
+		{{ end }}
+	</div>
+	
 	<article class="content poem-content">
 		{{ .Content }}
 	</article>
