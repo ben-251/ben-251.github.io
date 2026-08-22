@@ -10,6 +10,7 @@
 	/* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 
 	.theme-item[class*="theme-"] {
+		position: relative;
 		font-family: var(--theme-button-font);
 		box-sizing: border-box;
 		position: relative;
@@ -19,51 +20,47 @@
 		background-color: var(--primary-bg);
 		position: relative;
 		padding: 1.6rem;
-		padding-right: 3rem;
+		padding-left: 7%;
+		padding-right: 25%;
 
 		text-decoration: var(--primary-accent) 2px underline;
 		text-underline-offset: .25em;
 
-		--middle: 70%;
-		--middle-left: calc(var(--middle) - 10%);
-		--middle-right: calc(var(--middle) + 10%);
-		--right: 95%;
-
 		--border-width: 4%;
-		--middle: 70%;
+		--middle: 7%;
 		--middle-middle: var(--middle);
-		--middle-left-left: calc(var(--middle) - var(--border-width));
-		--middle-middle-left: calc(var(--middle) - calc(var(--border-width)) / 2);
-		--middle-middle-right: calc(var(--middle) + calc(var(--border-width)) / 2);
-		--middle-right-right: calc(var(--middle) + var(--border-width));
-		--right: 95%;
+		--middle-left: calc(var(--middle) - var(--border-width));
+		--middle-right: calc(var(--middle) + var(--border-width));
+		--right: 90%;
+		overflow: hidden;
+
 
 		background: linear-gradient(
-			100deg,
+			75deg,
 			var(--primary-bg) var(--middle-left),
-
 			var(--primary-accent) var(--middle-left),
-			var(--primary-accent) var(--middle-middle-left),
-
-			var(--secondary-accent) var(--middle-middle-left),
-			var(--secondary-accent) var(--middle-middle),
-			
+			var(--primary-accent) var(--middle-middle),
 			var(--secondary-bg) var(--middle-middle),
 			var(--secondary-bg) var(--right)
 		);
 
-		//border-radius: 2em;
-		border-radius: 0;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-
+		// border-radius: .8rem;
+		border-radius: 0rem;
 		border: 3px solid var(--primary-accent);
 		box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
 
-		// &.active {
-		// 	border: 3px solid var(--primary-accent);
-		// 	box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
-		// } making this effect appear on all theme options
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: var(--secondary-accent);
+			// border-radius: 100%;
+			transform: rotate(75deg);
+			right:-55%;
+			top: -35%;
+			height: 150%;
+			aspect-ratio: 1 / 1;
+			// box-shadow: 0 0 1px var(--pure-contrast) inset;
+		}
 	}
 }
 

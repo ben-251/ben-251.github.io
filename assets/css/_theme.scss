@@ -128,7 +128,7 @@ all colours must be fully opaque.
 	--secondary-accent: #{$base-accent};
 }
 
-.theme-default, .theme-space {
+.theme-space {
 	$base-accent: #7e94eb;
 	--pure-contrast: white;
 	--pure-color: black;
@@ -145,7 +145,7 @@ all colours must be fully opaque.
 	--secondary-accent: #7e94eb;
 }
 
-.theme-daisy {
+.theme-default, .theme-daisy {
 	$base-accent: rgb(255,181,96);
 	--pure-contrast: black;
 	--pure-color: white;

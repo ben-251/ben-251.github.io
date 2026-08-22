@@ -115,10 +115,10 @@ const themes = Array.from(themeItems).flatMap(item =>
   );
 var currentTheme = localStorage.getItem('theme') || 'theme-default';
 
-const middleStart = 90;
-const middleEnd = 80;
+const middleStart = 86;
+const middleEnd = 76;
 const rightStart = 95;
-const rightEnd = 90;
+const rightEnd = 85;
 
 
 function applyTheme(theme) {

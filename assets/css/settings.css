@@ -93,7 +93,7 @@ all colours must be fully opaque.
   --secondary-accent: rgb(113, 207, 113);
 }
 
-.theme-default, .theme-space {
+.theme-space {
   --pure-contrast: white;
   --pure-color: black;
   --primary-color: #f6f6ff;
@@ -106,7 +106,7 @@ all colours must be fully opaque.
   --secondary-accent: #7e94eb;
 }
 
-.theme-daisy {
+.theme-default, .theme-daisy {
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #133400;
@@ -271,6 +271,7 @@ all colours must be fully opaque.
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 }
 .theme-options .theme-item[class*=theme-] {
+  position: relative;
   font-family: var(--theme-button-font);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -284,27 +285,32 @@ all colours must be fully opaque.
   background-color: var(--primary-bg);
   position: relative;
   padding: 1.6rem;
-  padding-right: 3rem;
+  padding-left: 7%;
+  padding-right: 25%;
   -webkit-text-decoration: var(--primary-accent) 2px underline;
           text-decoration: var(--primary-accent) 2px underline;
   text-underline-offset: 0.25em;
-  --middle: 70%;
-  --middle-left: calc(var(--middle) - 10%);
-  --middle-right: calc(var(--middle) + 10%);
-  --right: 95%;
   --border-width: 4%;
-  --middle: 70%;
+  --middle: 7%;
   --middle-middle: var(--middle);
-  --middle-left-left: calc(var(--middle) - var(--border-width));
-  --middle-middle-left: calc(var(--middle) - calc(var(--border-width)) / 2);
-  --middle-middle-right: calc(var(--middle) + calc(var(--border-width)) / 2);
-  --middle-right-right: calc(var(--middle) + var(--border-width));
-  --right: 95%;
-  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle-left), var(--secondary-accent) var(--middle-middle-left), var(--secondary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right));
-  border-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  --middle-left: calc(var(--middle) - var(--border-width));
+  --middle-right: calc(var(--middle) + var(--border-width));
+  --right: 90%;
+  overflow: hidden;
+  background: linear-gradient(75deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right));
+  border-radius: 0rem;
   border: 3px solid var(--primary-accent);
   -webkit-box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
           box-shadow: 0 0 3px color-mix(in srgb, transparent 95%, var(--pure-contrast));
+}
+.theme-options .theme-item[class*=theme-]::after {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-accent);
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  right: -55%;
+  top: -35%;
+  height: 150%;
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=settings.css.map */
