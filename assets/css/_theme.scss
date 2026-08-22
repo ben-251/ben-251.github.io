@@ -17,7 +17,7 @@ eventually add a third accent type called accent color:
 all colours must be fully opaque. 
 */
 
-.theme-light {
+.theme-icy {
 	--base-accent: #3fa7a7;
 
 	--pure-contrast: black;
@@ -46,14 +46,14 @@ all colours must be fully opaque.
 	--base-accent: #408b8b;
 	// primary
 	--primary-color: #ebf3f6;
-	--primary-bg: #1e2a2e;
-	--primary-accent: #4fa6ba;
+	--primary-bg: #1d3339;
+	--primary-accent: #47b5ce;
 	--primary--accent-contrast: var(--primary-bg);
 
 	// secondary 
 	--secondary-color: white;
 	--secondary-bg: #{color.scale($base-light, $lightness: -90%, $saturation: 15%)};
-	--secondary-accent: #408b8b;
+	--secondary-accent: #3b9595;
 	--secondary-accent-contrast: var(--secondary-bg);
 
 }
@@ -64,8 +64,8 @@ all colours must be fully opaque.
 	--pure-contrast: white;
 	--pure-color: black;
 	// primary
-	--primary-color: #dfd9dd;
-	--primary-bg: #19030b;
+	--primary-color: #efe4e5;
+	--primary-bg: #23020e;
 	--primary-accent: #{$base-accent};
 	--primary-accent-contrast: var(--primary-color);
 
@@ -112,25 +112,6 @@ all colours must be fully opaque.
 	--primary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-sepia {
-	$base-accent:  rgb(192, 130, 106);
-	--pure-contrast: black;
-	--pure-color: white;
-
-	// primary
-	--primary-color: #482005;
-	--primary-bg: #f0e8e0;
-	--primary-bg: #fcf2e5;
-	--primary-accent: #{$base-accent};
-
-	// secondary 
-	--secondary-color: #{color.scale($base-accent, $lightness: 100%, $saturation: -50%)};
-	--secondary-bg: #{color.scale($base-accent, $lightness: 0%, $saturation: -30%)};
-	--secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
-	--secondary-bg: #b58670;
-	--secondary-accent: #f7cf9c;
-}
-
 .theme-emerald {
 	$base-accent:  rgb(113, 207, 113);
 	--pure-contrast: white;
@@ -162,22 +143,20 @@ all colours must be fully opaque.
 	--secondary-color: #fff;
 	--secondary-bg: #06062a;
 	--secondary-accent: #7e94eb;
-
 }
 
-.theme-peony {
+.theme-daisy {
 	$base-accent: rgb(255,181,96);
 	--pure-contrast: black;
 	--pure-color: white;
 
-	--primary-color: #292621;
-	--primary-bg: #fffef2;
-	--primary-accent: rgb(235, 168, 81);
+	--primary-color: #133400;
+	--primary-bg: #fffff4;
+	--primary-accent: rgb(226, 159, 35);
 
 	--secondary-color: #231707;
-	--secondary-bg: #fef1d8;
-	--secondary-accent: rgb(255, 181, 96);
-	
+	--secondary-bg: #f8d698;
+	--secondary-accent: rgb(255, 164, 73);
   }
 
 .theme-dark-peach {
@@ -200,67 +179,34 @@ all colours must be fully opaque.
 	//--logo-font: consolas;
 }
 
-.theme-misty-dark {
-	--pure-contrast: white;
-	--pure-color: black;
-	--primary-color: #e8e8e8;
-	--primary-bg: #7979a1;
-	--primary-accent: rgb(223, 203, 255);
-	--primary-accent-contrast: var(--primary-bg);
-
-	--secondary-color: #27285a;
-	--secondary-bg: #ddddef;
-	--secondary-accent: rgb(162, 153, 233);
-	--secondary-accent-contrast: var(--secondary-bg);
-}
-
-.theme-misty-light {
+.theme-lavender {
 	--pure-contrast: black;
 	--pure-color: white;
-
-	--secondary-color: #e8e8e8;
-	--secondary-bg: #7979a1;
-	--secondary-accent: rgb(162, 149, 220);
-	--secondary-accent-contrast: var(--secondary-bg);
 
 	--primary-color: #27285a;
 	--primary-bg: #ededf8;
 	--primary-accent: rgb(162, 153, 233);
 	--primary-accent-contrast: var(--primary-bg);
+
+	--secondary-color: #e8e8e8;
+	--secondary-bg: #7070a7;
+	--secondary-accent: rgb(237, 238, 252);
+	--secondary-accent-contrast: var(--secondary-bg);
 }
 
 .theme-cornflower {
 	--pure-contrast: black;
 	--pure-color: white;
 
-	--secondary-color: white;
-	--secondary-bg: #7f92c1;
-	--secondary-accent: rgb(237, 243, 255);
-	--secondary-accent-contrast: var(--secondary-bg);
-
 	--primary-color: #27285a;
 	--primary-bg: #f8f6ed;
-	--primary-accent: rgb(118, 153, 229);
+	--primary-accent: rgb(92, 132, 218);
 	--primary-accent-contrast: var(--primary-bg);
-}
-
-.theme-dystopian{
-	--pure-contrast: white;
-	--pure-color: black;
-
-	--primary-color: #b0b3ab;
-	--primary-bg: #474946;
-	--primary-accent: rgb(206, 213, 169);
-	--primary-accent-contrast: var(--primary-bg);
-
-	--secondary-color: #ffffff;
-	--secondary-bg: #666760;
-	--secondary-accent: rgb(255, 252, 189);
+	
+	--secondary-color: white;
+	--secondary-bg: #5872b5;
+	--secondary-accent: rgb(255, 249, 237);
 	--secondary-accent-contrast: var(--secondary-bg);
-
-	--primary-font: "Fira Code", consolas;
-	--header-font: "Fira Code", consolas;
-	--sans-font: "fira code"
 }
 
 .theme-alabaster {
@@ -277,6 +223,29 @@ all colours must be fully opaque.
 	--secondary-accent: rgb(255, 255, 255);
 }
 
+.theme-sunset {
+	--primary-color: #ffffff;
+	--primary-bg: #38476e;
+	--primary-accent: rgb(255, 148, 173);
+	--primary-accent-contrast: var(--primary-bg);
+
+	--secondary-color: #e8e8e8;
+	--secondary-bg: rgb(215, 90, 105);
+	--secondary-accent: rgb(237, 238, 252);
+	--secondary-accent-contrast: var(--secondary-bg);
+}
+
+.theme-icy-night {
+	--primary-color: #ecf9fb;
+	--primary-bg: #252e44;
+	--primary-accent: rgb(145, 174, 194);
+	--primary-accent-contrast: var(--primary-bg);
+
+	--secondary-color: #e8e8e8;
+	--secondary-bg: rgb(102, 127, 144);
+	--secondary-accent: rgb(237, 238, 252);
+	--secondary-accent-contrast: var(--secondary-bg);
+}
 
 //   JUNK PILE
 .theme-jest {
@@ -317,3 +286,54 @@ all colours must be fully opaque.
 	--tertiary-accent: #dcc8ff;
 }
 
+.theme-dystopian{
+	--pure-contrast: white;
+	--pure-color: black;
+
+	--primary-color: #b0b3ab;
+	--primary-bg: #474946;
+	--primary-accent: rgb(206, 213, 169);
+	--primary-accent-contrast: var(--primary-bg);
+
+	--secondary-color: #ffffff;
+	--secondary-bg: #666760;
+	--secondary-accent: rgb(255, 252, 189);
+	--secondary-accent-contrast: var(--secondary-bg);
+
+	--primary-font: "Fira Code", consolas;
+	--header-font: "Fira Code", consolas;
+	--sans-font: "fira code"
+}
+
+.theme-sepia {
+	$base-accent:  rgb(192, 130, 106);
+	--pure-contrast: black;
+	--pure-color: white;
+
+	// primary
+	--primary-color: #482005;
+	--primary-bg: #f0e8e0;
+	--primary-bg: #fcf2e5;
+	--primary-accent: #{$base-accent};
+
+	// secondary 
+	--secondary-color: #{color.scale($base-accent, $lightness: 100%, $saturation: -50%)};
+	--secondary-bg: #{color.scale($base-accent, $lightness: 0%, $saturation: -30%)};
+	--secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
+	--secondary-bg: #b58670;
+	--secondary-accent: #f7cf9c;
+}
+
+.theme-misty-dark {
+	--pure-contrast: white;
+	--pure-color: black;
+	--primary-color: #e8e8e8;
+	--primary-bg: #7979a1;
+	--primary-accent: rgb(223, 203, 255);
+	--primary-accent-contrast: var(--primary-bg);
+
+	--secondary-color: #27285a;
+	--secondary-bg: #ddddef;
+	--secondary-accent: rgb(162, 153, 233);
+	--secondary-accent-contrast: var(--secondary-bg);
+}

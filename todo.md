@@ -9,6 +9,8 @@
 # UI/UX-improvements
 - [ ] round the right-hand side of the blockquotes
 - [ ] add more top padding to blockquotes to make small quotes sit less awkwardly
+- [ ] make nav links slightly bolder
+- [ ] fix theme font
 - [x] make the "last updated" not part of the 3 mini tag things. Either put it under or above or something
 - [x] make the header sizes on mobile smaller and the title font size bigger (atm h1's are literally larger than the title...)
 - [x] make the page header capitalisation consistent

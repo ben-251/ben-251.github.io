@@ -25,7 +25,7 @@ eventually add a third accent type called accent color:
 
 all colours must be fully opaque. 
 */
-.theme-light {
+.theme-icy {
   --base-accent: #3fa7a7;
   --pure-contrast: black;
   --pure-color: white;
@@ -44,12 +44,12 @@ all colours must be fully opaque.
   --pure-color: black;
   --base-accent: #408b8b;
   --primary-color: #ebf3f6;
-  --primary-bg: #1e2a2e;
-  --primary-accent: #4fa6ba;
+  --primary-bg: #1d3339;
+  --primary-accent: #47b5ce;
   --primary--accent-contrast: var(--primary-bg);
   --secondary-color: white;
   --secondary-bg: rgb(18.36, 24.48, 27.54);
-  --secondary-accent: #408b8b;
+  --secondary-accent: #3b9595;
   --secondary-accent-contrast: var(--secondary-bg);
 }
 
@@ -57,8 +57,8 @@ all colours must be fully opaque.
   --base-accent: #d32274;
   --pure-contrast: white;
   --pure-color: black;
-  --primary-color: #dfd9dd;
-  --primary-bg: #19030b;
+  --primary-color: #efe4e5;
+  --primary-bg: #23020e;
   --primary-accent: #d32274;
   --primary-accent-contrast: var(--primary-color);
   --secondary-color: rgb(255, 255, 255);
@@ -93,20 +93,6 @@ all colours must be fully opaque.
   --primary-accent-contrast: var(--secondary-bg);
 }
 
-.theme-sepia {
-  --pure-contrast: black;
-  --pure-color: white;
-  --primary-color: #482005;
-  --primary-bg: #f0e8e0;
-  --primary-bg: #fcf2e5;
-  --primary-accent: rgb(192, 130, 106);
-  --secondary-color: white;
-  --secondary-bg: rgb(179.1, 135.7, 118.9);
-  --secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
-  --secondary-bg: #b58670;
-  --secondary-accent: #f7cf9c;
-}
-
 .theme-emerald {
   --pure-contrast: white;
   --pure-color: black;
@@ -131,15 +117,15 @@ all colours must be fully opaque.
   --secondary-accent: #7e94eb;
 }
 
-.theme-peony {
+.theme-daisy {
   --pure-contrast: black;
   --pure-color: white;
-  --primary-color: #292621;
-  --primary-bg: #fffef2;
-  --primary-accent: rgb(235, 168, 81);
+  --primary-color: #133400;
+  --primary-bg: #fffff4;
+  --primary-accent: rgb(226, 159, 35);
   --secondary-color: #231707;
-  --secondary-bg: #fef1d8;
-  --secondary-accent: rgb(255, 181, 96);
+  --secondary-bg: #f8d698;
+  --secondary-accent: rgb(255, 164, 73);
 }
 
 .theme-dark-peach {
@@ -159,59 +145,30 @@ all colours must be fully opaque.
   //--logo-font: consolas;
 }
 
-.theme-misty-dark {
-  --pure-contrast: white;
-  --pure-color: black;
-  --primary-color: #e8e8e8;
-  --primary-bg: #7979a1;
-  --primary-accent: rgb(223, 203, 255);
-  --primary-accent-contrast: var(--primary-bg);
-  --secondary-color: #27285a;
-  --secondary-bg: #ddddef;
-  --secondary-accent: rgb(162, 153, 233);
-  --secondary-accent-contrast: var(--secondary-bg);
-}
-
-.theme-misty-light {
+.theme-lavender {
   --pure-contrast: black;
   --pure-color: white;
-  --secondary-color: #e8e8e8;
-  --secondary-bg: #7979a1;
-  --secondary-accent: rgb(162, 149, 220);
-  --secondary-accent-contrast: var(--secondary-bg);
   --primary-color: #27285a;
   --primary-bg: #ededf8;
   --primary-accent: rgb(162, 153, 233);
   --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #e8e8e8;
+  --secondary-bg: #7070a7;
+  --secondary-accent: rgb(237, 238, 252);
+  --secondary-accent-contrast: var(--secondary-bg);
 }
 
 .theme-cornflower {
   --pure-contrast: black;
   --pure-color: white;
-  --secondary-color: white;
-  --secondary-bg: #7f92c1;
-  --secondary-accent: rgb(237, 243, 255);
-  --secondary-accent-contrast: var(--secondary-bg);
   --primary-color: #27285a;
   --primary-bg: #f8f6ed;
-  --primary-accent: rgb(118, 153, 229);
+  --primary-accent: rgb(92, 132, 218);
   --primary-accent-contrast: var(--primary-bg);
-}
-
-.theme-dystopian {
-  --pure-contrast: white;
-  --pure-color: black;
-  --primary-color: #b0b3ab;
-  --primary-bg: #474946;
-  --primary-accent: rgb(206, 213, 169);
-  --primary-accent-contrast: var(--primary-bg);
-  --secondary-color: #ffffff;
-  --secondary-bg: #666760;
-  --secondary-accent: rgb(255, 252, 189);
+  --secondary-color: white;
+  --secondary-bg: #5872b5;
+  --secondary-accent: rgb(255, 249, 237);
   --secondary-accent-contrast: var(--secondary-bg);
-  --primary-font: "Fira Code", consolas;
-  --header-font: "Fira Code", consolas;
-  --sans-font: "fira code" ;
 }
 
 .theme-alabaster {
@@ -224,6 +181,28 @@ all colours must be fully opaque.
   --secondary-color: #896b4a;
   --secondary-bg: #e3d0c0;
   --secondary-accent: rgb(255, 255, 255);
+}
+
+.theme-sunset {
+  --primary-color: #ffffff;
+  --primary-bg: #38476e;
+  --primary-accent: rgb(255, 148, 173);
+  --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #e8e8e8;
+  --secondary-bg: rgb(215, 90, 105);
+  --secondary-accent: rgb(237, 238, 252);
+  --secondary-accent-contrast: var(--secondary-bg);
+}
+
+.theme-icy-night {
+  --primary-color: #ecf9fb;
+  --primary-bg: #252e44;
+  --primary-accent: rgb(145, 174, 194);
+  --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #e8e8e8;
+  --secondary-bg: rgb(102, 127, 144);
+  --secondary-accent: rgb(237, 238, 252);
+  --secondary-accent-contrast: var(--secondary-bg);
 }
 
 .theme-jest {
@@ -251,14 +230,55 @@ all colours must be fully opaque.
   --tertiary-accent: #dcc8ff;
 }
 
+.theme-dystopian {
+  --pure-contrast: white;
+  --pure-color: black;
+  --primary-color: #b0b3ab;
+  --primary-bg: #474946;
+  --primary-accent: rgb(206, 213, 169);
+  --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #ffffff;
+  --secondary-bg: #666760;
+  --secondary-accent: rgb(255, 252, 189);
+  --secondary-accent-contrast: var(--secondary-bg);
+  --primary-font: "Fira Code", consolas;
+  --header-font: "Fira Code", consolas;
+  --sans-font: "fira code" ;
+}
+
+.theme-sepia {
+  --pure-contrast: black;
+  --pure-color: white;
+  --primary-color: #482005;
+  --primary-bg: #f0e8e0;
+  --primary-bg: #fcf2e5;
+  --primary-accent: rgb(192, 130, 106);
+  --secondary-color: white;
+  --secondary-bg: rgb(179.1, 135.7, 118.9);
+  --secondary-bg: color-mix(in srgb, #c2847a, var(--primary-bg));
+  --secondary-bg: #b58670;
+  --secondary-accent: #f7cf9c;
+}
+
+.theme-misty-dark {
+  --pure-contrast: white;
+  --pure-color: black;
+  --primary-color: #e8e8e8;
+  --primary-bg: #7979a1;
+  --primary-accent: rgb(223, 203, 255);
+  --primary-accent-contrast: var(--primary-bg);
+  --secondary-color: #27285a;
+  --secondary-bg: #ddddef;
+  --secondary-accent: rgb(162, 153, 233);
+  --secondary-accent-contrast: var(--secondary-bg);
+}
+
 .theme-options {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 1em;
-  padding: 2em;
   border-radius: 0rem;
-  padding-inline: 4em;
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 }
 .theme-options .theme-item[class*=theme-] {
@@ -286,10 +306,12 @@ all colours must be fully opaque.
   --border-width: 4%;
   --middle: 70%;
   --middle-middle: var(--middle);
-  --middle-left: calc(var(--middle) - var(--border-width));
-  --middle-right: calc(var(--middle) + var(--border-width));
+  --middle-left-left: calc(var(--middle) - var(--border-width));
+  --middle-middle-left: calc(var(--middle) - calc(var(--border-width)) / 2);
+  --middle-middle-right: calc(var(--middle) + calc(var(--border-width)) / 2);
+  --middle-right-right: calc(var(--middle) + var(--border-width));
   --right: 95%;
-  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right));
+  background: linear-gradient(100deg, var(--primary-bg) var(--middle-left), var(--primary-accent) var(--middle-left), var(--primary-accent) var(--middle-middle-left), var(--secondary-accent) var(--middle-middle-left), var(--secondary-accent) var(--middle-middle), var(--secondary-bg) var(--middle-middle), var(--secondary-bg) var(--right));
   border-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1111,8 +1133,8 @@ main.container.poem-container hr:before {
   padding-inline: 0.6em;
   -webkit-transition: color 100ms ease;
   transition: color 100ms ease;
-  border-top: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
-  border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
+  border-top: 2px solid color-mix(in srgb, var(--primary-accent), transparent 70%);
+  border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 70%);
   color: var(--primary-accent);
 }
 .mainbody .home-content-lists > .home-content-list-container > h2 a:hover {

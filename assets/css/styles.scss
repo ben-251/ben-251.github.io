@@ -929,8 +929,8 @@ main.container.poem-container {
 				padding-inline: .6em;
 				transition: color 100ms ease;
 
-				border-top: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
-				border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 80%);
+				border-top: 2px solid color-mix(in srgb, var(--primary-accent), transparent 70%);
+				border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 70%);
 				// border-left: 2px solid var(--primary-accent);
 				color: var(--primary-accent);
 				// background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));

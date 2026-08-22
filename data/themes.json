@@ -2,44 +2,36 @@
 	"themes": [
 		{
 			"name": "Light",
-			"class": "theme-light"
+			"class": "theme-icy"
 		},
 
 		{
 			"name": "Blossom",
 			"class": "theme-cherry-blossom"
 		},
-		
-		
-		{
-			"name": "Sepia",
-			"class": "theme-sepia"
-		},
 		{
 			"name": "Alabaster",
 			"class": "theme-alabaster"
-		},		
+		},				
 		{
-			"name": "Cornflower",
-			"class": "theme-cornflower"
-		},
-		
-		{
-			"name": "lavender",
-			"class": "theme-misty-light"
-		},
-
-		{
-			"name": "Popcorn",
-			"class": "theme-peony"
+			"name": "Lavender",
+			"class": "theme-lavender"
 		},
 		{
-			"name": "Dark",
-			"class": "theme-dark"
+			"name": "Sunset",
+			"class": "theme-sunset"
+		},
+		{
+			"name": "Daisy",
+			"class": "theme-daisy"
 		},
 		{
 			"name": "Berry",
 			"class": "theme-raspberry"
+		},
+		{
+			"name": "Icy Night",
+			"class": "theme-icy-night"
 		},
 		{
 			"name": "Emerald City",
@@ -48,14 +40,6 @@
 		{
 			"name": "Space",
 			"class": "theme-space"
-		},
-		{
-			"name": "experimental",
-			"class": "theme-dark-peach"
-		},
-		{
-			"name": "d.y.s.t.o.p.i.a",
-			"class": "theme-dystopian"
 		}
 	]
 }

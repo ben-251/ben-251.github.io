@@ -1,4 +1,8 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "themes.html" . }}
+<main class="container">
+{{ partial "post-header.html" . }}
+<article class="content poem-content">
+	{{ partial "themes.html" . }}
+</article>
+</main>
 {{ end }}
