@@ -120,7 +120,7 @@ all colours must be fully opaque.
 .theme-default, .theme-daisy {
   --pure-contrast: black;
   --pure-color: white;
-  --primary-color: #133400;
+  --primary-color: #171d13;
   --primary-bg: #fffff4;
   --primary-accent: rgb(226, 159, 35);
   --secondary-color: #231707;
@@ -1394,6 +1394,7 @@ main:has(main.four-o-four) main.four-o-four h1 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    padding: 0;
   }
   .mainbody main {
     padding: 5vw;
@@ -1500,7 +1501,6 @@ main:has(main.four-o-four) main.four-o-four h1 {
     overflow-wrap: break-word;
   }
   .mainbody:has(.theme-options) {
-    padding-inline: 1em;
     width: 100vw;
   }
   .mainbody:has(.theme-options) footer {
@@ -1511,7 +1511,6 @@ main:has(main.four-o-four) main.four-o-four h1 {
   }
   .theme-options {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 100vw;
     padding-top: 3em;
     padding-bottom: 6em;
     padding-inline: 0em;
@@ -1520,5 +1519,41 @@ main:has(main.four-o-four) main.four-o-four h1 {
     font-size: 0.8em;
     padding: 0.8em;
     background: var(--primary-bg);
+    position: relative;
+    text-decoration: none;
+  }
+  .theme-options .theme-item[class*=theme-]::after, .theme-options .theme-item[class*=theme-]::before {
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    right: 3%;
+    height: unset;
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: none;
+    -webkit-transform: none;
+            transform: none;
+    content: "";
+  }
+  .theme-options .theme-item[class*=theme-]::before {
+    border: 1px solid;
+    border-color: color-mix(in oklch, transparent 55%, var(--secondary-accent));
+    background-color: color-mix(in oklch, transparent, var(--primary-accent));
+    right: 5%;
+    top: 20%;
+    height: 50%;
+    z-index: 4;
+  }
+  .theme-options .theme-item[class*=theme-]::after {
+    bottom: -75%;
+    right: 4%;
+    z-index: 3;
+    height: 130%;
+    background-color: color-mix(in oklch, transparent 10%, var(--secondary-bg));
+    border: 1px solid;
+    border-color: color-mix(in oklch, transparent 55%, var(--secondary-accent));
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -109,7 +109,7 @@ all colours must be fully opaque.
 .theme-default, .theme-daisy {
   --pure-contrast: black;
   --pure-color: white;
-  --primary-color: #133400;
+  --primary-color: #171d13;
   --primary-bg: #fffff4;
   --primary-accent: rgb(226, 159, 35);
   --secondary-color: #231707;
