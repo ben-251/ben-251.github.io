@@ -13,6 +13,7 @@ Ever since I noticed today’s poem would begin with the final word of ‘Mornin
 > 
 > Brother is making    
 > His balloon squeak like a cat.
+{.poem}
 
 One way this poem leans into the imagined perspective of a child is through breaks that shrink the line at critical moments, conveying size through structure. Scattered throughout this poem are some particularly simple lines, often broken after just a few words, and forming sentences that are very simple in diction and structure. The example given above shows this nicely. The image itself is of a childish one, and the words “small” and “like a cat” ground this image in simplicity. The enjambment occurring after “small” makes for a two word line, resulting in almost no possible stress play going on. Yet, the same stanza that contains the lonely line “He bites,” contains a fifteen-syllable, thirteen-word line: “A funny pink world he might eat on the other side of it.” The result is a feeling of instability, not anxious but playful and child-like. 
 
@@ -23,9 +24,10 @@ The final stanza creates a powerful closure. Its two sentences employ assonance 
 
 > THEN **SITS**   
 > **BACK** | **FAT** JUG      
-> cont-em-PLAT- | -ing a **WORLD** | as CLEAR | as **WAT**-er |   
+> cont-em-PLAT- | -ing a **WORLD** | as CLEAR | as **WAT**-er
 > A **RED**    
 > **SHRED** in | his LIT- | -tle **FIST**.
+{.poem}
 
 The result of this peculiar rhythm is a slow, confused reflection, contrasting with the vibrant energy of much of the rest of the poem. 
 

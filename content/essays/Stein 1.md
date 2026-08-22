@@ -8,12 +8,12 @@ tags:
 ---
 I recently went to a workshop hosted by Francesca Wade, author of recently published *Gertrude Stein, an Afterlife,* which dives into the life and legacy of the ever-perplexing poet. I went in expecting answers (Stein breaks rules like they're written in pencil) and left with a deeper understanding of how such apparent chaos could contain meaning.
 
-In case you have never come across her work, here is a poem from her collection *Tender Buttons*:
+Here is a poem of hers, from her collection *Tender Buttons*:
 
-<div class="poem">
-<h1>A Blue Coat </h1>
-A blue coat is guided guided away, guided and guided away, that is the particular color that is used for that length and not any width not even more than a shadow.
-</div>
+> # A Blue Coat
+> A blue coat is guided guided away, guided and guided away, that is the particular color that is used for that length and not any width not even more than a shadow.
+> <cite>(Tender Buttons, p.19)</cite>
+{.poem}
 
 If you're anything like I was, you're feeling a mix of discomfort and curiosity right now. A lot of decisions seem to be almost random or even foolish. Why repeat 'guided' so much? What does it mean to use a color for a length (and not any width??) There are many such questions that seem to go nowhere; the more you read trying to find answers, the more questions emerge. At some point you might give up and put her work aside, assuming you just need to work up to being able to analyse her work, to tackle it. But maybe, if you're lucky, you might decide that actually the nonsense *is* the point. What if, beneath the surface layer of discomfort, there exists a much more interesting plane of emotions and **colour,** found only by disregarding typical analysis, and leaning into intuition. 
 
@@ -29,7 +29,7 @@ For contrast, consider this excerpt, from Imagist poet Amy Lowell's *Bath:*
 The sunshine pours in at the bath-room window and bores through the water in the bath-tub in lathes and planes of greenish-white. It cleaves the water into flaws like a jewel, and cracks it to bright light.
 </div>
 
-Here, in addition to the obvious examples of rhyme, we have the repeated 'l' sounds at important words, such as *lathes, planes, cleaves, flaws, jewel,* and *light.* Sound choices. Or we could look at the verbs used to describe the light, words like *pours, bores, cleaves,* and *cracks,* which all fuel the sunshine (and the poem) with energy, much like personification would.
+Here, in addition to the obvious examples of rhyme, we have the repeated ‘l' sounds at important words, such as *lathes, planes, cleaves, flaws, jewel,* and *light.* Sound choices. Or we could look at the verbs used to describe the light, words like *pours, bores, cleaves,* and *cracks,* which all fuel the sunshine (and the poem) with energy, much like personification would.
 
 Both of these examples show how decisions around the features of a word go a long way, but neither, in my opinion, is quite as daringly decisive as what we see in Tender Buttons. The difference is that in a more standard poem like Lowell's, syntax and semantics behave nicely. This isn't necessarily a bad thing$^1$ but with this structure imposed, it is impossible to free the individual word to the extent that Stein does. 
 
@@ -37,11 +37,11 @@ Whether or not we intend it, we allow logic and convention to be our constraints
 
 With this in mind, I decided to put words to paper, and see what I come up with. This is a quick style exercise, a poem inspired by Tender Buttons:
 
-<div class="poem">
-<h1>leftovers</h1>
-Crumbs forgotten are not particular. Plates can break but crumbs disperse, colourless. There are too many to count. Parts instead of whole and even the knife is pretty picky. 
-Clump everything back together. What are you looking at. What is overcome if not the parts now whole, in particular. <br> Crumbs disperse colour. Less pieces now, the plates are not broken. 
-</div>   
+> # Leftovers
+> Crumbs forgotten are not particular. Plates can break but crumbs disperse, colourless. There are too many to count. Parts instead of whole and even the knife is pretty picky. Clump everything back together. What are you looking at. What is overcome if not the parts now whole, in particular.  
+> 
+> Crumbs disperse colour. Less pieces now, the plates are not broken.
+{.poem}
 
 In writing this, I discovered is that this level of chaos is tremendously difficult to balance. It's fairly easy to write sentences that make no sense, and it isn't terribly hard to write sentences with pleasing diction. The trouble is doing both at once. This is one of the many puzzling parts of her work: to appreciate it means letting go of the particulars, or at least the need to understand them, yet the only way to differentiate her work from so-called "Automatic Writing" is to welcome the idea that every word is intentional, and that the nonsense only works *because* of this meticulous care. 
 

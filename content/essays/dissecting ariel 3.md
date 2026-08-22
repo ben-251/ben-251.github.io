@@ -14,6 +14,7 @@ This one seems to be doing very little, but of course with time that opinion mig
 A standout feature of this poem is the use of very simple phrases. Several lines describe one object in very clear ways, for example the first line, describing the bruise itself:
 
 > Color floods to the spot, dull purple.
+{.poem}
 
 This factual presentation can do many things depending on context, for example portray childlike simplicity or a finality. Here, I think it is serving to portray Plath’s cold acceptance of the nature of life and its end. The last stanza shows this particularly well, where each line is a really simple end-stopped phrase beginning with “the”.  She’s presenting these things as they are, with very few flourishes. An interpretation of this poem is quite simple: an unnamed, “washed-out” body has a bruise and then dies; and the sea pushes at, and then recedes from, a hole in a rock. What’s interesting are the ways the body and the sea relate with each other, and how the fly and mirror fit into everything.
 

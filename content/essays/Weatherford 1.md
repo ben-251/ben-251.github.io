@@ -8,8 +8,9 @@ description: A poem on infancy and knowledge
 ---
 What stood out first about [this](https://www.poetryfoundation.org/poetrymagazine/poems/1639264/wheres-my-moon) delightful poem, by Carole Boston Weatherford, is how deliberately it portrays infancy through its elements. The rhyming couplet pattern (AA AA AA …) is never broken, and when you pair that with the incessant repetition of the question *’Where’s my moon?’* you get the feeling of a nursery rhyme or lullaby:
 
-> Child wakes at sunup, fresh as June   
-> But worries still, *Where’s my moon?*
+> Child wakes at sunup, fresh as June    
+> But worries still, _Where’s my moon?_
+{.poem}
 
 It’s on one hand a simple, unassuming poem, and yet this is precisely what it needed to be, in order to best explore what it wants to.
 
@@ -25,10 +26,7 @@ What’s interesting about that refrain line is that it doesn’t attempt to flu
 - “The scoop a reminder, …”
 - “Pops! Gone forever, *Like my moon?*”
   
-I think it’s these short phrases that make this poem really shine. If they were all the same, and the refrain just read
-> and asks again, *Where’s my moon?*
-
-for example, then the poem would be significantly weaker. We would feel as though the obsession with the moon was necessary, as though the child would *obviously* continue to monotonically dwell on this, nothing special there! But no, instead we get phrases that twist in creative ways to get back to the moon, making the childlike curiosity the focus. 
+I think it’s these short phrases that make this poem really shine. If they were all the same, and the refrain just read, “…and asks again, *Where’s my moon?*” for example, then the poem would be significantly weaker. We would feel as though the obsession with the moon was necessary, as though the child would *obviously* continue to monotonically dwell on this, nothing special there! But no, instead we get phrases that twist in creative ways to get back to the moon, making the childlike curiosity the focus. 
 
 With the verbs we instead get, we see the energy of the child fluctuate throughout. Rather than maybe starting off settled then growing uneasy, this child “wonders”, then “wails”, then “coos gently.” Later, they “fret between bites,” and finally, “beg.” This portrays an oscillation between resignation and determination—the child never stops wondering, but has to keep trying new approaches to get their answer. 
 
@@ -64,11 +62,12 @@ and so on. To be clear, this is not the only way to interpret the poem, and is d
 # “There’s my moon!”
 The power of this interpretation shines with the final two couplets:
 
-> Child sees the sunset from a little room,   
-> and begs once more: *Where’s my moon?*  
->    
-> Mama promises, *Soon, dear, soon.*   
-> And sure enough: *There’s my moon!*    
+> Child sees the sunset from a little room,  
+and begs once more: *Where’s my moon?*
+>
+>Mama promises, _Soon, dear, soon._  
+>And sure enough: _There’s my moon!_
+{.poem}
 
 Of course, a direct reading is that the moon which was covered by clouds is revealed this night, but even alongside this interpretation, we can notice that the only moment their question is responded to is when resolution arrives. The tension from the unanswered question, and the tension from the elusive moon, are both released in sync. This matches the idea that the mother’s presence makes everything okay. If we imagine the child’s mother away for whatever reason, it makes perfect sense that the child would only feel at peace with their lack of control and knowledge when their mother, protector and ultimate source of wisdom, arrives, and makes a promise which is immediately fulfilled. If we then take the moon as a metaphor for the mother, then the point of resolution is not the final line, but the line before it, where the unity between the two aforementioned tensions is at its most extreme: to find your mother answer the question ‘where is my mum?’ *is*  to find her.  
 

@@ -7,10 +7,11 @@
 - [x] go through all old pages to remove "# Notes" "# References" or "# Notes and References", then make that heading automatically add itself if the frontmatter includes `hasNotes,` then everything will be super clean! // didn't do exactly this, but instead used css to target the heading that comes *before* the reference list, whatever it is
 
 # UI/UX-improvements
+- [ ] round the right-hand side of the blockquotes
+- [ ] add more top padding to blockquotes to make small quotes sit less awkwardly
 - [x] make the "last updated" not part of the 3 mini tag things. Either put it under or above or something
 - [x] make the header sizes on mobile smaller and the title font size bigger (atm h1's are literally larger than the title...)
 - [x] make the page header capitalisation consistent
-- [ ] make the backnext buttons appear at the top too, for easier navigation
 - [x] make the last updated only show on desktop
 
 # Bugs

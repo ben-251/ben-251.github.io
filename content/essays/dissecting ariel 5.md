@@ -10,14 +10,16 @@ tags:
 description: A nature poem weaves two strong images together
 ---
 # The Red Flower
-> Little poppies, little hell flames,
+> Little poppies, little hell flames,   
 > Do you do no harm?
+{.poem}
 
 Fire is a symbol that I hesitate to use freely in my poems, because, along with the sea and the wind, fire creates a basic picture that people have observed and talked about for generations, seemingly from every angle imaginable. There is a danger in ‘defaulting’ to familiar images and limiting creativity (and intrigue) in the process. Yet, in continuing to explore this basic element, and contrast it to so many different “tenors,” we unconsciously create a web of symbols across time, place, and culture, which I think is quite amazing. 
 
 The use of fire in this poem reminded me of the following quote from *Frankenstein*, by the monster, on discovering an abandoned campfire:
 
 > I \[…] was overcome with delight at the warmth I experienced from it. In my joy I thrust my hand into the live embers, but quickly drew it out again with a cry of pain.
+{.lit}
 
 Fire creates a tension, where the fire-wielder has both a fear and an admiration of the same entity. This age-old ambivalence is prepared in ‘Poppies in July’ through the first line, introducing us to one of the two central symbols of the poem. As the poem develops this metaphor, we will see many facets of fire intertwine with the floral subject to portray a complex emotion for the speaker. 
 
@@ -29,6 +31,7 @@ In the next lines, Plath makes a shift. The red that was previously compared to 
 > 
 > A mouth just bloodied.  
 > Little bloody skirts!
+{.poem}
 
 The bridge between the two lines is fascinating, simultaneously connecting the lipstick and menstruation to a complex picture of injury. The result is a rekindled (pun intended) sense of danger as well as an exploration of what these flowers and related feminine symbols represent in the first place. Where the redness of lipstick is an intentionally outward-facing sign; the redness of menstruation can be thought of as an unintentional or “disgraceful” one, as emphasised by the exclamation mark. With this lens, the lipstick-red poppies are shamed for their association to menstruation. The speaker seems to be viewing feminine displays of beauty as parallel to the biological nature of bleeding, and both of these, the beauty and the biology, are exhausting to watch.
 
@@ -40,10 +43,12 @@ I love that Plath is able to see something as simple as flowers in a field, and 
 Poppy seeds are the source of opium, a drug used both as a narcotic and for pain-relieving medications; therefore, it is no surprise to see the wide range of instances where the flowers are associated with sleep$^1$. The connection appears in the sleep-inducing poppy field of *The Wizard of Oz*, where Dorothy is put to sleep by their scent. These associations also appear in ancient mythology, where the flowers were associated with sleep-adjacent gods such as Morpheus and Hypnos.
 
 > There are fumes that I cannot touch.
+{.poem}
 
 The poem’s second half presents a longing. There is a clear tonal shift as we lose the energy from the previous outburst. After touching the exposed fire and having nothing happen, the speaker switches to a different desire, that of complete peace. Having expanded on the red, fiery petals from a distance, she examines the flowers up close, looking for the poppy seeds (and the opium within them). Plath repeats the exact phrasing of “I cannot touch” now with building disappointment. This dejection grows into desperation in the next line, as she asks her second question to the flowers:
 
 > Where are your opiates, your nauseous capsules?
+{.poem}
 
 She wants what the flowers seem to be hiding: the opportunity to “bleed, or sleep.” This energetic build culminates in the line “If my mouth could marry a hurt like that!” which connects both to the idea of feminine roles and images through the idea of marriage and kissing (and lipstick), while also solidifying her desire to be fully united to this peacefulness, even if the entry is potentially painful. As the poem draws to a close, the rhythm slows significantly. The plosives in “hurt like that” give way to repeated s sounds, and this couplet is the first in a while to be one long sentence. The line “dulling and stilling” is particularly rhythmic, almost *sleepy,* perfectly coinciding with the desire of the speaker. 
 
@@ -53,6 +58,7 @@ Inherent within poppies is a contrast between the peace of sleep and the bright,
 > Dulling and stilling.
 > 
 > But colourless. Colourless.
+{.poem}
 
  This line begins with a small burst of energy and dissonance, both through the double plosives (‘b’ and ‘t’) and through the fact that the previous line had ended its sentence, meaning this phrase now acts as a minor sentence.  This creates a small, final burst of energy, as the speaker demands this final request.
 

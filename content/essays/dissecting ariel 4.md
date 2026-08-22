@@ -13,6 +13,7 @@ The first stanza introduces us to the central tool of the poem: the personificat
 > What is so real as the cry of a child?  
 > A rabbit’s cry may be wilder  
 > but it has no soul.
+{.poem}
 
 The reader easily places this question as a link to one of Plath’s central themes: womanhood through the lens of motherhood. She describes a child’s cry as a soulful-yet-tame version of a rabbit’s. From here, Plath immediately pivots back to the central image: Kindness as a form of sweetness. In these two lines, sugar (and, by association, kindness) is connected to health and comfort.
 
@@ -34,6 +35,7 @@ The final stanza begins with what we can safely conjecture is a direct reference
 
 > The blood jet is poetry,
 > there is no stopping it. 
+{.poem}
 
 We can (fairly) safely conjecture that the “you” referred to in this closing stanza is Ted Hughes, who I believe was still her husband at the time of writing this. The first line is a shift in several ways. The metaphorical, tense language of lines 6 to 15 are swapped for a straight, conversational approach, with the line “And here you come, with a cup of tea.” The contrast is visceral and telling, the implications clear.
 

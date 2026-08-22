@@ -7,18 +7,18 @@ tags:
   - close-reads
 description: A quick read of Dickinson's 'A Book'
 ---
-<div class=poem>
-<h1> A Book   </h1>      
-He ate and drank the precious words, <br>
-His spirit grew robust; <br>
-He knew no more that he was poor, <br>
-Nor that his frame was dust. <br>
-He danced along the dingy days, <br>
-And this bequest of wings <br>
-Was but a book. What liberty <br>
-A loosened spirit brings! <br>
-</div>    
 
+> # A Book
+> 
+> He ate and drank the precious words,  
+> His spirit grew robust;  
+> He knew no more that he was poor,  
+> Nor that his frame was dust.  
+> He danced along the dingy days,  
+> And this bequest of wings  
+> Was but a book. What liberty  
+> A loosened spirit brings!
+{.poem}
    
 In “XXI. A Book”, we discover that the legacy of the writer highlighted in Whitman’s “Song of Myself” is equally crucial for Dickinson. The poem portrays a man receiving the inheritance of a written work, presumably poetry, from an unnamed, unaddressed writer. The omission of writer is crucial: whereas Whitman “follow[s] you, whoever you are”, Dickinson refuses to introduce the reader to the creator of the work. For Dickinson, then, the most important step of the interaction between poet and reader is the receipt of “precious words”; reading (and wrestling with a text’s possibilities) allows for a freedom which the writer wishes to gift their reader. 
 

@@ -579,24 +579,52 @@ body p > a {
   scroll-behavior: smooth;
   padding-block: 2em;
 }
+.mainbody article.content p:has(+ :is(.poem, blockquote)) {
+  margin-bottom: 0;
+}
 .mainbody article.content blockquote {
-  margin-inline: 0;
-  -webkit-border-start: 2px var(--primary-accent) solid;
-          border-inline-start: 2px var(--primary-accent) solid;
-  -webkit-padding-start: 1.4em;
-          padding-inline-start: 1.4em;
-  padding-block: 0.3em;
+  -webkit-padding-start: 2em;
+          padding-inline-start: 2em;
+  padding-block: 0.5em;
   -webkit-padding-end: 5em;
           padding-inline-end: 5em;
-  -webkit-margin-start: 0.4em;
-          margin-inline-start: 0.4em;
+  -webkit-border-start: 2px var(--primary-accent) solid;
+          border-inline-start: 2px var(--primary-accent) solid;
   background-color: color-mix(in oklch, var(--primary-accent), var(--primary-bg) 90%);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  width: 70%;
+  display: block;
+}
+.mainbody article.content blockquote cite {
+  width: 100%;
+  display: block;
+  text-align: right;
+  letter-spacing: 0.015em;
+  font-size: 0.9em;
+}
+.mainbody article.content blockquote.poem, .mainbody article.content blockquote.lit {
+  margin-block: 0.5em;
+  background-color: transparent;
+  border: none;
+  font-family: var(--poem-font);
+  line-height: 1.3;
+}
+.mainbody article.content blockquote.poem > *, .mainbody article.content blockquote.lit > * {
+  margin: 0;
+  line-height: 1.3;
+}
+.mainbody article.content blockquote.poem h1, .mainbody article.content blockquote.lit h1 {
+  font-size: 1.2em;
+  text-align: left;
+  margin-bottom: 0.4em;
+}
+.mainbody article.content blockquote.poem p:has(+ p), .mainbody article.content blockquote.lit p:has(+ p) {
+  margin-bottom: 0.7em;
 }
 .mainbody article.content blockquote p {
   margin-block: 0;
+  line-height: 1.4;
 }
 .mainbody article.content code {
   white-space: nowrap;
@@ -622,6 +650,12 @@ body p > a {
   font-weight: 550;
   font-family: var(--sans-font);
 }
+.mainbody article.content :is(h1, h2, h3, h4, h5, h6) .footnote-ref {
+  font-size: 0.6em;
+}
+.mainbody article.content :is(h1, h2, h3, h4, h5, h6) .footnote-ref::before, .mainbody article.content :is(h1, h2, h3, h4, h5, h6) .footnote-ref::after {
+  display: none;
+}
 .mainbody article.content h1 {
   font-size: 1.65em;
   font-weight: 600;
@@ -641,6 +675,23 @@ body p > a {
 }
 .mainbody article.content strong {
   font-weight: 500;
+}
+.mainbody article.content ul, .mainbody article.content ol {
+  line-height: 1.4;
+}
+.mainbody article.content ul {
+  line-height: 1.4;
+  position: relative;
+}
+.mainbody article.content ul li {
+  list-style-type: none;
+}
+.mainbody article.content ul li:before {
+  position: absolute;
+  content: "•";
+  font-weight: 600;
+  opacity: 0.7;
+  left: 1em;
 }
 .mainbody article.content img {
   max-width: 60vw;
@@ -731,12 +782,6 @@ body p > a {
 }
 .mainbody article.content .notes {
   list-style-type: lower-alpha;
-}
-.mainbody article.content div.poem {
-  width: 70%;
-  margin-left: 3em;
-  margin-bottom: 2em;
-  font-family: var(--poem-font);
 }
 .mainbody article.content h1#chapters {
   margin-bottom: 0;
@@ -833,6 +878,8 @@ button.active {
 
 main.container.poem-container {
   font-family: var(--primary-font);
+  padding-left: 10rem;
+  padding-right: 4rem;
 }
 main.container.poem-container div.poem-header {
   font-family: var(--sans-font);
@@ -842,12 +889,13 @@ main.container.poem-container div.poem-header * {
   margin-block: 0;
 }
 main.container.poem-container div.poem-header .title.poem-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   -webkit-font-variant-ligatures: common-ligatures;
           font-variant-ligatures: common-ligatures;
   font-weight: 600;
 }
 main.container.poem-container div.poem-header .poem-subtitle, main.container.poem-container div.poem-header .poem-epigraph {
+  font-size: 0.9rem;
   margin-top: 0;
   font-style: italic;
   font-family: var(--poem-font);
@@ -863,7 +911,7 @@ main.container.poem-container article.poem-content {
 }
 main.container.poem-container article.poem-content p, main.container.poem-container article.poem-content .column-stanza {
   margin-bottom: 1em;
-  font-size: 1rem;
+  font-size: 0.8em;
   line-height: 1.45;
   font-weight: 350;
 }
@@ -1006,7 +1054,7 @@ main.container.poem-container hr:before {
 .poem-post-list li .title {
   display: block;
   margin-block: 0;
-  font-weight: 380;
+  font-weight: 350;
   font-size: 1.2em;
   letter-spacing: 0.02em;
 }
@@ -1104,6 +1152,7 @@ main.container.poem-container hr:before {
   font-weight: 100;
   font-size: 3rem;
   color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%);
+  margin-bottom: 0.5em;
 }
 .mainbody main.prose-container article.prose-content {
   padding-top: 0;

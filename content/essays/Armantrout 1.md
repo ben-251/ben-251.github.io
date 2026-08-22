@@ -11,6 +11,7 @@ The bookends of Rae Armantrout’s [‘Bees’](https://www.poetryfoundation.org
 # Existence and Uniqueness
 > If not being (something)    
 > …
+{.poem}
 
 The introduction to this poem is very abstract, and (annoyingly) not about a place or object at all. It would be careless to rush through short poems like this one, so let’s take things phrase by phrase. This line sneaks the title of the poem in sonically, an idea which will prove crucial as we progress through the poem. The verb “to be” is usually a copula, meaning it functions to connect noun-like objects together, for example “My pet **is** a poodle” or “Dinner **wasn’t** great”.  However, this word can also just declare existence, for example in saying “To be, or not to be…” This, combined with the gerund form of “being”, means that the subject and object are all but discarded. 
 
@@ -23,6 +24,7 @@ So what we have now are two things that are “something”: being, and not bein
 > …not being (something)  
 > is the same as being,   
 > …
+{.poem}
 
 This is strange. We expected to see a convincing justification, but instead both states are simply asserted to be the same, glued together with hope. 
 
@@ -31,7 +33,11 @@ The first word of the poem, ‘if’, gives half of our resolution to this puzzl
 
 So then, this is not strictly a metaphysical claim but an exploration of language. We can’t speak about ‘nothing’ without making it into something. What then, does the speaker do with this established “truth”? What are the personal implications? *Stanza break. Drum roll.*
 
+> If not being (something)   
+> is the same as being,  
+> 
 > then I will live forever.
+{.poem}
 
 Of course! Mortality is ceasing to *be* living *beings*, so death is not being. So, by the power of the language realm, death is something. So death is being. Everything is and nothing is and our speaker has figured it all out! 
 
@@ -45,7 +51,7 @@ And it gets even worse: the only way to do the act of not-being is for there to 
 > would the present’s noose  
 > 
 > be looser?
-
+{.poem}
 
 By repeating the exact structure of the end of stanza 1, Armantrout resumes the implication trail, this time with significantly less confidence. Just like an object intercepts a light ray and robs the ground of light, the speaker has discovered that not-being may require existing in perpetual darkness. Now, the assured “I will live forever” gives way to a more desperate question.
 

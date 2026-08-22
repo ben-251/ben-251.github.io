@@ -5,6 +5,7 @@ title: Favourite cognitive science texts
 description: A summary of the texts I enjoyed, and why I enjoyed them.
 tags:
   - mind
+  - language
 ---
 (I'll add a few more once I've decided what I think of them)
 # The Conduit Metaphor (1993)

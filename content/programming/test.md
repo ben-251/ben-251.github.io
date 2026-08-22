@@ -1,5 +1,5 @@
 ---
-date: 2025-01-29T14:35:42Z
+date: 2025-01-29
 draft: true
 title: Test
 ---

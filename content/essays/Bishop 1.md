@@ -32,6 +32,7 @@ In a similar way, the traditional mask of the raccoon does little to remove thei
 Finally, this pattern occurs through clever undermining of the bullfrog’s symbols of position:
 
 > He was a very large, overweight bullfrog, also dressed in the traditional costume, carrying the traditional long scroll that dragged for several feet on the ground and had the real speech, on a little slip of paper, pasted inside it. The scroll and the white plume on his hat made him look comically like something in a nursery tale…
+{.poem}
 
 This picture turns a formidable creature into a bit of a joke, and the frog’s image is only salvaged by the “deep bass” of his voice, something inherent in his body, not formed through his society. 
 
@@ -39,6 +40,7 @@ This picture turns a formidable creature into a bit of a joke, and the frog’s 
 The Mantis is an interesting character in this poem. His actions ultimately support the oppressive forces of all the other animals, yet he seems unable to fully bring his mind into complete alignment with their will, leading to him vicariously sharing the mouse’s pain. The most powerful example of this is through the clever link to the beetle’s march: 
 
 > He glided to the left a few steps, to the right a few steps […] but could not seem to begin [his ceremony]…
+{.poem}
 
 Compared to the beetles’ precise changes of direction, the mantis is completely clueless. He cannot do what he must, and yet can only “like” to be somewhere else.  
 

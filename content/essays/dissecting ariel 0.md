@@ -8,6 +8,7 @@ tags:
 description: A quick close read of a fantastic collection-opener.
 ---
 > Our voices echo, magnifying your arrival.
+{.poem}
 
 
 I recently finished writing an ambitious villanelle, which means I have a few days to forget about my construction before returning to get my hands messy again. Analysing poetry was the obvious choice for a way to spend this time. Sylvia Plath was born on this day 93 years ago, and after seeing [Poetry Foundation](https://www.poetryfoundation.org/poems/poem-of-the-day) selected her poem *Morning Song* for poem of the day, there was no way I could resist a quick analysis. This poem comes from her collection *Ariel*, which I've been reading and learning from over the past few months. 

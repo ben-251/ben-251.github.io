@@ -11,6 +11,7 @@ The speaker of today’s poem[^1] is a ‘paralytic’, suffering with the inabi
 
 # A fuzzy start
 > It happens. Will it go on?
+{.poem}
 
 This opening line sets the tone for what will be a crushing monologue. The use of the present tense throughout the poem creates a sense of endlessness. However, when we first read “It happens,” we have no idea when “it” started or if “it” has ended. It is the question that makes the vagueness matter, creating intrigue, rather than only frustration. The rest of the poem will explore what “it” is, and in that sense the dash after the question mark can be read as acting similarly to a colon.
 
@@ -26,6 +27,7 @@ With a brief survey across the poem, we find several instances of the speaker re
 > Two girls    
 > As flat as she, who whisper   
 > ‘We’re your daughters.’  
+{.poem}
 
 It’s worth mentioning that in English, possessive pronouns are more flexible than just talking of ownership, but here they seem to have ownership as an additional loose implication, even for family members, in the sense of attachment to people and things of the world and the self. Thus, the two daughters would not have said ‘You’re our father’, as this would be a statement of the speaker’s identity, rather than of connections to the speaker (and also, explicitly stating “father/mother” would weaken the sense that the speaker is reduced to nothing).
 

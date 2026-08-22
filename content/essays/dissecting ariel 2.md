@@ -28,6 +28,7 @@ To tie everything together, consider these lines from *Morning Song:*
 > Our voices echo, magnifying your arrival. New Statue.     
 > In a drafty museum, your nakedness    
 > Shadows our safety. \[...]    
+{.poem}
 
 In the context of *Morning Song,* the statue in the museum is the newborn, and this image is a well-crafted exploration of this creature settling into its existence, being marvelled at by the people around. In *Edge,* the statue is the woman, and here, rather than focussing on perception, we focus on the person herself. This acts as a darker side of the same coin: if *Morning Song* explored the good and bad of start of a life, *Edge* explores the good and bad of the end of one. 
 
@@ -48,21 +49,21 @@ One lesson then is that sometimes, associations can be created not through expli
 
 I'm in the drafting process for one of my poems, an Ars Poetica titled *Abacus in the Nile.* I realised I could use structure in a similar way in this tiny poem to hopefully say a lot more than what is immediately apparent:
 
-<div class="poem">
-<h1>Abacus in the Nile </h1>
-Before he died, he placed an abacus in a basket <br>
-and a baby in the basket and the basket <br>
-in the river. <br>
-<br>
-I survived through the numbers, <br>
-growing and shrinking like lungs, <br>
-guiding my little brain along.  <br>
-<br>
-The current bobbed my little boat along, <br>
-and just like that we were one: <br>
-<br>
-Me, my basket, my abacus, and poetry. <br>
-</div>
+> # Abacus in the Nile
+> 
+> Before he died, he placed an abacus in a basket  
+> and a baby in the basket and the basket  
+> in the river.  
+>   
+> I survived through the numbers,  
+> growing and shrinking like lungs,  
+> guiding my little brain along.  
+>   
+> The current bobbed my little boat along,  
+> and just like that we were one:  
+>   
+> Me, my basket, my abacus, and poetry.
+{.poem}
 
 This poem is based largely on Mary Oliver's passing metaphor of Poetry as a river, in *A Poetry Handbook* but I chose not to explicitly state that anymore, and to instead use the list of objects in the end, to let the reader come to the conclusion themselves, when they realise the river is the only item missing.
 
