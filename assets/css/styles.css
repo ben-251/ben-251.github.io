@@ -585,9 +585,18 @@ body p > a {
           border-inline-start: 2px var(--primary-accent) solid;
   -webkit-padding-start: 1.4em;
           padding-inline-start: 1.4em;
+  padding-block: 0.3em;
+  -webkit-padding-end: 5em;
+          padding-inline-end: 5em;
   -webkit-margin-start: 0.4em;
           margin-inline-start: 0.4em;
-  background-color: var(--primary-accent);
+  background-color: color-mix(in oklch, var(--primary-accent), var(--primary-bg) 90%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.mainbody article.content blockquote p {
+  margin-block: 0;
 }
 .mainbody article.content code {
   white-space: nowrap;
