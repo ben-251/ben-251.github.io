@@ -163,10 +163,19 @@
 			display: block;
 		}
 	}
+
 	main  {
 		> .post-list {
 			.post-list-item .title {
 				width: 100%;
+			}
+		}
+	}
+
+	.poem-post-list {
+		&:not(.home-content-list) {
+			li {
+				flex: 0.1 1 50%
 			}
 		}
 	}

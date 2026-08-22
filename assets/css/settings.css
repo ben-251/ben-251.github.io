@@ -138,7 +138,7 @@ all colours must be fully opaque.
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #27285a;
-  --primary-bg: #ededf8;
+  --primary-bg: #f4f4fa;
   --primary-accent: rgb(162, 153, 233);
   --primary-accent-contrast: var(--primary-bg);
   --secondary-color: #e8e8e8;

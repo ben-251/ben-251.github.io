@@ -138,7 +138,7 @@ body {
 		color: inherit;
 		width: max-content;
 		text-wrap: pretty;
-		font-weight: 540;
+		font-weight: 600;
 	}
 
 	/* underline effect */
@@ -253,8 +253,8 @@ body {
 
 	main {
 		padding-block: 3rem;
-		padding-left: 7rem;
-		padding-right: 10rem;
+		padding-left: 6vw;
+		padding-right: 10vw;
 		overflow-y: auto;
 		height: max-content;
 		grid-column: 2;
@@ -774,10 +774,11 @@ main.container.poem-container {
 	margin-bottom: 1em;
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: .4em;
+	column-gap: .3em;
 	row-gap: .6em;
 
 	button {
+		// flex: 0 0 5%;
 	}
 }
 
@@ -872,14 +873,14 @@ main.container.poem-container {
 
 .poem-post-list {
 	li {
-		padding: .5em 4em .5em 1em;
+		padding: .77em 1.2em;
 
 		.title {
 			display: block;
 			margin-block: 0;
 			
 			font-weight: 380;
-			font-size: 1.1em;
+			font-size: 1.12em;
 			letter-spacing: 0.01em;
 		}
 	}
@@ -888,12 +889,16 @@ main.container.poem-container {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
+		
+		padding: .4em 1em;
+
 		margin-top: 2em;
 		border-block: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
-		padding-block: 1.1em;
-
 		li {		
 			border: none;
+			padding: 1em .8em;
+			flex: 0.1 1 33%;
+			font-size: 1.1em;
 
 			&:hover{
 				background-color: inherit;
@@ -905,7 +910,13 @@ main.container.poem-container {
 			}
 
 			a {
-				transition: all ease 200ms;
+				transition: color ease-in 150ms;
+				display: block;
+
+				.title {
+					display: block;
+					// text-align: center;
+				}
 			}
 		}
 	}

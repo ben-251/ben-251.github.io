@@ -149,7 +149,7 @@ all colours must be fully opaque.
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #27285a;
-  --primary-bg: #ededf8;
+  --primary-bg: #f4f4fa;
   --primary-accent: rgb(162, 153, 233);
   --primary-accent-contrast: var(--primary-bg);
   --secondary-color: #e8e8e8;
@@ -438,7 +438,7 @@ body p > a {
   width: -moz-max-content;
   width: max-content;
   text-wrap: pretty;
-  font-weight: 540;
+  font-weight: 600;
 }
 .navbar {
   /* underline effect */
@@ -548,8 +548,8 @@ body p > a {
 }
 .mainbody main {
   padding-block: 3rem;
-  padding-left: 7rem;
-  padding-right: 10rem;
+  padding-left: 6vw;
+  padding-right: 10vw;
   overflow-y: auto;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -987,9 +987,9 @@ main.container.poem-container hr:before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 0.4em;
-     -moz-column-gap: 0.4em;
-          column-gap: 0.4em;
+  -webkit-column-gap: 0.3em;
+     -moz-column-gap: 0.3em;
+          column-gap: 0.3em;
   row-gap: 0.6em;
 }
 .essay-post-list, .poem-post-list, .math-post-list, .post-list {
@@ -1083,13 +1083,13 @@ main.container.poem-container hr:before {
 }
 
 .poem-post-list li {
-  padding: 0.5em 4em 0.5em 1em;
+  padding: 0.77em 1.2em;
 }
 .poem-post-list li .title {
   display: block;
   margin-block: 0;
   font-weight: 380;
-  font-size: 1.1em;
+  font-size: 1.12em;
   letter-spacing: 0.01em;
 }
 .poem-post-list:not(.home-content-list) {
@@ -1102,12 +1102,17 @@ main.container.poem-container hr:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0.4em 1em;
   margin-top: 2em;
   border-block: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
-  padding-block: 1.1em;
 }
 .poem-post-list:not(.home-content-list) li {
   border: none;
+  padding: 1em 0.8em;
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1 1 33%;
+          flex: 0.1 1 33%;
+  font-size: 1.1em;
 }
 .poem-post-list:not(.home-content-list) li:hover {
   background-color: inherit;
@@ -1117,8 +1122,12 @@ main.container.poem-container hr:before {
   color: var(--text-accent);
 }
 .poem-post-list:not(.home-content-list) li a {
-  -webkit-transition: all ease 200ms;
-  transition: all ease 200ms;
+  -webkit-transition: color ease-in 150ms;
+  transition: color ease-in 150ms;
+  display: block;
+}
+.poem-post-list:not(.home-content-list) li a .title {
+  display: block;
 }
 
 .mainbody .home-content-lists {
@@ -1445,6 +1454,11 @@ main:has(main.four-o-four) main.four-o-four h1 {
   }
   main > .post-list .post-list-item .title {
     width: 100%;
+  }
+  .poem-post-list:not(.home-content-list) li {
+    -webkit-box-flex: 0.1;
+        -ms-flex: 0.1 1 50%;
+            flex: 0.1 1 50%;
   }
   .poem-container .content p {
     font-size: 1rem;
