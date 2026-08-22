@@ -690,7 +690,7 @@ button.active {
 main.container.poem-container {
 	font-family: var(--primary-font);
 	padding-left: 10rem;
-	padding-right: 4rem;
+	padding-right: 18rem;
 
 	div.poem-header{
 		font-family: var(--sans-font);
@@ -727,7 +727,7 @@ main.container.poem-container {
 			margin-bottom: 1em;
 			font-size: .8em;
 			line-height: 1.45;
-			font-weight: 350;
+			font-weight: 400;
 		}
 
 		p {
@@ -792,7 +792,7 @@ main.container.poem-container {
 	li {
 		list-style-type: none;
 		padding-inline: 1.3em;
-		padding-block: 1em;
+		padding-block: .85em;
 		--border-size: 1px;
 		border-block: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
 		margin-bottom: calc(-1*var(--border-size));
@@ -830,7 +830,7 @@ main.container.poem-container {
 				gap: .3em;
 
 				.title {
-					font-size: 1.2em;
+					font-size: 1.1em;
 					letter-spacing: .02em;
 					
 				}
@@ -838,9 +838,10 @@ main.container.poem-container {
 				.description {
 					font-style: italic;
 					font-family: var(--secondary-font);
+					font-size: .95em;
 					font-weight: 450;
 					opacity: 0.8;
-					letter-spacing: .025em;
+					letter-spacing: .005em;
 				}
 			}
 		}
@@ -867,15 +868,15 @@ main.container.poem-container {
 
 .poem-post-list {
 	li {
-		padding: .6em 4em .6em 1em;
+		padding: .5em 4em .5em 1em;
 
 		.title {
 			display: block;
 			margin-block: 0;
 			
-			font-weight: 350;
-			font-size: 1.2em;
-			letter-spacing: 0.02em;
+			font-weight: 380;
+			font-size: 1.1em;
+			letter-spacing: 0.01em;
 		}
 	}
 
