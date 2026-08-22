@@ -333,15 +333,14 @@ all colours must be fully opaque.
 
 *:root {
   --nav-width: 10vw;
-  --primary-font: Newsreader, Spectral;
-  --sans-font: "Nunito sans", jost, "quicksand";
-  --header-font: Newsreader, Spectral;
-  --logo-font: Bellefair, 'Playfair display';
-  --tertiary-font: Bellefair;
+  --primary-font: Newsreader, Spectral, serif;
+  --sans-font: "Nunito sans", jost, "quicksand", sans-serif;
+  --logo-font: Bellefair, 'Playfair display', serif;
+  --tertiary-font: Bellefair, serif;
   --main-font-size: 20px;
-  --prose-title-font: Bellefair;
-  --poem-font: Newsreader;
-  --code-font: "Chivo Mono", "Fira Code";
+  --prose-title-font: Bellefair, serif;
+  --poem-font: Newsreader, serif;
+  --code-font: "Chivo Mono", "Fira Code", monospace, sans-serif;
   font-size: var(--main-font-size);
   /* to set rem */
 }
@@ -577,10 +576,13 @@ body p > a {
 }
 .mainbody main .post-header .description {
   margin-top: 0.2em;
-  margin-bottom: 0.9em;
+  margin-bottom: 1.1em;
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.85;
+}
+.mainbody main .post-header:has(+ .page-info) .description {
+  margin-bottom: 0.6em;
 }
 .mainbody .footer {
   display: -webkit-box;
@@ -911,8 +913,8 @@ button.active {
 
 main.container.poem-container {
   font-family: var(--primary-font);
-  padding-left: 10rem;
-  padding-right: 18rem;
+  padding-left: 9vw;
+  padding-right: 16vw;
 }
 main.container.poem-container div.poem-header {
   font-family: var(--sans-font);
@@ -1400,7 +1402,10 @@ main:has(main.four-o-four) main.four-o-four h1 {
     padding: 5vw;
   }
   .mainbody main.container {
-    padding: 5vw;
+    padding: 10vw;
+  }
+  .mainbody main.container.poem-container {
+    padding-left: 15vw;
   }
   .mainbody main.container .description {
     margin-block: 0.3em;
@@ -1413,6 +1418,16 @@ main:has(main.four-o-four) main.four-o-four h1 {
   }
   .mainbody main.container .tag-list .tag {
     font-size: 0.8rem;
+  }
+  .mainbody main.container {
+    width: 100vw;
+  }
+  .mainbody main.container h1.title {
+    font-size: 1.5rem;
+  }
+  .mainbody main.container .tag {
+    font-size: 0.7em;
+    padding: 0.4rem;
   }
   .mainbody article.content {
     scroll-behavior: auto;
@@ -1483,16 +1498,6 @@ main:has(main.four-o-four) main.four-o-four h1 {
   .home-content-lists .home-content-list li .date {
     min-width: 6em;
     font-size: 0.9em;
-  }
-  main.container {
-    width: 100vw;
-  }
-  main.container h1.title {
-    font-size: 1.5rem;
-  }
-  main.container .tag {
-    font-size: 0.7em;
-    padding: 0.4rem;
   }
   mjx-container[jax=CHTML][display=true] {
     font-size: 1.1rem !important;

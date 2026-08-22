@@ -94,12 +94,18 @@
 		margin: 0 !important;
 		width: fit-content; // removed an "important; hopefully nothing braks
 		padding: 0;
+		
 		main {
 			padding: 5vw;
 		}
 		
 		main.container {
-			padding: 5vw;
+			padding: 10vw; // avoiding redefinitions from non-mobile scss
+			
+			&.poem-container {
+				padding-left: 15vw;
+			}
+	
 
 			.description {
 				margin-block: 0.3em;
@@ -115,6 +121,17 @@
 				.tag {
 					font-size: 0.8rem;
 				}
+			}
+
+			width: 100vw;
+
+			h1.title {
+				font-size: 1.5rem;
+			}
+	
+			.tag {
+				font-size: .7em;
+				padding: .4rem;
 			}
 		}
 
@@ -209,18 +226,6 @@
 		}
 	}
 
-	main.container {
-		width: 100vw;
-
-		h1.title {
-			font-size: 1.5rem;
-		}
-
-		.tag {
-			font-size: .7em;
-			padding: .4rem;
-		}
-	}
 
 	mjx-container[jax="CHTML"][display="true"] {
 		font-size: 1.1rem !important;

@@ -2,23 +2,11 @@
 <main class="container">
 	{{ partial "post-header.html" . }}
 
-	<div class="tag-list">
-		<div class="tag">{{ .Date.Format "2 January 2006" }}</div>
-		<div class="tag">{{ .ReadingTime }} minutes</div>
-		<div class="tag">{{ .WordCount }} words</div>
-	</div>
-	{{ with .Lastmod }}
-		<div class="last-mod">Last updated {{ .Format "2 January" }}</div>
-	{{ end }}
-		
 
 	<article class="content">
 		{{ .Content }}
 	</article>
-	
-	{{ partial "backnext.html" . }}
 
-	{{/*  {{ template "_internal/disqus.html" . }}  */}}
 
 </main>
 {{ end }}

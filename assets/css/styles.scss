@@ -32,16 +32,14 @@
 
 *:root {
 	--nav-width: 10vw;
-	--primary-font: Newsreader, Spectral;
-	// --primary-italic-font: ;
-	--sans-font:  "Nunito sans", jost, "quicksand";
-	--header-font: Newsreader, Spectral;
-	--logo-font: Bellefair, 'Playfair display';
-	--tertiary-font: Bellefair;
+	--primary-font: Newsreader, Spectral, serif;
+	--sans-font:  "Nunito sans", jost, "quicksand", sans-serif;
+	--logo-font: Bellefair, 'Playfair display', serif;
+	--tertiary-font: Bellefair, serif;
 	--main-font-size: 20px;
-	--prose-title-font: Bellefair;
-	--poem-font: Newsreader;
-	--code-font: "Chivo Mono", "Fira Code";
+	--prose-title-font: Bellefair, serif;
+	--poem-font: Newsreader, serif;
+	--code-font: "Chivo Mono", "Fira Code", monospace, sans-serif;
 	font-size: var(--main-font-size);
 	/* to set rem */
 }
@@ -281,11 +279,17 @@ body {
 			}
 			.description {
 				margin-top: 0.2em;
-				margin-bottom: 0.9em;
+				margin-bottom: 1.1em;
 				font-size: 1rem;
 				font-weight: 400;
 				opacity: 0.85;
 				// font-style: italic;
+			}
+
+			&:has(+.page-info) {
+				.description {
+					margin-bottom: .6em;
+				}
 			}
 		}
 	}
@@ -693,8 +697,8 @@ button.active {
 // poems
 main.container.poem-container {
 	font-family: var(--primary-font);
-	padding-left: 10rem;
-	padding-right: 18rem;
+	padding-left: 9vw;
+	padding-right: 16vw;
 
 	div.poem-header{
 		font-family: var(--sans-font);

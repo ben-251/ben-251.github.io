@@ -1,13 +1,14 @@
 # Additions
 - [ ] comments (disqus?)
 - [ ] tag-based rss/email
-- [ ] footnotes
+- [z] footnotes
 
 # hugo/md tweaks
 - [x] go through all old pages to remove "# Notes" "# References" or "# Notes and References", then make that heading automatically add itself if the frontmatter includes `hasNotes,` then everything will be super clean! // didn't do exactly this, but instead used css to target the heading that comes *before* the reference list, whatever it is
 
 # UI/UX-improvements
 - [ ] round the right-hand side of the blockquotes?
+- [ ] make desktop settings tiles use the same design as mobile
 - [ ] potentially make nav links lowercase or sentence case?
 - [ ] potentially make nav the standard horizontal form instead of vertical
 - [x] add more top padding to blockquotes to make small quotes sit less awkwardly
@@ -18,11 +19,12 @@
 - [x] make the page header capitalisation consistent
 - [x] make the last updated only show on desktop
 
+## Mobile
+- [x] Layout of settings on mobile is now broken
+- [ ] make poem page more to the right (makes sense for normal posts but for poems we have the space to add more padding to the container or whatever is holding it)
+
 # Bugs
 - [x] On the home page, /poems creates a blank item for some reason (probably draft related somehow)
 - [x] theme is broken again; changing theme doesn't stay when you change page. it reverts to the default of white peony.
 - [x] theme is not broken now, but laggy
 - [x] fix odd deploy issue?
-
-# Mobile vs Desktop
-- [x] Layout of settings on mobile is now broken
