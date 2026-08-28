@@ -4,7 +4,7 @@ date:
 title: "Ariel: (not-so) Final Thoughts"
 tags:
   - poetry
-  - Ariel
+  - ariel
 description: Looking back on a year of Plath
 ---
 

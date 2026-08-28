@@ -4,7 +4,7 @@ date: 2026-01-09
 title: "Kindness: Dissecting Ariel #4"
 tags:
   - poetry
-  - Ariel
+  - ariel
   - close-reads
 description: A simple personifying image proves anything but.
 ---

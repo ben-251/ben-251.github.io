@@ -4,7 +4,8 @@ date: 2025-12-29
 title: "Edge: Dissecting Ariel #2"
 tags:
   - poetry
-  - Ariel
+  - ariel
+  - close-reads
 description: Plath teaches us how to create and wield associations.
 ---
 

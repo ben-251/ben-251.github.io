@@ -4,7 +4,7 @@ date: 2026-01-17
 title: "Poppies in July: Dissecting Ariel #5"
 tags:
   - poetry
-  - Ariel
+  - ariel
   - close-reads
   - favourites
 description: A nature poem weaves two strong images together

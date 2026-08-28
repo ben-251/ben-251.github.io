@@ -4,7 +4,8 @@ date: 2026-01-03
 title: "Contusion: Dissecting Ariel #3"
 tags:
   - poetry
-  - Ariel
+  - ariel
+  - close-reads
 description: Searching for depth in one of Plath’s more simple-looking poems.
 ---
 

@@ -161,6 +161,7 @@ all colours must be fully opaque.
 }
 
 .theme-alabaster {
+  --pure-contrast: black;
   --base-accent: #rgb(255,181,96);
   --pure-contrast: black;
   --pure-color: white;
@@ -173,6 +174,7 @@ all colours must be fully opaque.
 }
 
 .theme-sunset {
+  --pure-contrast: white;
   --primary-color: #ffffff;
   --primary-bg: #38476e;
   --primary-accent: rgb(255, 148, 173);
@@ -184,6 +186,7 @@ all colours must be fully opaque.
 }
 
 .theme-icy-night {
+  --pure-contrast: white;
   --primary-color: #ecf9fb;
   --primary-bg: #252e44;
   --primary-accent: rgb(145, 174, 194);

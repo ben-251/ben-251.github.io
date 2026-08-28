@@ -4,7 +4,8 @@ date: 2025-10-27
 title: "Morning Song: dissecting Ariel #0"
 tags:
   - poetry
-  - Ariel
+  - ariel
+  - close-reads
 description: A quick close read of a fantastic collection-opener.
 ---
 > Our voices echo, magnifying your arrival.
@@ -27,7 +28,9 @@ It is also worth noting the use of the "O" sound throughout this poem. This is a
 
 If we're flexible$^{2}$ about what we call an "O" sound, we have even more instances of crucial words that have this sound. The result is a feeling of cohesion that feeds into the "open", transparent feeling of this poem. There is a lot of exposure, through windows, and nakedness, and "We" standing around. 
 
-The poem ends with a voice. The same voice which started this poem off, desperately then, now closes the poem with intention. The child tries a "handful" of notes, not in a dramatic entrance into life, demanding a place in the world, but with a more playful air. The comparison to balloons invites the reader to imagine a celebratory outlook. There is much still to say about *Morning Song*, but it is unlikely I will have the chance to write a full review$^{3}$. Ariel is an extraordinary collection, exploring several dimensions of human emotion with rawness and expression, and while the general perception of the collection is as a solely dark one$^4$, this serves as a reminder that even a collection like this can sometimes hit at something so hopeful.
+The poem ends with a voice. The same voice which started this poem off, desperately then, now closes the poem with intention. The child tries a "handful" of notes, not in a dramatic entrance into life, demanding a place in the world, but with a more playful air. The comparison to balloons invites the reader to imagine a celebratory outlook. 
+
+There is much still to say about *Morning Song*, but it is unlikely I will have the chance to write a full review$^{3}$. Ariel is an extraordinary collection, exploring several dimensions of human emotion with rawness and expression, and while the general perception of the collection is as a solely dark one$^4$, this serves as a reminder that even a collection like this can sometimes hit at something so hopeful.
 
 # Notes
 1. This reminds me of Gertrude Stein. The ability to direct the reader's mind by forcing them to see things really makes it hard to tell how much agency readers actually have when reading a poem. It seems like no matter how different the lived experiences of the reader and writer are, a good writer can always show a certain level of command over the joint subjective experience that their work provides.

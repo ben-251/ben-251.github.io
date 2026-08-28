@@ -4,7 +4,8 @@ date: 2026-03-11
 title: "Paralytic: Dissecting Ariel #7"
 tags:
   - poetry
-  - Ariel
+  - ariel
+  - close-reads
 description: A subversion on the Plathian speaker's typical apathy
 ---
 The speaker of today’s poem[^1] is a ‘paralytic’, suffering with the inability to be a part of the world around him[^2]. As time passes, he remains unable to do anything but think and speak his thoughts to the reader. In this sense the poem becomes something of a desperate cry, before its bittersweet conclusion.
