@@ -96,30 +96,79 @@
 		padding: 0;
 		
 		main {
-			padding: 5vw;
-		}
+			padding: 7vw;
+
+
+			.poem-post-list {
+				&:not(.home-content-list) {
+					li {
+						flex: 0.1 1 50%
+					}
+				}
+
+				li a .title {
+					font-family: var(--primary-font);
+				}
+			}
+
+			.post-list {
+				&:not(.poem-post-list) {
+					.title {
+						font-family: var(--sans-font);
+					}
+				}
+
+				.post-list-item .title {
+					width: 100%;
+				}
 		
-		main.container {
-			padding: 10vw; // avoiding redefinitions from non-mobile scss
+				li a {
+					align-items: start;
+		
+					.date {
+						font-weight: 600;
+						display: none;
+					} 
+
+					.mobile-date {
+						display: block;
+						font-size: .85em;
+						font-family: var(--sans-font);
+						opacity: .7;
+					}
+
+					.description {
+						font-style: normal;
+						font-weight: 450;
+					}
+				}
+			}
 			
 			&.poem-container {
-				padding-left: 15vw;
+				padding-left: 9vw;
+				padding-right: 9vw;
+				.content {
+					.line {
+						font-size: .9em;
+					}
+				}
+				hr{
+					margin-left: 4em; // may need a js approach to keep this automatically nicely positioned	
+				}
 			}
 	
 
 			.description {
-				margin-block: 0.3em;
+
 			}
 	
 			.last-mod {
 				display: none;
 			}
 
-			.tag-list {
-				opacity: 0.85;
-
-				.tag {
-					font-size: 0.8rem;
+			.tag-buttons {
+				button {
+					height: fit-content;
 				}
 			}
 
@@ -128,85 +177,71 @@
 			h1.title {
 				font-size: 1.5rem;
 			}
+
+			article.content {
+				font-size: 1rem;
+				scroll-behavior: auto;
+
+				p, em, blockquote, ol, ul {
+					// font-weight: 350;
+				}
 	
-			.tag {
-				font-size: .7em;
-				padding: .4rem;
+				p {
+					line-height: 1.4;
+					// margin-block: 1em;
+				}
+	
+				blockquote {
+					margin-inline-end: .4em;
+					border-left-width: 6px;
+					padding-block: .1em;
+					padding-inline-end: 1em;
+					text-align: justify;
+					text-wrap: wrap;
+					width: 100%;
+	
+					&.lit,
+					&.poem {
+						text-align: left;
+						padding-left: 4vw;
+						padding-right: 0;
+						
+						p, em {
+							font-weight: 400;
+							font-size: .9em;
+						}
+					}
+					
+				}
+				figure {
+					margin: 0;
+					img {
+						max-width: 100vw;
+					}
+				}
+	
 			}
-		}
 
-		article.content {
-			scroll-behavior: auto;
-			p {
-				margin-block: 1em;
-			}
+			.backnext {
+				font-size: .9em;
 
-			blockquote {
-				margin-inline-end: .4em;
-				background-color: color-mix(in srgb, 
-					color-mix(in oklch, var(--pure-contrast), var(--primary-accent) 70%),
-					var(--primary-bg) 97%
-				);
-				border-left-width: 6px;
-				padding-block: .1em;
-				padding-inline-end: 1em;
-				text-align: justify;
-				text-wrap: wrap
-				
-			}
-			figure {
-				margin: 0;
-				img {
-					max-width: 100vw;
+				li {
+					padding: .5em 1em;
 				}
 			}
-
 		}
 
 
-	}
-
-	.footer {
-		display: flex;
-		flex-direction: column;
-		padding: 1em;
-		p  {
-			width: 90vw !important;
-		}
-	}
-
-	ul.essay-post-list li a {
-		.date {
-			display: block;
-		}
-	}
-
-	main  {
-		> .post-list {
-			.post-list-item .title {
-				width: 100%;
+		.footer {
+			display: flex;
+			flex-direction: column;
+			padding: 1em;
+			p  {
+				width: 90vw !important;
 			}
 		}
 	}
 
-	.poem-post-list {
-		&:not(.home-content-list) {
-			li {
-				flex: 0.1 1 50%
-			}
-		}
-	}
-
-	.poem-container {
-		.content {
-			p {
- 			// white-space: pre-line; // need to find a good way to make wrapped text indented
-			font-size: 1rem;
-		}}
-		hr{
-			margin-left: 4em; // may need a js approach to keep this automatically nicely positioned	
-		}
-	}
 
 	.home-content-lists {
 		.home-content-list {
@@ -226,7 +261,6 @@
 		}
 	}
 
-
 	mjx-container[jax="CHTML"][display="true"] {
 		font-size: 1.1rem !important;
 		background-color: color-mix(in srgb, 
@@ -236,8 +270,6 @@
 		overflow: scroll;
 		overflow-wrap: break-word;
 	}
-
-
 
 	// sETTINGS pAgE
 	.mainbody:has(.theme-options) {
@@ -262,6 +294,10 @@
 			position: relative;
 			text-decoration: none;
 
+			span.name {
+				z-index: 99;
+				position: relative;
+			}
 			&::after,
 			&::before {
 				position: absolute;

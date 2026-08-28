@@ -1,0 +1,9 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="regular-stanza">
+	{{- range split (strings.TrimSpace .Inner) "\n" -}}
+		{{- $line := strings.TrimSpace . -}}
+		{{- if $line -}}
+			<div class="line">{{ $line | $.Page.RenderString }}</div>
+		{{- end -}}
+	{{- end -}}
+</div>

@@ -37,10 +37,6 @@
 <main>
 	{{ partial "post-header.html" . }}
 
-	<article>
-		{{.Content}}
-	</article>
-
 	<div class="tag-buttons">
 		<button id="showall" onclick="resetFilter()">Show All</button>
 		{{ $allTags := slice }}
@@ -61,12 +57,14 @@
 		{{ end }}
 	</div>
 
-	{{ range .Pages.GroupByDate "2006" }}
+	<article>
+		{{ range .Pages.GroupByDate "2006" }}
 		<p class="year-label">{{ .Key }}</p>
 		{{ partial "essay-list.html" (dict
   			"pages" .Pages
   			"home" false
 		) }}
-	{{ end }}
+		{{ end }}
+	</article>
 </main>
 {{ end }}

@@ -1,9 +1,12 @@
 <a href="{{.Permalink}}" title = "{{ .Description }}">
 	<span class="date">
-		{{.Date.Format "January 2"}}
+		{{.Date.Format "2 January"}}
 	</span>
 	<span class="summary">
 		<span class="title"> {{.Title}} </span> 
+		<span class="mobile-date">
+			{{.Date.Format "2 January, 2006"}}
+		</span>
 		<span class="description"> {{.Description}} </span> 
 	</span>
 </a>

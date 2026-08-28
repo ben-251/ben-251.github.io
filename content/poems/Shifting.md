@@ -8,13 +8,14 @@ tags:
   - sestina
   - contrapuntal
 ---
-
+{{< regular-stanza >}}
 the most   
 interesting music was   
 made by simply    
 lining loops   
 in unison and letting them    
 slowly shift   
+{{< /regular-stanza >}}
 
 <div class=column-stanza>
 <div class=”column”>

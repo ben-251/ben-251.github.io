@@ -25,7 +25,7 @@ What’s interesting about that refrain line is that it doesn’t attempt to flu
 - “and begs once more, …”
 - “The scoop a reminder, …”
 - “Pops! Gone forever, *Like my moon?*”
-  
+
 I think it’s these short phrases that make this poem really shine. If they were all the same, and the refrain just read, “…and asks again, *Where’s my moon?*” for example, then the poem would be significantly weaker. We would feel as though the obsession with the moon was necessary, as though the child would *obviously* continue to monotonically dwell on this, nothing special there! But no, instead we get phrases that twist in creative ways to get back to the moon, making the childlike curiosity the focus. 
 
 With the verbs we instead get, we see the energy of the child fluctuate throughout. Rather than maybe starting off settled then growing uneasy, this child “wonders”, then “wails”, then “coos gently.” Later, they “fret between bites,” and finally, “beg.” This portrays an oscillation between resignation and determination—the child never stops wondering, but has to keep trying new approaches to get their answer. 
