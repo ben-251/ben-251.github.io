@@ -4,8 +4,8 @@
 	<h1>404</h1>
 	<p>Sorry, I can't find the page you're looking for :(</p>
 	<p>
-		<a href='{{ "/" | relURL }}'>
-		Take me back to the homepage
+		<a href='{{ .Site.Home.RelPermalink }}'>
+		Take me back!
 		</a>
 	</p>
 	</main>

@@ -624,7 +624,7 @@ body p > a {
 .mainbody article.content blockquote {
   -webkit-padding-start: 2em;
           padding-inline-start: 2em;
-  padding-block: 0.5em;
+  padding-block: 1em;
   -webkit-padding-end: 5em;
           padding-inline-end: 5em;
   -webkit-border-start: 2px var(--primary-accent) solid;
@@ -1487,18 +1487,19 @@ main:has(main.four-o-four) main.four-o-four h1 {
     scroll-behavior: auto;
   }
   .mainbody main article.content p {
-    line-height: 1.4;
+    line-height: 1.6;
   }
   .mainbody main article.content blockquote {
     -webkit-margin-end: 0.4em;
             margin-inline-end: 0.4em;
     border-left-width: 6px;
-    padding-block: 0.1em;
     -webkit-padding-end: 1em;
             padding-inline-end: 1em;
-    text-align: justify;
     text-wrap: wrap;
     width: 100%;
+  }
+  .mainbody main article.content blockquote p {
+    line-height: 1.3;
   }
   .mainbody main article.content blockquote.lit, .mainbody main article.content blockquote.poem {
     text-align: left;
@@ -1520,6 +1521,14 @@ main:has(main.four-o-four) main.four-o-four h1 {
   }
   .mainbody main .backnext li {
     padding: 0.5em 1em;
+  }
+  .mainbody main:has(main.four-o-four) {
+    width: 100%;
+    height: 100%;
+    padding: 10vh 0;
+  }
+  .mainbody main:has(main.four-o-four) main.four-o-four h1 {
+    font-size: 7rem;
   }
   .mainbody .footer {
     display: -webkit-box;
