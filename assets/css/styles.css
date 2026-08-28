@@ -1462,7 +1462,7 @@ main:has(main.four-o-four) main.four-o-four h1 {
     padding-left: 9vw;
     padding-right: 9vw;
   }
-  .mainbody main.poem-container .content .line {
+  .mainbody main.poem-container .content {
     font-size: 0.9em;
   }
   .mainbody main.poem-container hr {
