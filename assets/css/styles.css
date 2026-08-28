@@ -1543,20 +1543,18 @@ main:has(main.four-o-four) main.four-o-four h1 {
   .mainbody .footer p {
     width: 90vw !important;
   }
-  .home-content-lists .home-content-list {
-    margin-block: 0;
-    -webkit-margin-after: 0.5em;
-            margin-block-end: 0.5em;
+  .home-content-lists .home-content-list-container .home-content-list {
+    padding-inline: 1em;
   }
-  .home-content-lists .home-content-list li {
-    padding-inline: 0.1em;
+  .home-content-lists .home-content-list-container .home-content-list li {
+    padding-inline: 0.5em;
   }
-  .home-content-lists .home-content-list li .title {
+  .home-content-lists .home-content-list-container .home-content-list li .title {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
   }
-  .home-content-lists .home-content-list li .date {
+  .home-content-lists .home-content-list-container .home-content-list li .date {
     min-width: 6em;
     font-size: 0.9em;
   }
