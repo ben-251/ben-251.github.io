@@ -5,11 +5,12 @@ title: "The Hanging of the Mouse: a close-read"
 tags:
   - poetry
   - close-reads
-description: Analysing one of Elizabeth Bishop's prose poems
+  - nature
+description: "Analysing one of Elizabeth Bishop's prose poems"
 ---
-When a poet tackles the prose poem, there are often a few directions you could try. Often one opts for a style that subverts the expectations of typical prose, leaning into the strangeness permitted by poetry, either by engaging the intellectual realm, by employing surreal, abstract narratives, or by creating very tangential links between sentences, as with the so called ‘Language Poets’ of the 70s.
+When a poet tackles the prose poem, there are often a few directions they could try. Often one opts for a style that subverts the expectations of typical prose, leaning into the strangeness permitted by poetry, either by engaging the intellectual realm, by employing surreal, abstract narratives, or by creating very tangential links between sentences, as with the so called ‘Language Poets’ of the 70s.
 
-In ‘The Hanging of the Mouse', from *Rainy Season; Sub-Tropics,* Elizabeth Bishop goes the opposite direction. In fact, at first, it seems hard to argue that this is a poem at all. What drew my attention initially was the fascinating premise as well as the cast of characters; my experience was almost identical to reading a short story or the start of a novel. Even at this stage, however, I could subconsciously sense a precise care being given to language across the whole narrative. On my second and third read, this precision sparkled subtly, and later was impossible to ignore. Rather than analysing this text as strictly a poem or strictly a piece of prose, I will analyse it as what it is: a piece of text which uses elements from both to convey its meaning. 
+In ‘The Hanging of the Mouse', Elizabeth Bishop goes the opposite direction. In fact, at first, it seems hard to argue that this is a poem at all. What drew my attention initially was the fascinating premise as well as the cast of characters; my experience was almost identical to reading a short story or the start of a novel. Even at this stage, however, I could subconsciously sense a precise care being given to language across the whole narrative. On my second and third read, this precision sparkled subtly, and later was impossible to ignore. Rather than analysing this text as strictly a poem or strictly a piece of prose, I will analyse it as what it is: text which uses elements from both to convey its meaning. 
 
 # 1. A Question of Authority
 One way Bishop employs poetic techniques is through her diction. Throughout this narrative, Bishop repeats$^1$ the word “traditional” five times, to describe various aspects of the mouse’s assailants:
@@ -21,8 +22,7 @@ One way Bishop employs poetic techniques is through her diction. Throughout this
 | Raccoon Mask         | “A raccoon, wearing the traditional black mask…”                                      |
 | Bullfrog Costume     | “He was a very large, overweight bullfrog, also dressed in the traditional costume…”  |
 | Bullfrog Scroll      | “…and carrying the traditional long scroll that dragged for several feet…”            |
-    
-    
+
 The characters that receive this description are all crucial players in the mouse’s demise: the soldiers that bring him to his death, the executioner, and the messenger that officially pronounces his sentence, respectively. They are each portrayed in varying negative ways, and as a result cast tradition itself into that same unflattering light. 
 
 One way this shows up is through the cold, precise descriptions of the beetles’ movements. Their “traditional long antennae” emphasise the exactness of their movements; every aspect of the beetles is tuned to perfection, to *tradition.* Yet this traditional exactness does not stop the mouse from moving erratically; it merely causes unnecessary distress and discomfort for him.
@@ -65,6 +65,6 @@ Thus we have:
 
 The result of this complex web of miscommunications is that the kitten, his mother, and the mantis, all share in the mouse’s sufferings, and not the beetle or the bullfrog, or the raccoon and his son.
 # Notes
-1. I also didn’t mention Bishop’s use of repetition in phrases like “Early, early in the morning…” or “…long, long antennae,” or even the more subtle “…stayed up later and later…” and “…hopelessly round and round….”, because in all of these cases, I think the repetition is more a widespread stylistic pattern, than a sign of any unique depth. For comparison, see ‘Anaphora’, ‘Argument’, and ‘Four Poems[III / While Someone Telephones]’ for more nice examples of this effect.
+1. I also didn’t mention Bishop’s use of repetition in phrases like “Early, early in the morning…” or “…long, long antennae,” or even the more subtle “…stayed up later and later…” and “…hopelessly round and round….”, because in all of these cases, I think the repetition is more a widespread stylistic pattern, than a sign of any unique depth. See ‘Anaphora’, ‘Argument’, and ‘Four Poems[III / While Someone Telephones]’ for more nice examples of this effect.
 # References
 1. Bishop, E. (1983). _The Complete Poems, 1927-1979,_ pp. 143–145

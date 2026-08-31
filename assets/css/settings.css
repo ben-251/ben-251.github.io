@@ -110,7 +110,7 @@ all colours must be fully opaque.
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #171d13;
-  --primary-bg: #fffff4;
+  --primary-bg: #fdfcf5;
   --primary-accent: rgb(226, 159, 35);
   --secondary-color: #231707;
   --secondary-bg: #f8d698;
@@ -280,7 +280,7 @@ all colours must be fully opaque.
           box-sizing: border-box;
   position: relative;
   color: var(--primary-color);
-  font-size: 1.5em;
+  font-size: 1.3em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -312,8 +312,11 @@ all colours must be fully opaque.
   background-color: var(--secondary-accent);
   -webkit-transform: rotate(75deg);
           transform: rotate(75deg);
-  right: -55%;
+  right: -60%;
   top: -35%;
   height: 150%;
   aspect-ratio: 1/1;
+}
+.theme-options .theme-item[class*=theme-] .name {
+  text-wrap: nowrap;
 }/*# sourceMappingURL=settings.css.map */

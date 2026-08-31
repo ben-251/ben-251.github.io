@@ -121,7 +121,7 @@ all colours must be fully opaque.
   --pure-contrast: black;
   --pure-color: white;
   --primary-color: #171d13;
-  --primary-bg: #fffff4;
+  --primary-bg: #fdfcf5;
   --primary-accent: rgb(226, 159, 35);
   --secondary-color: #231707;
   --secondary-bg: #f8d698;
@@ -291,7 +291,7 @@ all colours must be fully opaque.
           box-sizing: border-box;
   position: relative;
   color: var(--primary-color);
-  font-size: 1.5em;
+  font-size: 1.3em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -323,10 +323,13 @@ all colours must be fully opaque.
   background-color: var(--secondary-accent);
   -webkit-transform: rotate(75deg);
           transform: rotate(75deg);
-  right: -55%;
+  right: -60%;
   top: -35%;
   height: 150%;
   aspect-ratio: 1/1;
+}
+.theme-options .theme-item[class*=theme-] .name {
+  text-wrap: nowrap;
 }
 
 * {
@@ -430,7 +433,7 @@ body p > a {
   height: 2px;
   background-color: var(--secondary-accent);
   display: block;
-  margin: auto;
+  margin-inline: auto;
 }
 .navbar a,
 .navbar #blog-button {
@@ -710,13 +713,17 @@ body p > a {
   line-height: 1.7;
   margin-top: 0;
 }
-.mainbody article.content p {
+.mainbody article.content p, .mainbody article.content table {
   margin-block: 0.1em;
   margin-bottom: 0.8em;
   font-weight: 400;
 }
 .mainbody article.content strong {
   font-weight: 550;
+}
+.mainbody article.content em {
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
 }
 .mainbody article.content ul, .mainbody article.content ol {
   line-height: 1.4;
@@ -747,7 +754,7 @@ body p > a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
+  margin-inline: auto;
   font-family: var(--sans-font);
 }
 .mainbody article.content .figcaption-index {
@@ -791,21 +798,19 @@ body p > a {
   margin-bottom: 0;
 }
 .mainbody article.content table {
-  margin: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-.mainbody article.content table, .mainbody article.content td {
+  max-width: 80%;
+  margin-inline: auto;
+  border: 1px solid var(--primary-accent);
   border-collapse: collapse;
 }
-.mainbody article.content table, .mainbody article.content th, .mainbody article.content td {
+.mainbody article.content table th, .mainbody article.content table td {
+  padding: 0.4em 0.6em;
   border: 1px solid var(--primary-accent);
 }
-.mainbody article.content th, .mainbody article.content td {
-  padding: 0.4em 0.6em;
-}
-.mainbody article.content th {
+.mainbody article.content table th {
   font-family: var(--sans-font);
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -852,7 +857,7 @@ body p > a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
+  margin-inline: auto;
 }
 .mainbody .backnext ul {
   width: -webkit-fit-content;
@@ -998,7 +1003,7 @@ main.container.poem-container div.poem-header .title.poem-title {
 }
 main.container.poem-container div.poem-header .poem-subtitle, main.container.poem-container div.poem-header .poem-epigraph {
   font-size: 0.9rem;
-  margin-top: 0;
+  margin-top: 0.3em;
   font-style: italic;
   font-family: var(--poem-font);
 }
@@ -1068,8 +1073,8 @@ main.container.poem-container hr:before {
 .tag-buttons .tag.active, .tag-buttons button.active {
   background-color: color-mix(in srgb, var(--primary-accent), transparent 60%);
   color: var(--primary-accent);
-  -webkit-box-shadow: color-mix(in srgb, var(--primary-accent), transparent 50%) 0 0 0.6em;
-          box-shadow: color-mix(in srgb, var(--primary-accent), transparent 50%) 0 0 0.6em;
+  -webkit-box-shadow: color-mix(in srgb, var(--primary-accent), transparent 80%) 0 0 0.4em;
+          box-shadow: color-mix(in srgb, var(--primary-accent), transparent 80%) 0 0 0.4em;
 }
 
 .essay-post-list, .poem-post-list, .math-post-list, .post-list {
@@ -1311,7 +1316,7 @@ main:has(main.four-o-four) {
   height: 100%;
 }
 main:has(main.four-o-four) main.four-o-four {
-  margin: auto;
+  margin-inline: auto;
   padding: 0;
   overflow: hidden;
 }

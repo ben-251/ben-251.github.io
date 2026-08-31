@@ -15,7 +15,7 @@
 		box-sizing: border-box;
 		position: relative;
 		color: var(--primary-color);
-		font-size: 1.5em;
+		font-size: 1.3em;
 		user-select: none;
 		background-color: var(--primary-bg);
 		position: relative;
@@ -55,11 +55,15 @@
 			background-color: var(--secondary-accent);
 			// border-radius: 100%;
 			transform: rotate(75deg);
-			right:-55%;
+			right:-60%;
 			top: -35%;
 			height: 150%;
 			aspect-ratio: 1 / 1;
 			// box-shadow: 0 0 1px var(--pure-contrast) inset;
+		}
+
+		.name {
+			text-wrap: nowrap;
 		}
 	}
 }

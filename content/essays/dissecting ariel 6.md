@@ -6,6 +6,7 @@ tags:
   - poetry
   - ariel
   - close-reads
+  - childhood
 description: A surprisingly light-hearted look at the process of childhood.
 ---
 Ever since I noticed today’s poem would begin with the final word of ‘Morning Song,’ I’ve been eager to get to it. With this connection in mind, it’s no surprise that ‘Balloons’ is bursting (pun intended) with childhood themes and imagery, presenting a view of life from a child’s eyes

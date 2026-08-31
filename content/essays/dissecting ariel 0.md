@@ -6,6 +6,7 @@ tags:
   - poetry
   - ariel
   - close-reads
+  - childhood
 description: A quick close read of a fantastic collection-opener.
 ---
 > Our voices echo, magnifying your arrival.

@@ -7,6 +7,7 @@ tags:
   - ariel
   - close-reads
   - favourites
+  - nature
 description: A nature poem weaves two strong images together
 ---
 # The Red Flower

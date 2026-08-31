@@ -2,6 +2,8 @@
 date: 2026-08-08
 draft: false
 title: "Framing Things"
+params:
+ subtitle: After Job 1
 tags:
   - sestina
   - contrapuntal

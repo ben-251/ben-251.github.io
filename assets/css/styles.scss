@@ -126,7 +126,7 @@ body {
 			height: 2px;
 			background-color: var(--secondary-accent);
 			display: block;
-			margin: auto;
+			margin-inline: auto;
 		}
 	}
 
@@ -348,7 +348,6 @@ body {
 
 			border-inline-start: 2px var(--primary-accent) solid;
 			background-color: color-mix(in oklch, var(--primary-accent), var(--primary-bg) 90%);
-			// margin: auto;
 			margin-inline-start: 0;
 			width: 70%; 
 			display: block;
@@ -465,12 +464,14 @@ body {
 			font-weight: 600;
 		}
 		h2 { font-size: 1.4em }
+
 		p, ul, ol {
 			color: var(--subtle-text-color);
 			line-height: 1.7;
 			margin-top: 0;
 		}
-		p {
+
+		p, table {
 			margin-block: 0.1em;
 			margin-bottom: 0.8em;
 			font-weight: 400;
@@ -479,6 +480,10 @@ body {
 		strong {
 			font-weight: 550;
 			// color: red !important;
+		}
+		em {
+			font-style: italic;
+			font-variant-numeric: oldstyle-nums;
 		}
 		ul, ol {
 			line-height: 1.4;
@@ -511,7 +516,7 @@ body {
 		figcaption {
 			display: block;
 			width: fit-content;
-			margin: auto;
+			margin-inline: auto;
 			font-family: var(--sans-font);
 		}
 		.figcaption-index {
@@ -562,18 +567,25 @@ body {
 
 
 		// table
-		table { margin:auto; width:fit-content}
-		table, td { border-collapse: collapse }
-		table, th, td {
+		table { 
+			width: fit-content;
+			max-width: 80%;
+			margin-inline: auto;
 			border: 1px solid var(--primary-accent);
+			border-collapse: collapse;
+
+			th, td {
+				padding: 0.4em 0.6em;
+				border: 1px solid var(--primary-accent);
+
+			}
+			th {
+				font-family: var(--sans-font);
+				width: min-content;
+			}
 		}
-		th, td {
-			padding: 0.4em 0.6em;
-		}
-		th {
-			font-family: var(--sans-font);
-			width: min-content;
-		}
+		
+		
 
 		// footnotes
 		h1:has(+div.footnotes), .ref-header {	
@@ -626,7 +638,7 @@ body {
 		background-color: var(--backnext-bg-color);
 		color: ver(--secondary-color);
 		width: fit-content;
-		margin: auto;
+		margin-inline: auto;
 	
 	
 		ul {
@@ -787,7 +799,7 @@ main.container.poem-container {
 		}
 		.poem-subtitle, .poem-epigraph {
 			font-size: .9rem;
-			margin-top: 0;
+			margin-top: .3em;
 			font-style: italic;
 			font-family: var(--poem-font);
 		}
@@ -861,7 +873,7 @@ main.container.poem-container {
 		&.active {
 			background-color: color-mix(in srgb, var(--primary-accent), transparent 60%);
 			color: var(--primary-accent);
-			box-shadow:  color-mix(in srgb, var(--primary-accent), transparent 50%) 0 0 .6em;
+			box-shadow:  color-mix(in srgb, var(--primary-accent), transparent 80%) 0 0 .4em;
 		}
 	}
 }
@@ -1131,7 +1143,7 @@ main:has(main.four-o-four) {
 	height: 100%;
 
 	main.four-o-four {
-		margin: auto;
+		margin-inline: auto;
 		// width: 100%;
 		padding: 0;
 		overflow: hidden;
