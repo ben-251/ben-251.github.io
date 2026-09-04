@@ -2,6 +2,7 @@
 - [ ] comments (disqus?)
 - [ ] tag-based rss/email
 - [z] footnotes
+- [ ] hugo taxonomies for ordered essay series (Dissecting Ariel, Theories of Art, Patterns of Poetry, Elizabeth Bishop, etc)
 
 # hugo/md tweaks
 - [x] go through all old pages to remove "# Notes" "# References" or "# Notes and References", then make that heading automatically add itself if the frontmatter includes `hasNotes,` then everything will be super clean! // didn't do exactly this, but instead used css to target the heading that comes *before* the reference list, whatever it is
@@ -22,6 +23,10 @@
 ## Mobile
 - [x] Layout of settings on mobile is now broken
 - [ ] make poem page more to the right (makes sense for normal posts but for poems we have the space to add more padding to the container or whatever is holding it)
+
+## Css Organisation
+- [ ] Use mixins in places where I repeatedly use the same sets of settings, maybe in typography or sizing/spacing
+- [ ] Make the nesting fully hierarchical to avoid repetitions and redefinitions (especially around main vs main.container)
 
 # Bugs
 - [x] On the home page, /poems creates a blank item for some reason (probably draft related somehow)

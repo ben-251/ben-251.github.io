@@ -66,6 +66,8 @@ body {
 	height: 100;
 	max-width: 100vw;
 
+	font-optical-sizing: auto;
+
 	// letter-spacing: 0.01em; // with the font Yrsa
 
 	display: flex;
@@ -259,7 +261,7 @@ body {
 
 	main {
 		padding-block: 3rem;
-		padding-left: 13vw;
+		padding-left: 10vw;
 		padding-right: 16vw;
 		overflow-y: auto;
 		height: max-content;
@@ -288,7 +290,7 @@ body {
 			.description {
 				margin-top: 0.2em;
 				margin-bottom: 2em;
-				font-size: 1rem;
+				font-size: 1.1rem;
 				font-weight: 400;
 				opacity: 0.85;
 				// font-style: italic;
@@ -349,26 +351,42 @@ body {
 			border-inline-start: 2px var(--primary-accent) solid;
 			background-color: color-mix(in oklch, var(--primary-accent), var(--primary-bg) 90%);
 			margin-inline-start: 0;
-			width: 70%; 
+			max-width: 70%; 
+			width: fit-content;
 			display: block;
 
-			cite {
-				width: 100%;
-				display: block;
-				text-align: right;
-				letter-spacing: .015em;
-				font-size: .9em;
-			}
-
-
+				
 			&.poem,
 			&.lit {
-				margin-block: .5em;
+				--top-bottom-margin: 1.2em;
+				margin-block: var(--top-bottom-margin);
+				padding-block: .5em;
+				padding-inline-end: 2em;
+
 				background-color: transparent;
 				border: none;
 
 				font-family: var(--poem-font);
 				line-height: 1.3;
+
+				width: max-content;
+				max-width: 70%;
+
+				&:has(+ blockquote:is(.lit, .poem)) {
+					position: relative;
+
+					&::after {
+						content: "";
+						width: 90%;
+						height: 2px;
+						margin: auto;
+						display: block;
+						background-color: color-mix(in srgb, var(--text-accent), transparent 70%);
+						background: linear-gradient(to right, #0000 10%, color-mix(in srgb, #0000 75%, var(--text-accent)) 40%, #0000);
+						position: absolute;
+						bottom: calc(-0.5 * var(--top-bottom-margin));
+					}
+				}
 
 				> * {
 					margin: 0;
@@ -381,41 +399,31 @@ body {
 					margin-bottom: .4em;
 				}
 
-				p:has(+ p) {
-					margin-bottom: .7em;
+				p {
+
+					&:has(+ p) {
+						margin-bottom: .7em;
+					}
+				}
+
+				cite {
+					width: 110%;
+					display: block;
+					text-align: right;
+					// letter-spacing: .015em;
+					font-size: .9em;
+					margin-top: .15em;
+	
+					&::before {
+						content: "—";
+					}
 				}
 			}
-	
-
+				
 			p {
 				margin-block: 0;
 				line-height: 1.4;
 			}
-
-			// &::before,
-			// &::after {
-			// 	position: absolute;
-			// 	color: var(--primary-accent);
-			// }
-
-			// &::before {
-			// 	content: "*";
-			// 	transform: rotate(90deg);
-			// 	font-weight: 1000;
-			// 	left: 0;
-			// 	top: 0;
-			// 	display: block;
-			// 	width: 1em;
-			//   }   
-		  
-			// &::after {
-			// 	content: "";
-			// 	left: 0;
-			// 	bottom: 0;
-			// 	width: 3px;
-			// 	height: 80%;
-			// 	background-color: currentColor;
-			// }  
 		}
 
 		code {
@@ -447,8 +455,6 @@ body {
 
 			.footnote-ref {
 				font-size: 0.6em;
-				// color: var(--primary-color);
-
 				&::before,
 				&::after {
 					display: none;
@@ -467,7 +473,7 @@ body {
 
 		p, ul, ol {
 			color: var(--subtle-text-color);
-			line-height: 1.7;
+			line-height: 1.5;
 			margin-top: 0;
 		}
 
@@ -475,11 +481,14 @@ body {
 			margin-block: 0.1em;
 			margin-bottom: 0.8em;
 			font-weight: 400;
+
+			&.para-break {
+				margin-bottom: 2.6em;
+			}
 		}
 		
 		strong {
 			font-weight: 550;
-			// color: red !important;
 		}
 		em {
 			font-style: italic;
@@ -530,7 +539,7 @@ body {
 			margin: 0;
 			&::before {
 				content: " ✽✽✽ ";
-				color: color-mix(in srgb, var(--primary-color) 90%, var(--primary-accent));
+				color: var(--text-accent);
 				margin-block: 1.6em;
 				margin-inline: auto;
 				width: fit-content;
@@ -587,20 +596,59 @@ body {
 		
 		
 
-		// footnotes
-		h1:has(+div.footnotes), .ref-header {	
+		// footnotes & bibliography
+		@mixin endmatter-typography {
+			font-weight: 360;
+			font-size: .9rem;
+			font-family: var(--primary-font);
+		}
+		
+
+		h1:has(+ :is(div.footnotes, div.bibliography)), .ref-header {	
 			font-variant: small-caps;
 			font-family: var(--sans-font);
-			font-weight: 300;
+			font-weight: 400;
+			
 		}
+
 		div.footnotes {
 			hr {display: none;}
 			ol {
-				font-family: var(--tertiary-font);
 
 				li p {
 					line-height: 1.35;
 					margin-bottom: 0.1em;
+					font-size: .95em;
+					font-weight: var(--font-weight);
+					letter-spacing: .003em;
+
+					a.footnote-backref {
+						color: transparent;
+						font-size: 0;
+
+						&::before {
+							content: "↑";
+							color: var(--text-accent);
+							font-weight: 600;
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+		}
+		div.bibliography {
+			font-weight: var(--end-matter-font-weight);
+			ul {
+				padding-left: 1em;
+				li {
+					text-indent: -1em;
+					padding-left: 1em;
+					padding-bottom: .3em;
+					line-height: 1.4;
+
+					&::before{
+						display: none;
+					}
 				}
 			}
 		}
@@ -617,7 +665,6 @@ body {
 		.chapter-list {
 			color: var(--primary-color);
 			margin-top: 0;
-			// font-style: italic;
 			font-family: var(--primary-font);
 			
 			a {
@@ -633,8 +680,8 @@ body {
 	}
 
 	.backnext {
-		//background-color: var(--secondary-bg);
 		--backnext-bg-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
+		background-color: var(--secondary-bg);
 		background-color: var(--backnext-bg-color);
 		color: ver(--secondary-color);
 		width: fit-content;
@@ -687,11 +734,9 @@ body {
 }
 
 main.post-list, main > .post-list {
-	// font-size: 0.8rem;
 	display: block;
 	display: flex;
 	flex-direction: column;
-	
 
 	a {
 		text-decoration: none;
@@ -720,22 +765,14 @@ main.post-list, main > .post-list {
 		h1 {
 			font-size: 2rem;
 		}
-		// margin-inline: auto;
 		background-color: color-mix(in srgb, var(--secondary-bg), transparent);
-		// background: linear-gradient(
-		// 	to right,
-		// 	color-mix(in srgb, var(--secondary-bg), transparent 10%),
-		// 	color-mix(in srgb, var(--secondary-bg), transparent 90%)
-		// );
 		border: 2px var(--primary-accent) dashed;
 		border: none;
 		color: var(--secondary-color);
-		// padding-inline: 7em;
 		padding-inline: 2em;
 		padding-block: 1em;
 	}
 }
-
 
 
 // Maths
@@ -854,7 +891,6 @@ main.container.poem-container {
 
 }
 
-
 .year-label {
 	margin-block: 0;
 	color: var(--primary-accent);
@@ -862,6 +898,7 @@ main.container.poem-container {
 	font-size: 1.4em;
 	margin-top: 1em;
 }
+
 .tag-buttons {
 	margin-bottom: 1em;
 	display: flex;

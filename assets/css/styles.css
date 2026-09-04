@@ -70,7 +70,7 @@ all colours must be fully opaque.
 .theme-cherry-blossom {
   --pure-contrast: black;
   --pure-color: white;
-  --primary-color: #212729;
+  --primary-color: #0f1e21;
   --primary-bg: #fff;
   --primary-accent: rgb(220, 67, 154);
   --primary-accent-contrast: white;
@@ -367,6 +367,7 @@ body {
   min-height: 100vh;
   height: 100;
   max-width: 100vw;
+  font-optical-sizing: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,7 +555,7 @@ body p > a {
 }
 .mainbody main {
   padding-block: 3rem;
-  padding-left: 13vw;
+  padding-left: 10vw;
   padding-right: 16vw;
   overflow-y: auto;
   height: -webkit-max-content;
@@ -584,7 +585,7 @@ body p > a {
 .mainbody main .post-header .description {
   margin-top: 0.2em;
   margin-bottom: 2em;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   opacity: 0.85;
 }
@@ -635,22 +636,41 @@ body p > a {
   background-color: color-mix(in oklch, var(--primary-accent), var(--primary-bg) 90%);
   -webkit-margin-start: 0;
           margin-inline-start: 0;
-  width: 70%;
+  max-width: 70%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: block;
-}
-.mainbody article.content blockquote cite {
-  width: 100%;
-  display: block;
-  text-align: right;
-  letter-spacing: 0.015em;
-  font-size: 0.9em;
 }
 .mainbody article.content blockquote.poem, .mainbody article.content blockquote.lit {
-  margin-block: 0.5em;
+  --top-bottom-margin: 1.2em;
+  margin-block: var(--top-bottom-margin);
+  padding-block: 0.5em;
+  -webkit-padding-end: 2em;
+          padding-inline-end: 2em;
   background-color: transparent;
   border: none;
   font-family: var(--poem-font);
   line-height: 1.3;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 70%;
+}
+.mainbody article.content blockquote.poem:has(+ blockquote:is(.lit, .poem)), .mainbody article.content blockquote.lit:has(+ blockquote:is(.lit, .poem)) {
+  position: relative;
+}
+.mainbody article.content blockquote.poem:has(+ blockquote:is(.lit, .poem))::after, .mainbody article.content blockquote.lit:has(+ blockquote:is(.lit, .poem))::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background-color: color-mix(in srgb, var(--text-accent), transparent 70%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(40%, color-mix(in srgb, rgba(0, 0, 0, 0) 75%, var(--text-accent))), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, color-mix(in srgb, rgba(0, 0, 0, 0) 75%, var(--text-accent)) 40%, rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: calc(-0.5 * var(--top-bottom-margin));
 }
 .mainbody article.content blockquote.poem > *, .mainbody article.content blockquote.lit > * {
   margin: 0;
@@ -663,6 +683,16 @@ body p > a {
 }
 .mainbody article.content blockquote.poem p:has(+ p), .mainbody article.content blockquote.lit p:has(+ p) {
   margin-bottom: 0.7em;
+}
+.mainbody article.content blockquote.poem cite, .mainbody article.content blockquote.lit cite {
+  width: 110%;
+  display: block;
+  text-align: right;
+  font-size: 0.9em;
+  margin-top: 0.15em;
+}
+.mainbody article.content blockquote.poem cite::before, .mainbody article.content blockquote.lit cite::before {
+  content: "—";
 }
 .mainbody article.content blockquote p {
   margin-block: 0;
@@ -710,13 +740,16 @@ body p > a {
 }
 .mainbody article.content p, .mainbody article.content ul, .mainbody article.content ol {
   color: var(--subtle-text-color);
-  line-height: 1.7;
+  line-height: 1.5;
   margin-top: 0;
 }
 .mainbody article.content p, .mainbody article.content table {
   margin-block: 0.1em;
   margin-bottom: 0.8em;
   font-weight: 400;
+}
+.mainbody article.content p.para-break, .mainbody article.content table.para-break {
+  margin-bottom: 2.6em;
 }
 .mainbody article.content strong {
   font-weight: 550;
@@ -766,7 +799,7 @@ body p > a {
 }
 .mainbody article.content :is(p, blockquote) + hr:has(+ p)::before {
   content: " ✽✽✽ ";
-  color: color-mix(in srgb, var(--primary-color) 90%, var(--primary-accent));
+  color: var(--text-accent);
   margin-block: 1.6em;
   margin-inline: auto;
   width: -webkit-fit-content;
@@ -816,20 +849,45 @@ body p > a {
   width: -moz-min-content;
   width: min-content;
 }
-.mainbody article.content h1:has(+ div.footnotes), .mainbody article.content .ref-header {
+.mainbody article.content h1:has(+ :is(div.footnotes, div.bibliography)), .mainbody article.content .ref-header {
   font-variant: small-caps;
   font-family: var(--sans-font);
-  font-weight: 300;
+  font-weight: 400;
 }
 .mainbody article.content div.footnotes hr {
   display: none;
 }
-.mainbody article.content div.footnotes ol {
-  font-family: var(--tertiary-font);
-}
 .mainbody article.content div.footnotes ol li p {
   line-height: 1.35;
   margin-bottom: 0.1em;
+  font-size: 0.95em;
+  font-weight: var(--font-weight);
+  letter-spacing: 0.003em;
+}
+.mainbody article.content div.footnotes ol li p a.footnote-backref {
+  color: transparent;
+  font-size: 0;
+}
+.mainbody article.content div.footnotes ol li p a.footnote-backref::before {
+  content: "↑";
+  color: var(--text-accent);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.mainbody article.content div.bibliography {
+  font-weight: var(--end-matter-font-weight);
+}
+.mainbody article.content div.bibliography ul {
+  padding-left: 1em;
+}
+.mainbody article.content div.bibliography ul li {
+  text-indent: -1em;
+  padding-left: 1em;
+  padding-bottom: 0.3em;
+  line-height: 1.4;
+}
+.mainbody article.content div.bibliography ul li::before {
+  display: none;
 }
 .mainbody article.content .notes {
   list-style-type: lower-alpha;
@@ -852,6 +910,7 @@ body p > a {
 }
 .mainbody .backnext {
   --backnext-bg-color: color-mix(in oklch, var(--primary-accent) 13%, var(--primary-bg));
+  background-color: var(--secondary-bg);
   background-color: var(--backnext-bg-color);
   color: ver(--secondary-color);
   width: -webkit-fit-content;

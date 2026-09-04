@@ -1,0 +1,30 @@
+<h1>Bibliography</h1>
+<div class="bibliography">
+    <ul>
+        {{ range sort . "author" }}
+            {{ if eq .type "book" }}
+                <li>
+                    {{ $entry := . }}
+
+                    {{ .author }},
+                    <em>“{{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}”.</em>
+                    {{ with .publisher }}
+                        {{ . }}{{ with $entry.published }}, {{ . }}.{{ else }}{{ end }}
+                    {{ end }}
+                </li>
+            {{ else if eq .type "site" }}
+                <li>
+                    {{ .author }},
+                    {{ with .published }}
+                        ({{ . }}).
+                    {{ end }}
+                    <em>‘{{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}’.</em>
+                    {{ with .retrieved }}
+                        Retrieved {{ time.AsTime . | time.Format "2 January, 2006" }}, from
+                    {{ end }}
+                    <a href="{{ .url }}">{{ .url }}</a>
+                </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>

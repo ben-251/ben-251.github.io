@@ -6,7 +6,7 @@ layout: "about-single"
 ---
 Hi, I’m Ben, a mathematics student and a huge fan of literature. I love to explore how as humans we experience the world and re-present those experiences, whether through philosophy, teaching, mathematics, language, or art.
 
-Literature acts as an intersection between the last two, and has become quite a focus of mine. On this site, you’ll primarily find essays and close-reads on poetry, as well as a few unpublished writing projects.
+Literature acts as an intersection between the last two, and has become quite a focus of mine. This site has become a good way for me to practice the analysis of literature, so you’ll primarily find here essays on poems I like, as well as a few unpublished writing projects of my own.
 
 Another central part of my interest in representation is synesthesia, a phenomenon which for me primarily shows up as involuntary associations of specific colours when interacting with written symbols. I’ve explored the ways this affects my cognition, and I’m currently working on an anecdotal account of the ways synesthesia shapes my experience of areas like creativity, memory, problem-solving, and expression.
 ___

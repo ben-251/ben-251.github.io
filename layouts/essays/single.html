@@ -16,11 +16,15 @@
 
 	<article class="content">
 		{{ .Content }}
+
+		{{ with .Params.bibliography }}
+			{{ partial "bibliography.html" . }}
+		{{ end }}
 	</article>
 	
+
 	{{ partial "backnext.html" . }}
 
-	{{/*  {{ template "_internal/disqus.html" . }}  */}}
-
+	{{/*  {{ partial "disqus.html" . }}  */}}
 </main>
 {{ end }}

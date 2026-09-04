@@ -8,7 +8,6 @@ pluralizeListTitles = false
 enableGitInfo = true
 enableRobotsTXT = true
 
-
 [markup]
   [markup.goldmark]
 	[markup.goldmark.extensions]
@@ -29,11 +28,9 @@ enableRobotsTXT = true
 	[params.meta]
 		favicon = false
 
-	
-
 [services]
   [services.disqus]
-	shortname = 'ben251'
+	shortname = 'benolanlokun'
 
 customcss = [
 	"css/settings.css",
