@@ -73,10 +73,6 @@ So then, the sound, stress, and sentence structure all point to this final invit
 
 There is so much in the phrasing here. Without more context about the speaker or what comes after this imperative, we can only guess whether this is a command or an invitation, a trap or a gift. We can imagine being in the world of the poem, with the speaker addressing us, asking us to consider everything we have heard (the passionately questioning voice of stanzas 1 and 3, and the cold perception in stanza 2) and make the choice to enter into the tension, to embrace the uncertainty that comes with being, with the threat of non-being, and with everything in-between.
 
-
-
-
-
 # Notes and References
 [^1]: _Bees_. (2026). The Poetry Foundation. https://www.poetryfoundation.org/poetrymagazine/poems/89350/bees-572b73911eea4
 [^2]: Low hanging fruit…

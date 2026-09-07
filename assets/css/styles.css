@@ -874,20 +874,48 @@ body p > a {
   font-weight: 600;
   font-size: 1rem;
 }
-.mainbody article.content div.bibliography {
-  font-weight: var(--end-matter-font-weight);
-}
 .mainbody article.content div.bibliography ul {
   padding-left: 1em;
 }
 .mainbody article.content div.bibliography ul li {
   text-indent: -1em;
   padding-left: 1em;
-  padding-bottom: 0.3em;
+  padding-bottom: 1.2em;
   line-height: 1.4;
 }
 .mainbody article.content div.bibliography ul li::before {
   display: none;
+}
+.mainbody article.content div.bibliography ul li details summary {
+  -webkit-transition: opacity 20ms ease-in;
+  transition: opacity 20ms ease-in;
+  list-style: none;
+  cursor: context-menu;
+}
+.mainbody article.content div.bibliography ul li details summary:hover {
+  opacity: 0.85;
+}
+.mainbody article.content div.bibliography ul li details summary::after {
+  display: block;
+  content: "[more]";
+  text-wrap: nowrap;
+  font-family: var(--sans-font);
+  margin-right: 2em;
+  font-size: 0.8em;
+}
+.mainbody article.content div.bibliography ul li details[open] summary:hover {
+  opacity: 0.9;
+}
+.mainbody article.content div.bibliography ul li details[open] summary::after {
+  content: "[close]";
+}
+.mainbody article.content div.bibliography ul li details .annotation {
+  display: block;
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
 }
 .mainbody article.content .notes {
   list-style-type: lower-alpha;

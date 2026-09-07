@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2026-08-31
+date: 2026-09-05
 title: "Elizabeth Bishop and the Animal World"
 tags:
   - poetry
@@ -15,7 +15,8 @@ params:
       subtitle: "1927-1979"
       published: "1983"
       type: "book"
-    - author: "Dodd, Elizabeth C."
+      annotation: "Fusce vel metus nec eros ornare placerat. Vestibulum laoreet lectus ut neque fermentum, ut porttitor dui feugiat. Fusce nunc turpis, ullamcorper et ipsum et, faucibus luctus ligula. Pellentesque pretium neque mattis nisi venenatis, eu consequat felis ultrices. Fusce vel turpis mauris. Donec ut egestas enim. Suspendisse lacus dolor, mattis ac sagittis id, euismod eu risus. Quisque leo libero, porttitor sed pulvinar ac, placerat nec neque. Pellentesque molestie arcu nulla, sit amet suscipit neque rutrum a. Aenean congue sodales elit, et viverra ligula elementum ac. Maecenas et gravida tellus. Donec ornare tellus vitae justo accumsan lacinia."
+    - author: "Dodd, Elizabeth"
       title: "The Veiled Mirror and the Woman Poet"
       subtitle: "H.D., Louise Bogan, Elizabeth Bishop, and Louise Glück"
       publisher: "University of Missouri Press"
@@ -26,12 +27,14 @@ params:
       published: "2006"
       type: "book"
       publisher: "Bloodaxe Books"
+      annotation: "Duis bibendum vitae erat at tincidunt. Donec id odio congue mi imperdiet consequat. Phasellus lobortis, urna sed blandit aliquam, nisi purus mattis leo, vel viverra arcu ante nec lorem. In facilisis nisl id eros aliquam, a malesuada mi tincidunt. Nam dictum sem ut tristique euismod. Sed malesuada posuere turpis a semper. In metus dui, fermentum rutrum massa vel, iaculis tempor nibh."
     - author: "Gutman, Huck"
       title: "Elizabeth Bishop: Sandpiper"
       sitename: "Poetry Letters by Huck Gutman"
       retrieved: 2026-09-01
       url: "https://www.huckgutman.com/sandpiper"
       type: "site"
+      annotation: "Phasellus eget imperdiet purus. Nunc mollis tempor elit, et fermentum lectus cursus ut. Donec egestas placerat odio, id efficitur ex rhoncus ac. Donec a sem arcu. Fusce dui eros, hendrerit a sollicitudin sed, suscipit non velit. Nam sed consequat risus. Vivamus nec enim nisl. Nulla in nisl malesuada, aliquet lorem nec, euismod nunc. Pellentesque aliquet, lectus a eleifend pretium, neque lectus convallis ante, sit amet tempus ante orci eu urna."
     - author: "Eckert, Tony"
       title: 'Elizabeth Bishop: “The Moose”'
       published: "2008, October 1"
@@ -39,6 +42,8 @@ params:
       retrieved: 2026-09-01
       type: "site"
       url: "https://www.poetryfoundation.org/articles/69132/elizabeth-bishop-the-moose"
+      id: "pfm"
+      annotation: "Donec accumsan leo vel magna interdum, et porttitor nisl tristique. Nulla elementum elit lacus, eu rutrum est interdum et. Mauris quis dictum leo. Etiam non erat quis lorem consequat fermentum."
 ---
 
 Elizabeth Bishop looks outward, closely inspecting the world and its details, yet it is precisely this attention that allows her to indirectly portray human experience. The main way this happens is through the speakers of her poems, who are looking into the world. 
@@ -61,7 +66,7 @@ In *The Fish*, our speaker examines the eyes of a catch:
 > <cite>The Complete Poems, p.43</cite>
 {.poem}
 
-Much of the language here is pessimistic about the fish’s ability to see the world meaningfully. The constrained assonance of ‘backed and packed’ and the gross image of ‘old scratched isinglass’ are just some of the ways the fish’s sight is undermined. This last one is particularly horrific because isinglass is a material formed from a fish’s bladders; it is as though the fish’s eyes have been grafted in. His eyes are as useless for looking as they are revolting to look at. He does not look at anything, let alone examine it. His eyes are ‘object[s]’ rather than organs. This is an animal whose eyes are much more like glass eyes, ornamental and representative objects, than “windows to the soul.”[^1]
+Much of the language here is pessimistic about the fish’s ability to see the world meaningfully. The constrained assonance of ‘backed and packed’ and the gross image of ‘old scratched isinglass’ are just some of the ways the fish’s sight is undermined. This last one is particularly horrific because isinglass is a material formed from a fish’s bladders; it is as though the fish’s eyes have been grafted in. He does not look at anything, let alone examine it. His eyes are ‘object[s]’ rather than organs. This is an animal whose eyes are ornamental,  “emphatically not windows of the soul.”[^1]  Unlike the glass eye of Bishop’s grandmother, which “looked heavenward, or off at an angle, while the real eye looked at you,” the fish is *all* glass eye. 
 
 *Roosters* contains a similarly pessimistic portrayal:
 
@@ -127,7 +132,7 @@ In many ways, the moose sees things the humans could not. The humans were trappe
 # Beauty
 
 # Violence and Power
-h
+
 ___
 It may seem that Bishop portrays animals as inattentive and violent in order to raise humans up as the superior beings, but I believe a more reasonable conclusion is that the default state of humans is quite like her animals. Most of human experience is ignorance, vanity, self-obsession, and a struggle for power, and only those who choose to pause, to look at the world closely, are capable of truly finding beauty and peace. 
 # Notes

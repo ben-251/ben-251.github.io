@@ -239,6 +239,7 @@ body {
 				&:not(.date) {
 					display: none;
 				}
+
 				// &:last-child {
 				// 	border-right: none;
 				// } - useful back when we had multiple tags displayed
@@ -637,17 +638,59 @@ body {
 			}
 		}
 		div.bibliography {
-			font-weight: var(--end-matter-font-weight);
 			ul {
 				padding-left: 1em;
 				li {
 					text-indent: -1em;
 					padding-left: 1em;
-					padding-bottom: .3em;
+					padding-bottom: 1.2em;
 					line-height: 1.4;
 
 					&::before{
 						display: none;
+					}
+					details {
+						summary {
+							transition: opacity 20ms ease-in;
+							list-style: none;
+							cursor:context-menu;
+
+							&:hover {
+								opacity: 0.85;
+							}
+
+							&::marker {
+							}
+
+							&::after{
+								display: block;
+								// width: fit-content;
+								// margin-inline: auto;
+								// text-align: right;
+								content: "[more]";
+								text-wrap: nowrap;
+								font-family: var(--sans-font);
+								margin-right: 2em;
+								font-size: .8em;
+							}
+						}
+
+						&[open] summary {
+							&:hover { opacity: 0.90 }
+							&::after{
+								content: "[close]";
+							}
+						}
+					
+						.annotation {
+							display: block;
+							text-indent: 0;
+							margin:0;
+							padding:0;
+							margin-top: .8em;
+							margin-bottom: 1em;
+							
+						}
 					}
 				}
 			}
