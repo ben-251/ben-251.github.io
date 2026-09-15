@@ -10,10 +10,8 @@ tags:
 description: A quick close read of a fantastic collection-opener.
 ---
 > Our voices echo, magnifying your arrival.
-{.poem}
 
-
-I recently finished writing an ambitious villanelle, which means I have a few days to forget about my construction before returning to get my hands messy again. Analysing poetry was the obvious choice for a way to spend this time. Sylvia Plath was born on this day 93 years ago, and after seeing [Poetry Foundation](https://www.poetryfoundation.org/poems/poem-of-the-day) selected her poem *Morning Song* for poem of the day, there was no way I could resist a quick analysis. This poem comes from her collection *Ariel*, which I've been reading and learning from over the past few months. 
+I recently finished writing an ambitious villanelle, which means I have a few days to forget about my construction before returning to get my hands messy again. Analysing poetry was the obvious choice for a way to spend this time. Sylvia Plath was born on this day 93 years ago, and after seeing [Poetry Foundation](https://www.poetryfoundation.org/poems/poem-of-the-day) select her poem *Morning Song* for poem of the day, there was no way I could resist a quick analysis. This poem comes from her collection *Ariel*, which I've been reading and learning from over the past few months. 
 
 The energy of this poem is clear from the first line. Plath doesn't ease the reader into the environment of the poem, setting the scene or presenting some theme. Rather, she immediately pulls on the reader's imagination with the phrase "fat gold watch." The word "fat" links forward nicely to the descriptions of the newborn in this poem, and paired with "gold" brings thoughts of luxury and happiness. The "watch" gets us thinking far into the future, tempted to imagine a "fat gold" life. Any stability that this poem appeared to present with this first line is disturbed with the next lines. The newborn's cry is "bald," another clever moment of efficiency with Plath, describing the voice, while also playing with our imaginations$^{1}$. As this child's cry takes "its place among the elements," the reader has a moment to pause. This poem reads like an address to a baby, almost like the speaker is telling a child about how they came to be. 
 

@@ -14,6 +14,7 @@ params:
       title: "The Complete Poems"
       subtitle: "1927-1979"
       published: "1983"
+      publisher: "Chatto & Windus Ltd"
       type: "book"
       annotation: "Fusce vel metus nec eros ornare placerat. Vestibulum laoreet lectus ut neque fermentum, ut porttitor dui feugiat. Fusce nunc turpis, ullamcorper et ipsum et, faucibus luctus ligula. Pellentesque pretium neque mattis nisi venenatis, eu consequat felis ultrices. Fusce vel turpis mauris. Donec ut egestas enim. Suspendisse lacus dolor, mattis ac sagittis id, euismod eu risus. Quisque leo libero, porttitor sed pulvinar ac, placerat nec neque. Pellentesque molestie arcu nulla, sit amet suscipit neque rutrum a. Aenean congue sodales elit, et viverra ligula elementum ac. Maecenas et gravida tellus. Donec ornare tellus vitae justo accumsan lacinia."
     - author: "Dodd, Elizabeth"
@@ -30,17 +31,18 @@ params:
       annotation: "Duis bibendum vitae erat at tincidunt. Donec id odio congue mi imperdiet consequat. Phasellus lobortis, urna sed blandit aliquam, nisi purus mattis leo, vel viverra arcu ante nec lorem. In facilisis nisl id eros aliquam, a malesuada mi tincidunt. Nam dictum sem ut tristique euismod. Sed malesuada posuere turpis a semper. In metus dui, fermentum rutrum massa vel, iaculis tempor nibh."
     - author: "Gutman, Huck"
       title: "Elizabeth Bishop: Sandpiper"
-      sitename: "Poetry Letters by Huck Gutman"
+      journalName: "Poetry Letters by Huck Gutman"
       retrieved: 2026-09-01
       url: "https://www.huckgutman.com/sandpiper"
-      type: "site"
+      type: "article"
       annotation: "Phasellus eget imperdiet purus. Nunc mollis tempor elit, et fermentum lectus cursus ut. Donec egestas placerat odio, id efficitur ex rhoncus ac. Donec a sem arcu. Fusce dui eros, hendrerit a sollicitudin sed, suscipit non velit. Nam sed consequat risus. Vivamus nec enim nisl. Nulla in nisl malesuada, aliquet lorem nec, euismod nunc. Pellentesque aliquet, lectus a eleifend pretium, neque lectus convallis ante, sit amet tempus ante orci eu urna."
     - author: "Eckert, Tony"
-      title: 'Elizabeth Bishop: “The Moose”'
+      title: 'Elizabeth Bishop'
+      subtitle: '“The Moose”'
       published: "2008, October 1"
-      sitename: "Poetry Foundation"
+      journalName: "Poetry Foundation"
       retrieved: 2026-09-01
-      type: "site"
+      type: "article"
       url: "https://www.poetryfoundation.org/articles/69132/elizabeth-bishop-the-moose"
       id: "pfm"
       annotation: "Donec accumsan leo vel magna interdum, et porttitor nisl tristique. Nulla elementum elit lacus, eu rutrum est interdum et. Mauris quis dictum leo. Etiam non erat quis lorem consequat fermentum."
