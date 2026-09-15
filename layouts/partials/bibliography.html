@@ -1,6 +1,10 @@
 <h1>Annotated Bibliography</h1>
 <div class="bibliography">
 	{{/*  Click references for annotations if available.  */}}
+
+	{{/*  todo: add for anthology ch, eg c20p  */}}
+	{{/*  todo: check whether last char is a question mark, to remove regular period  */}}
+
     <ul>
         {{ range sort . "author" }}
 			<li>
@@ -13,21 +17,38 @@
 
 				{{ .author }}.
 				{{ with .published }}({{ . }}).{{ end }}
-				<em>“{{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}”.</em>
-				{{ with .publisher }}
-					{{ . }}.
+				<em> {{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}.</em>
+				<span class="source-info">
+					{{ with .publisher }}
+						{{ . }}.
+					{{ end }}
+				</span>
+            {{ else if eq .type "article" }}
+				{{ .author }}.
+				{{ with .published }}
+					({{ . }}).
+				{{ else }}
+					(n.d.).
 				{{ end }}
-            {{ else if eq .type "site" }}
+				{{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}.
+				{{ with .journalName }} <em>{{ . }}.</em>  {{ end }}
+				<span class="source-info">
+					{{ with .retrieved }}
+						Retrieved {{ time.AsTime . | time.Format "2 January, 2006" }}, from
+					{{ end }}
+					<a href="{{ .url }}">{{ .url }}</a>
+				</span>
+			{{ else if eq .type "ytVid" }}
 				{{ .author }}.
 				{{ with .published }}
 					({{ . }}).
 				{{ end }}
-				<em>‘{{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}’.</em>
-				{{ with .retrieved }}
-					Retrieved {{ time.AsTime . | time.Format "2 January, 2006" }}, from
-				{{ end }}
-				<a href="{{ .url }}">{{ .url }}.</a>
-				{{/*  tot: add for anthology ch, eg c20p, and add journal pub  */}}
+				{{ .title }}{{ with .subtitle }}: {{ . }}{{ end }}[Video].
+				{{ with .journalName }} <em>{{ . }}.</em>  {{ end }}
+				<span class="source-info">
+					Youtube. 
+					<a href="{{ .url }}">{{ .url }}</a>
+				</span>
             {{ end }}
 
 			{{ with .annotation }}

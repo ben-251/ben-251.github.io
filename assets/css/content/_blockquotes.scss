@@ -1,0 +1,98 @@
+article.content {
+	p:has(+ :is(.poem, blockquote)) {
+		margin-bottom: 0;
+	}
+
+	blockquote {
+		// position: relative;
+		padding-inline-start: 2em;
+		padding-block: 1em;
+		padding-inline-end: 3em;
+
+		border-inline-start: 2px var(--primary-accent) solid;
+		background-color: color-mix(in oklch, var(--primary-accent), var(--primary-bg) 90%);
+		margin-inline-start: 0;
+		max-width: 70%; 
+		width: fit-content;
+		display: block;
+		
+		hyphens: auto;
+		text-align: left;
+		overflow-wrap: break-word;
+
+			
+		&.poem,
+		&.lit {
+			--top-bottom-margin: 1.2em;
+			margin-block: var(--top-bottom-margin);
+			padding-block: .5em;
+			padding-inline-end: 2em;
+
+			background-color: transparent;
+			border: none;
+
+			font-family: var(--poem-font);
+			line-height: 1.3;
+
+			width: max-content;
+			max-width: 70%;
+
+			&:has(+ blockquote:is(.lit, .poem)) {
+				position: relative;
+
+				&::after {
+					content: "";
+					width: 90%;
+					height: 2px;
+					margin: auto;
+					display: block;
+					background-color: color-mix(in srgb, var(--text-accent), transparent 70%);
+					background: linear-gradient(to right, #0000 10%, color-mix(in srgb, #0000 75%, var(--text-accent)) 40%, #0000);
+					position: absolute;
+					bottom: calc(-0.5 * var(--top-bottom-margin));
+				}
+			}
+
+			&.centred {
+				margin-inline: auto;
+				padding-inline-start: 0;
+			}
+
+			> * {
+				margin: 0;
+				line-height: 1.3;
+			}
+
+			h1 {
+				font-size: 1.2em;
+				text-align: left;
+				margin-bottom: .4em;
+			}
+
+			p {
+
+				&:has(+ p) {
+					margin-bottom: .7em;
+				}
+			}
+
+			cite {
+				width: 110%;
+				display: block;
+				text-align: right;
+				// letter-spacing: .015em;
+				font-size: .9em;
+				margin-top: .15em;
+
+				&::before {
+					content: "—";
+				}
+			}
+		}
+			
+		p {
+			margin-block: 0;
+			line-height: 1.4;
+		}
+	}
+}

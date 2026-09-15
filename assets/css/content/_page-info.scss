@@ -1,0 +1,41 @@
+.mainbody .page-info {
+	.tag-list {
+		display: flex;
+		gap: 0rem;
+	
+		.tag {
+			color: var(--subtle-text-color);
+			opacity: 0.8;
+			font-family: var(--sans-font);
+			padding-inline: .5rem;
+			padding-block: 0;
+			font-size: .9rem;
+			// border-radius: 2rem;
+			display: block;
+			width: fit-content;
+			user-select: none;
+			border-right: solid 2.2px color-mix(in srgb, var(--primary-accent), var(--subtle-text-color));
+
+			// &:not(.date) {
+			// 	display: none;
+			// }
+
+			&:last-child {
+				border-right: none;
+			} // - useful back when we had multiple tags displayed
+			
+
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+	}	
+
+	.last-mod {
+		color: var(--subtle-text-color);
+		opacity: 0.75;
+		font-family: var(--sans-font);
+		font-size: .85rem;
+		margin-top: .2em;
+	}
+}

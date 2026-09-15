@@ -1,0 +1,95 @@
+article.content {
+	scroll-behavior: smooth;
+	padding-block: 2em;
+
+	code {
+		white-space: nowrap;
+		display: inline-block;
+		color: var(--text-accent);
+		font-family: var(--code-font);
+	}
+
+	a {
+		color: var(--text-accent);
+	}
+
+	:is(h1, h2, h3, h4, h5, h6) {
+		margin-bottom: 0em;
+		margin-top: 1em;
+		font-weight: 550;
+		font-family: var(--sans-font);
+
+		&.centred {
+			text-align: center;
+		}
+	}
+
+	h1 {
+		font-size: 1.65em;
+		font-weight: 600;
+	}
+
+	h2 { font-size: 1.4em }
+
+	p, ul, ol {
+		color: var(--subtle-text-color);
+		line-height: 1.5;
+		margin-top: 0;
+	}
+
+	p {
+		margin-block: 0.1em;
+		margin-bottom: 0.8em;
+		font-weight: 400;
+
+		&.para-break {
+			margin-bottom: 2.6em;
+		}
+	}
+	
+	strong {
+		font-weight: 550;
+	}
+	em {
+		font-style: italic;
+		font-variant-numeric: oldstyle-nums;
+	}
+
+
+
+	// LISTS
+	p:has(+ :is(ul, ol)) {
+		margin-bottom: 0;
+	}
+
+
+	ul, ol {
+		line-height: 1.4;
+		margin-block: 0.4em;
+	}
+	
+	ul {
+		line-height: 1.4;
+		position: relative;
+		li {
+			list-style-type: none;
+
+			&::before {
+				position:absolute;
+				content: "•";
+				font-weight: 600;
+				opacity: 0.7;
+				left: 1em;
+			}
+		}
+
+		&.colon li::before {
+			content: ":";
+			font-weight: 800;
+		}
+	}
+
+	::selection {
+		background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
+	}
+}

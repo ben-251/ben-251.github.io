@@ -1,0 +1,19 @@
+.mainbody .about-container {
+	h1.title {
+		font-family: var(--sans-font);
+		font-size: 2.1em;
+		margin-bottom: .5em;
+		font-weight: 100;
+	}
+
+	.about-content {
+		padding-top: 0;
+
+		h1 {
+			font-family: var(--sans-font);
+		}
+		h2 {
+			margin-top: 0.4em
+		}
+	}
+}

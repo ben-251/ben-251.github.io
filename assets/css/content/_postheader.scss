@@ -1,0 +1,29 @@
+main {
+	.post-header {
+		h1.title {
+			font-size: 2rem;
+			margin-bottom: 0.3em;
+			font-weight: 600;
+
+			&:has(+.description) {
+				margin-bottom: 0;
+			}
+
+			font-family: var(--sans-font);
+		}
+		.description {
+			margin-top: 0.2em;
+			margin-bottom: 2em;
+			font-size: 1.1rem;
+			font-weight: 400;
+			opacity: 0.85;
+			// font-style: italic;
+		}
+
+		&:has(+:is(.page-info, .tag-buttons)) {
+			.description {
+				margin-bottom: .6em;
+			}
+		}
+	}
+}

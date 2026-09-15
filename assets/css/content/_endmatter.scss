@@ -1,0 +1,130 @@
+article.content {
+	@mixin endmatter-typography {
+		// font-weight: 350;
+		font-size: 1rem;
+		font-family: var(--primary-font);
+	}
+	
+	:is(h1, h2, h3, h4, h5, h6) .footnote-ref {
+		font-size: 0.6em;
+		
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+
+	a.footnote-ref {
+		text-decoration: none;
+
+		&::before {
+			content: '[';
+		}
+
+		&::after {
+			content: ']';
+		}
+	}
+
+	
+	h1:has(+ :is(div.footnotes, div.bibliography)), .ref-header {	
+		// font-variant: small-caps;
+		font-family: var(--sans-font);
+		font-weight: 400;
+	}
+	
+	div.footnotes {
+		@include endmatter-typography();
+	
+		hr {display: none;}
+		ol {
+	
+			li p {
+				line-height: 1.35;
+				margin-bottom: 0.1em;
+				font-size: .95em;
+				font-weight: var(--font-weight);
+				letter-spacing: .003em;
+	
+				a.footnote-backref {
+					color: transparent;
+					font-size: 0;
+	
+					&::before {
+						content: "↑";
+						color: var(--text-accent);
+						font-weight: 600;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+	div.bibliography {
+		@include endmatter-typography();
+	
+		ul {
+			padding-left: 1em;
+			li {
+				text-indent: -1em;
+				padding-left: 1em;
+				padding-bottom: 1.2em;
+				line-height: 1.4;
+	
+				&::before {
+					display: none;
+				}
+	
+				details {
+					summary {
+						transition: opacity 20ms ease-in;
+						list-style: none;
+						cursor:context-menu;
+	
+						&:hover {
+							opacity: 0.8;
+						}
+	
+						&::marker {
+						}
+	
+						&::after{
+							display: block;
+							// width: fit-content;
+							// margin-inline: auto;
+							// text-align: right;
+							content: "[more]";
+							text-wrap: nowrap;
+							font-family: var(--sans-font);
+							margin-right: 2em;
+							font-size: .8em;
+						}
+					}
+	
+					&[open] summary {
+						&:hover { opacity: 0.90 }
+						&::after{
+							content: "[close]";
+						}
+					}
+				
+					.annotation {
+						@include endmatter-typography();
+						display: block;
+						text-indent: 0;
+						margin:0;
+						padding:0;
+						margin-top: .8em;
+						margin-bottom: 1em;
+						letter-spacing: .002em;
+						opacity: 0.95;
+					}
+				}
+			}
+		}
+	}
+
+	.notes {
+		list-style-type: lower-alpha;
+	}
+}

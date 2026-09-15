@@ -1,0 +1,73 @@
+main.container.poem-container {
+	font-family: var(--primary-font);
+	padding-left: 9vw;
+	padding-right: 16vw;
+
+	div.poem-header{
+		font-family: var(--sans-font);
+		margin-bottom: 1em;
+
+		* {
+			margin-block: 0;
+		}
+
+		.title.poem-title {
+			font-size: 1.5rem;
+			font-variant-ligatures: common-ligatures;
+			font-weight: 600;
+		}
+		.poem-subtitle, .poem-epigraph {
+			font-size: .9rem;
+			margin-top: .3em;
+			font-style: italic;
+			font-family: var(--poem-font);
+		}
+		.poem-epigraph {
+			font-family: var(--poem-font);
+			margin-left: 1.2em;
+			padding-block: 0.4em;
+		}
+	}	
+
+	article.poem-content {
+		padding-top: 0;
+		font-family: var(--poem-font);
+
+		.regular-stanza, .column-stanza, .prose-stanza {
+			margin-bottom: 1em;
+			font-size: .9em;
+			line-height: 1.4;
+			font-weight: 400;
+		}
+		
+		.column-stanza {
+			display: flex;
+			flex-direction: row;
+			gap: 1.6em;
+		}
+
+		.prose-stanza {
+		}
+
+		> * >.line {
+			text-indent: -1em;
+			padding-left: 1em;
+		}
+	}
+
+	hr {
+		border: none;
+		margin-left: 12em;
+		margin-block: 0;
+
+		&:before {
+			content: '∗ ∗ ∗';
+			text-align: left;
+			color: var(--primary-accent);
+			opacity: 100%;
+			font-size: 1.5em;
+			line-height: 1
+		}
+	}
+
+}

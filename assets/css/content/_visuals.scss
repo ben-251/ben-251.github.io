@@ -1,0 +1,35 @@
+article.content {
+	img {
+		max-width: 60vw;
+	}
+	figcaption {
+		display: block;
+		width: fit-content;
+		margin-inline: auto;
+		font-family: var(--sans-font);
+	}
+	.figcaption-index {
+		font-variant: small-caps;
+	}
+	
+	table { 
+		width: fit-content;
+		max-width: 80%;
+		margin-inline: auto;
+		border: 1px solid var(--primary-accent);
+		border-collapse: collapse;
+		margin-block: 0.1em;
+		margin-bottom: 0.8em;
+		font-weight: 400;
+	
+		th, td {
+			padding: 0.4em 0.6em;
+			border: 1px solid var(--primary-accent);
+	
+		}
+		th {
+			font-family: var(--sans-font);
+			width: min-content;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+.nav-mobile {display: none}
+.navbar {
+	font-family: var(--sans-font);
+	font-weight: 300;
+	text-transform: uppercase;
+
+	box-sizing: border-box;
+	width: var(--nav-width);
+	min-width: min-content;
+	text-wrap: pretty;
+
+	display: flex;
+	flex-direction: column;
+	
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	padding: 3em 1.1em 3em 1.1em;
+
+	background-color: var(--secondary-bg);
+	color: var(--secondary-color);
+	
+
+	* {
+		display: block;
+
+		line-height: 2;
+		letter-spacing: 0.1em;
+	}
+
+	
+	.navbar-item.navbar-logo {
+		font-size: 1.9rem;
+		font-family: var(--logo-font);
+		font-weight: 100;
+		text-transform: capitalize;
+		margin-block: 2rem;
+		line-height: 1.4;
+		width: min-content;
+
+		&::after {
+			content: '';
+			width: 70%;
+			height: 2px;
+			background-color: var(--secondary-accent);
+			display: block;
+			margin-inline: auto;
+		}
+	}
+
+	a,
+	#blog-button {
+		text-decoration: none;
+		color: inherit;
+		width: max-content;
+		text-wrap: pretty;
+		font-weight: 600;
+	}
+
+	/* underline effect */
+	.navbar-item {
+		background:
+			linear-gradient(to right,
+				transparent,
+				transparent),
+			linear-gradient(to right,
+				color-mix(in srgb, var(--secondary-accent), var(--secondary-bg)),
+				var(--secondary-accent));
+		background-size: 100% 3px, 0 3px;
+		background-position: 100% 100%, 0 100%;
+		background-repeat: no-repeat;
+		opacity: 0.75;
+		transition-property: opacity, background-position;
+		transition: 200ms ease-in-out;
+
+		margin-block: .3em;
+
+		// misc
+		font-size: .9em;
+	}
+
+	a:not(.navbar-logo):hover {
+		background-size: 0 3px, 100% 3px;
+		opacity: 1;
+	}
+
+	/* more nav stuff */
+	li a {
+		margin-left: 1em
+	}
+
+	a#home-link {
+		letter-spacing: 0.2em;
+		font-size: 1.3em;
+		opacity: unset;
+	}
+
+	a.active {
+		color: var(--secondary-accent);
+		opacity: 1;
+	}
+
+}

@@ -1,0 +1,42 @@
+.essay-menu {
+	button {
+		padding-inline: .5rem;
+		padding-block: .2rem;
+		border-radius: .6rem;
+		border: solid 1px color-mix(in oklch, var(--primary-accent), transparent);
+		width: fit-content;
+		background-color: color-mix(in srgb, var(--primary-accent), transparent 85%);
+		color: var(--primary-accent);
+		font-family: var(--sans-font);
+		font-weight: 500;
+	}
+	
+	button.active {
+		background-color: color-mix(in srgb, var(--primary-accent), transparent 2%);
+		color: var(--primary-bg)
+	}
+	
+	.year-label {
+		margin-block: 0;
+		color: var(--primary-accent);
+		font-weight: 600;
+		font-size: 1.4em;
+		margin-top: 1em;
+	}
+	
+	.tag-buttons {
+		margin-bottom: 1em;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: .3em;
+		row-gap: .6em;
+	
+		.tag, button {
+			&.active {
+				background-color: color-mix(in srgb, var(--primary-accent), transparent 60%);
+				color: var(--primary-accent);
+				box-shadow:  color-mix(in srgb, var(--primary-accent), transparent 80%) 0 0 .4em;
+			}
+		}
+	}
+}

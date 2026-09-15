@@ -1,0 +1,69 @@
+.mainbody .home-content-lists {
+	display: flex;
+	flex-direction: column;
+	gap: 1em; 
+
+	> .home-content-list-container {
+		&:hover:not(:has( > ul:hover)){  // how did I get this first try??
+			> * {
+				background-color: color-mix(in srgb, var(--primary-bg) 95%, var(--primary-accent));
+			}
+		}
+
+		> h2 {
+			margin-block: 0;
+			
+			a {
+				display: block;
+				text-decoration: none;
+				padding-block: .35em;
+				padding-inline: .6em;
+				transition: color 100ms ease;
+
+				border-top: 2px solid color-mix(in srgb, var(--primary-accent), transparent 70%);
+				border-left: 2px solid color-mix(in srgb, var(--primary-accent), transparent 70%);
+				// border-left: 2px solid var(--primary-accent);
+				color: var(--primary-accent);
+				// background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));
+				&:hover {
+					color: var(--primary-accent);
+					background-color: color-mix(in srgb, var(--primary-bg) 85%, var(--primary-accent));
+				}
+
+				font-weight: 500;
+
+			}
+		}
+
+		> .home-content-list {
+			margin-block: 0;
+			margin-block-end: 0em;
+			padding-top: 0;
+			
+	
+			li:first-child {
+				border-top: none;
+			}
+	
+			li:last-child {
+				border-bottom: none;
+			}
+	
+			.content-list-item.poem {
+				line-height: 1;
+				height: fit-content;
+	
+				h4 {
+					margin: 0;
+					font-weight: 400;
+				}
+			}
+		}
+
+		&:last-child {			
+			li:last-child {
+				border-bottom: solid var(--border-size) color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+			}
+		}
+	}
+}

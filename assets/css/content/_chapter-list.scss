@@ -1,0 +1,19 @@
+article.content {
+	h1#chapters {
+		margin-bottom:0
+	};
+	.chapter-list {
+		color: var(--primary-color);
+		margin-top: 0;
+		font-family: var(--primary-font);
+		
+		a {
+			font-family: var(--sans-font);
+			font-style: normal;
+			color: color-mix(var(--primary-accent), var(--primary-color));
+			&:hover{
+				color: var(--primary-accent);
+			}
+		};
+	}	
+}

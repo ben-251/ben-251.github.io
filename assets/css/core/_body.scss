@@ -1,0 +1,29 @@
+body {
+	a {
+		color: var(--primary-color)
+	}
+
+	p > a {
+		color: var(--primary-accent)
+	}
+	
+	--text-accent: color-mix(in oklch, var(--primary-accent) 80%, var(--primary-color));
+	--subtle-text-color: color-mix(in srgb, var(--primary-color) 95%, transparent);
+	
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: var(--primary-font);
+	font-size: 1rem;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	min-height: 100vh;
+	max-width: 100vw;
+
+	background-color: var(--primary-bg);
+	color: var(--primary-color);
+
+	font-optical-sizing: auto;
+	display: flex;
+	flex-direction: row;
+}

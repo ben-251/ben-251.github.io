@@ -1,0 +1,19 @@
+// proof square
+.TEX-A:is(.mjx-c25FB, .mjx-c25FC) {
+	--special-color: color-mix(in srgb, var(--primary-accent), var(--primary-color) 70%);
+	color: var(--special-color);
+	font-weight: 1000;
+	// background-color: var(--special-color);
+}
+
+// display
+mjx-container[jax="CHTML"][display="true"] {
+	color: color-mix(in srgb, var(--primary-color), var(--base-accent) 50%);
+	margin-block: 0em;
+	padding-block: 1em;
+	padding-inline: 1em;
+	width: max-content;
+	width: 100%;
+	margin:auto !important;
+	font-size: 1.2rem !important;
+}

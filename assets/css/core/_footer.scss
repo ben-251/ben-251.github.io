@@ -1,0 +1,23 @@
+.mainbody .footer {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		padding-block: .3rem;
+		border-top: solid 2px var(--secondary-bg);
+		padding-block: 1em;
+		background-color: color-mix(in srgb, var(--primary-bg) 92%, var(--primary-accent));
+		font-size: .73rem;
+
+		p {
+			display: block;
+			margin: 0;
+			// flex-grow: 1;
+		}
+
+		a {
+			text-decoration: none;
+			font-weight: 350;
+			font-family: var(--sans-font);
+			text-transform: uppercase;
+		}	
+}

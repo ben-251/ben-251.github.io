@@ -1,0 +1,19 @@
+.mainbody main.prose-container {
+	h1.prose-title {
+		font-family: var(--prose-title-font);
+		font-weight: 100;
+		font-size: 3rem;
+		color: color-mix(in srgb, var(--primary-color), var(--primary-accent) 40%);
+		margin-bottom: .5em;
+	}
+	article.prose-content {
+		padding-top: 0;
+
+		p {
+			margin-bottom: 0.2em;
+		}
+		p:not(:first-child) {
+			text-indent: 1.5em;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.mainbody {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	width: calc(100vw - var(--nav-width));
+	margin-right: 0;
+	margin-left: auto;
+
+	main {
+		padding-block: 3rem;
+		padding-left: 10vw;
+		padding-right: 16vw;
+		overflow-y: auto;
+		height: max-content;
+		grid-column: 2;
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 100vh;
+
+		.page-header {
+			margin-bottom: 0;
+			margin-top: 2rem;
+			font-weight: 550;
+			font-family: var(--sans-font);
+	
+			&.title {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

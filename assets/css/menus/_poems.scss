@@ -1,0 +1,52 @@
+.poem-menu {
+	.poem-post-list {
+		li {
+			padding: .77em 1.2em;
+
+			.title {
+				display: block;
+				margin-block: 0;
+				
+				font-weight: 380;
+				font-size: 1.12em;
+				letter-spacing: 0.01em;
+			}
+		}
+
+		&:not(.home-content-list) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			
+			padding: .4em 1em;
+
+			margin-top: 2em;
+			border-block: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+			li {		
+				border: none;
+				padding: 1em .8em;
+				flex: 0.1 1 33%;
+				font-size: 1.1em;
+
+				&:hover{
+					background-color: inherit;
+					color: inherit;
+
+					a {
+						color: var(--text-accent);
+					}
+				}
+
+				a {
+					transition: color ease-in 150ms;
+					display: block;
+
+					.title {
+						display: block;
+						// text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

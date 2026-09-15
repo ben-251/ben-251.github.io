@@ -1,0 +1,32 @@
+article.content {
+
+	:is(p,blockquote) + hr:has(+ p) { 
+		border: none;
+		margin: 0;
+		&::before {
+			content: " ✽✽✽ ";
+			color: var(--text-accent);
+			margin-block: 1.6em;
+			margin-inline: auto;
+			width: fit-content;
+			display: block;
+			letter-spacing: 1em;
+		}
+	}
+	p + hr:has(+ :is(h1,h2,h3)) { // dinkus before new section
+		margin: 0;
+		height: 3px;
+		border: none;
+		background: linear-gradient(to right, #0000, color-mix(in srgb, #0000 70%, var(--primary-accent)), #0000);
+		margin-block: 2.5em;
+		margin-inline: auto;
+		width: 70%;
+	}
+	p:has(+ hr) { // p before dinkus
+		margin-bottom: 0;
+	}
+
+	hr + :is(h1,h2,h3) {
+		margin-top: 0
+	}
+}
