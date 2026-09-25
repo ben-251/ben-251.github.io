@@ -37,7 +37,7 @@ and you will serve them.
 {{< regular-stanza >}}
 When you're ready, and only then, glaze    
 your work with varnish.   
-Place it in an well-crafted frame.   
+Place it in a well-crafted frame.   
 {{< /regular-stanza >}}
 
 {{< regular-stanza >}}
