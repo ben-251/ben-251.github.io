@@ -20,7 +20,7 @@ Pretend this scene is a scene,
 {{< regular-stanza >}}
 and you a painter. Please, capture it faithfully,    
 but make it beautiful: ease the eye   
-first to the clouds as they were that morning   
+first to the clouds as they were that morning 
 (it is important that the air is portrayed positively),  
 then to the pretty pillars around the room   
 (even if so little now remains intact). Be quick   
