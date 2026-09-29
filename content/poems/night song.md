@@ -1,5 +1,5 @@
 ---
-date: 2025-08-05
+date: 2026-09-27
 draft: false
 title: Night Song
 tags:
@@ -30,7 +30,7 @@ leaving without leaving behind.
 
 The green is making peace with
 the white and the black sky. The white
-is an afterimage with no “before”, 
+is an afterimage with no “before”:
 no spider taking responsibility,
 no memory whatsoever of the streetlight 
 as unassuming glass. The slugs might
@@ -43,8 +43,8 @@ The tree and its fruit are the tree—
 I and my fruit am I.
 My leaves and my fruit are green.
 I know the feeling of water hitchhiking on my clothes. 
-I know how to be a series of planted things,
-shrinking and fading into distant dots.
+I know how to be a series of planted things
+displaced, fading into distant dots.
 I also know how to be more than a thing. 
 
 {{</ regular-stanza >}}

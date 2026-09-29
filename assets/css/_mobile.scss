@@ -96,14 +96,11 @@
 		padding: 0;
 		
 		main {
-			padding: 7vw;
-
+			padding: 4.5vw;
 
 			.poem-post-list {
 				&:not(.home-content-list) {
-					li {
-						flex: 0.1 1 50%
-					}
+					grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 				}
 
 				li a .title {
@@ -139,30 +136,50 @@
 
 					.description {
 						font-style: normal;
-						font-weight: 450;
+						font-weight: 390;
 					}
 				}
 			}
 			
 			&.poem-container {
-				padding-left: 9vw;
-				padding-right: 9vw;
+				padding-left: 5vw;
+				padding-right: 7vw;
+
 				.content {
-					font-size: .9em;
+					font-size: .85em;
+					letter-spacing: .01em;
+
+					.line {
+						line-height: 1.45;
+					}
 				}
+
 				hr{
 					margin-left: 4em; // may need a js approach to keep this automatically nicely positioned	
 				}
 			}
-	
-
-			.description {
-
+			
+			.post-header {
+				.description {
+					margin-bottom: 0;
+				}
 			}
-	
+			
+			.page-info {
+				.tag-list {
+					:not(.date) {
+						display: none;
+					}
+					.date {
+						border: none;
+					}
+				}
+			}
+
 			.last-mod {
 				display: none;
 			}
+			
 
 			.tag-buttons {
 				button {
@@ -177,8 +194,16 @@
 			}
 
 			article.content {
+				padding-top: 1em;
 				font-size: 1rem;
 				scroll-behavior: auto;
+
+				h1, h2, h3 {
+					font-size: 1.4em;
+				}
+				h4, h5, h6 {
+
+				}
 
 				p, em, blockquote, ol, ul {
 					// font-weight: 350;
@@ -193,9 +218,14 @@
 					margin-inline-end: .4em;
 					border-left-width: 6px;
 					// padding-block: .1em;
-					padding-inline-end: 1em;
+					padding: .8em .8em .8em 1em; 
 					text-wrap: wrap;
 					width: 100%;
+					max-width: unset;
+
+					&:not(.lit, .poem) {
+						font-size: .95em;
+					}
 
 					p {
 						line-height: 1.3;

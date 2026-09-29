@@ -4,9 +4,6 @@ draft: false
 title: "Framing Things"
 params:
  subtitle: After Job 1
-tags:
-  - sestina
-  - contrapuntal
 ---
 {{< regular-stanza >}}
 You can't just say, "all your kids  

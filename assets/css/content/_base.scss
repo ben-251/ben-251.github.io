@@ -88,8 +88,4 @@ article.content {
 			font-weight: 800;
 		}
 	}
-
-	::selection {
-		background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
-	}
 }

@@ -36,8 +36,11 @@ main.container.poem-container {
 		.regular-stanza, .column-stanza, .prose-stanza {
 			margin-bottom: 1em;
 			font-size: .9em;
-			line-height: 1.4;
 			font-weight: 400;
+
+			.line {
+				line-height: 1.4;
+			}
 		}
 		
 		.column-stanza {

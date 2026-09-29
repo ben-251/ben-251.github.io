@@ -404,12 +404,6 @@ article.content ul.colon li::before {
   content: ":";
   font-weight: 800;
 }
-article.content ::-moz-selection {
-  background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
-}
-article.content ::selection {
-  background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
-}
 
 article.content p:has(+ :is(.poem, blockquote)) {
   margin-bottom: 0;
@@ -828,6 +822,12 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+body ::-moz-selection {
+  background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
+}
+body ::selection {
+  background-color: color-mix(in srgb, var(--primary-accent), var(--primary-bg) 75%);
+}
 
 .mainbody .footer {
   display: -webkit-box;
@@ -881,6 +881,13 @@ body {
           box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .mainbody main .page-header {
   margin-bottom: 0;
@@ -1237,26 +1244,20 @@ main.post-list .empty-message, main > .post-list .empty-message {
   letter-spacing: 0.01em;
 }
 :is(.poem-menu, .home-content-lists) .poem-post-list:not(.home-content-list) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
   padding: 0.4em 1em;
   margin-top: 2em;
-  border-block: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+  border-top: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
+  border-bottom: solid 2px color-mix(in srgb, var(--primary-accent), var(--primary-bg));
 }
 :is(.poem-menu, .home-content-lists) .poem-post-list:not(.home-content-list) li {
   border: none;
   padding: 1em 0.8em;
-  -webkit-box-flex: 0.1;
-      -ms-flex: 0.1 1 33%;
-          flex: 0.1 1 33%;
   font-size: 1.1em;
+}
+:is(.poem-menu, .home-content-lists) .poem-post-list:not(.home-content-list) li .title {
+  font-weight: 400;
 }
 :is(.poem-menu, .home-content-lists) .poem-post-list:not(.home-content-list) li:hover {
   background-color: inherit;
@@ -1350,8 +1351,10 @@ main.container.poem-container article.poem-content {
 main.container.poem-container article.poem-content .regular-stanza, main.container.poem-container article.poem-content .column-stanza, main.container.poem-container article.poem-content .prose-stanza {
   margin-bottom: 1em;
   font-size: 0.9em;
-  line-height: 1.4;
   font-weight: 400;
+}
+main.container.poem-container article.poem-content .regular-stanza .line, main.container.poem-container article.poem-content .column-stanza .line, main.container.poem-container article.poem-content .prose-stanza .line {
+  line-height: 1.4;
 }
 main.container.poem-container article.poem-content .column-stanza {
   display: -webkit-box;
@@ -1513,12 +1516,10 @@ main.container.poem-container hr:before {
     padding: 0;
   }
   .mainbody main {
-    padding: 7vw;
+    padding: 4.5vw;
   }
-  .mainbody main .poem-post-list:not(.home-content-list) li {
-    -webkit-box-flex: 0.1;
-        -ms-flex: 0.1 1 50%;
-            flex: 0.1 1 50%;
+  .mainbody main .poem-post-list:not(.home-content-list) {
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
   }
   .mainbody main .poem-post-list li a .title {
     font-family: var(--primary-font);
@@ -1546,17 +1547,30 @@ main.container.poem-container hr:before {
   }
   .mainbody main .post-list li a .description {
     font-style: normal;
-    font-weight: 450;
+    font-weight: 390;
   }
   .mainbody main.poem-container {
-    padding-left: 9vw;
-    padding-right: 9vw;
+    padding-left: 5vw;
+    padding-right: 7vw;
   }
   .mainbody main.poem-container .content {
-    font-size: 0.9em;
+    font-size: 0.85em;
+    letter-spacing: 0.01em;
+  }
+  .mainbody main.poem-container .content .line {
+    line-height: 1.45;
   }
   .mainbody main.poem-container hr {
     margin-left: 4em;
+  }
+  .mainbody main .post-header .description {
+    margin-bottom: 0;
+  }
+  .mainbody main .page-info .tag-list :not(.date) {
+    display: none;
+  }
+  .mainbody main .page-info .tag-list .date {
+    border: none;
   }
   .mainbody main .last-mod {
     display: none;
@@ -1573,8 +1587,12 @@ main.container.poem-container hr:before {
     font-size: 1.5rem;
   }
   .mainbody main article.content {
+    padding-top: 1em;
     font-size: 1rem;
     scroll-behavior: auto;
+  }
+  .mainbody main article.content h1, .mainbody main article.content h2, .mainbody main article.content h3 {
+    font-size: 1.4em;
   }
   .mainbody main article.content p {
     line-height: 1.6;
@@ -1583,10 +1601,13 @@ main.container.poem-container hr:before {
     -webkit-margin-end: 0.4em;
             margin-inline-end: 0.4em;
     border-left-width: 6px;
-    -webkit-padding-end: 1em;
-            padding-inline-end: 1em;
+    padding: 0.8em 0.8em 0.8em 1em;
     text-wrap: wrap;
     width: 100%;
+    max-width: unset;
+  }
+  .mainbody main article.content blockquote:not(.lit, .poem) {
+    font-size: 0.95em;
   }
   .mainbody main article.content blockquote p {
     line-height: 1.3;
