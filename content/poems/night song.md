@@ -15,7 +15,7 @@ The flesh of slugs is slimy yet undoubtedly flesh.
 {{</ regular-stanza >}}
 {{< regular-stanza >}}
 
-The leaves here are green like a motherboard.
+The leaves here are green as a motherboard.
 A piece of technology hangs
 from a wire wrapped around a branch—
 its insides are the colour of leaves. The green
